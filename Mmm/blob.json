@@ -146,6 +146,21 @@
           },
           "description": {}
         }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.66",
+          "title": {
+            "ru_RU": "66",
+            "en_EN": "66"
+          },
+          "description": {}
+        }
       }
     ],
     "organization": {
