@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 16,
-  "verStr": "1.1.16",
+  "ver": 18,
+  "verStr": "1.1.18",
   "content": {
     "roles": [],
     "menus": [],
@@ -237,6 +237,50 @@
               "title": {
                 "ru_RU": "88-1",
                 "en_EN": "881"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.88.888",
+              "title": {
+                "ru_RU": "888",
+                "en_EN": "888"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.88.88",
+              "title": {
+                "ru_RU": "88",
+                "en_EN": "88"
               },
               "description": {}
             },
