@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 4,
-  "verStr": "1.1.4",
+  "ver": 7,
+  "verStr": "1.1.7",
   "content": {
     "roles": [],
     "menus": [],
@@ -101,7 +101,53 @@
         }
       }
     ],
-    "enums": [],
+    "enums": [
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.R1",
+          "title": {
+            "ru_RU": "r1",
+            "en_EN": "r1"
+          },
+          "description": {}
+        }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.R2",
+          "title": {
+            "ru_RU": "r2",
+            "en_EN": "r2"
+          },
+          "description": {}
+        }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.R3",
+          "title": {
+            "ru_RU": "r3",
+            "en_EN": "r3"
+          },
+          "description": {}
+        }
+      }
+    ],
     "organization": {
       "publiccatalog": true,
       "levelscount": 1,
