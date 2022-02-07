@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 13,
-  "verStr": "1.1.13",
+  "ver": 17,
+  "verStr": "1.1.17",
   "content": {
     "roles": [],
     "menus": [],
@@ -213,7 +213,217 @@
         }
       }
     },
-    "catalogs": [],
+    "catalogs": [
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.1.123",
+              "title": {
+                "ru_RU": "123",
+                "en_EN": "123"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника 1",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.1",
+          "title": {
+            "ru_RU": "1",
+            "en_EN": "1"
+          },
+          "description": {}
+        }
+      },
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.2.312123",
+              "title": {
+                "ru_RU": "312123",
+                "en_EN": "312123"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.2.44",
+              "title": {
+                "ru_RU": "44",
+                "en_EN": "44"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника 2",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.2",
+          "title": {
+            "ru_RU": "2",
+            "en_EN": "2"
+          },
+          "description": {}
+        }
+      },
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.3",
+          "title": {
+            "ru_RU": "3",
+            "en_EN": "3"
+          },
+          "description": {}
+        }
+      }
+    ],
     "register": [],
     "accplans": [],
     "accoperations": [],
