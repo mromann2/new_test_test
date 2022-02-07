@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 13,
-  "verStr": "1.1.13",
+  "ver": 16,
+  "verStr": "1.1.16",
   "content": {
     "roles": [],
     "menus": [],
@@ -213,7 +213,170 @@
         }
       }
     },
-    "catalogs": [],
+    "catalogs": [
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.88.881",
+              "title": {
+                "ru_RU": "88-1",
+                "en_EN": "881"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника 88",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.88",
+          "title": {
+            "ru_RU": "88",
+            "en_EN": "88"
+          },
+          "description": {}
+        }
+      },
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.888.8881",
+              "title": {
+                "ru_RU": "888-1",
+                "en_EN": "8881"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.888.8882",
+              "title": {
+                "ru_RU": "888-2",
+                "en_EN": "8882"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника 888",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.888",
+          "title": {
+            "ru_RU": "888",
+            "en_EN": "888"
+          },
+          "description": {}
+        }
+      }
+    ],
     "register": [],
     "accplans": [],
     "accoperations": [],
