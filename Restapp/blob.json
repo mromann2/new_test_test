@@ -1,0 +1,171 @@
+{
+  "mnemo": "Restapp",
+  "name": {
+    "ru_RU": "Restapp",
+    "en_EN": "Restapp"
+  },
+  "ver": 3,
+  "verStr": "1.1.3",
+  "content": {
+    "roles": [],
+    "menus": [],
+    "constants": [
+      {
+        "value": {
+          "meta": {
+            "mnemo": "Restapp.Konstanta",
+            "title": {
+              "ru_RU": "константа",
+              "en_EN": "konstanta"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "primitive.text"
+          },
+          "properties": {
+            "unlimited": "false",
+            "length": "14"
+          },
+          "required": false
+        },
+        "periodical": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "Restapp.Konstanta",
+          "title": {
+            "ru_RU": "константа",
+            "en_EN": "konstanta"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "enums": [],
+    "organization": {
+      "publiccatalog": true,
+      "levelscount": 1,
+      "kodlength": 5,
+      "titlelength": 25,
+      "autonumerizer": true,
+      "uniquecontrol": true,
+      "kodseries": "SlaveScope",
+      "kodtype": "Number",
+      "mainview": "Kod",
+      "oneformforelementandgroup": false,
+      "editing": "InList",
+      "requisites": [],
+      "form": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formelement": {
+        "title": "formElement",
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formgroup": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "listformset": [],
+      "script": {
+        "title": "script",
+        "sources": ""
+      },
+      "grants": {},
+      "meta": {
+        "mnemo": "Restapp.organization",
+        "title": {
+          "ru_RU": "Учётная организация",
+          "en_EN": "Accounting Organization"
+        },
+        "description": {
+          "ru_RU": "Справочник учётных организаций",
+          "en_EN": "Directory of accounting organizations"
+        }
+      }
+    },
+    "catalogs": [
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Restapp.Spravochnik",
+          "title": {
+            "ru_RU": "справочник",
+            "en_EN": "spravochnik"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "register": [],
+    "accplans": [],
+    "accoperations": [],
+    "typicaloperationgroups": [],
+    "typicaloperations": [],
+    "documents": [],
+    "documentalgorithms": [],
+    "reports": [],
+    "journals": [],
+    "operationScript": {
+      "title": "Скрипт операций",
+      "sources": ""
+    },
+    "constantScript": {
+      "title": "Скрипт констант",
+      "sources": ""
+    }
+  },
+  "required": [],
+  "parent": {
+    "mnemo": "ROOT",
+    "ver": 1,
+    "verStr": "1.1.1"
+  },
+  "scripts": [],
+  "forms": [],
+  "printedForms": []
+}

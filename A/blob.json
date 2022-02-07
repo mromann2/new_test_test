@@ -1,0 +1,292 @@
+{
+  "mnemo": "A",
+  "name": {
+    "ru_RU": "а",
+    "en_EN": "a"
+  },
+  "ver": 9,
+  "verStr": "1.1.9",
+  "content": {
+    "roles": [],
+    "menus": [],
+    "constants": [],
+    "enums": [
+      {
+        "type": {
+          "mnemo": "primitive.plan"
+        },
+        "enum": [
+          "A.A"
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "A.Plan",
+          "title": {
+            "ru_RU": "план",
+            "en_EN": "plan"
+          },
+          "description": {}
+        }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.plan"
+        },
+        "enum": [
+          "A.BUDGETNOE"
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "A.TipUchrezhdeniya",
+          "title": {
+            "ru_RU": "Тип учреждения",
+            "en_EN": "Tip uchrezhdeniya"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "organization": {
+      "publiccatalog": true,
+      "levelscount": 1,
+      "kodlength": 5,
+      "titlelength": 25,
+      "autonumerizer": true,
+      "uniquecontrol": true,
+      "kodseries": "SlaveScope",
+      "kodtype": "Number",
+      "mainview": "Kod",
+      "oneformforelementandgroup": false,
+      "editing": "InList",
+      "requisites": [
+        {
+          "periodical": false,
+          "sort": false,
+          "selectbyrequisite": false,
+          "usefor": "ForElement",
+          "meta": {
+            "mnemo": "A.organization.plantype",
+            "title": {
+              "ru_RU": "plantype",
+              "en_EN": "plantype"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "A.Plan"
+          },
+          "properties": {},
+          "required": false
+        }
+      ],
+      "form": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formelement": {
+        "title": "formElement",
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formgroup": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "listformset": [],
+      "script": {
+        "title": "Скрипт учетной организации Учётная организация",
+        "sources": ""
+      },
+      "grants": {},
+      "meta": {
+        "mnemo": "A.organization",
+        "title": {
+          "ru_RU": "Учётная организация",
+          "en_EN": "Accounting Organization"
+        },
+        "description": {
+          "ru_RU": "Справочник учётных организаций",
+          "en_EN": "Directory of accounting organizations"
+        }
+      }
+    },
+    "catalogs": [
+      {
+        "publiccatalog": true,
+        "levelscount": 2,
+        "kodlength": 5,
+        "titlelength": 250,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "A.Zhurnaly.Prioritet",
+              "title": {
+                "ru_RU": "Приоритет",
+                "en_EN": "Prioritet"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.integer"
+            },
+            "properties": {
+              "length": "3",
+              "unsigned": "false"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "A.Zhurnaly.DopolnitelnyeUsloviyaVkliucheniyaProvodok",
+              "title": {
+                "ru_RU": "Дополнительно отбирать проводки с номером журнала счета, равным формируемому журналу",
+                "en_EN": "Dopolnitelnye usloviya vkliucheniya provodok"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.boolean"
+            },
+            "properties": {},
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "A.Zhurnaly.NeVyvoditOstatki",
+              "title": {
+                "ru_RU": "Не выводить остатки",
+                "en_EN": "Ne vyvodit ostatki"
+              },
+              "description": {
+                "ru_RU": "Не выводить остатки на начало и конец периода"
+              }
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "A.Zhurnaly",
+          "title": {
+            "ru_RU": "Журналы",
+            "en_EN": "Zhurnaly"
+          },
+          "description": {
+            "ru_RU": "Журналы операций"
+          }
+        }
+      }
+    ],
+    "register": [],
+    "accplans": [
+      {
+        "plantype": "BUDGET",
+        "codeTemplate": "",
+        "accounts": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "A.A",
+          "title": {
+            "ru_RU": "а",
+            "en_EN": "a"
+          },
+          "description": {}
+        }
+      },
+      {
+        "plantype": "BUDGET",
+        "codeTemplate": "",
+        "accounts": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "A.4",
+          "title": {
+            "ru_RU": "4",
+            "en_EN": "4"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "accoperations": [],
+    "typicaloperationgroups": [],
+    "typicaloperations": [],
+    "documents": [],
+    "documentalgorithms": [],
+    "reports": [],
+    "journals": [],
+    "operationScript": {
+      "title": "Скрипт операций",
+      "sources": ""
+    },
+    "constantScript": {
+      "title": "Скрипт констант",
+      "sources": ""
+    }
+  },
+  "required": [],
+  "parent": {
+    "mnemo": "ROOT",
+    "ver": 1,
+    "verStr": "1.1.1"
+  },
+  "scripts": [],
+  "forms": [],
+  "printedForms": []
+}

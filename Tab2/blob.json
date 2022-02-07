@@ -1,0 +1,330 @@
+{
+  "mnemo": "Tab2",
+  "name": {
+    "ru_RU": "tab2",
+    "en_EN": "tab2"
+  },
+  "ver": 6,
+  "verStr": "1.1.6",
+  "content": {
+    "roles": [],
+    "menus": [],
+    "constants": [],
+    "enums": [
+      {
+        "type": {
+          "mnemo": "primitive.plan"
+        },
+        "enum": [
+          "Tab2.Plan",
+          "Tab2.Fff"
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "Tab2.Gthtx",
+          "title": {
+            "ru_RU": "gthtx",
+            "en_EN": "gthtx"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "organization": {
+      "publiccatalog": true,
+      "levelscount": 1,
+      "kodlength": 5,
+      "titlelength": 25,
+      "autonumerizer": true,
+      "uniquecontrol": true,
+      "kodseries": "SlaveScope",
+      "kodtype": "Number",
+      "mainview": "Kod",
+      "oneformforelementandgroup": false,
+      "editing": "InList",
+      "requisites": [
+        {
+          "periodical": false,
+          "sort": false,
+          "selectbyrequisite": false,
+          "usefor": "ForElement",
+          "meta": {
+            "mnemo": "Tab2.organization.Htr",
+            "title": {
+              "ru_RU": "htr",
+              "en_EN": "htr"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "Tab2.Gthtx"
+          },
+          "properties": {},
+          "required": false
+        }
+      ],
+      "form": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formelement": {
+        "title": "formElement",
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formgroup": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "listformset": [],
+      "script": {
+        "title": "Скрипт учетной организации Учётная организация",
+        "sources": ""
+      },
+      "grants": {},
+      "meta": {
+        "mnemo": "Tab2.organization",
+        "title": {
+          "ru_RU": "Учётная организация",
+          "en_EN": "Accounting Organization"
+        },
+        "description": {
+          "ru_RU": "Справочник учётных организаций",
+          "en_EN": "Directory of accounting organizations"
+        }
+      }
+    },
+    "catalogs": [
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Tab2.Dokument",
+          "title": {
+            "ru_RU": "Документ",
+            "en_EN": "Dokument"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "register": [],
+    "accplans": [
+      {
+        "plantype": "BUDGET",
+        "codeTemplate": "",
+        "accounts": [
+          {
+            "active": true,
+            "code": "65+65+5",
+            "name": {
+              "ru_RU": "",
+              "en_EN": ""
+            },
+            "foreign": false,
+            "numerical": false,
+            "amounttype": "None",
+            "journalnumber": "",
+            "budgetclassificationtype": "None",
+            "offbalance": false,
+            "type": "Active",
+            "analyticsList": [],
+            "grants": {},
+            "meta": {
+              "mnemo": "65+65+5",
+              "title": {
+                "ru_RU": "65+65+5"
+              },
+              "description": {}
+            }
+          },
+          {
+            "active": true,
+            "code": "++98+98",
+            "name": {
+              "ru_RU": "",
+              "en_EN": ""
+            },
+            "foreign": false,
+            "numerical": false,
+            "amounttype": "None",
+            "journalnumber": "",
+            "budgetclassificationtype": "None",
+            "offbalance": false,
+            "type": "Active",
+            "analyticsList": [],
+            "grants": {},
+            "meta": {
+              "mnemo": "++98+98",
+              "title": {
+                "ru_RU": "++98+98"
+              },
+              "description": {}
+            }
+          }
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "Tab2.Plan",
+          "title": {
+            "ru_RU": "plan",
+            "en_EN": "plan"
+          },
+          "description": {}
+        }
+      },
+      {
+        "plantype": "BUDGET",
+        "codeTemplate": "",
+        "accounts": [
+          {
+            "active": true,
+            "code": "++++++",
+            "name": {
+              "ru_RU": "++++",
+              "en_EN": ""
+            },
+            "foreign": false,
+            "numerical": false,
+            "amounttype": "None",
+            "journalnumber": "",
+            "budgetclassificationtype": "None",
+            "offbalance": false,
+            "type": "Active",
+            "analyticsList": [],
+            "grants": {},
+            "meta": {
+              "mnemo": "++++++",
+              "title": {
+                "ru_RU": "++++++"
+              },
+              "description": {}
+            }
+          }
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "Tab2.Fff",
+          "title": {
+            "ru_RU": "fff",
+            "en_EN": "fff"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "accoperations": [],
+    "typicaloperationgroups": [],
+    "typicaloperations": [],
+    "documents": [
+      {
+        "periodictype": "ForAllDocumentsThatType",
+        "autonumerizer": true,
+        "numeratortype": "Number",
+        "length": 5,
+        "uniquecontrol": true,
+        "acceptaccountingprocessing": true,
+        "automovedeletion": true,
+        "autorownumerizer": true,
+        "accounting": false,
+        "calculation": false,
+        "operationalaccounting": false,
+        "createoperation": "Always",
+        "headerrequsites": [],
+        "tablerequsites": [],
+        "basedondocuments": {
+          "isthebasis": [],
+          "maybethebasisforanykind": false
+        },
+        "formdescription": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formdocument": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "algorithms": [],
+        "printedformset": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Tab2.748",
+          "title": {
+            "ru_RU": "Документ",
+            "en_EN": "748"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "documentalgorithms": [],
+    "reports": [],
+    "journals": [],
+    "operationScript": {
+      "title": "Скрипт операций",
+      "sources": ""
+    },
+    "constantScript": {
+      "title": "Скрипт констант",
+      "sources": ""
+    }
+  },
+  "required": [],
+  "parent": {
+    "mnemo": "ROOT",
+    "ver": 1,
+    "verStr": "1.1.1"
+  },
+  "scripts": [],
+  "forms": [],
+  "printedForms": []
+}

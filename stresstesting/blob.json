@@ -1,0 +1,257 @@
+{
+  "mnemo": "stresstesting",
+  "name": {
+    "ru_RU": "Нагрузочное тестирование",
+    "en_EN": "Stress testing"
+  },
+  "ver": 5,
+  "verStr": "1.1.5",
+  "content": {
+    "roles": [],
+    "menus": [],
+    "constants": [],
+    "enums": [
+      {
+        "type": {
+          "mnemo": "primitive.plan"
+        },
+        "enum": [
+          "stresstesting.ProstoPlan"
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "stresstesting.TipUchrezhdeniya",
+          "title": {
+            "ru_RU": "Тип учреждения",
+            "en_EN": "Tip uchrezhdeniya"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "organization": {
+      "publiccatalog": true,
+      "levelscount": 1,
+      "kodlength": 5,
+      "titlelength": 25,
+      "autonumerizer": true,
+      "uniquecontrol": true,
+      "kodseries": "SlaveScope",
+      "kodtype": "Number",
+      "mainview": "Kod",
+      "oneformforelementandgroup": false,
+      "editing": "InList",
+      "requisites": [
+        {
+          "periodical": false,
+          "sort": false,
+          "selectbyrequisite": false,
+          "usefor": "ForElement",
+          "meta": {
+            "mnemo": "stresstesting.organization.plantype",
+            "title": {
+              "ru_RU": "Тип организации",
+              "en_EN": "Tip organizacii"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "stresstesting.TipUchrezhdeniya"
+          },
+          "properties": {},
+          "required": false
+        }
+      ],
+      "form": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formelement": {
+        "title": "formElement",
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formgroup": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "listformset": [],
+      "script": {
+        "title": "Скрипт учетной организации Учётная организация",
+        "sources": ""
+      },
+      "grants": {},
+      "meta": {
+        "mnemo": "stresstesting.organization",
+        "title": {
+          "ru_RU": "Учётная организация",
+          "en_EN": "Accounting Organization"
+        },
+        "description": {
+          "ru_RU": "Справочник учётных организаций",
+          "en_EN": "Directory of accounting organizations"
+        }
+      }
+    },
+    "catalogs": [],
+    "register": [],
+    "accplans": [
+      {
+        "plantype": "BUDGET",
+        "codeTemplate": "",
+        "accounts": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "stresstesting.ProstoPlan",
+          "title": {
+            "ru_RU": "Просто план",
+            "en_EN": "Prosto plan"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "accoperations": [],
+    "typicaloperationgroups": [],
+    "typicaloperations": [],
+    "documents": [
+      {
+        "periodictype": "ForAllDocumentsThatType",
+        "autonumerizer": true,
+        "numeratortype": "Number",
+        "length": 12,
+        "uniquecontrol": true,
+        "acceptaccountingprocessing": true,
+        "automovedeletion": true,
+        "autorownumerizer": true,
+        "accounting": false,
+        "calculation": false,
+        "operationalaccounting": false,
+        "createoperation": "Always",
+        "headerrequsites": [
+          {
+            "meta": {
+              "mnemo": "stresstesting.RandomActivation.hr.EntriesNumber",
+              "title": {
+                "ru_RU": "Количество проводок",
+                "en_EN": "Entries number"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.integer"
+            },
+            "properties": {
+              "length": "14",
+              "unsigned": "true"
+            },
+            "required": true
+          }
+        ],
+        "tablerequsites": [],
+        "basedondocuments": {
+          "isthebasis": [],
+          "maybethebasisforanykind": false
+        },
+        "formdescription": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formdocument": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "script": {
+          "title": "Скрипт документа Случайные проводки",
+          "sources": ""
+        },
+        "algorithms": [
+          {
+            "mnemo": "stresstesting.RandomActivation.RandomEntries"
+          }
+        ],
+        "printedformset": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "stresstesting.RandomActivation",
+          "title": {
+            "ru_RU": "Случайные проводки",
+            "en_EN": "Random activation"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "documentalgorithms": [
+      {
+        "script": {
+          "title": "script",
+          "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n   \r\n        let entriesNumber \u003d currentDocument.get(\u0027stresstesting.RandomActivation.hr.EntriesNumber\u0027);\r\n        \r\n\r\n                let posting \u003d EntityFactory.createPosting();\r\n                posting.setComment( \"Случайная проводка\" );\r\n                posting.setValue( 100 );\r\n                posting.setDebit( statementPosting.getDebit() );\r\n                posting.setCredit( statementPosting.getCredit() );\r\n                currentDocument.addPosting(posting);\r\n        \r\n                \r\n        \r\n        \r\n        currentDocument.setExecuted();\r\n        currentDocument.save();\r\n    \r\n        return;  \r\n}\r\n\r\n//Снятие документа с проведения\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.removeAllPostings();\r\n    currentDocument.setExecutedDate(null);\r\n    currentDocument.save();\r\n    return;\r\n}\r\n"
+        },
+        "template": {
+          "universal": false,
+          "date": {
+            "celltype": "OPERATION_DATE",
+            "prompt": {},
+            "index": 0
+          },
+          "number": {
+            "celltype": "OPERATION_NUMBER",
+            "prompt": {},
+            "index": 0
+          },
+          "summ": {
+            "celltype": "OPERATION_SUM",
+            "prompt": {},
+            "index": 0
+          },
+          "operation_description": {
+            "celltype": "OPERATION_DESCRIPTION",
+            "prompt": {},
+            "index": 0
+          },
+          "operations": []
+        },
+        "runastemplate": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "stresstesting.RandomActivation.RandomEntries",
+          "title": {
+            "ru_RU": "Случайные проводки",
+            "en_EN": "Random entries"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "reports": [],
+    "journals": [],
+    "operationScript": {
+      "title": "Скрипт операций",
+      "sources": ""
+    },
+    "constantScript": {
+      "title": "Скрипт констант",
+      "sources": ""
+    }
+  },
+  "required": [],
+  "parent": {
+    "mnemo": "ROOT",
+    "ver": 1,
+    "verStr": "1.1.1"
+  },
+  "scripts": [],
+  "forms": [],
+  "printedForms": []
+}
