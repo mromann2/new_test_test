@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 7,
-  "verStr": "1.1.7",
+  "ver": 8,
+  "verStr": "1.1.8",
   "content": {
     "roles": [],
     "menus": [],
@@ -143,6 +143,21 @@
           "title": {
             "ru_RU": "r3",
             "en_EN": "r3"
+          },
+          "description": {}
+        }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.66",
+          "title": {
+            "ru_RU": "66",
+            "en_EN": "66"
           },
           "description": {}
         }
