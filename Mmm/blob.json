@@ -1,0 +1,183 @@
+{
+  "mnemo": "Mmm",
+  "name": {
+    "ru_RU": "mmm",
+    "en_EN": "mmm"
+  },
+  "ver": 4,
+  "verStr": "1.1.4",
+  "content": {
+    "roles": [],
+    "menus": [],
+    "constants": [
+      {
+        "value": {
+          "meta": {
+            "mnemo": "Mmm.324",
+            "title": {
+              "ru_RU": "324",
+              "en_EN": "324"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "primitive.text"
+          },
+          "properties": {
+            "unlimited": "false",
+            "length": "14"
+          },
+          "required": false
+        },
+        "periodical": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.324",
+          "title": {
+            "ru_RU": "324",
+            "en_EN": "324"
+          },
+          "description": {}
+        }
+      },
+      {
+        "value": {
+          "meta": {
+            "mnemo": "Mmm.45",
+            "title": {
+              "ru_RU": "45",
+              "en_EN": "45"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "primitive.text"
+          },
+          "properties": {
+            "unlimited": "false",
+            "length": "14"
+          },
+          "required": false
+        },
+        "periodical": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.45",
+          "title": {
+            "ru_RU": "45",
+            "en_EN": "45"
+          },
+          "description": {}
+        }
+      },
+      {
+        "value": {
+          "meta": {
+            "mnemo": "Mmm.Ewrrr",
+            "title": {
+              "ru_RU": "ewr",
+              "en_EN": "r"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "primitive.text"
+          },
+          "properties": {
+            "unlimited": "false",
+            "length": "14"
+          },
+          "required": false
+        },
+        "periodical": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Ewrrr",
+          "title": {
+            "ru_RU": "ewr",
+            "en_EN": "r"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "enums": [],
+    "organization": {
+      "publiccatalog": true,
+      "levelscount": 1,
+      "kodlength": 5,
+      "titlelength": 25,
+      "autonumerizer": true,
+      "uniquecontrol": true,
+      "kodseries": "SlaveScope",
+      "kodtype": "Number",
+      "mainview": "Kod",
+      "oneformforelementandgroup": false,
+      "editing": "InList",
+      "requisites": [],
+      "form": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formelement": {
+        "title": "formElement",
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formgroup": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "listformset": [],
+      "script": {
+        "title": "script",
+        "sources": ""
+      },
+      "grants": {},
+      "meta": {
+        "mnemo": "Mmm.organization",
+        "title": {
+          "ru_RU": "Учётная организация",
+          "en_EN": "Accounting Organization"
+        },
+        "description": {
+          "ru_RU": "Справочник учётных организаций",
+          "en_EN": "Directory of accounting organizations"
+        }
+      }
+    },
+    "catalogs": [],
+    "register": [],
+    "accplans": [],
+    "accoperations": [],
+    "typicaloperationgroups": [],
+    "typicaloperations": [],
+    "documents": [],
+    "documentalgorithms": [],
+    "reports": [],
+    "journals": [],
+    "operationScript": {
+      "title": "Скрипт операций",
+      "sources": ""
+    },
+    "constantScript": {
+      "title": "Скрипт констант",
+      "sources": ""
+    }
+  },
+  "required": [],
+  "parent": {
+    "mnemo": "ROOT",
+    "ver": 1,
+    "verStr": "1.1.1"
+  },
+  "scripts": [],
+  "forms": [],
+  "printedForms": []
+}
