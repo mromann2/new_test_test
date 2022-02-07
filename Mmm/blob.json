@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 7,
-  "verStr": "1.1.7",
+  "ver": 8,
+  "verStr": "1.1.8",
   "content": {
     "roles": [],
     "menus": [],
@@ -96,6 +96,36 @@
           "title": {
             "ru_RU": "ewr",
             "en_EN": "r"
+          },
+          "description": {}
+        }
+      },
+      {
+        "value": {
+          "meta": {
+            "mnemo": "Mmm.K4",
+            "title": {
+              "ru_RU": "k4",
+              "en_EN": "k4"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "primitive.text"
+          },
+          "properties": {
+            "unlimited": "false",
+            "length": "14"
+          },
+          "required": false
+        },
+        "periodical": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.K4",
+          "title": {
+            "ru_RU": "k4",
+            "en_EN": "k4"
           },
           "description": {}
         }
