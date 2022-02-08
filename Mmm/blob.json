@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 24,
-  "verStr": "1.1.24",
+  "ver": 25,
+  "verStr": "1.1.25",
   "content": {
     "roles": [],
     "menus": [],
@@ -66,36 +66,6 @@
           "title": {
             "ru_RU": "45",
             "en_EN": "45"
-          },
-          "description": {}
-        }
-      },
-      {
-        "value": {
-          "meta": {
-            "mnemo": "Mmm.Ewrrr",
-            "title": {
-              "ru_RU": "ewr",
-              "en_EN": "r"
-            },
-            "description": {}
-          },
-          "type": {
-            "mnemo": "primitive.text"
-          },
-          "properties": {
-            "unlimited": "false",
-            "length": "14"
-          },
-          "required": false
-        },
-        "periodical": false,
-        "grants": {},
-        "meta": {
-          "mnemo": "Mmm.Ewrrr",
-          "title": {
-            "ru_RU": "ewr",
-            "en_EN": "r"
           },
           "description": {}
         }
