@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 25,
-  "verStr": "1.1.25",
+  "ver": 37,
+  "verStr": "1.1.37",
   "content": {
     "roles": [],
     "menus": [],
@@ -281,6 +281,60 @@
           },
           "description": {}
         }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.R43",
+          "title": {
+            "ru_RU": "r43",
+            "en_EN": "r43"
+          },
+          "description": {}
+        }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Rrr",
+          "title": {
+            "ru_RU": "rrr",
+            "en_EN": "rrr"
+          },
+          "description": {}
+        }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [
+          "5",
+          "456",
+          "23",
+          "566",
+          "8878",
+          "313",
+          "333",
+          "6543"
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Pp",
+          "title": {
+            "ru_RU": "pp",
+            "en_EN": "pp"
+          },
+          "description": {}
+        }
       }
     ],
     "organization": {
@@ -539,6 +593,235 @@
           },
           "description": {}
         }
+      },
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.R11.2",
+              "title": {
+                "ru_RU": "2",
+                "en_EN": "2"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.real"
+            },
+            "properties": {
+              "precision": "2",
+              "length": "14",
+              "unsigned": "false"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.R11.324",
+              "title": {
+                "ru_RU": "324",
+                "en_EN": "324"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.R11.R",
+              "title": {
+                "ru_RU": "r",
+                "en_EN": "r"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.integer"
+            },
+            "properties": {
+              "length": "14",
+              "unsigned": "false"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника r_11",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.R11",
+          "title": {
+            "ru_RU": "r_11",
+            "en_EN": "r11"
+          },
+          "description": {}
+        }
+      },
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.666.Qwe",
+              "title": {
+                "ru_RU": "qwe",
+                "en_EN": "qwe"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.666.444",
+              "title": {
+                "ru_RU": "444",
+                "en_EN": "444"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.666.T66",
+              "title": {
+                "ru_RU": "t66",
+                "en_EN": "t66"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника 666",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.666",
+          "title": {
+            "ru_RU": "r__66",
+            "en_EN": "666"
+          },
+          "description": {}
+        }
       }
     ],
     "register": [],
@@ -704,6 +987,97 @@
           },
           "description": {}
         }
+      },
+      {
+        "periodictype": "ForAllDocumentsThatType",
+        "autonumerizer": true,
+        "numeratortype": "Number",
+        "length": 5,
+        "uniquecontrol": true,
+        "acceptaccountingprocessing": true,
+        "automovedeletion": true,
+        "autorownumerizer": true,
+        "accounting": false,
+        "calculation": false,
+        "operationalaccounting": false,
+        "createoperation": "Always",
+        "headerrequsites": [
+          {
+            "meta": {
+              "mnemo": "Mmm.Rdoc.hr.Ee",
+              "title": {
+                "ru_RU": "ee",
+                "en_EN": "ee"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "meta": {
+              "mnemo": "Mmm.Rdoc.hr.D",
+              "title": {
+                "ru_RU": "d",
+                "en_EN": "d"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "tablerequsites": [],
+        "basedondocuments": {
+          "isthebasis": [],
+          "maybethebasisforanykind": false
+        },
+        "formdescription": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formdocument": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "script": {
+          "title": "Скрипт документа r_doc",
+          "sources": ""
+        },
+        "algorithms": [
+          {
+            "mnemo": "Mmm.Rdoc.999"
+          },
+          {
+            "mnemo": "Mmm.Rdoc.Re"
+          }
+        ],
+        "printedformset": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Rdoc",
+          "title": {
+            "ru_RU": "r_doc",
+            "en_EN": "rdoc"
+          },
+          "description": {}
+        }
       }
     ],
     "documentalgorithms": [
@@ -743,6 +1117,86 @@
           "title": {
             "ru_RU": "fkuj",
             "en_EN": "fkuj"
+          },
+          "description": {}
+        }
+      },
+      {
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "template": {
+          "universal": false,
+          "date": {
+            "celltype": "OPERATION_DATE",
+            "prompt": {},
+            "index": 0
+          },
+          "number": {
+            "celltype": "OPERATION_NUMBER",
+            "prompt": {},
+            "index": 0
+          },
+          "summ": {
+            "celltype": "OPERATION_SUM",
+            "prompt": {},
+            "index": 0
+          },
+          "operation_description": {
+            "celltype": "OPERATION_DESCRIPTION",
+            "prompt": {},
+            "index": 0
+          },
+          "operations": []
+        },
+        "runastemplate": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Rdoc.Re",
+          "title": {
+            "ru_RU": "re",
+            "en_EN": "r"
+          },
+          "description": {}
+        }
+      },
+      {
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "template": {
+          "universal": false,
+          "date": {
+            "celltype": "OPERATION_DATE",
+            "prompt": {},
+            "index": 0
+          },
+          "number": {
+            "celltype": "OPERATION_NUMBER",
+            "prompt": {},
+            "index": 0
+          },
+          "summ": {
+            "celltype": "OPERATION_SUM",
+            "prompt": {},
+            "index": 0
+          },
+          "operation_description": {
+            "celltype": "OPERATION_DESCRIPTION",
+            "prompt": {},
+            "index": 0
+          },
+          "operations": []
+        },
+        "runastemplate": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Rdoc.999",
+          "title": {
+            "ru_RU": "999",
+            "en_EN": "999"
           },
           "description": {}
         }
