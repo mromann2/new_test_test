@@ -1119,6 +1119,56 @@
           },
           "description": {}
         }
+      },
+      {
+        "plantype": "BUDGET",
+        "codeTemplate": "",
+        "accounts": [
+          {
+            "active": true,
+            "code": "123",
+            "name": {
+              "ru_RU": "3333",
+              "en_EN": "3"
+            },
+            "foreign": false,
+            "numerical": false,
+            "amounttype": "None",
+            "journalnumber": "",
+            "budgetclassificationtype": "None",
+            "offbalance": false,
+            "type": "Active",
+            "analyticsList": [
+              {
+                "type": {
+                  "mnemo": "Mmm.V77767"
+                },
+                "returnsOnly": false,
+                "bySum": false,
+                "byForeignSum": false,
+                "byNum": false,
+                "analyticNumber": 0
+              }
+            ],
+            "grants": {},
+            "meta": {
+              "mnemo": "123",
+              "title": {
+                "ru_RU": "123"
+              },
+              "description": {}
+            }
+          }
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.1233",
+          "title": {
+            "ru_RU": "1233",
+            "en_EN": "3"
+          },
+          "description": {}
+        }
       }
     ],
     "accoperations": [],
