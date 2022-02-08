@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 25,
-  "verStr": "1.1.25",
+  "ver": 34,
+  "verStr": "1.1.34",
   "content": {
     "roles": [],
     "menus": [],
@@ -539,6 +539,250 @@
           },
           "description": {}
         }
+      },
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.V99.8885",
+              "title": {
+                "ru_RU": "8885",
+                "en_EN": "8885"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.V99.R2r32r",
+              "title": {
+                "ru_RU": "r2r32r",
+                "en_EN": "r2r32r"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.V99.232r",
+              "title": {
+                "ru_RU": "232r",
+                "en_EN": "r"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.character"
+            },
+            "properties": {},
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.V99.88",
+              "title": {
+                "ru_RU": "0088",
+                "en_EN": "88"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.V99.55454",
+              "title": {
+                "ru_RU": "55454",
+                "en_EN": "55454"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника v_99",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.V99",
+          "title": {
+            "ru_RU": "v_99",
+            "en_EN": "v99"
+          },
+          "description": {}
+        }
+      },
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.V77767.8887",
+              "title": {
+                "ru_RU": "8887",
+                "en_EN": "8887"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.date"
+            },
+            "properties": {},
+            "required": false
+          },
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.V77767.4422",
+              "title": {
+                "ru_RU": "4422",
+                "en_EN": "4422"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника v77767",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.V77767",
+          "title": {
+            "ru_RU": "v77767",
+            "en_EN": "v77767"
+          },
+          "description": {}
+        }
       }
     ],
     "register": [],
@@ -701,6 +945,72 @@
           "title": {
             "ru_RU": "virt1",
             "en_EN": "virt1"
+          },
+          "description": {}
+        }
+      },
+      {
+        "periodictype": "ForAllDocumentsThatType",
+        "autonumerizer": true,
+        "numeratortype": "Number",
+        "length": 5,
+        "uniquecontrol": true,
+        "acceptaccountingprocessing": true,
+        "automovedeletion": true,
+        "autorownumerizer": true,
+        "accounting": false,
+        "calculation": false,
+        "operationalaccounting": false,
+        "createoperation": "Always",
+        "headerrequsites": [],
+        "tablerequsites": [
+          {
+            "meta": {
+              "mnemo": "Mmm.Virt44.tr.55fg5gg",
+              "title": {
+                "ru_RU": "55fg5gg",
+                "en_EN": "55fg5gg"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "basedondocuments": {
+          "isthebasis": [],
+          "maybethebasisforanykind": false
+        },
+        "formdescription": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formdocument": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "script": {
+          "title": "Скрипт документа virt44",
+          "sources": ""
+        },
+        "algorithms": [],
+        "printedformset": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Virt44",
+          "title": {
+            "ru_RU": "virt44",
+            "en_EN": "virt44"
           },
           "description": {}
         }
