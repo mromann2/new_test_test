@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 37,
-  "verStr": "1.1.37",
+  "ver": 38,
+  "verStr": "1.1.38",
   "content": {
     "roles": [],
     "menus": [],
@@ -1069,7 +1069,58 @@
       }
     ],
     "register": [],
-    "accplans": [],
+    "accplans": [
+      {
+        "plantype": "BUDGET",
+        "codeTemplate": "",
+        "accounts": [
+          {
+            "active": true,
+            "code": "123",
+            "name": {
+              "ru_RU": "123",
+              "en_EN": ""
+            },
+            "foreign": false,
+            "numerical": false,
+            "amounttype": "None",
+            "journalnumber": "",
+            "budgetclassificationtype": "None",
+            "offbalance": false,
+            "type": "Active",
+            "analyticsList": [
+              {
+                "type": {
+                  "mnemo": "Mmm.R11"
+                },
+                "returnsOnly": false,
+                "bySum": false,
+                "byForeignSum": false,
+                "byNum": false,
+                "analyticNumber": 0
+              }
+            ],
+            "grants": {},
+            "meta": {
+              "mnemo": "123",
+              "title": {
+                "ru_RU": "123"
+              },
+              "description": {}
+            }
+          }
+        ],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.1",
+          "title": {
+            "ru_RU": "1",
+            "en_EN": "1"
+          },
+          "description": {}
+        }
+      }
+    ],
     "accoperations": [],
     "typicaloperationgroups": [],
     "typicaloperations": [],
