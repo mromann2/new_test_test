@@ -4,8 +4,8 @@
     "ru_RU": "mmm",
     "en_EN": "mmm"
   },
-  "ver": 39,
-  "verStr": "1.1.39",
+  "ver": 40,
+  "verStr": "1.1.40",
   "content": {
     "roles": [],
     "menus": [],
@@ -249,6 +249,36 @@
           },
           "description": {}
         }
+      },
+      {
+        "value": {
+          "meta": {
+            "mnemo": "Mmm.Qwe",
+            "title": {
+              "ru_RU": "qwe",
+              "en_EN": "qwe"
+            },
+            "description": {}
+          },
+          "type": {
+            "mnemo": "primitive.text"
+          },
+          "properties": {
+            "unlimited": "false",
+            "length": "14"
+          },
+          "required": false
+        },
+        "periodical": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Qwe",
+          "title": {
+            "ru_RU": "qwe",
+            "en_EN": "qwe"
+          },
+          "description": {}
+        }
       }
     ],
     "enums": [
@@ -362,6 +392,21 @@
           "title": {
             "ru_RU": "pp",
             "en_EN": "pp"
+          },
+          "description": {}
+        }
+      },
+      {
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "enum": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.Asdasd",
+          "title": {
+            "ru_RU": "asdasd",
+            "en_EN": "asdasd"
           },
           "description": {}
         }
@@ -1093,6 +1138,76 @@
           "title": {
             "ru_RU": "v77767",
             "en_EN": "v77767"
+          },
+          "description": {}
+        }
+      },
+      {
+        "publiccatalog": false,
+        "levelscount": 1,
+        "kodlength": 5,
+        "titlelength": 25,
+        "autonumerizer": true,
+        "uniquecontrol": true,
+        "kodseries": "SlaveScope",
+        "kodtype": "Number",
+        "mainview": "Kod",
+        "oneformforelementandgroup": false,
+        "editing": "InList",
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Mmm.111.P111",
+              "title": {
+                "ru_RU": "p111",
+                "en_EN": "p111"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "14"
+            },
+            "required": false
+          }
+        ],
+        "form": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formelement": {
+          "title": "formElement",
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formgroup": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "listformset": [],
+        "script": {
+          "title": "Скрипт справочника 111",
+          "sources": ""
+        },
+        "grants": {},
+        "meta": {
+          "mnemo": "Mmm.111",
+          "title": {
+            "ru_RU": "111",
+            "en_EN": "111"
           },
           "description": {}
         }
