@@ -4,8 +4,8 @@
     "ru_RU": "Родитель",
     "en_EN": "Roditel"
   },
-  "ver": 3,
-  "verStr": "1.1.3",
+  "ver": 9,
+  "verStr": "1.1.9",
   "content": {
     "roles": [],
     "menus": [],
@@ -74,7 +74,30 @@
         "mainview": "Kod",
         "oneformforelementandgroup": false,
         "editing": "InList",
-        "requisites": [],
+        "requisites": [
+          {
+            "periodical": false,
+            "sort": false,
+            "selectbyrequisite": false,
+            "usefor": "ForElement",
+            "meta": {
+              "mnemo": "Roditel.RoditelskiiiSparvochnik.PolnoeNaimenovanie",
+              "title": {
+                "ru_RU": "Полное наименование",
+                "en_EN": "Polnoe naimenovanie"
+              },
+              "description": {}
+            },
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "properties": {
+              "unlimited": "false",
+              "length": "15"
+            },
+            "required": false
+          }
+        ],
         "form": {
           "script": {
             "title": "script",
@@ -96,15 +119,15 @@
         },
         "listformset": [],
         "script": {
-          "title": "script",
+          "title": "Скрипт справочника Родительский спарвочник",
           "sources": ""
         },
         "grants": {},
         "meta": {
-          "mnemo": "Roditel.Roditeli",
+          "mnemo": "Roditel.RoditelskiiiSparvochnik",
           "title": {
-            "ru_RU": "Родители",
-            "en_EN": "Roditeli"
+            "ru_RU": "Родительский справочник",
+            "en_EN": "Roditelskiii sparvochnik"
           },
           "description": {}
         }
@@ -128,19 +151,18 @@
       "sources": ""
     }
   },
-  "required": [
-    {
-      "mnemo": "Zavisimost",
-      "ver": 1,
-      "verStr": "1.1.1"
-    }
-  ],
+  "required": [],
   "parent": {
     "mnemo": "ROOT",
     "ver": 1,
     "verStr": "1.1.1"
   },
-  "scripts": [],
+  "scripts": [
+    {
+      "title": "bibl",
+      "sources": "function addRecordOnSpravochnik() {\r\n    let catalog \u003d EntityFactory.createCatalogRecord(\u0027TestovoePrilozhenie.Spravochnik\u0027);\r\n    catalog.setCode(\u002700000000000000000001\u0027);\r\n    catalog.setTitle(\u0027Добавлена новая запись в справочник\u0027);\r\n    catalog.save();\r\n    \r\n    let catalog2 \u003d EntityFactory.createCatalogRecord(\u0027TestovoePrilozhenie.Spravochnik\u0027);\r\n    catalog2.setCode(\u002700000000000000000002\u0027);\r\n    catalog2.setTitle(\u0027Добавлена новая запись в справочник 2\u0027);\r\n    catalog2.save();\r\n}\r\n"
+    }
+  ],
   "forms": [],
   "printedForms": []
 }

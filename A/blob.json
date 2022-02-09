@@ -4,8 +4,8 @@
     "ru_RU": "а",
     "en_EN": "a"
   },
-  "ver": 9,
-  "verStr": "1.1.9",
+  "ver": 11,
+  "verStr": "1.1.11",
   "content": {
     "roles": [],
     "menus": [],
@@ -252,7 +252,32 @@
       {
         "plantype": "BUDGET",
         "codeTemplate": "",
-        "accounts": [],
+        "accounts": [
+          {
+            "active": true,
+            "code": "11111111111",
+            "name": {
+              "ru_RU": "1",
+              "en_EN": ""
+            },
+            "foreign": false,
+            "numerical": false,
+            "amounttype": "None",
+            "journalnumber": "",
+            "budgetclassificationtype": "None",
+            "offbalance": false,
+            "type": "Active",
+            "analyticsList": [],
+            "grants": {},
+            "meta": {
+              "mnemo": "11111111111",
+              "title": {
+                "ru_RU": "11111111111"
+              },
+              "description": {}
+            }
+          }
+        ],
         "grants": {},
         "meta": {
           "mnemo": "A.4",
@@ -267,8 +292,233 @@
     "accoperations": [],
     "typicaloperationgroups": [],
     "typicaloperations": [],
-    "documents": [],
-    "documentalgorithms": [],
+    "documents": [
+      {
+        "periodictype": "ForAllDocumentsThatType",
+        "autonumerizer": true,
+        "numeratortype": "Number",
+        "length": 5,
+        "uniquecontrol": true,
+        "acceptaccountingprocessing": true,
+        "automovedeletion": true,
+        "autorownumerizer": true,
+        "accounting": false,
+        "calculation": false,
+        "operationalaccounting": false,
+        "createoperation": "Always",
+        "headerrequsites": [],
+        "tablerequsites": [],
+        "basedondocuments": {
+          "isthebasis": [],
+          "maybethebasisforanykind": false
+        },
+        "formdescription": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "formdocument": {
+          "script": {
+            "title": "script",
+            "sources": ""
+          }
+        },
+        "script": {
+          "title": "Скрипт документа 1",
+          "sources": ""
+        },
+        "algorithms": [
+          {
+            "mnemo": "A.1.2"
+          },
+          {
+            "mnemo": "A.1.1"
+          }
+        ],
+        "printedformset": [],
+        "grants": {},
+        "meta": {
+          "mnemo": "A.1",
+          "title": {
+            "ru_RU": "1",
+            "en_EN": "1"
+          },
+          "description": {}
+        }
+      }
+    ],
+    "documentalgorithms": [
+      {
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "template": {
+          "plan": {
+            "mnemo": "A.4"
+          },
+          "universal": false,
+          "date": {
+            "celltype": "OPERATION_DATE",
+            "formulaEnabled": "true",
+            "prompt": {},
+            "index": 0
+          },
+          "number": {
+            "celltype": "OPERATION_NUMBER",
+            "formulaEnabled": "true",
+            "prompt": {},
+            "index": 0
+          },
+          "summ": {
+            "celltype": "OPERATION_SUM",
+            "formulaEnabled": "true",
+            "prompt": {},
+            "index": 0
+          },
+          "operation_description": {
+            "celltype": "OPERATION_DESCRIPTION",
+            "formulaEnabled": "true",
+            "prompt": {},
+            "index": 0
+          },
+          "operations": [
+            {
+              "row": [
+                {
+                  "celltype": "ROW_SOURCE",
+                  "type": {
+                    "mnemo": "primitive.text"
+                  },
+                  "value": "Shapka",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "DEBIT_ACCOUNT",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "CREDIT_ACCOUNT",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "CURRENCY",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "CURRENCY_SUM",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "EXCHANGE_RATE",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "COUNT",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "SUM",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "POSTING_DESCRIPTION",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "SOURCE",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                },
+                {
+                  "celltype": "JOURNAL_NUM",
+                  "formulaEnabled": "true",
+                  "prompt": {},
+                  "index": 0
+                }
+              ],
+              "rownum": 0,
+              "condition": "",
+              "conditionEnabled": true
+            }
+          ]
+        },
+        "runastemplate": true,
+        "grants": {},
+        "meta": {
+          "mnemo": "A.1.1",
+          "title": {
+            "ru_RU": "1",
+            "en_EN": "1"
+          },
+          "description": {}
+        }
+      },
+      {
+        "script": {
+          "title": "script",
+          "sources": ""
+        },
+        "template": {
+          "universal": false,
+          "date": {
+            "celltype": "OPERATION_DATE",
+            "formulaEnabled": "true",
+            "prompt": {},
+            "index": 0
+          },
+          "number": {
+            "celltype": "OPERATION_NUMBER",
+            "formulaEnabled": "true",
+            "prompt": {},
+            "index": 0
+          },
+          "summ": {
+            "celltype": "OPERATION_SUM",
+            "formulaEnabled": "true",
+            "prompt": {},
+            "index": 0
+          },
+          "operation_description": {
+            "celltype": "OPERATION_DESCRIPTION",
+            "formulaEnabled": "true",
+            "prompt": {},
+            "index": 0
+          },
+          "operations": []
+        },
+        "runastemplate": false,
+        "grants": {},
+        "meta": {
+          "mnemo": "A.1.2",
+          "title": {
+            "ru_RU": "2",
+            "en_EN": "2"
+          },
+          "description": {}
+        }
+      }
+    ],
     "reports": [],
     "journals": [],
     "operationScript": {
