@@ -256,6 +256,7 @@
             "mnemo": "primitive.date"
           },
           "value": "1624136400000",
+          "formulaEnabled": "true",
           "prompt": {},
           "index": 0
         },
@@ -265,6 +266,7 @@
             "mnemo": "primitive.internationalstring"
           },
           "value": "{\"ru_RU\":\"1\"}",
+          "formulaEnabled": "true",
           "prompt": {},
           "index": 0
         },
@@ -274,6 +276,7 @@
             "mnemo": "primitive.real"
           },
           "value": "12000",
+          "formulaEnabled": "true",
           "prompt": {},
           "index": 0
         },
@@ -283,6 +286,7 @@
             "mnemo": "primitive.internationalstring"
           },
           "value": "{\"ru_RU\":\"Перечисление средств на банковские счета распорядителей, получателей бюджетных средств\"}",
+          "formulaEnabled": "true",
           "prompt": {},
           "index": 0
         },
@@ -291,61 +295,74 @@
             "row": [
               {
                 "celltype": "ROW_SOURCE",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "DEBIT_ACCOUNT",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "CREDIT_ACCOUNT",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "CURRENCY",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "CURRENCY_SUM",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "EXCHANGE_RATE",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "COUNT",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "SUM",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "POSTING_DESCRIPTION",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "SOURCE",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               },
               {
                 "celltype": "JOURNAL_NUM",
+                "formulaEnabled": "true",
                 "prompt": {},
                 "index": 0
               }
             ],
-            "rownum": 0
+            "rownum": 0,
+            "condition": "",
+            "conditionEnabled": true
           }
         ],
         "script": {

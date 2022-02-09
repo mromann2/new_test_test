@@ -1501,21 +1501,25 @@
           "universal": false,
           "date": {
             "celltype": "OPERATION_DATE",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "number": {
             "celltype": "OPERATION_NUMBER",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "summ": {
             "celltype": "OPERATION_SUM",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "operation_description": {
             "celltype": "OPERATION_DESCRIPTION",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
@@ -1541,21 +1545,25 @@
           "universal": false,
           "date": {
             "celltype": "OPERATION_DATE",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "number": {
             "celltype": "OPERATION_NUMBER",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "summ": {
             "celltype": "OPERATION_SUM",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "operation_description": {
             "celltype": "OPERATION_DESCRIPTION",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
@@ -1581,21 +1589,25 @@
           "universal": false,
           "date": {
             "celltype": "OPERATION_DATE",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "number": {
             "celltype": "OPERATION_NUMBER",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "summ": {
             "celltype": "OPERATION_SUM",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
           "operation_description": {
             "celltype": "OPERATION_DESCRIPTION",
+            "formulaEnabled": "true",
             "prompt": {},
             "index": 0
           },
