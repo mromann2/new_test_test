@@ -1,0 +1,97 @@
+{
+  "mnemo": "ProstoModul",
+  "name": {
+    "ru_RU": "Просто модуль",
+    "en_EN": "Prosto modul"
+  },
+  "ver": 3,
+  "verStr": "1.1.3",
+  "content": {
+    "roles": [],
+    "menus": [],
+    "constants": [],
+    "enums": [],
+    "organization": {
+      "publiccatalog": true,
+      "levelscount": 1,
+      "kodlength": 5,
+      "titlelength": 25,
+      "autonumerizer": true,
+      "uniquecontrol": true,
+      "kodseries": "SlaveScope",
+      "kodtype": "Number",
+      "mainview": "Kod",
+      "oneformforelementandgroup": false,
+      "editing": "InList",
+      "requisites": [],
+      "form": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formelement": {
+        "title": "formElement",
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "formgroup": {
+        "script": {
+          "title": "script",
+          "sources": ""
+        }
+      },
+      "listformset": [],
+      "script": {
+        "title": "script",
+        "sources": ""
+      },
+      "grants": {},
+      "meta": {
+        "mnemo": "ProstoModul.organization",
+        "title": {
+          "ru_RU": "Учётная организация",
+          "en_EN": "Accounting Organization"
+        },
+        "description": {
+          "ru_RU": "Справочник учётных организаций",
+          "en_EN": "Directory of accounting organizations"
+        }
+      }
+    },
+    "catalogs": [],
+    "register": [],
+    "accplans": [],
+    "accoperations": [],
+    "typicaloperationgroups": [],
+    "typicaloperations": [],
+    "documents": [],
+    "documentalgorithms": [],
+    "reports": [],
+    "journals": [],
+    "operationScript": {
+      "title": "Скрипт операций",
+      "sources": ""
+    },
+    "constantScript": {
+      "title": "Скрипт констант",
+      "sources": ""
+    }
+  },
+  "required": [],
+  "parent": {
+    "mnemo": "Modul",
+    "ver": 12,
+    "verStr": "1.1.12"
+  },
+  "scripts": [
+    {
+      "title": "Bibl",
+      "sources": "function nR0() {\r\n    let catalog1 \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n    catalog1.setCode(\u00273\u0027);\r\n    catalog1.setTitle(\u0027Старший\u0027);\r\n    catalog1.save();\r\n}"
+    }
+  ],
+  "forms": [],
+  "printedForms": []
+}
