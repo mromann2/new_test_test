@@ -1,0 +1,20 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "10-расходы",
+    "20-доходы",
+    "31-ИВФДБ",
+    "32-ИВнФДБ"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.TipyKBK",
+    "title": {
+      "ru_RU": "Типы КБК",
+      "en_EN": "Tipy KBK"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50245",
+  "name": {
+    "ru_RU": "Исполненные денежные обязательства на второй год, следующий за очередным"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50245",
+    "title": {
+      "ru_RU": "50245"
+    },
+    "description": {}
+  }
+}

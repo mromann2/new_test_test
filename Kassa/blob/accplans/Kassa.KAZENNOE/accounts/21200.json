@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "21200",
+  "name": {
+    "ru_RU": "Внутренние расчеты по выбытиям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21200",
+    "title": {
+      "ru_RU": "21200"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "30712",
+  "name": {
+    "ru_RU": "Расчеты по операциям бюджета на счетах органа, осуществляющего кассовое обслуживание"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30712",
+    "title": {
+      "ru_RU": "30712"
+    },
+    "description": {}
+  }
+}

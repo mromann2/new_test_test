@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "30714",
+  "name": {
+    "ru_RU": "Расчеты по операциям автономных учреждений"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30714",
+    "title": {
+      "ru_RU": "30714"
+    },
+    "description": {}
+  }
+}

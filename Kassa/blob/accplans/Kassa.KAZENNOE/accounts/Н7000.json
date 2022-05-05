@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "Н7000",
+  "name": {
+    "ru_RU": "Расходы на оплату труда"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "7000",
+    "title": {
+      "ru_RU": "Н7000"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "active": true,
+  "code": "00310",
+  "name": {
+    "ru_RU": "Бланки строгой отчетности (в усл. ед.)"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.BlankiStrogoiiOtchetnosti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "00310",
+    "title": {
+      "ru_RU": "00310"
+    },
+    "description": {}
+  }
+}

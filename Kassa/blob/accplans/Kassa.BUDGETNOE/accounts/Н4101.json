@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "Н4101",
+  "name": {
+    "ru_RU": "Товары на складах"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "4101",
+    "title": {
+      "ru_RU": "Н4101"
+    },
+    "description": {}
+  }
+}

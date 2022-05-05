@@ -1,0 +1,36 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.AdresOrganizacii",
+      "title": {
+        "ru_RU": "Адрес организации",
+        "en_EN": "Adres organizacii"
+      },
+      "description": {
+        "ru_RU": "Юридический адрес организации",
+        "en_EN": ""
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "250"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.AdresOrganizacii",
+    "title": {
+      "ru_RU": "Адрес организации",
+      "en_EN": "Adres organizacii"
+    },
+    "description": {
+      "ru_RU": "Юридический адрес организации",
+      "en_EN": ""
+    }
+  }
+}

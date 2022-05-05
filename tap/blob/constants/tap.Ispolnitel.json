@@ -1,0 +1,31 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.Ispolnitel",
+      "title": {
+        "ru_RU": "Исполнитель",
+        "en_EN": "Ispolnitel"
+      },
+      "description": {
+        "ru_RU": "ФИО исполнителя"
+      }
+    },
+    "type": {
+      "mnemo": "tap.Sotrudniki"
+    },
+    "properties": {},
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Ispolnitel",
+    "title": {
+      "ru_RU": "Исполнитель",
+      "en_EN": "Ispolnitel"
+    },
+    "description": {
+      "ru_RU": "ФИО исполнителя"
+    }
+  }
+}

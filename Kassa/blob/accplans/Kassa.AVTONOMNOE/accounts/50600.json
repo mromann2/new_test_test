@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50600",
+  "name": {
+    "ru_RU": "Право на принятие обязательств"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50600",
+    "title": {
+      "ru_RU": "50600"
+    },
+    "description": {}
+  }
+}

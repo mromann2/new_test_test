@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Метод начисления",
+    "Кассовый метод"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.MetodyOpredeleniyaVyruchki",
+    "title": {
+      "ru_RU": "Методы определения выручки",
+      "en_EN": "Metody opredeleniya vyruchki"
+    },
+    "description": {}
+  }
+}

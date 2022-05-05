@@ -1,0 +1,209 @@
+{
+  "mastermnemo": {
+    "mnemo": "Razrabotka.Kontragenty"
+  },
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.BankovskieRekvizityKontragenta.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.BankovskieRekvizityKontragenta.RaschetnyiiSchet",
+        "title": {
+          "ru_RU": "Расчетный счет",
+          "en_EN": "Raschetnyii schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.BankovskieRekvizityKontragenta.BIK",
+        "title": {
+          "ru_RU": "БИК",
+          "en_EN": "BIK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankiRossii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.BankovskieRekvizityKontragenta.LicevoiiSchet",
+        "title": {
+          "ru_RU": "Лицевой счет",
+          "en_EN": "Licevoii schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.BankovskieRekvizityKontragenta.DataS",
+        "title": {
+          "ru_RU": "Дата с",
+          "en_EN": "Data s"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.BankovskieRekvizityKontragenta.DataPo",
+        "title": {
+          "ru_RU": "Дата по",
+          "en_EN": "Data po"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.BankovskieRekvizityKontragenta.Arhivnyii",
+        "title": {
+          "ru_RU": "Архивный",
+          "en_EN": "Arhivnyii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.BankovskieRekvizityKontragenta.ESK",
+        "title": {
+          "ru_RU": "ЕСК",
+          "en_EN": "ESK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Банковские реквизиты контрагента",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.BankovskieRekvizityKontragenta",
+    "title": {
+      "ru_RU": "Банковские реквизиты контрагента",
+      "en_EN": "Bankovskie rekvizity kontragenta"
+    },
+    "description": {}
+  }
+}

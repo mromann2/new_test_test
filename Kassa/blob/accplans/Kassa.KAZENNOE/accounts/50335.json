@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50335",
+  "name": {
+    "ru_RU": "Полученные бюджетные ассигнования"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50335",
+    "title": {
+      "ru_RU": "50335"
+    },
+    "description": {}
+  }
+}

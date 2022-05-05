@@ -1,0 +1,445 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Ispolnen",
+        "title": {
+          "ru_RU": "Исполнен",
+          "en_EN": "Ispolnen"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Anulirovan",
+        "title": {
+          "ru_RU": "Аннулирован",
+          "en_EN": "Anulirovan"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Raspredeleno",
+        "title": {
+          "ru_RU": "Распределено",
+          "en_EN": "Raspredeleno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Vyplacheno",
+        "title": {
+          "ru_RU": "Выплачено",
+          "en_EN": "Vyplacheno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.KodAnaliticheskogoUcheta",
+        "title": {
+          "ru_RU": "Код аналитического учета",
+          "en_EN": "Kod analiticheskogo ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "10"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.CelevoeNaznachenie",
+        "title": {
+          "ru_RU": "Целевое назначение",
+          "en_EN": "Celevoe naznachenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.CelevyeNaznacheniyaKassovyhOrderov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Osnovanie",
+        "title": {
+          "ru_RU": "Основание",
+          "en_EN": "Osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.OsnovaniyaKassovyhOrderov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Prilozhenie",
+        "title": {
+          "ru_RU": "Приложение",
+          "en_EN": "Prilozhenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "255"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.SchetKassa",
+        "title": {
+          "ru_RU": "Счет \"Касса\"",
+          "en_EN": "Schet Kassa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.SchetRaschetySPodotchetnymiLicami",
+        "title": {
+          "ru_RU": "Счет \"Расчеты с подотчетными лицами\"",
+          "en_EN": "Schet Raschety s podotchetnymi licami"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.KPSDlyaScheta2134",
+        "title": {
+          "ru_RU": "КПС для счета 201.34",
+          "en_EN": "KPS dlya scheta 2134"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Rukovoditel",
+        "title": {
+          "ru_RU": "Руководитель",
+          "en_EN": "Rukovoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.GlavnyiiBuhgater",
+        "title": {
+          "ru_RU": "Гл. бухгатер",
+          "en_EN": "Glavnyii buhgater"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.hr.Kassir",
+        "title": {
+          "ru_RU": "Кассир",
+          "en_EN": "Kassir"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.tr.Vyplacheno",
+        "title": {
+          "ru_RU": "Выплачено",
+          "en_EN": "Vyplacheno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.tr.Sotrudnik",
+        "title": {
+          "ru_RU": "Сотрудник",
+          "en_EN": "Sotrudnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.tr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.tr.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.tr.SchetDebeta",
+        "title": {
+          "ru_RU": "Счет дебета",
+          "en_EN": "Schet debeta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.tr.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.tr.KEK",
+        "title": {
+          "ru_RU": "КЭК",
+          "en_EN": "KEK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Ведомости на выдачу денег из кассы подотчетным лицам",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam.Standartnyii"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VedomostNaVydachuDenegIzKassyPodotchetnymLicam",
+    "title": {
+      "ru_RU": "Ведомости на выдачу денег из кассы подотчетным лицам",
+      "en_EN": "Vedomost na vydachu deneg iz kassy podotchetnym licam"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50890",
+  "name": {
+    "ru_RU": "Получено финансового обеспечения на иные годы (за пределами планового периода)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50890",
+    "title": {
+      "ru_RU": "50890"
+    },
+    "description": {}
+  }
+}

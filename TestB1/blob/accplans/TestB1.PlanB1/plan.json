@@ -1,0 +1,13 @@
+{
+  "plantype": "BUDGET",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB1.PlanB1",
+    "title": {
+      "ru_RU": "planB1",
+      "en_EN": "planB1"
+    },
+    "description": {}
+  }
+}

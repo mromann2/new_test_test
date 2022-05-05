@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "40120",
+  "name": {
+    "ru_RU": "Расходы текущего финансового года"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40120",
+    "title": {
+      "ru_RU": "40120"
+    },
+    "description": {}
+  }
+}

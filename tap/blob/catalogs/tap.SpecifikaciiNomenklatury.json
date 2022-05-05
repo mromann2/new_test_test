@@ -1,0 +1,161 @@
+{
+  "mastermnemo": {
+    "mnemo": "tap.Nomenklatura"
+  },
+  "publiccatalog": true,
+  "levelscount": 2,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SpecifikaciiNomenklatury.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "3",
+        "length": "8",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SpecifikaciiNomenklatury.NomerSpecifikacii",
+        "title": {
+          "ru_RU": "Номер спецификации",
+          "en_EN": "Nomer specifikacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "8",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SpecifikaciiNomenklatury.Opisanie",
+        "title": {
+          "ru_RU": "Описание",
+          "en_EN": "Opisanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SpecifikaciiNomenklatury.Nomenklatura",
+        "title": {
+          "ru_RU": "Номенклатура",
+          "en_EN": "Nomenklatura"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SpecifikaciiNomenklatury.NomenklaturaKolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "3",
+        "length": "8",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Спецификации номенклатуры",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SpecifikaciiNomenklatury",
+    "title": {
+      "ru_RU": "Спецификации номенклатуры",
+      "en_EN": "Specifikacii nomenklatury"
+    },
+    "description": {}
+  }
+}

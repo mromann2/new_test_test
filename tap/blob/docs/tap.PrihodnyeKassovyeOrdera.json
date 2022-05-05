@@ -1,0 +1,614 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Oplacheno",
+        "title": {
+          "ru_RU": "Оплачено",
+          "en_EN": "Oplacheno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Annulirovano",
+        "title": {
+          "ru_RU": "Аннулировано",
+          "en_EN": "Annulirovano"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.SchetDt",
+        "title": {
+          "ru_RU": "Счет Дт",
+          "en_EN": "Schet Dt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Podrazdeleniekor",
+        "title": {
+          "ru_RU": "Подразделение (кор.)",
+          "en_EN": "Podrazdelenie kor"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.KorSchet",
+        "title": {
+          "ru_RU": "Кор. счет",
+          "en_EN": "Kor schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.KodAnalitichUcheta",
+        "title": {
+          "ru_RU": "Код аналитич. учета",
+          "en_EN": "Kod analitich ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "10"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.StavkaNDS",
+        "title": {
+          "ru_RU": "Ставка НДС",
+          "en_EN": "Stavka NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.SummaNDS",
+        "title": {
+          "ru_RU": "Сумма НДС",
+          "en_EN": "Summa NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.CelevoeNaznachenie",
+        "title": {
+          "ru_RU": "Целевое назначение",
+          "en_EN": "Celevoe naznachenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.CelevyeNaznacheniyaKassovyhOrderov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.FIO",
+        "title": {
+          "ru_RU": "ФИО",
+          "en_EN": "FIO"
+        },
+        "description": {
+          "ru_RU": "ФИО лица, вносящего денежные средства"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Dogovor",
+        "title": {
+          "ru_RU": "Договор",
+          "en_EN": "Dogovor"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Osnovanie",
+        "title": {
+          "ru_RU": "Основание",
+          "en_EN": "Osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Prilozhenie",
+        "title": {
+          "ru_RU": "Приложение",
+          "en_EN": "Prilozhenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.PostuplenieVyruchkiTorgovoiiTochki",
+        "title": {
+          "ru_RU": "Поступление выручки торговой точки",
+          "en_EN": "Postuplenie vyruchki torgovoii tochki"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.KPS2134",
+        "title": {
+          "ru_RU": "КПС для счета 201.34",
+          "en_EN": "KPS2134"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.MOL",
+        "title": {
+          "ru_RU": "МОЛ",
+          "en_EN": "MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.ProvodkiPlanaDohodov",
+        "title": {
+          "ru_RU": "Формировать проводки по исполнению плана доходов",
+          "en_EN": "ProvodkiPlanaDohodov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.RazdelLicevyhSchetov",
+        "title": {
+          "ru_RU": "Раздел лицевых счетов",
+          "en_EN": "Razdel licevyh schetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.VozvratProshlyhLet",
+        "title": {
+          "ru_RU": "Возврат прошлых лет",
+          "en_EN": "Vozvrat proshlyh let"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.GlBuhgalter",
+        "title": {
+          "ru_RU": "Гл. бухгалтер",
+          "en_EN": "Gl buhgalter"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Kassir",
+        "title": {
+          "ru_RU": "Кассир",
+          "en_EN": "Kassir"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.hr.PriznakSposobaRascheta",
+        "title": {
+          "ru_RU": "Признак способа расчета",
+          "en_EN": "Priznak sposoba rascheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PriznakiSposobovRascheta"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.tr.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.tr.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.tr.KEK",
+        "title": {
+          "ru_RU": "КЭК",
+          "en_EN": "KEK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.tr.SchetRaschetov",
+        "title": {
+          "ru_RU": "Счет расчетов",
+          "en_EN": "Schet raschetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.tr.VidRaschetov",
+        "title": {
+          "ru_RU": "Вид расчетов",
+          "en_EN": "Vid raschetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyRaschetovPoZaiimam"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera.tr.PogashenieZadolzhennosti",
+        "title": {
+          "ru_RU": "Погашение задолженности",
+          "en_EN": "Pogashenie zadolzhennosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyPogasheniyaZadolzhennosti"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Приходные кассовые ордера",
+    "sources": "function baseOn(base, targetMnemo){\r\n\r\n    let organization \u003d base.getOrganization();\r\n    let currentDocument \u003d EntityFactory.createDocument(targetMnemo);\r\n\t\r\n    currentDocument.setParent(base);\r\n    currentDocument.setNumber(\u0027001\u0027);  \r\n    currentDocument.setOrganization(organization); \r\n   \t\r\n    let zakazchik \u003d base.get(\u0027tap.SchetaNaOplatu.hr.Zakazchik\u0027);\r\n    let dogovor \u003d base.get(\u0027tap.SchetaNaOplatu.hr.Dogovor\u0027);\r\n    let schet20531 \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002720531\u0027).get(0);\r\n    schet20531.put(0, zakazchik);\r\n    schet20531.put(1, dogovor);\r\n\r\n    currentDocument.set( \"tap.PrihodnyeKassovyeOrdera.hr.KorSchet\", schet20531);\r\n    currentDocument.set( \"tap.PrihodnyeKassovyeOrdera.hr.SchetDt\", EntityFactory.getPlan().getAccounts().findByCode(\u002720134\u0027).get(0) );\r\n\r\n    currentDocument.set( \"tap.PrihodnyeKassovyeOrdera.hr.Kontragent\", zakazchik );\r\n    currentDocument.set( \"tap.PrihodnyeKassovyeOrdera.hr.Dogovor\", dogovor );\r\n    currentDocument.set( \"tap.PrihodnyeKassovyeOrdera.hr.Summa\", base.get(\u0027tap.SchetaNaOplatu.hr.Vsego\u0027) );\r\n    currentDocument.set( \"tap.PrihodnyeKassovyeOrdera.hr.SummaNDS\", base.get(\u0027tap.SchetaNaOplatu.hr.VTchNDS\u0027) );\r\n    currentDocument.set( \"tap.PrihodnyeKassovyeOrdera.hr.ProvodkiPlanaDohodov\", true );\r\n    currentDocument.set( \"tap.PrihodnyeKassovyeOrdera.hr.PriznakSposobaRascheta\", EntityFactory.getEnumeration(\"tap.PriznakiSposobovRascheta\").get(5) );\r\n\r\n    let row \u003d  currentDocument.addTableRow();\r\n\r\n        row.put(\"tap.PrihodnyeKassovyeOrdera.tr.SchetRaschetov\", schet20531 );\r\n        row.put(\"tap.PrihodnyeKassovyeOrdera.tr.Summa\", base.get(\u0027tap.SchetaNaOplatu.hr.Vsego\u0027) );\r\n        row.put(\"tap.PrihodnyeKassovyeOrdera.tr.KFO\", base.get(\u0027tap.SchetaNaOplatu.hr.KFO\u0027) );\r\n        row.put(\"tap.PrihodnyeKassovyeOrdera.tr.KPS\", base.get(\u0027tap.SchetaNaOplatu.hr.KPS\u0027) );\r\n        row.put(\"tap.PrihodnyeKassovyeOrdera.tr.KEK\", base.get(\u0027tap.SchetaNaOplatu.hr.KEK\u0027) );\r\n\t \r\n    currentDocument.save()\r\n    return currentDocument;\r\n}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.VozniknovenieprinyatieDolgovyhObyazatelstv"
+    },
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.PogashenieZadolzhennostiPoPredostavlennymKreditamZaiimamssudam"
+    },
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.PostuplenieNalichnyhDsOtKontragentov"
+    },
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.PostuplenieDohodovOtRoznichnyhProdazh"
+    },
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.PostuplenieNalichnyhDsOtPodotchetnogoLica"
+    },
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.PostuplenieSredstvVVozmeshenieUsherbaIInyhDohodov29"
+    },
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.PostuplenieNalichnyhDsSBankovskogoScheta212"
+    },
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.PostuplenieNalichnyhDsSLicevogoSchetaOtkrytogoVFinansovomOrgane213"
+    },
+    {
+      "mnemo": "tap.PrihodnyeKassovyeOrdera.PostuplenieVyruchkiOtRoznichnyhProdazhZaKassovuiuSmenu"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PrihodnyeKassovyeOrdera",
+    "title": {
+      "ru_RU": "Приходные кассовые ордера",
+      "en_EN": "Prihodnye kassovye ordera"
+    },
+    "description": {}
+  }
+}

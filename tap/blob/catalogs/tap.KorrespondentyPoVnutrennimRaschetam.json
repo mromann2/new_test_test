@@ -1,0 +1,48 @@
+{
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Корреспонденты по внутренним расчетам",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KorrespondentyPoVnutrennimRaschetam",
+    "title": {
+      "ru_RU": "Корреспонденты по внутренним расчетам"
+    },
+    "description": {
+      "ru_RU": "Справочник Корреспонденты по внутренним расчетам"
+    }
+  }
+}

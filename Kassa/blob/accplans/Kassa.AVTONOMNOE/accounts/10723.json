@@ -1,0 +1,53 @@
+{
+  "active": true,
+  "code": "10723",
+  "name": {
+    "ru_RU": "Материальные запасы – особо ценное движимое имущество учреждения в пути"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "tap.PartiiVPuti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10723",
+    "title": {
+      "ru_RU": "10723"
+    },
+    "description": {}
+  }
+}

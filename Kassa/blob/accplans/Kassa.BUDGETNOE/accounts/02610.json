@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "02610",
+  "name": {
+    "ru_RU": "Недвижимое имущество, переданное в безвозмездное пользование"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "02610",
+    "title": {
+      "ru_RU": "02610"
+    },
+    "description": {}
+  }
+}

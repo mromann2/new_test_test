@@ -1,0 +1,43 @@
+{
+  "active": true,
+  "code": "11460",
+  "name": {
+    "ru_RU": "Обесценение прав пользования нематериальными активами"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "11460",
+    "title": {
+      "ru_RU": "11460"
+    },
+    "description": {}
+  }
+}

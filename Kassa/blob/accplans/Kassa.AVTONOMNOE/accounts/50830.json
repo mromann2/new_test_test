@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50830",
+  "name": {
+    "ru_RU": "Получено финансового обеспечения на второй год, следующий за текущим (первый год, следующий за очередным)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50830",
+    "title": {
+      "ru_RU": "50830"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "ПОФР0",
+  "name": {
+    "ru_RU": "Предельные объемы финансирования к распределению"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "0",
+    "title": {
+      "ru_RU": "ПОФР0"
+    },
+    "description": {}
+  }
+}

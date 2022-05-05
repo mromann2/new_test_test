@@ -1,0 +1,166 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    let docForScriptExt \u003d new DocumentForScriptExtention(currentDocument);\r\n    if (!docForScriptExt.isValid()) {\r\n        return docForScriptExt.validator.validationResult;\r\n    }\r\n\r\n    docForScriptExt.table.forEach((tableRec, i) \u003d\u003e {\r\n        let posting \u003d EntityFactory.createPosting();\r\n        posting.setComment(\u0027Учёт ПКО по скрипту\u0027);\r\n        posting.setValue(tableRec.SummaBezNDS);\r\n        posting.setDebit(tableRec.Debet);\r\n        posting.setCredit(tableRec.Kredit);\r\n        currentDocument.addPosting(posting);        \r\n    });\r\n\r\n    currentDocument.setExecuted();\r\n    currentDocument.save();      \r\n}\r\n\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.unPostingAndSave();\r\n}\r\n\r\nclass TableRecWrapper{\r\n    constructor(tableRec, docMnemo){\r\n        this._tableRec \u003d tableRec;\r\n        this._mnemo \u003d `${docMnemo}.tr`;       \r\n        //добавляем в обертку удобный способ доступа к полям таблицы\r\n        tableRec.entrySet()\r\n            .forEach(requisite \u003d\u003e {\r\n                let requisiteName \u003d requisite.getKey().replace(this._mnemo + \".\", \"\");\r\n                this[requisiteName] \u003d requisite.getValue(); \r\n            });                                             \r\n    }\r\n    \r\n    get rec(){\r\n        return this._tableRec;\r\n    }\r\n}\r\n\r\nclass DocumentForScriptExtention{\r\n    constructor(document){\r\n        this._document \u003d document;\r\n        this._table \u003d new Array();\r\n        this._validator \u003d new DefaultDocumentValidator();\r\n        document.getRows()\r\n            .forEach((item) \u003d\u003e { \r\n                let recWraper \u003d new TableRecWrapper(item, document.getMnemo());\r\n                this._table.push(recWraper);\r\n            });\r\n    }\r\n    \r\n    get table() {\r\n        return this._table;\r\n    }\r\n    \r\n    get validator(){\r\n        return this._validator;\r\n    }\r\n    \r\n    get originalDocument(){\r\n        return this._document;\r\n    }\r\n    \r\n    isValid(validator \u003d this._validator){\r\n        return validator.validate(this._document);\r\n    }\r\n}\r\n\r\nclass DefaultDocumentValidator{\r\n    validationResult;\r\n    constructor() {}    \r\n    \r\n    validate(currentDocument) {  \r\n        this.validationResult \u003d currentDocument.validate();\r\n        if (!currentDocument.getRows().size()){        \r\n            this.validationResult.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n        }\r\n        return !this.validationResult.hasErrors() \u0026\u0026 !this.validationResult.hasValueErrors(); \r\n    }\r\n}"
+  },
+  "template": {
+    "plan": {
+      "mnemo": "Kassa.KAZENNOE"
+    },
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formula": "currentDocument.getDate();",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "type": {
+        "mnemo": "primitive.internationalstring"
+      },
+      "value": "{\"ru_RU\":\"1\"}",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formula": "currentDocument.getDocumentSumma();",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "type": {
+        "mnemo": "primitive.internationalstring"
+      },
+      "value": "{\"ru_RU\":\"Учёт ПКО по шаблону\"}",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": [
+      {
+        "row": [
+          {
+            "celltype": "ROW_SOURCE",
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "value": "Faktura",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "DEBIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.PrihodnyiiKassovyiiOrder.tr.Debet"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CREDIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.PrihodnyiiKassovyiiOrder.tr.Kredit"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY_SUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "EXCHANGE_RATE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "COUNT",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SUM",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.PrihodnyiiKassovyiiOrder.tr.SummaBezNDS"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "POSTING_DESCRIPTION",
+            "type": {
+              "mnemo": "primitive.internationalstring"
+            },
+            "value": "{\"ru_RU\":\"Учёт ПКО по шаблону\"}",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SOURCE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "JOURNAL_NUM",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.PrihodnyiiKassovyiiOrder.hr.ZhurnalOperaciii"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          }
+        ],
+        "rownum": 0,
+        "condition": "",
+        "conditionEnabled": true
+      }
+    ]
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.PrihodnyiiKassovyiiOrder.UchPKO",
+    "title": {
+      "ru_RU": "УчПКО",
+      "en_EN": "UchPKO"
+    },
+    "description": {}
+  }
+}

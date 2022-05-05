@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    if (!notValid(currentDocument)) {\r\n        let summ \u003d 0;\r\n        \r\n        for (let tableRec of currentDocument.getRows()){\r\n            //создание и заполнение проводки\r\n            let posting \u003d EntityFactory.createPosting();\r\n          \r\n            //КВФО\r\n            posting.setProperty(KFO, tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.KVFO\u0027)[0]);\r\n            //Дебет\r\n            posting.setDebit(tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Debet\u0027));\r\n            posting.setDebitProperty(KPS, tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.KPSDb\u0027).getCode());\r\n            posting.setDebitProperty(KOSGU, tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.KOSGUDb\u0027).getCode());\r\n            //Кредит\r\n            posting.setCredit(tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Kredit\u0027));\r\n            posting.setCreditProperty(KPS, tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.KPSKr\u0027).getCode());\r\n            posting.setCreditProperty(KOSGU, tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.KOSGUKr\u0027).getCode());\r\n            //Сумма\r\n            posting.setValue(tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Summa\u0027));\r\n            //Комментарий\r\n            if (tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Operaciya\u0027))\r\n                posting.setComment(tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Operaciya\u0027).get(\u0027tap.Operacii.PolnoeNaimenovanie\u0027));\r\n            //Расшифровка операции\r\n            if (tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.RasshifrovkaOperacii\u0027))\r\n                posting.setProperty(RASOPER, tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.RasshifrovkaOperacii\u0027));\r\n            //Количесвто\r\n            if (tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Kolichestvo\u0027))\r\n                posting.setProperty(KOLVO, tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Kolichestvo\u0027));\r\n            \r\n            //Цена\r\n            if (tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Cena\u0027))\r\n                posting.setProperty(CENA,tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Cena\u0027));\r\n          \r\n            currentDocument.addPosting(posting);\r\n            \r\n            //Вычисление общей суммы операции\r\n            summ +\u003d +tableRec.get(\u0027tap.BuhgalterskieSpravki.tr.Summa\u0027);            \r\n        };\r\n        \r\n        //устанавливаем текущую дату проводки\r\n        currentDocument.setExecuted();\r\n        //устанавливаем сумму операции\r\n        currentDocument.setOperationSum(summ);\r\n\r\n        //сохранение документа с проводками\r\n        currentDocument.save();\r\n        return;  \r\n    } else \r\n        return notValid(currentDocument);\r\n}\r\n\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.unPostingAndSave();\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) { \r\n    let resultValidate \u003d currentDocument.validate();\r\n \r\n    if (!currentDocument.getRows().size()){\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    }\r\n    \r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n        return  resultValidate;\r\n}  "
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskieSpravki.UchetBuhgalterskoiiSpravki",
+    "title": {
+      "ru_RU": "Учет бухгалтерской справки",
+      "en_EN": "Uchet buhgalterskoii spravki"
+    },
+    "description": {}
+  }
+}

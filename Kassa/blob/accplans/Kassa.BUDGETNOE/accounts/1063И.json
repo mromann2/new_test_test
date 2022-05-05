@@ -1,0 +1,53 @@
+{
+  "active": true,
+  "code": "1063И",
+  "name": {
+    "ru_RU": "(Изготовление) Вложения в материальные запасы – иное движимое имущество."
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "tap.VidyZatrat"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "1063",
+    "title": {
+      "ru_RU": "1063И"
+    },
+    "description": {}
+  }
+}

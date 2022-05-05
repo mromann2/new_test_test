@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "00000",
+  "name": {
+    "ru_RU": "Вспомогательный"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "00000",
+    "title": {
+      "ru_RU": "00000"
+    },
+    "description": {}
+  }
+}

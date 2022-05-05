@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.OGRN",
+      "title": {
+        "ru_RU": "ОГРН",
+        "en_EN": "OGRN"
+      },
+      "description": {
+        "ru_RU": "Основной государственный регистрационный номер"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.integer"
+    },
+    "properties": {
+      "length": "14",
+      "unsigned": "true"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.OGRN",
+    "title": {
+      "ru_RU": "ОГРН",
+      "en_EN": "OGRN"
+    },
+    "description": {
+      "ru_RU": "Основной государственный регистрационный номер"
+    }
+  }
+}

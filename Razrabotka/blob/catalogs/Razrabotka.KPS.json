@@ -1,0 +1,219 @@
+{
+  "publiccatalog": false,
+  "levelscount": 2,
+  "kodlength": 17,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.VidPokazatelya",
+        "title": {
+          "ru_RU": "Вид показателя",
+          "en_EN": "Vid pokazatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.VidyPokazatelyaKPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.NachaloDeiistviya",
+        "title": {
+          "ru_RU": "Начало действия",
+          "en_EN": "Nachalo deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.OkonchanieDeiistviya",
+        "title": {
+          "ru_RU": "Окончание действия",
+          "en_EN": "Okonchanie deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.RazdelPodrazdelKRB",
+        "title": {
+          "ru_RU": "Раздел, подраздел (КРБ)",
+          "en_EN": "Razdel podrazdel KRB"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RazdelyPodrazdely"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.CelevayaStatyaKRB",
+        "title": {
+          "ru_RU": "Целевая статья (КРБ)",
+          "en_EN": "Celevaya statya KRB"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.CelevyeStati"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.VidRashodaKRB",
+        "title": {
+          "ru_RU": "Вид расхода (КРБ)",
+          "en_EN": "Vid rashoda KRB"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KVR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.Glava",
+        "title": {
+          "ru_RU": "Глава",
+          "en_EN": "Glava"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Glavy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.CelevoeSredstvo",
+        "title": {
+          "ru_RU": "Целевое средство",
+          "en_EN": "Celevoe sredstvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KPS.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника КПС",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.KPS",
+    "title": {
+      "ru_RU": "КПС",
+      "en_EN": "KPS"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyRaschetovSPodotchetnymiLicami",
+    "title": {
+      "ru_RU": "Виды расчетов с подотчетными лицами"
+    },
+    "description": {
+      "ru_RU": "Справочник Виды расчетов с подотчетными лицами"
+    }
+  }
+}

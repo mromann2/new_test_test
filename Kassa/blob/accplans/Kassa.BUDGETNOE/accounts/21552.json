@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "21552",
+  "name": {
+    "ru_RU": "Вложения в международные организации"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.ObektyFinansovyhVlozheniii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21552",
+    "title": {
+      "ru_RU": "21552"
+    },
+    "description": {}
+  }
+}

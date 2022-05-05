@@ -1,0 +1,86 @@
+{
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.CelevyeStati.Biudzhet",
+        "title": {
+          "ru_RU": "Бюджет",
+          "en_EN": "Biudzhet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestovoePrilozhenie.VidyBiudzhetov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.CelevyeStati.NachaloDeiistviya",
+        "title": {
+          "ru_RU": "Начало действия",
+          "en_EN": "Nachalo deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Целевые статьи",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.CelevyeStati",
+    "title": {
+      "ru_RU": "Целевые статьи",
+      "en_EN": "Celevye stati"
+    },
+    "description": {}
+  }
+}

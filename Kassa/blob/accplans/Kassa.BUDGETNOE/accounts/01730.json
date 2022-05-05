@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "01730",
+  "name": {
+    "ru_RU": "Поступления расчетов с финансовым органом по наличным денежным средствам"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "01730",
+    "title": {
+      "ru_RU": "01730"
+    },
+    "description": {}
+  }
+}

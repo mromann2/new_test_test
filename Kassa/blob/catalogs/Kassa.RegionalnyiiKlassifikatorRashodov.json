@@ -1,0 +1,70 @@
+{
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.RegionalnyiiKlassifikatorRashodov.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Полное наименование",
+          "en_EN": "Polnoe naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Региональный классификатор расходов",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.RegionalnyiiKlassifikatorRashodov",
+    "title": {
+      "ru_RU": "Региональный классификатор расходов",
+      "en_EN": "Regionalnyii klassifikator rashodov"
+    },
+    "description": {}
+  }
+}

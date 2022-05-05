@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "40200",
+  "name": {
+    "ru_RU": "Результат по кассовым операциям бюджета"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40200",
+    "title": {
+      "ru_RU": "40200"
+    },
+    "description": {}
+  }
+}

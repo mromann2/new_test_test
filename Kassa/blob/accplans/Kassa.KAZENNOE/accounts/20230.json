@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "20230",
+  "name": {
+    "ru_RU": "Средства бюджета на депозитных счетах"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20230",
+    "title": {
+      "ru_RU": "20230"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "active": true,
+  "code": "50229",
+  "name": {
+    "ru_RU": "Отложенные обязательства первого года, следующего за текущим (очередного финансового года)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50229",
+    "title": {
+      "ru_RU": "50229"
+    },
+    "description": {}
+  }
+}

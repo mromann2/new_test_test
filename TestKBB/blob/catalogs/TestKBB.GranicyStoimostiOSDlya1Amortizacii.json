@@ -1,0 +1,113 @@
+{
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.GranicyStoimostiOSDlya1Amortizacii.Data",
+        "title": {
+          "ru_RU": "Дата",
+          "en_EN": "Data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.GranicyStoimostiOSDlya1Amortizacii.MinimalnayaGranica",
+        "title": {
+          "ru_RU": "Минимальная граница",
+          "en_EN": "Minimalnaya granica"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.GranicyStoimostiOSDlya1Amortizacii.MaksimalnayaGranica",
+        "title": {
+          "ru_RU": "Максимальная граница",
+          "en_EN": "Maksimalnaya granica"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Границы стоимости ОС для 100% амортизации",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.GranicyStoimostiOSDlya1Amortizacii",
+    "title": {
+      "ru_RU": "Границы стоимости ОС для 100% амортизации",
+      "en_EN": "Granicy stoimosti OS dlya 1 amortizacii"
+    },
+    "description": {}
+  }
+}

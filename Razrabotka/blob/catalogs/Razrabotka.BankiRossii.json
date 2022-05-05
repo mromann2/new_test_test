@@ -1,0 +1,133 @@
+{
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BankiRossii.KorrespondentskiiiSchet",
+        "title": {
+          "ru_RU": "Корреспондентский счет",
+          "en_EN": "Korrespondentskiii schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BankiRossii.Adres",
+        "title": {
+          "ru_RU": "Адрес",
+          "en_EN": "Adres"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BankiRossii.RegNomer",
+        "title": {
+          "ru_RU": "Рег. номер",
+          "en_EN": "Reg nomer"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BankiRossii.DataKorrektirovki",
+        "title": {
+          "ru_RU": "Дата корректировки",
+          "en_EN": "Data korrektirovki"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Банки России",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.BankiRossii",
+    "title": {
+      "ru_RU": "Банки России",
+      "en_EN": "Banki Rossii"
+    },
+    "description": {}
+  }
+}

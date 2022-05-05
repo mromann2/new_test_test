@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "21100",
+  "name": {
+    "ru_RU": "Внутренние расчеты по поступлениям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21100",
+    "title": {
+      "ru_RU": "21100"
+    },
+    "description": {}
+  }
+}

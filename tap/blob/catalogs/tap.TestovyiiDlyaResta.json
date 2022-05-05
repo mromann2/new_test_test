@@ -1,0 +1,91 @@
+{
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.TestovyiiDlyaResta.Tekstovyii",
+        "title": {
+          "ru_RU": "текстовый",
+          "en_EN": "tekstovyii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.TestovyiiDlyaResta.Schet",
+        "title": {
+          "ru_RU": "счет",
+          "en_EN": "schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Тестовый для реста",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.TestovyiiDlyaResta",
+    "title": {
+      "ru_RU": "Тестовый для реста",
+      "en_EN": "Testovyii dlya resta"
+    },
+    "description": {}
+  }
+}

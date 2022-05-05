@@ -1,0 +1,291 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.hr.MOL_",
+        "title": {
+          "ru_RU": "МОЛ",
+          "en_EN": "MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.hr.Podrazdelenie_",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.hr.Primechanie_",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.OS",
+        "title": {
+          "ru_RU": "ОС",
+          "en_EN": "OS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.Stoimost_",
+        "title": {
+          "ru_RU": "Стоимость",
+          "en_EN": "Stoimost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.Amortizaciya_",
+        "title": {
+          "ru_RU": "Амортизация",
+          "en_EN": "Amortizaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.KVFO_",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.KPSDb_",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS Db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.Debet_",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.KOSGUDb_",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.KPSKr_",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS Kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.KreditSchetOS_",
+        "title": {
+          "ru_RU": "Кредит, счет ОС",
+          "en_EN": "Kredit schet OS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.KOSGUKr_",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.NovyiiKVFO_",
+        "title": {
+          "ru_RU": "Новый КВФО",
+          "en_EN": "Novyii KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.SmenaKBKOS.tr.NovyiiKPS_",
+        "title": {
+          "ru_RU": "Новый КПС",
+          "en_EN": "Novyii KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Смена КБК ОС",
+    "sources": ""
+  },
+  "algorithms": [],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestLis.SmenaKBKOS_",
+    "title": {
+      "ru_RU": "Смена КБК ОС",
+      "en_EN": "Smena KBK OS"
+    },
+    "description": {}
+  }
+}

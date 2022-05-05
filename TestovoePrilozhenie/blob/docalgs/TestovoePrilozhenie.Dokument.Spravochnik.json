@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    \r\n    creatRecords(okeiTest, \u0027TestovoePrilozhenie.SootvetstviyaSchetov\u0027, \r\n        \u0027TestovoePrilozhenie.SootvetstviyaSchetov.SchetAmortizacii\u0027, \r\n        \u0027TestovoePrilozhenie.SootvetstviyaSchetov.SchetAvansa\u0027,\r\n        \u0027TestovoePrilozhenie.SootvetstviyaSchetov.SchetVlozheniii\u0027, \r\n        \u0027TestovoePrilozhenie.SootvetstviyaSchetov.SchetObesceneniya\u0027, \r\n        \u0027TestovoePrilozhenie.SootvetstviyaSchetov.Schet17\u0027, \r\n        \u0027TestovoePrilozhenie.SootvetstviyaSchetov.Schet18\u0027, \r\n        \u0027TestovoePrilozhenie.SootvetstviyaSchetov.SchetZatrat\u0027, \r\n        \u0027TestovoePrilozhenie.SootvetstviyaSchetov.SchetZabalansovyii\u0027);\r\n    \r\n    //creatRecords(okeiTest2, \u0027TestovoePrilozhenie.Spravochnik\u0027, \u0027TestovoePrilozhenie.Spravochnik.Schet\u0027, \u0027TestovoePrilozhenie.Spravochnik.KOSGU\u0027);\r\n    //valueToCatalogLink(\u0027TestovoePrilozhenie.Spravochnik\u0027, \u0027TestovoePrilozhenie.Spravochnik.Schet\u0027, \u0027TestovoePrilozhenie.Spravochnik\u0027); \r\n    //valueToCatalogLink(\u0027TestovoePrilozhenie.Spravochnik\u0027, \u0027TestovoePrilozhenie.Spravochnik.KOSGU\u0027, \u0027TestovoePrilozhenie.KOSGUEKR\u0027);  \r\n    return 1;\r\n\r\n}\r\n\r\n//Снятие документа с проведения\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.unPostingAndSave();\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) { \r\n    let resultValidate \u003d currentDocument.validate();\r\n \r\n    /*if (!currentDocument.getRows().size()){\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    }*/\r\n\r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n        return  resultValidate;\r\n}\r\n\r\nfunction valueToCatalogLink(catalog, mnemoValue, mnemoTypeValue) {\r\n    \r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.Dokument.Spravochnik",
+    "title": {
+      "ru_RU": "Справочник",
+      "en_EN": "Spravochnik"
+    },
+    "description": {}
+  }
+}

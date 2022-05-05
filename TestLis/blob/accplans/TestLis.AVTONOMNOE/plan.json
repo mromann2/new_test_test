@@ -1,0 +1,13 @@
+{
+  "plantype": "BUDGET",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "TestLis.AVTONOMNOE",
+    "title": {
+      "ru_RU": "Автономный",
+      "en_EN": "Autonomous"
+    },
+    "description": {}
+  }
+}

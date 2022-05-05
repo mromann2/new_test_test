@@ -1,0 +1,290 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.hr.Sklad",
+        "title": {
+          "ru_RU": "Склад",
+          "en_EN": "Sklad"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.MestaHraneniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.hr.Mebel",
+        "title": {
+          "ru_RU": "Мебель",
+          "en_EN": "Mebel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.MaterialnyeZapasy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.hr.VidDvizheniyaTMC",
+        "title": {
+          "ru_RU": "Вид движения ТМЦ",
+          "en_EN": "Vid dvizheniya TMC"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.VidyDvizheniyaTMC"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.hr.Rekvizit2",
+        "title": {
+          "ru_RU": "Реквизит2",
+          "en_EN": "Rekvizit2"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.RasshifrovkiOperaciii"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Testovyii.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа 00Тестовый",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "TestB.Testovyii.2"
+    },
+    {
+      "mnemo": "TestB.Testovyii.Reg1"
+    },
+    {
+      "mnemo": "TestB.Testovyii.1"
+    },
+    {
+      "mnemo": "TestB.Testovyii.DlyaZapolneniyaKlassifikatorov"
+    },
+    {
+      "mnemo": "TestB.Testovyii.SKontrolemProvodokNaRannemEtape"
+    },
+    {
+      "mnemo": "TestB.Testovyii.RegRecCreate"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.Testovyii",
+    "title": {
+      "ru_RU": "00Тестовый",
+      "en_EN": "Testovyii"
+    },
+    "description": {}
+  }
+}

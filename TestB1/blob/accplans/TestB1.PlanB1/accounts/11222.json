@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "11222",
+  "name": {
+    "ru_RU": "11222",
+    "en_EN": ""
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "11222",
+    "title": {
+      "ru_RU": "11222"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": {
+    "item": {
+      "major": 1,
+      "minor": 1,
+      "counter": 5
+    }
+  },
+  "class": "com.argos.dfe.lib.module.Module"
+}

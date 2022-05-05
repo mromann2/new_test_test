@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "10900",
+  "name": {
+    "ru_RU": "Затраты на изготовление готовой продукции, выполнение работ, услуг"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10900",
+    "title": {
+      "ru_RU": "10900"
+    },
+    "description": {}
+  }
+}

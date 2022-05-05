@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Мужской",
+    "Женский"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.PolSotrudnika",
+    "title": {
+      "ru_RU": "Пол сотрудника",
+      "en_EN": "Pol sotrudnika"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "mastermnemo": {
+    "mnemo": "tap.VidyDenezhnyhDokumentov"
+  },
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DenezhnyeDokumenty.VidDokumenta",
+        "title": {
+          "ru_RU": "Вид документа",
+          "en_EN": "Vid dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyDenezhnyhDokumentov"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DenezhnyeDokumenty.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.EdinicyIzmereniii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DenezhnyeDokumenty.NominalnayaStoimost",
+        "title": {
+          "ru_RU": "Номинальная стоимость",
+          "en_EN": "Nominalnaya stoimost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DenezhnyeDokumenty.Seriya",
+        "title": {
+          "ru_RU": "Серия",
+          "en_EN": "Seriya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DenezhnyeDokumenty.Nomer",
+        "title": {
+          "ru_RU": "Номер",
+          "en_EN": "Nomer"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.DenezhnyeDokumenty",
+    "title": {
+      "ru_RU": "Денежные документы"
+    },
+    "description": {
+      "ru_RU": "Справочник Денежные документы"
+    }
+  }
+}

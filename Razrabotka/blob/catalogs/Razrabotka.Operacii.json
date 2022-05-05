@@ -1,0 +1,207 @@
+{
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.Operacii.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Полное наименование",
+          "en_EN": "Polnoe naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.Operacii.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.Operacii.KPSDebet",
+        "title": {
+          "ru_RU": "КПС дебет",
+          "en_EN": "KPS Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.Operacii.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.Operacii.KPSKredit",
+        "title": {
+          "ru_RU": "КПС кредит",
+          "en_EN": "KPS kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.Operacii.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.Operacii.Dokument",
+        "title": {
+          "ru_RU": "Документ",
+          "en_EN": "Dokument"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.document"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.Operacii.VklKUDiR",
+        "title": {
+          "ru_RU": "Вкл. КУДиР",
+          "en_EN": "VklKUDiR"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Операции",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.Operacii",
+    "title": {
+      "ru_RU": "Операции",
+      "en_EN": "Operacii"
+    },
+    "description": {}
+  }
+}

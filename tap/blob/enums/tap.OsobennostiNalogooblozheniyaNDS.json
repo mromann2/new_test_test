@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Налоплательщик НДС",
+    "Не является налогоплательщиком НДС",
+    "Освобожден от НДС по ст.145 НК РФ"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.OsobennostiNalogooblozheniyaNDS",
+    "title": {
+      "ru_RU": "Особенности налогообложения НДС",
+      "en_EN": "Osobennosti nalogooblozheniya NDS"
+    },
+    "description": {}
+  }
+}

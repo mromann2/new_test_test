@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Автоматически",
+    "Не засчитывать"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VariantyZachetaAvansa",
+    "title": {
+      "ru_RU": "Варианты зачета аванса",
+      "en_EN": "Varianty zacheta avansa"
+    },
+    "description": {}
+  }
+}

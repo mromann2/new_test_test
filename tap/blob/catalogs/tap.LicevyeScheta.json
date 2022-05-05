@@ -1,0 +1,229 @@
+{
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.TipScheta",
+        "title": {
+          "ru_RU": "Тип счета",
+          "en_EN": "Tip scheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.TipScheta"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.NomerScheta",
+        "title": {
+          "ru_RU": "Номер счета",
+          "en_EN": "Nomer scheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "20",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.DolzhnostnoeLicoImeiusheePravoPodpisipervayaPodpis",
+        "title": {
+          "ru_RU": "Должностное лицо, имеющее право подписи (первая подпись)",
+          "en_EN": "Dolzhnostnoe lico imeiushee pravo podpisi pervaya podpis"
+        },
+        "description": {
+          "ru_RU": "Должностное лицо, имеющее право подписи платежных и иных документов при совершении операции по лицевому счету (первая подпись)"
+        }
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.DolzhnostnoeLicoImeiusheePravoPodpisivtorayaPodpis",
+        "title": {
+          "ru_RU": "Должностное лицо, имеющее право подписи (вторая подпись)",
+          "en_EN": "Dolzhnostnoe lico imeiushee pravo podpisi vtoraya podpis"
+        },
+        "description": {
+          "ru_RU": "Должностное лицо, имеющее право подписи платежных и иных документов при совершении операции по лицевому счету (первая подпись)"
+        }
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.DataOtkrytiya",
+        "title": {
+          "ru_RU": "Дата открытия",
+          "en_EN": "Data otkrytiya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.DataZakrytiya",
+        "title": {
+          "ru_RU": "Дата закрытия",
+          "en_EN": "Data zakrytiya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.VidLicevogoScheta",
+        "title": {
+          "ru_RU": "Вид лицевого счета",
+          "en_EN": "Vid licevogo scheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.RazdelyLicevyhSchetov",
+        "title": {
+          "ru_RU": "Разделы лицевых счетов",
+          "en_EN": "Razdely licevyh schetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.LicevyeScheta.RekvizityLicevyhSchetov",
+        "title": {
+          "ru_RU": "Реквизиты лицевых счетов",
+          "en_EN": "Rekvizity licevyh schetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RekvizityLicevyhSchetov"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.LicevyeScheta",
+    "title": {
+      "ru_RU": "Лицевые счета",
+      "en_EN": "Licevye scheta"
+    },
+    "description": {}
+  }
+}

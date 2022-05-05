@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "Н0400",
+  "name": {
+    "ru_RU": "Нематериальные активы"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "0400",
+    "title": {
+      "ru_RU": "Н0400"
+    },
+    "description": {}
+  }
+}

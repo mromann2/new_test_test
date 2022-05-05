@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "20222",
+  "name": {
+    "ru_RU": "Средства на счетах бюджета в кредитной организации в пути"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20222",
+    "title": {
+      "ru_RU": "20222"
+    },
+    "description": {}
+  }
+}

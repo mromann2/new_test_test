@@ -1,0 +1,86 @@
+{
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KlassifikaciyaBiudzhetovRFdohodyDeficit.Biudzhet",
+        "title": {
+          "ru_RU": "Бюджет",
+          "en_EN": "Biudzhet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.VidyBiudzhetov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.KlassifikaciyaBiudzhetovRFdohodyDeficit.NachaloDeiistviya",
+        "title": {
+          "ru_RU": "Начало действия",
+          "en_EN": "Nachalo deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Классификация бюджетов РФ (доходы, дефицит)",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.KlassifikaciyaBiudzhetovRFdohodyDeficit",
+    "title": {
+      "ru_RU": "Классификация бюджетов РФ (доходы, дефицит)",
+      "en_EN": "Klassifikaciya biudzhetov RFdohody deficit"
+    },
+    "description": {}
+  }
+}

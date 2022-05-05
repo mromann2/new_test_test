@@ -1,0 +1,43 @@
+{
+  "active": true,
+  "code": "Н9101",
+  "name": {
+    "ru_RU": "Прочие доходы"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.ProchieDohodyIRashody"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.RealizuemyeAktivy"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "9101",
+    "title": {
+      "ru_RU": "Н9101"
+    },
+    "description": {}
+  }
+}
