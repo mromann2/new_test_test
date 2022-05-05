@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "01500",
+  "name": {
+    "ru_RU": "Расчетные документы, не оплаченные в срок из-за отсутствия средств на счете государственного (муниципального) учреждения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "01500",
+    "title": {
+      "ru_RU": "01500"
+    },
+    "description": {}
+  }
+}

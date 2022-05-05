@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "20123",
+  "name": {
+    "ru_RU": "Денежные средства учреждения в кредитной организации в пути"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20123",
+    "title": {
+      "ru_RU": "20123"
+    },
+    "description": {}
+  }
+}

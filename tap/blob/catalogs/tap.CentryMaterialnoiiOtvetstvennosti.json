@@ -1,0 +1,130 @@
+{
+  "publiccatalog": false,
+  "levelscount": 2,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti.MaterialnoOtvetstvennoeLico",
+        "title": {
+          "ru_RU": "Сотрудник",
+          "en_EN": "Materialno otvetstvennoe lico"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti.MestoHraneniya",
+        "title": {
+          "ru_RU": "Место хранения",
+          "en_EN": "Mesto hraneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.MestaHraneniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti.CMONeAktualen",
+        "title": {
+          "ru_RU": "ЦМО не актуален",
+          "en_EN": "CMO ne aktualen"
+        },
+        "description": {
+          "ru_RU": "ЦМО больше не используется в актуальных документах, но в ранее созданных документах используется"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Центры материальной ответственности",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti",
+    "title": {
+      "ru_RU": "Центры материальной ответственности"
+    },
+    "description": {
+      "ru_RU": "Справочник Центры материальной ответственности"
+    }
+  }
+}

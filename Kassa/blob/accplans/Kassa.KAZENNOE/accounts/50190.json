@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50190",
+  "name": {
+    "ru_RU": "Лимиты бюджетных обязательств на иные очередные годы (за пределами планового периода)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50190",
+    "title": {
+      "ru_RU": "50190"
+    },
+    "description": {}
+  }
+}

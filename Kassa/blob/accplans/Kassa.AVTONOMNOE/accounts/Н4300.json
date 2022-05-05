@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "Н4300",
+  "name": {
+    "ru_RU": "Готовая продукция"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "4300",
+    "title": {
+      "ru_RU": "Н4300"
+    },
+    "description": {}
+  }
+}

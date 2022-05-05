@@ -1,0 +1,43 @@
+{
+  "active": true,
+  "code": "30313",
+  "name": {
+    "ru_RU": "Расчеты по земельному налогу"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.VidyNalogovIPlatezheii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30313",
+    "title": {
+      "ru_RU": "30313"
+    },
+    "description": {}
+  }
+}

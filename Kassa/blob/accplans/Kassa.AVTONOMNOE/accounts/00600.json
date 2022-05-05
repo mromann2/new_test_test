@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "00600",
+  "name": {
+    "ru_RU": "Задолженность учащихся и студентов за невозвращенные материальные ценности"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "00600",
+    "title": {
+      "ru_RU": "00600"
+    },
+    "description": {}
+  }
+}

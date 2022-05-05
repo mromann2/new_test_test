@@ -1,0 +1,216 @@
+{
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov.SchetAmortizacii",
+        "title": {
+          "ru_RU": "Счет амортизации",
+          "en_EN": "Schet amortizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov.SchetAvansa",
+        "title": {
+          "ru_RU": "Счет аванса",
+          "en_EN": "Schet avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov.SchetVlozheniii",
+        "title": {
+          "ru_RU": "Счет вложений",
+          "en_EN": "Schet vlozheniii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov.SchetObesceneniya",
+        "title": {
+          "ru_RU": "Счет обесценения",
+          "en_EN": "Schet obesceneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov.Schet17",
+        "title": {
+          "ru_RU": "Счет 17",
+          "en_EN": "Schet 17"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov.Schet18",
+        "title": {
+          "ru_RU": "Счет 18",
+          "en_EN": "Schet 18"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov.SchetZatrat",
+        "title": {
+          "ru_RU": "Счет затрат",
+          "en_EN": "Schet zatrat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov.SchetZabalansovyii",
+        "title": {
+          "ru_RU": "Счет забалансовый",
+          "en_EN": "Schet zabalansovyii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Соответствия счетов",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.SootvetstviyaSchetov",
+    "title": {
+      "ru_RU": "Соответствия счетов",
+      "en_EN": "Sootvetstviya schetov"
+    },
+    "description": {}
+  }
+}

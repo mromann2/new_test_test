@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50329",
+  "name": {
+    "ru_RU": "Утвержденные бюджетные ассигнования"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50329",
+    "title": {
+      "ru_RU": "50329"
+    },
+    "description": {}
+  }
+}

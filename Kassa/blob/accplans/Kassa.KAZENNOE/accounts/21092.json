@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "21092",
+  "name": {
+    "ru_RU": "Расчеты с финансовым органом по уточнению невыясненных поступлений в бюджет прошлых лет"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21092",
+    "title": {
+      "ru_RU": "21092"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "30140",
+  "name": {
+    "ru_RU": "Расчеты по долговым обязательствам в иностранной валюте"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30140",
+    "title": {
+      "ru_RU": "30140"
+    },
+    "description": {}
+  }
+}

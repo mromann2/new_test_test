@@ -1,0 +1,817 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.Dogovor",
+        "title": {
+          "ru_RU": "Договор",
+          "en_EN": "Dogovor"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.DataPolucheniyaUslugiRaboty",
+        "title": {
+          "ru_RU": "Дата получения услуги, работы",
+          "en_EN": "Data polucheniya uslugi raboty"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.ValiutaDokumenta",
+        "title": {
+          "ru_RU": "Валюта документа",
+          "en_EN": "Valiuta dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Valiuty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.SposobZachetaAvansa",
+        "title": {
+          "ru_RU": "Способ зачета аванса",
+          "en_EN": "Sposob zacheta avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.SposobyZachetaAvansov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.VidDokumenta",
+        "title": {
+          "ru_RU": "Вид документа",
+          "en_EN": "Vid dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PervichnyeDokumenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.Nomer",
+        "title": {
+          "ru_RU": "Номер",
+          "en_EN": "Nomer"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.Data",
+        "title": {
+          "ru_RU": "Дата",
+          "en_EN": "Data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.UslugiRabotyPrinyaty",
+        "title": {
+          "ru_RU": "Услуги, работы приняты",
+          "en_EN": "Uslugi raboty prinyaty"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.SummaVkliuchaetNDS",
+        "title": {
+          "ru_RU": "Сумма включает НДС",
+          "en_EN": "Summa vkliuchaet NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.PrinyatNDSKVychetu",
+        "title": {
+          "ru_RU": "Принять НДС к вычету",
+          "en_EN": "Prinyat NDS k vychetu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.Vsego",
+        "title": {
+          "ru_RU": "Всего",
+          "en_EN": "Vsego"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.NDS",
+        "title": {
+          "ru_RU": "НДС",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.SchetDb",
+        "title": {
+          "ru_RU": "Счет дб",
+          "en_EN": "Schet db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.ObektVlozheniii",
+        "title": {
+          "ru_RU": "Объект вложений",
+          "en_EN": "Obekt vlozheniii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.MZ",
+        "title": {
+          "ru_RU": "МЗ",
+          "en_EN": "MZ"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.NapravlenieDeyatelnosti",
+        "title": {
+          "ru_RU": "Направление деятельности",
+          "en_EN": "Napravlenie deyatelnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.NapravleniyaDeyatelnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.RashodyBudushihPeriodov",
+        "title": {
+          "ru_RU": "Расходы будущих периодов",
+          "en_EN": "Rashody budushih periodov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RashodyBudushihPeriodov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.Dogovory",
+        "title": {
+          "ru_RU": "Договоры",
+          "en_EN": "Dogovory"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.ProchieDohodyIRashody",
+        "title": {
+          "ru_RU": "Прочие доходы и расходы",
+          "en_EN": "Prochie dohody i rashody"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.ProchieDohodyIRashody"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.RealizuemyeAktivy",
+        "title": {
+          "ru_RU": "Реализуемые активы",
+          "en_EN": "Realizuemye aktivy"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RealizuemyeAktivy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.KPSNDS",
+        "title": {
+          "ru_RU": "КПС НДС",
+          "en_EN": "KPS NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.SchetNDS",
+        "title": {
+          "ru_RU": "Счет НДС",
+          "en_EN": "Schet NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.KOSGUNDS",
+        "title": {
+          "ru_RU": "КОСГУ НДС",
+          "en_EN": "KOSGU NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.KPSNDSKRaspredeleniiu",
+        "title": {
+          "ru_RU": "КПС НДС к распределению",
+          "en_EN": "KPS NDS k raspredeleniiu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.SchetNDSKRaspredeleniiu",
+        "title": {
+          "ru_RU": "Счет НДС к распределению",
+          "en_EN": "Schet NDS k raspredeleniiu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.KOSGUNDSKRaspredeleniiu",
+        "title": {
+          "ru_RU": "КОСГУ НДС к распределению",
+          "en_EN": "KOSGU NDS k raspredeleniiu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.KPSRaschetov",
+        "title": {
+          "ru_RU": "КПС расчетов",
+          "en_EN": "KPS raschetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.SchetRaschetov",
+        "title": {
+          "ru_RU": "Счет расчетов",
+          "en_EN": "Schet raschetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.KOSGURaschetov",
+        "title": {
+          "ru_RU": "КОСГУ расчетов",
+          "en_EN": "KOSGU raschetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.PrinyatDenezhnoeObyazatelstvo",
+        "title": {
+          "ru_RU": "Принять денежное обязательство",
+          "en_EN": "Prinyat denezhnoe obyazatelstvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.RazdelLicevyhSchetov",
+        "title": {
+          "ru_RU": "Раздел лицевых счетов",
+          "en_EN": "Razdel licevyh schetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.hr.Otvetstvennyii",
+        "title": {
+          "ru_RU": "Ответственный",
+          "en_EN": "Otvetstvennyii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.Nomenklatura",
+        "title": {
+          "ru_RU": "Номенклатура",
+          "en_EN": "Nomenklatura"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "3",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.EdinicyIzmereniii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.StavkaNDS",
+        "title": {
+          "ru_RU": "Ставка НДС",
+          "en_EN": "Stavka NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.SummaNDS",
+        "title": {
+          "ru_RU": "Сумма НДС",
+          "en_EN": "Summa NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.NDSRaspredelyaetsya",
+        "title": {
+          "ru_RU": "НДС распределяется",
+          "en_EN": "NDS raspredelyaetsya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.Vsego",
+        "title": {
+          "ru_RU": "Всего",
+          "en_EN": "Vsego"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.KOSGU",
+        "title": {
+          "ru_RU": "КОСГУ",
+          "en_EN": "KOSGU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PostuplenieUslugRabot.tr.VidyZatrat",
+        "title": {
+          "ru_RU": "Виды затрат",
+          "en_EN": "Vidy zatrat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyZatrat"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Поступления услуг, работ",
+    "sources": "////Проведение документа\r\n//function activate(currentDocument) {\r\n//\r\n//    if (!notValid(currentDocument)) {\r\n//        \r\n//        for (let tableRec of currentDocument.getRows()){\r\n//            \r\n//            //создание и заполнение проводки по счету расчетов\r\n//            let posting \u003d EntityFactory.createPosting();\r\n//            let summa \u003d tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Vsego\u0027);\r\n//            if(currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.PrinyatNDSKVychetu\u0027)){\r\n//                let stavka \u003d tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.StavkaNDS\u0027);\r\n//                if(stavka !\u003d\u0027\u0027 \u0026\u0026 stavka !\u003d\u00270%\u0027 \u0026\u0026 stavka !\u003d\u0027без НДС\u0027){\r\n//                    //создание и заполнение проводки по счету НДС\r\n//                    let posting \u003d EntityFactory.createPosting();\r\n//                    posting.setValue(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.SummaNDS\u0027));\r\n//                    posting.setCredit(currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.SchetRaschetov\u0027));\r\n//                    \r\n//                    if (!tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.NDSRaspredelyaetsya\u0027))\r\n//                        posting.setDebit(currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.SchetNDS\u0027));\r\n//                    else posting.setDebit(currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.SchetNDSKRaspredeleniiu\u0027));\r\n//                    \r\n//                    let comment \u003d \u0027Выделен НДС: \u0027;\r\n//                    if (tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Nomenklatura\u0027)) \r\n//                        comment +\u003d tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Nomenklatura\u0027);\r\n//                    posting.setComment(comment);\r\n//                    currentDocument.addPosting(posting);\r\n//                }\r\n//                \r\n//                summa \u003d tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Summa\u0027);\r\n//            }\r\n//            posting.setValue(summa);\r\n//            posting.setComment(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Nomenklatura\u0027));\r\n//            posting.setDebit(currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.SchetDebeta\u0027));\r\n//            posting.setCredit(currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.SchetRaschetov\u0027));\r\n//            currentDocument.addPosting(posting);\r\n//            \r\n//            //создание и заполнение проводки по счету обязательств\r\n//            if(currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.PrinyatDenezhnoeObyazatelstvo\u0027)){\r\n//                let posting \u003d EntityFactory.createPosting();\r\n//                posting.setComment(\u0027Принято денежное обязательство\u0027);\r\n//                posting.setValue(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Vsego\u0027));\r\n//\r\n//                let AccDebitPrDenObyaz \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u002700000000000000000050211000\u0027).get(0);\r\n//                AccDebitPrDenObyaz.put(0, tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.KEK\u0027) );//Аналитика 1: КЭК\r\n//                AccDebitPrDenObyaz.put(1, currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.Dogovor\u0027) );//Аналитика 2: Принятые обязательства\r\n//                if (currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.RazdelLicevyhSchetov\u0027))//Аналитика 3: Раздел лицевых счетов\r\n//                    AccDebitPrDenObyaz.put(2, currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.RazdelLicevyhSchetov\u0027) );\r\n//                posting.setDebit(AccDebitPrDenObyaz);\r\n//\r\n//                let AccCreditPrDenObyaz \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u002700000000000000000050212000\u0027).get(0);\r\n//                AccCreditPrDenObyaz.put(0, tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.KEK\u0027) );//Аналитика 1: КЭК\r\n//                AccCreditPrDenObyaz.put(1, currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.Dogovor\u0027) );//Аналитика 2: Принятые обязательства\r\n//                if (currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.RazdelLicevyhSchetov\u0027))//Аналитика 3: Раздел лицевых счетов\r\n//                    AccCreditPrDenObyaz.put(2, currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.RazdelLicevyhSchetov\u0027) );\r\n//                posting.setCredit(AccCreditPrDenObyaz);\r\n//                currentDocument.addPosting(posting);\r\n//            }\r\n//            \r\n//            //создание и заполнение проводки НУ: Услуги сторонних организаций\r\n//            if(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.KFO\u0027)){\r\n//                if(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.KFO\u0027).getTitle() \u003d\u003d \u0027Приносящая доход деятельность (собственные доходы учреждения)\u0027){\r\n//                    let posting \u003d EntityFactory.createPosting();\r\n//                    posting.setComment(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Nomenklatura\u0027));\r\n//                    posting.setValue(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Vsego\u0027));\r\n//\r\n//                    let AccDebitNU \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u0027000000000000000000Н2602000\u0027).get(0);\r\n//                    AccDebitNU.put(0, tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.VidyZatrat\u0027) );//Аналитика 1: Виды затрат\r\n//                    posting.setDebit(AccDebitNU);\r\n//\r\n//\r\n//                    let AccCreditNU \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u0027000000000000000000НПВ00000\u0027).get(0);\r\n//                    AccCreditNU.put(0, EntityFactory.getCatalogs().get(\"tap.UsloviyaPostupleniyaIVybytiya\").findByCode(\u0027001\u0027).get(0) );//Аналитика 1: Условия поступления и выбытия\r\n//                    AccCreditNU.put(1, currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.Kontragent\u0027) );//Аналитика 2: Котрагенты\r\n//                    AccCreditNU.put(2, currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.Dogovor\u0027) );//Аналитика 3: Договоры\r\n//                    posting.setCredit(AccCreditNU);\r\n//                    currentDocument.addPosting(posting);\r\n//                }\r\n//            }\r\n//        };\r\n//                \r\n//        //устанавливаем текущую дату проводки\r\n//        currentDocument.setExecuted();\r\n//\r\n//        //сохранение документа с проводками\r\n//        currentDocument.save();\r\n//\r\n//        return;  \r\n//        \r\n//    } else \r\n//        return notValid(currentDocument);\r\n//}\r\n//\r\n////Снятие документа с проведения\r\n//function deactivate(currentDocument) {\r\n//    \r\n//    //удаляем старые проводки\r\n//    currentDocument.removeAllPostings();\r\n//    //обнуляем дату проводки\r\n//    currentDocument.setExecutedDate(null);\r\n//    currentDocument.save();\r\n//    return;\r\n//}\r\n//\r\n////Проверка документа на полное заполнение\r\n//function notValid(currentDocument) {\r\n//    let resultValidate \u003d currentDocument.validate();\r\n// \r\n//    if (!currentDocument.getRows().size())\r\n//        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n//    \r\n//    //Проверки\r\n//    if (!resultValidate.hasErrors())  {\r\n//\r\n////        if (!currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.SchetRaschetov\u0027))\r\n////           resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.hr.SchetRaschetov\u0027, \u0027Не заполнено обязательное поле \"Счет расчетов\".\u0027);\r\n//       \r\n//        for (let tableRec of currentDocument.getRows()){\r\n//\r\n//            if (!tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Summa\u0027))\r\n//                resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.tr.Summa\u0027, \u0027\\nНе заполнено обязательное поле \"Сумма\" в табличной части.\u0027);\r\n//            \r\n//            if (!tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Vsego\u0027))\r\n//                resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.tr.Vsego\u0027, \u0027\\nНе заполнено обязательное поле \"Всего\" в табличной части.\u0027);\r\n//            \r\n//            if (currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.PrinyatNDSKVychetu\u0027)){\r\n//                if (!tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.SummaNDS\u0027))\r\n//                    resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.tr.SummaNDS\u0027, \u0027\\nНе заполнено обязательное поле \"Сумма НДС\" в табличной части.\u0027);\r\n//                \r\n//                if (!tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.NDSRaspredelyaetsya\u0027)){\r\n//                    if (!currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.SchetNDS\u0027))\r\n//                        resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.hr.SchetNDS\u0027, \u0027\\nНе заполнено обязательное поле \"Счет НДС\".\u0027);\r\n//                } else {\r\n//                    if (!currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.SchetNDSKRaspredeleniiu\u0027))\r\n//                        resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.hr.SchetNDSKRaspredeleniiu\u0027, \u0027\\nНе заполнено обязательное поле \"Счет НДС к распределению\".\u0027);\r\n//                }\r\n//            }\r\n//            \r\n//            if (currentDocument.get(\u0027tap.PostuplenieUslugRabot.hr.PrinyatDenezhnoeObyazatelstvo\u0027)){\r\n//                if (!tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.Vsego\u0027))\r\n//                    resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.tr.Vsego\u0027, \u0027\\nНе заполнено обязательное поле \"Всего\" в табличной части.\u0027);\r\n//                if (!tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.KEK\u0027))\r\n//                    resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.tr.KEK\u0027, \u0027\\nНе заполнено обязательное поле \"КЭК\" в табличной части.\u0027);\r\n//            }\r\n//\r\n//            if(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.KFO\u0027)){\r\n//                if(tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.KFO\u0027).getTitle() \u003d\u003d \u0027Приносящая доход деятельность (собственные доходы учреждения)\u0027){\r\n//                    if (!tableRec.get(\u0027tap.PostuplenieUslugRabot.tr.VidyZatrat\u0027))\r\n//                        resultValidate.addValueError(\u0027tap.PostuplenieUslugRabot.tr.VidyZatrat\u0027, \u0027\\nНе заполнено обязательное поле \"Виды затрат\" в табличной части.\u0027);\r\n//                }\r\n//            }\r\n//        }\r\n//    };\r\n//    \r\n//    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n//        return  resultValidate;\r\n//};"
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.PostuplenieUslugRabot.Standartnyii"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PostuplenieUslugRabot",
+    "title": {
+      "ru_RU": "Поступления услуг, работ",
+      "en_EN": "Postuplenie uslug rabot"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Выдача наличных д/с\r\nfunction activate(currentDocument) {\r\n\r\n    if (!notValid(currentDocument)) {\r\n\r\n        for (let tableRec of currentDocument.getRows()){\r\n            let posDebit \u003d posCredit \u003d \u0027\u0027;\r\n            let posValue \u003d tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.Summa\u0027);\r\n            let posComment \u003d currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.Osnovanie\u0027);\r\n\r\n//              Основная проводка\r\n                posDebit \u003d currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.SchetRaschetov\u0027);\r\n                    if (tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.Kontragent\u0027))\r\n                        posDebit.put(0, tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.Kontragent\u0027)); //Аналитика 1: Контрагент из строки\r\n                        \r\n                    if (tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.PravovoeOsnovanie\u0027))\r\n                        posDebit.put(1, tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.PravovoeOsnovanie\u0027)); //Аналитика 1: Правовое основание из строки\r\n                    else\r\n                        posDebit.put(1, currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.PravovoeOsnovanie1\u0027)); //Аналитика 1: Правовое основание из шапки\r\n                \r\n                posCredit \u003d currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.SchetKassy\u0027);\r\n                createPosting();\r\n                posDebit \u003d \u0027\u0027;\r\n\r\n//              Забалансовая проводка\r\n                posCredit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u00270000000000000000000НД00000\u0027).get(0);\r\n                createPosting();\r\n\r\n//              Проводка по счету 18\r\n                posCredit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000001834000\u0027).get(0);\r\n                createPosting();\r\n\r\n\r\n//          Общая функция создания и заполнения проводки\r\n            function createPosting() {\r\n                let posting \u003d EntityFactory.createPosting();\r\n                if (posDebit)\r\n                    posting.setDebit(posDebit);\r\n                if (posCredit)\r\n                    posting.setCredit(posCredit);\r\n                if (posValue)\r\n                    posting.setValue(posValue);\r\n                if (posComment)\r\n                    posting.setComment(posComment);\r\n                currentDocument.addPosting(posting);\r\n                return;\r\n            }\r\n        }\r\n    \r\n        currentDocument.setExecuted();\r\n        currentDocument.save();\r\n        \r\n        return;  \r\n    \r\n    } else \r\n        return notValid(currentDocument);\r\n}\r\n    \r\n//Снятие документа с проведения\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.removeAllPostings();\r\n    currentDocument.setExecutedDate(null);\r\n    currentDocument.save();\r\n    return;\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) {\r\n        \r\n    let resultValidate \u003d currentDocument.validate();\r\n    \r\n    if (!currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.Ispolnen\u0027))\r\n            resultValidate.addValueError(\u0027tap.PlatezhnayaVedomost.hr.Ispolnen\u0027, \u0027Для проведения документа, он должен быть исполнен.\u0027);\r\n\r\n    if (currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.SchetKassy\u0027) \u0026\u0026\r\n        currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.SchetKassy\u0027).getCode().substr(18,5) !\u003d \u002720134\u0027)\r\n            resultValidate.addValueError(\u0027Счет кассы должен принимать значение 201.34\u0027);\r\n                    \r\n    if (currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.SchetRaschetov\u0027) \u0026\u0026\r\n        currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.SchetRaschetov\u0027).getCode().substr(18,5) !\u003d \u002730200\u0027)\r\n            resultValidate.addValueError(\u0027Счет расчетов должен принимать значение 302.00\u0027);\r\n\r\n    if (!currentDocument.getRows().size())\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    else {\r\n        let sum \u003d currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.Summa\u0027);\r\n        let sumChek \u003d 0.00;\r\n        \r\n        for (let tableRec of currentDocument.getRows()){\r\n            \r\n            if (!tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.PravovoeOsnovanie\u0027) \u0026\u0026 \r\n                !currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.PravovoeOsnovanie1\u0027))\r\n                    resultValidate.addValueError(\u0027tap.PlatezhnayaVedomost.hr.PravovoeOsnovanie1\u0027, \u0027Не заполнено поле, обязательное в случае отсутствия значения поля \"Правовое основание\" в табличной части.\u0027);\r\n            \r\n            if(currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.Vyplaty\u0027)){\r\n                switch (currentDocument.get(\u0027tap.PlatezhnayaVedomost.hr.Vyplaty\u0027).toString()) {\r\n                    case EntityFactory.getEnumeration(\u0027tap.VyplatyPlatezhnoiiVedomosti\u0027).get(0) : \r\n                        if ( !tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.Sotrudnik\u0027) )\r\n                          resultValidate.addValueError(\u0027tap.PlatezhnayaVedomost.tr.Sotrudnik\u0027, \u0027Не заполнено обязательное поле в табличной части.\u0027);\r\n\r\n                        if ( tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.Kontragent\u0027) )\r\n                          resultValidate.addValueError(\u0027tap.PlatezhnayaVedomost.tr.Kontragent\u0027, \u0027Выбраны выплаты сотрудникам, необходимо очистить поле.\u0027);\r\n                      break;\r\n\r\n                    case EntityFactory.getEnumeration(\u0027tap.VyplatyPlatezhnoiiVedomosti\u0027).get(1) : \r\n                        if ( !tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.Kontragent\u0027) )\r\n                          resultValidate.addValueError(\u0027tap.PlatezhnayaVedomost.tr.Kontragent\u0027, \u0027Не заполнено обязательное поле в табличной части.\u0027);\r\n\r\n                        if ( tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.Sotrudnik\u0027) )\r\n                          resultValidate.addValueError(\u0027tap.PlatezhnayaVedomost.tr.Sotrudnik\u0027, \u0027Выбраны выплаты контрагентам, необходимо очистить поле.\u0027);\r\n                      break;\r\n                }\r\n            }\r\n                        \r\n            sumChek +\u003d +tableRec.get(\u0027tap.PlatezhnayaVedomost.tr.Summa\u0027);\r\n        }\r\n\r\n//      сумма документа \u003d сумме из строк\r\n        if (+sumChek.toFixed(2) !\u003d +sum)\r\n            resultValidate.addValueError(\u0027tap.PlatezhnayaVedomost.hr.Summa\u0027, \u0027Сумма документа не совпадает с суммой в табличной части.\u0027);\r\n    }\r\n    \r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors()) \r\n        return  resultValidate;\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PlatezhnayaVedomost.Standartnyii",
+    "title": {
+      "ru_RU": "Стандартный",
+      "en_EN": "Standartnyii"
+    },
+    "description": {}
+  }
+}

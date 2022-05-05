@@ -1,0 +1,47 @@
+{
+  "publiccatalog": false,
+  "levelscount": 6,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Номера грузовых таможенных деклараций",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.NomeraGruzovyhTamozhennyhDeklaraciii",
+    "title": {
+      "ru_RU": "Номера грузовых таможенных деклараций",
+      "en_EN": "Nomera gruzovyh tamozhennyh deklaraciii"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "publiccatalog": false,
+  "levelscount": 3,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.Podrazdeleniya.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Полное наименование",
+          "en_EN": "Polnoe naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.Podrazdeleniya.OKTMO",
+        "title": {
+          "ru_RU": "ОКТМО",
+          "en_EN": "OKTMO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.OKTMO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.Podrazdeleniya.KPP",
+        "title": {
+          "ru_RU": "КПП",
+          "en_EN": "KPP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "9"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Подразделения",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.Podrazdeleniya",
+    "title": {
+      "ru_RU": "Подразделения",
+      "en_EN": "Podrazdeleniya"
+    },
+    "description": {}
+  }
+}

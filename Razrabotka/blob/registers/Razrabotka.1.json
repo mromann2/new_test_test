@@ -1,0 +1,17 @@
+{
+  "dimensions": [],
+  "resources": [],
+  "requisites": [],
+  "type": "Remainders",
+  "period": "Month",
+  "fast": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.1",
+    "title": {
+      "ru_RU": "1",
+      "en_EN": "1"
+    },
+    "description": {}
+  }
+}

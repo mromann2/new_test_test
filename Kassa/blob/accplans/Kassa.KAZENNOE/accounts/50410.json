@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50410",
+  "name": {
+    "ru_RU": "Сметные (плановые, прогнозные) назначения текущего финансового года"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50410",
+    "title": {
+      "ru_RU": "50410"
+    },
+    "description": {}
+  }
+}

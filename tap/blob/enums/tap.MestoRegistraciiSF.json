@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Книга продаж",
+    "Дополнительный лист"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.MestoRegistraciiSF",
+    "title": {
+      "ru_RU": "Место регистрации СФ",
+      "en_EN": "Mesto registracii SF"
+    },
+    "description": {}
+  }
+}

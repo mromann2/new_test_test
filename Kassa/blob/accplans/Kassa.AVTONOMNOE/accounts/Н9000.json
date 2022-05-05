@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "Н9000",
+  "name": {
+    "ru_RU": "Доходы и расходы по обычным видам деятельности"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "9000",
+    "title": {
+      "ru_RU": "Н9000"
+    },
+    "description": {}
+  }
+}

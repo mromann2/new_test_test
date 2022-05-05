@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "10491",
+  "name": {
+    "ru_RU": "Амортизация жилых помещений в концессии"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10491",
+    "title": {
+      "ru_RU": "10491"
+    },
+    "description": {}
+  }
+}

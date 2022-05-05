@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "02200",
+  "name": {
+    "ru_RU": "Материальные ценности, полученные по централизованному снабжению"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "02200",
+    "title": {
+      "ru_RU": "02200"
+    },
+    "description": {}
+  }
+}

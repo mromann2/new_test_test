@@ -1,0 +1,74 @@
+{
+  "form": {
+    "mainform": {
+      "controltype": "Form",
+      "cellx": 0,
+      "celly": 0,
+      "spansize": {
+        "width": 5,
+        "height": 18
+      },
+      "x": 0,
+      "y": 0,
+      "size": {
+        "width": 70,
+        "height": 23
+      },
+      "bold": false,
+      "alignment": "LEFT",
+      "background": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "foreground": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "visible": true,
+      "enabled": true,
+      "meta": {
+        "mnemo": "tap.Otchet.form",
+        "title": {
+          "ru_RU": "отчет",
+          "en_EN": "otchet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    "formcontrols": []
+  },
+  "formscript": {
+    "title": "script",
+    "sources": ""
+  },
+  "reportscript": {
+    "title": "Скрипт отчета отчет",
+    "sources": ""
+  },
+  "reporttemplates": [
+    {
+      "class": "com.argos.dfe.lib.reports.template.Template",
+      "meta": "{\"mnemo\":\"tap.Otchet.SHablon\",\"title\":{\"ru_RU\":\"шаблон\",\"en_EN\":\"shablon\"},\"description\":{}}",
+      "body": "{\"d\":{\"columnWidth\":75,\"rowHeight\":16,\"colmargin\":0,\"rowmargin\":0},\"c\":[],\"rc\":{\"r\":[],\"c\":[]}}"
+    }
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Otchet",
+    "title": {
+      "ru_RU": "отчет",
+      "en_EN": "otchet"
+    },
+    "description": {}
+  }
+}

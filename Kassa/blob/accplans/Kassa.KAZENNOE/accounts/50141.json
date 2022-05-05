@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50141",
+  "name": {
+    "ru_RU": "Доведенные лимиты бюджетных обязательств"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50141",
+    "title": {
+      "ru_RU": "50141"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "plantype": "BUDGET",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.Avtonomnyii",
+    "title": {
+      "ru_RU": "Автономный",
+      "en_EN": "Avtonomnyii"
+    },
+    "description": {}
+  }
+}

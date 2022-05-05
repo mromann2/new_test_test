@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.KodOKFS",
+      "title": {
+        "ru_RU": "Код ОКФС",
+        "en_EN": "Kod OKFS"
+      },
+      "description": {
+        "ru_RU": "Код формы собственности по ОКФС"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "20"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KodOKFS",
+    "title": {
+      "ru_RU": "Код ОКФС",
+      "en_EN": "Kod OKFS"
+    },
+    "description": {
+      "ru_RU": "Код формы собственности по ОКФС"
+    }
+  }
+}

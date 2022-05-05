@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "В книге продаж или покупок",
+    "В доп. листах книг продаж или покупок"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VariantyRegistraciiKSFV",
+    "title": {
+      "ru_RU": "Варианты регистрации КСФВ",
+      "en_EN": "Varianty registracii KSFV"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "publiccatalog": true,
+  "levelscount": 2,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SubektyRF.FederalnyiiOkrug",
+        "title": {
+          "ru_RU": "Федеральный округ",
+          "en_EN": "Federalnyii okrug"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.FederalnyeOkruga"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SubektyRF.KodPoOKATO",
+        "title": {
+          "ru_RU": "Код по ОКАТО",
+          "en_EN": "Kod po OKATO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "11"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SubektyRF.KodFNS",
+        "title": {
+          "ru_RU": "Код ФНС",
+          "en_EN": "Kod FNS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "11"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Субъекты РФ",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SubektyRF",
+    "title": {
+      "ru_RU": "Субъекты РФ",
+      "en_EN": "Subekty RF"
+    },
+    "description": {}
+  }
+}

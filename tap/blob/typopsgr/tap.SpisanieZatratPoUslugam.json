@@ -1,0 +1,11 @@
+{
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SpisanieZatratPoUslugam",
+    "title": {
+      "ru_RU": "Списание затрат по услугам",
+      "en_EN": "Spisanie zatrat po uslugam"
+    },
+    "description": {}
+  }
+}

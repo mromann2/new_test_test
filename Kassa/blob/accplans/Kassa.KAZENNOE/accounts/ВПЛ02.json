@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "ВПЛ02",
+  "name": {
+    "ru_RU": "Возвраты прошлых лет на счета расчетов с финансовым органом по поступлениям в бюджет"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "02",
+    "title": {
+      "ru_RU": "ВПЛ02"
+    },
+    "description": {}
+  }
+}

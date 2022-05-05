@@ -1,0 +1,450 @@
+{
+  "publiccatalog": true,
+  "levelscount": 3,
+  "kodlength": 10,
+  "titlelength": 40,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InDialog",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.ObosoblennoePodrazdelenie",
+        "title": {
+          "ru_RU": "Обособленное подразделение",
+          "en_EN": "Obosoblennoe podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.NaimenovanieDlyaPervichnyhDokumentov",
+        "title": {
+          "ru_RU": "Наименование для первичных документов",
+          "en_EN": "Naimenovanie dlya pervichnyh dokumentov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.NalogovyiiOrgan",
+        "title": {
+          "ru_RU": "Налоговый орган",
+          "en_EN": "Nalogovyii organ"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RegistraciiVNalogovomOrgane"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.KPP",
+        "title": {
+          "ru_RU": "КПП",
+          "en_EN": "KPP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "9",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.OKTMO",
+        "title": {
+          "ru_RU": "ОКТМО",
+          "en_EN": "OKTMO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "11",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.KodNalogovogoOrgana",
+        "title": {
+          "ru_RU": "Код налогового органа",
+          "en_EN": "Kod nalogovogo organa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "4",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.CifrovoiiIndeksObosoblennogoPodrazdeleniya",
+        "title": {
+          "ru_RU": "Цифровой индекс обособленного подразделения",
+          "en_EN": "Cifrovoii indeks obosoblennogo podrazdeleniya"
+        },
+        "description": {
+          "ru_RU": "Указывается в номерах выставляемых счетах-фактур"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "4",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.ObosoblennayaNumeraciyaDokumentov",
+        "title": {
+          "ru_RU": "Обособленная нумерация документов",
+          "en_EN": "Obosoblennaya numeraciya dokumentov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.Prefiks",
+        "title": {
+          "ru_RU": "Префикс",
+          "en_EN": "Prefiks"
+        },
+        "description": {
+          "ru_RU": "Используется при нумерации документов. В начало каждого номера документов данной организации добавляется два символа префикса."
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "2"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.VedetsyaKassovayaKniga",
+        "title": {
+          "ru_RU": "Ведется кассовая книга",
+          "en_EN": "Vedetsya kassovaya kniga"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.Rukovoditel",
+        "title": {
+          "ru_RU": "Руководитель",
+          "en_EN": "Rukovoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.GlavnyiiBuhgalter",
+        "title": {
+          "ru_RU": "Главный бухгалтер",
+          "en_EN": "Glavnyii buhgalter"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.Kassir",
+        "title": {
+          "ru_RU": "Кассир",
+          "en_EN": "Kassir"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.RukovoditelPFS",
+        "title": {
+          "ru_RU": "Руководитель ПФС",
+          "en_EN": "Rukovoditel PFS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.FakticheskiiiAdres",
+        "title": {
+          "ru_RU": "Фактический адрес",
+          "en_EN": "Fakticheskiii adres"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "256"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.Telefon",
+        "title": {
+          "ru_RU": "Телефон",
+          "en_EN": "Telefon"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "25"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.Faks",
+        "title": {
+          "ru_RU": "Факс",
+          "en_EN": "Faks"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "125"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.Email",
+        "title": {
+          "ru_RU": "E-mail",
+          "en_EN": "Email"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "125"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Podrazdeleniya.DrugoeliubayaDrugayaKontaktnayaInformaciya",
+        "title": {
+          "ru_RU": "Другое (любая другая контактная информация)",
+          "en_EN": "Drugoe liubaya drugaya kontaktnaya informaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Подразделения",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Podrazdeleniya",
+    "title": {
+      "ru_RU": "Подразделения",
+      "en_EN": "Podrazdeleniya"
+    },
+    "description": {}
+  }
+}

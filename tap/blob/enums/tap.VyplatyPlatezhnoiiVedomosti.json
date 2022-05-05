@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Сотрудникам",
+    "Контрагентам"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VyplatyPlatezhnoiiVedomosti",
+    "title": {
+      "ru_RU": "Выплаты платежной ведомости",
+      "en_EN": "Vyplaty platezhnoii vedomosti"
+    },
+    "description": {}
+  }
+}

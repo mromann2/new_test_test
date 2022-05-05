@@ -1,0 +1,150 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    if (!notValid(currentDocument)) {\r\n        for (let tableRec of currentDocument.getRows()){\r\n            let posting \u003d EntityFactory.createPosting();\r\n            posting.setComment(tableRec.get(\u0027tap.ZayavleniyaNaVydachuAvansa.tr.KomuIZaCHtoTrebuetsyaUplatit\u0027));\r\n            posting.setValue(tableRec.get(\u0027tap.ZayavleniyaNaVydachuAvansa.tr.Summa\u0027));\r\n\r\n            //счет дб 50211\r\n            let debit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050211000\u0027).get(0);\r\n            debit.put(0, currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027)); //Аналитика 1: Разделы лиц счетов\r\n            debit.put(1, currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo\u0027)); //Аналитика 2: Принятые обязательства\r\n            posting.setDebit(debit);\r\n            \r\n            //счет кр 50212\r\n            let credit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050212000\u0027).get(0);\r\n            credit.put(0, currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027)); //Аналитика 1: Разделы лиц счетов\r\n            credit.put(1, currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo\u0027)); //Аналитика 2: Принятые обязательства\r\n            posting.setCredit(credit);\r\n            currentDocument.addPosting(posting);\r\n        };\r\n        currentDocument.setExecuted();\r\n        currentDocument.save();\r\n    \r\n        return;  \r\n    } else \r\n        return notValid(currentDocument);\r\n}\r\n\r\n//Снятие документа с проведения\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.removeAllPostings();\r\n    currentDocument.setExecutedDate(null);\r\n    currentDocument.save();\r\n    return;\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) { \r\n    let resultValidate \u003d currentDocument.validate();\r\n \r\n    if (!currentDocument.getRows().size()){\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    }\r\n\r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n        return  resultValidate;\r\n}"
+  },
+  "template": {
+    "plan": {
+      "mnemo": "tap.BUDGETNOE"
+    },
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "value": "1628672400000",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "type": {
+        "mnemo": "primitive.internationalstring"
+      },
+      "value": "{\"ru_RU\":\"1\"}",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "requisite": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.SummaAvansa"
+      },
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "requisite": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.Kommentariii"
+      },
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": [
+      {
+        "row": [
+          {
+            "celltype": "ROW_SOURCE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "DEBIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CREDIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY_SUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "EXCHANGE_RATE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "COUNT",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "POSTING_DESCRIPTION",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SOURCE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "JOURNAL_NUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          }
+        ],
+        "rownum": 0,
+        "condition": "",
+        "conditionEnabled": true
+      }
+    ]
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.ZayavleniyaNaVydachuAvansa.Standartnyii",
+    "title": {
+      "ru_RU": "Стандартный",
+      "en_EN": "Standartnyii"
+    },
+    "description": {}
+  }
+}

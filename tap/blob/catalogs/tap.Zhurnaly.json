@@ -1,0 +1,115 @@
+{
+  "publiccatalog": true,
+  "levelscount": 2,
+  "kodlength": 5,
+  "titlelength": 250,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Zhurnaly.Prioritet",
+        "title": {
+          "ru_RU": "Приоритет",
+          "en_EN": "Prioritet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "3",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Zhurnaly.DopolnitelnyeUsloviyaVkliucheniyaProvodok",
+        "title": {
+          "ru_RU": "Дополнительно отбирать проводки с номером журнала счета, равным формируемому журналу",
+          "en_EN": "Dopolnitelnye usloviya vkliucheniya provodok"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Zhurnaly.NeVyvoditOstatki",
+        "title": {
+          "ru_RU": "Не выводить остатки",
+          "en_EN": "Ne vyvodit ostatki"
+        },
+        "description": {
+          "ru_RU": "Не выводить остатки на начало и конец периода"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Zhurnaly",
+    "title": {
+      "ru_RU": "Журналы",
+      "en_EN": "Zhurnaly"
+    },
+    "description": {
+      "ru_RU": "Журналы операций"
+    }
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "publiccatalog": false,
+  "levelscount": 2,
+  "kodlength": 10,
+  "titlelength": 50,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.Dolzhnost",
+        "title": {
+          "ru_RU": "Должность",
+          "en_EN": "Dolzhnost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Dolzhnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.Zvanie",
+        "title": {
+          "ru_RU": "Звание",
+          "en_EN": "Zvanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "100"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.VidDogovora",
+        "title": {
+          "ru_RU": "Вид договора",
+          "en_EN": "Vid dogovora"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyDogovorovSSotrudnikom"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.VidDokumenta",
+        "title": {
+          "ru_RU": "Вид документа",
+          "en_EN": "Vid dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyDokumenta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.SeriyaDokumenta",
+        "title": {
+          "ru_RU": "Серия документа",
+          "en_EN": "Seriya dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.NomerDokumenta",
+        "title": {
+          "ru_RU": "Номер документа",
+          "en_EN": "Nomer dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.KemVydan",
+        "title": {
+          "ru_RU": "Кем выдан",
+          "en_EN": "Kem vydan"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "150"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.DataVydachi",
+        "title": {
+          "ru_RU": "Дата выдачи",
+          "en_EN": "Data vydachi"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.KodPodrazdeleniya",
+        "title": {
+          "ru_RU": "Код подразделения",
+          "en_EN": "Kod podrazdeleniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "3"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.Grazhdanstvo",
+        "title": {
+          "ru_RU": "Гражданство",
+          "en_EN": "Grazhdanstvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StranyMira"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.LicoBezGrazhdanstva",
+        "title": {
+          "ru_RU": "Лицо без гражданства",
+          "en_EN": "Lico bez grazhdanstva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.INNSotrudnika",
+        "title": {
+          "ru_RU": "ИНН сотрудника",
+          "en_EN": "INN sotrudnika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "12",
+        "unsigned": "true"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.Pol",
+        "title": {
+          "ru_RU": "Пол",
+          "en_EN": "Pol"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PolSotrudnika"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.SNILS",
+        "title": {
+          "ru_RU": "СНИЛС",
+          "en_EN": "SNILS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.DataRozhdeniya",
+        "title": {
+          "ru_RU": "Дата рождения",
+          "en_EN": "Data rozhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.NomerPolisaOMS",
+        "title": {
+          "ru_RU": "Номер полиса ОМС",
+          "en_EN": "Nomer polisa OMS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.MestoRozhdeniya",
+        "title": {
+          "ru_RU": "Место рождения",
+          "en_EN": "Mesto rozhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.AdresPoPropiske",
+        "title": {
+          "ru_RU": "Адрес по прописке",
+          "en_EN": "Adres po propiske"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.AdresMestaRegistracii",
+        "title": {
+          "ru_RU": "Адрес места регистрации",
+          "en_EN": "Adres mesta registracii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.AdresMestaProzhivaniya",
+        "title": {
+          "ru_RU": "Адрес места проживания",
+          "en_EN": "Adres mesta prozhivaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.AdresDlyaInformirovaniya",
+        "title": {
+          "ru_RU": "Адрес для информирования",
+          "en_EN": "Adres dlya informirovaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.TelefonRabochiii",
+        "title": {
+          "ru_RU": "Телефон рабочий",
+          "en_EN": "Telefon rabochiii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.TelefonDomashniii",
+        "title": {
+          "ru_RU": "Телефон домашний",
+          "en_EN": "Telefon domashniii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.Email",
+        "title": {
+          "ru_RU": "Email",
+          "en_EN": "Email"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.AdresZaPredelamiRF",
+        "title": {
+          "ru_RU": "Адрес за пределами РФ",
+          "en_EN": "Adres za predelami RF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Sotrudniki.DopolnitelnayaInformaciya",
+        "title": {
+          "ru_RU": "Дополнительная информация",
+          "en_EN": "Dopolnitelnaya informaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Сотрудники",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.Sotrudniki",
+    "title": {
+      "ru_RU": "Сотрудники",
+      "en_EN": "Sotrudniki"
+    },
+    "description": {}
+  }
+}

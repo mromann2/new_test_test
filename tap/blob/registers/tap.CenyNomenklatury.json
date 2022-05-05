@@ -1,0 +1,17 @@
+{
+  "dimensions": [],
+  "resources": [],
+  "requisites": [],
+  "type": "Returns",
+  "period": "Week",
+  "fast": true,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.CenyNomenklatury",
+    "title": {
+      "ru_RU": "Цены номенклатуры",
+      "en_EN": "Ceny nomenklatury"
+    },
+    "description": {}
+  }
+}

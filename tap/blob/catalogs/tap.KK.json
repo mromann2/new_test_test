@@ -1,0 +1,48 @@
+{
+  "publiccatalog": true,
+  "levelscount": 5,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника КЭК",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KK",
+    "title": {
+      "ru_RU": "КЭК"
+    },
+    "description": {
+      "ru_RU": "Справочник КЭК"
+    }
+  }
+}

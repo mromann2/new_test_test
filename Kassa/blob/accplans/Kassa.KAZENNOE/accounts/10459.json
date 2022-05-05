@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "10459",
+  "name": {
+    "ru_RU": "Амортизация имущества казны в концессии"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10459",
+    "title": {
+      "ru_RU": "10459"
+    },
+    "description": {}
+  }
+}

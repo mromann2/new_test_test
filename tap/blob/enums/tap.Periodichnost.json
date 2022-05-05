@@ -1,0 +1,24 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "День",
+    "Неделя",
+    "Декада",
+    "Месяц",
+    "Квартал",
+    "Девять месяцев",
+    "Полугодие",
+    "Год"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Periodichnost",
+    "title": {
+      "ru_RU": "Периодичность",
+      "en_EN": "Periodichnost"
+    },
+    "description": {}
+  }
+}

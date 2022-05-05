@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "Н9199",
+  "name": {
+    "ru_RU": "(не используется) Сальдо прочих доходов и расходов"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.ProchieDohodyIRashody"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "9199",
+    "title": {
+      "ru_RU": "Н9199"
+    },
+    "description": {}
+  }
+}

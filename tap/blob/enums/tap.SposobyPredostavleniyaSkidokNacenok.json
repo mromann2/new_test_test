@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Сумма",
+    "Процент"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SposobyPredostavleniyaSkidokNacenok",
+    "title": {
+      "ru_RU": "Способы предоставления скидок наценок",
+      "en_EN": "Sposoby predostavleniya skidok nacenok"
+    },
+    "description": {}
+  }
+}

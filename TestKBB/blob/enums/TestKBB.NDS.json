@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "20",
+    "18"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.NDS",
+    "title": {
+      "ru_RU": "НДС",
+      "en_EN": "NDS"
+    },
+    "description": {}
+  }
+}

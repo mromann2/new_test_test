@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "50630",
+  "name": {
+    "ru_RU": "Право на принятие обязательств на второй год, следующий за текущим (первый, следующий за очередным)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50630",
+    "title": {
+      "ru_RU": "50630"
+    },
+    "description": {}
+  }
+}

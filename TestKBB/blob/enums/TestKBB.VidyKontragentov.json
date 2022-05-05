@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "юридическое лицо",
+    "физическое лицо"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.VidyKontragentov",
+    "title": {
+      "ru_RU": "Виды контрагентов",
+      "en_EN": "Vidy kontragentov"
+    },
+    "description": {}
+  }
+}

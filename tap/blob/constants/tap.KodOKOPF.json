@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.KodOKOPF",
+      "title": {
+        "ru_RU": "Код ОКОПФ",
+        "en_EN": "Kod OKOPF"
+      },
+      "description": {
+        "ru_RU": "Код организационно-правовой формы организации по КОПФ"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "20"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KodOKOPF",
+    "title": {
+      "ru_RU": "Код ОКОПФ",
+      "en_EN": "Kod OKOPF"
+    },
+    "description": {
+      "ru_RU": "Код организационно-правовой формы организации по КОПФ"
+    }
+  }
+}

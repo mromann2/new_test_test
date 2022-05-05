@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "01806",
+  "name": {
+    "ru_RU": "Выбытие денежных средств со специальных счетов в кредитной организации"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": true,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "01806",
+    "title": {
+      "ru_RU": "01806"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "publiccatalog": true,
+  "levelscount": 5,
+  "kodlength": 10,
+  "titlelength": 500,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.CelevyeStatiRashodovBiudzhetov.Biudzhet",
+        "title": {
+          "ru_RU": "Бюджет",
+          "en_EN": "Biudzhet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Biudzhety"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.CelevyeStatiRashodovBiudzhetov.NachaloDeiistviya",
+        "title": {
+          "ru_RU": "Начало действия",
+          "en_EN": "Nachalo deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.CelevyeStatiRashodovBiudzhetov.OkonchanieDeiistviya",
+        "title": {
+          "ru_RU": "Окончание действия",
+          "en_EN": "Okonchanie deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Целевые статьи расходов бюджетов",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.CelevyeStatiRashodovBiudzhetov",
+    "title": {
+      "ru_RU": "Целевые статьи расходов бюджетов",
+      "en_EN": "Celevye stati rashodov biudzhetov"
+    },
+    "description": {}
+  }
+}

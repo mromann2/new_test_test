@@ -1,0 +1,33 @@
+{
+  "active": true,
+  "code": "21006",
+  "name": {
+    "ru_RU": "Расчеты с учредителем"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21006",
+    "title": {
+      "ru_RU": "21006"
+    },
+    "description": {}
+  }
+}

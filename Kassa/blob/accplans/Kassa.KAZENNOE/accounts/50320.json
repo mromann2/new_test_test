@@ -1,0 +1,22 @@
+{
+  "active": true,
+  "code": "50320",
+  "name": {
+    "ru_RU": "Бюджетные ассигнования первого года, следующего за текущим (очередного финансового года)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50320",
+    "title": {
+      "ru_RU": "50320"
+    },
+    "description": {}
+  }
+}

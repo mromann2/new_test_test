@@ -1,0 +1,280 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.hr.MOL_",
+        "title": {
+          "ru_RU": "МОЛ",
+          "en_EN": "MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.hr.Podrazdelenie_",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.hr.Primechanie_",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.hr.Operaciya_",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.OS",
+        "title": {
+          "ru_RU": "ОС",
+          "en_EN": "OS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.OsnovnyeSredstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.SchetOS",
+        "title": {
+          "ru_RU": "Счет ОС",
+          "en_EN": "Schet OS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.IzmenenieAmortizacii_",
+        "title": {
+          "ru_RU": "Изменение амортизации",
+          "en_EN": "Izmenenie amortizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.KVFO_",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.KPSDb_",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS Db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.Debet_",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.KOSGUDb_",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU Db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.KPSKr_",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS Kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestLis.AktNachisleniyaAmortizacii.tr.KOSGUKr_",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU Kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Акты начисления амортизации",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "TestLis.AktNachisleniyaAmortizacii.AmortizaciyaOperacionnoiiArendyBezvozmezdno__"
+    },
+    {
+      "mnemo": "TestLis.AktNachisleniyaAmortizacii.NachislenieAmortizacii__"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestLis.AktNachisleniyaAmortizacii_",
+    "title": {
+      "ru_RU": "Акты начисления амортизации",
+      "en_EN": "Aktу nachisleniya amortizacii"
+    },
+    "description": {}
+  }
+}
