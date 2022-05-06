@@ -3,11 +3,7 @@
     "item": {
       "major": 1,
       "minor": 1,
-<<<<<<< HEAD
-      "counter": 594
-=======
       "counter": 595
->>>>>>> a7106f82515e86a53f6c9dcdc17e16f053649a7f
     }
   },
   "class": "com.argos.dfe.lib.module.Application"
