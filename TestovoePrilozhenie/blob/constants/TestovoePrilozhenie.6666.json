@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "TestovoePrilozhenie.6666",
+      "title": {
+        "ru_RU": "6666",
+        "en_EN": "6666"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "14"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.6666",
+    "title": {
+      "ru_RU": "6666",
+      "en_EN": "6666"
+    },
+    "description": {}
+  }
+}
