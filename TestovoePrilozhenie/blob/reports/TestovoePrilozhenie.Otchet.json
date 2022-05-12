@@ -1,0 +1,68 @@
+{
+  "form": {
+    "mainform": {
+      "controltype": "Form",
+      "cellx": 0,
+      "celly": 0,
+      "spansize": {
+        "width": 5,
+        "height": 18
+      },
+      "x": 0,
+      "y": 0,
+      "size": {
+        "width": 70,
+        "height": 23
+      },
+      "bold": false,
+      "alignment": "LEFT",
+      "background": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "foreground": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "visible": true,
+      "enabled": true,
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Otchet.form",
+        "title": {
+          "ru_RU": "Отчет",
+          "en_EN": "Otchet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    "formcontrols": []
+  },
+  "formscript": {
+    "title": "script",
+    "sources": ""
+  },
+  "reportscript": {
+    "title": "Скрипт отчета Отчет",
+    "sources": ""
+  },
+  "reporttemplates": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.Otchet",
+    "title": {
+      "ru_RU": "Отчет",
+      "en_EN": "Otchet"
+    },
+    "description": {}
+  }
+}
