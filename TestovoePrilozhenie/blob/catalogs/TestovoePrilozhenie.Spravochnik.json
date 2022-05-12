@@ -1,10 +1,10 @@
 {
   "mastermnemo": {
-    "mnemo": "TestovoePrilozhenie.RoditelskiiiSpravochnik"
+    "mnemo": "TestovoePrilozhenie.RoditelskiiiSpravochnik2"
   },
   "publiccatalog": true,
-  "levelscount": 4,
-  "kodlength": 23,
+  "levelscount": 1,
+  "kodlength": 24,
   "titlelength": 500,
   "autonumerizer": true,
   "uniquecontrol": true,

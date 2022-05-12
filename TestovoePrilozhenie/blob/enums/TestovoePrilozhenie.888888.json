@@ -1,0 +1,17 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "tyhtyh"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.888888",
+    "title": {
+      "ru_RU": "888888",
+      "en_EN": "888888"
+    },
+    "description": {}
+  }
+}

@@ -2,18 +2,23 @@
   "form": {
     "mainform": {
       "controltype": "Form",
-      "cellx": 0,
-      "celly": 0,
-      "spansize": {
-        "width": 5,
-        "height": 18
+      "cellX": 0,
+      "cellY": 0,
+      "spanSize": {
+        "width": 1,
+        "height": 1
       },
       "x": 0,
       "y": 0,
+      "padLeft": 0,
+      "padRight": 0,
+      "padTop": 0,
+      "padBottom": 0,
       "size": {
         "width": 70,
         "height": 23
       },
+      "fontSize": 12,
       "bold": false,
       "alignment": "LEFT",
       "background": {
