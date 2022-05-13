@@ -9,12 +9,9 @@
       "description": {}
     },
     "type": {
-      "mnemo": "primitive.text"
+      "mnemo": "primitive.date"
     },
-    "properties": {
-      "unlimited": "false",
-      "length": "14"
-    },
+    "properties": {},
     "required": false
   },
   "periodical": false,
