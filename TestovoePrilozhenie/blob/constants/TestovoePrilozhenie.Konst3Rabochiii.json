@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "TestovoePrilozhenie.Konst3Rabochiii",
+      "title": {
+        "ru_RU": "конст 3 рабочий_измененая",
+        "en_EN": "konst 3 rabochiii"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "length": "14",
+      "unlimited": "false"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.Konst3Rabochiii",
+    "title": {
+      "ru_RU": "конст 3 рабочий_измененая",
+      "en_EN": "konst 3 rabochiii"
+    },
+    "description": {}
+  }
+}

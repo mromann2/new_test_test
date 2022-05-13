@@ -9,7 +9,7 @@
       "description": {}
     },
     "type": {
-      "mnemo": "primitive.date"
+      "mnemo": "primitive.character"
     },
     "properties": {},
     "required": false
