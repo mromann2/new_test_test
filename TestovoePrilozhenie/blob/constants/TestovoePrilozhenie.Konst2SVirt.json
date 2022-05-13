@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "TestovoePrilozhenie.Konst2SVirt",
+      "title": {
+        "ru_RU": "конст 2 с вирт",
+        "en_EN": "konst 2 s virt"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "14"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.Konst2SVirt",
+    "title": {
+      "ru_RU": "конст 2 с вирт",
+      "en_EN": "konst 2 s virt"
+    },
+    "description": {}
+  }
+}
