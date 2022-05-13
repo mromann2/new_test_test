@@ -1,0 +1,27 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "TestovoePrilozhenie.V",
+      "title": {
+        "ru_RU": "v",
+        "en_EN": "v"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.date"
+    },
+    "properties": {},
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.V",
+    "title": {
+      "ru_RU": "v",
+      "en_EN": "v"
+    },
+    "description": {}
+  }
+}
