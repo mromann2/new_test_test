@@ -3,18 +3,15 @@
     "meta": {
       "mnemo": "TestovoePrilozhenie.V2",
       "title": {
-        "ru_RU": "v2",
+        "ru_RU": "v2-777",
         "en_EN": "v2"
       },
       "description": {}
     },
     "type": {
-      "mnemo": "primitive.text"
+      "mnemo": "primitive.boolean"
     },
-    "properties": {
-      "unlimited": "false",
-      "length": "14"
-    },
+    "properties": {},
     "required": false
   },
   "periodical": false,
@@ -22,7 +19,7 @@
   "meta": {
     "mnemo": "TestovoePrilozhenie.V2",
     "title": {
-      "ru_RU": "v2",
+      "ru_RU": "v2-777",
       "en_EN": "v2"
     },
     "description": {}
