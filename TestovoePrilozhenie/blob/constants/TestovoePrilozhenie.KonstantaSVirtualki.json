@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "TestovoePrilozhenie.KonstantaSVirtualki",
+      "title": {
+        "ru_RU": "константа с виртуалки",
+        "en_EN": "konstanta s virtualki"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "14"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.KonstantaSVirtualki",
+    "title": {
+      "ru_RU": "константа с виртуалки",
+      "en_EN": "konstanta s virtualki"
+    },
+    "description": {}
+  }
+}
