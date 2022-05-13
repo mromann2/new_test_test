@@ -398,6 +398,9 @@
     },
     {
       "mnemo": "TestovoePrilozhenie.BuhgalterskieSpravki.Uchch"
+    },
+    {
+      "mnemo": "TestovoePrilozhenie.BuhgalterskieSpravki.DataIVremya"
     }
   ],
   "printedformset": [],

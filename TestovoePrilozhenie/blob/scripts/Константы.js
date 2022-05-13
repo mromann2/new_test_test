@@ -12,7 +12,7 @@ const DOPJOURNAL = 'dopJournal'; // Дополнительный журнал о
 const ACCOUNTINGDATE = 'accountingDate'; // Дата учета
 
 const MAXANALYTICSCOUNT = '4'; // Максимальное кол-во аналитик, встречаемое у счетов
-const MODULEMNEMO = 'Razrabotka'; // Мнемоника модуля
+const MODULEMNEMO = 'TestovoePrilozhenie'; // Мнемоника модуля
 
 
 const ValueTypes = {requisite: "requisite", code: "code", enumValue: "enumValue", kosgu: "kosgu", journal: "journal", test: "test"}

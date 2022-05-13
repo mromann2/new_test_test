@@ -24,49 +24,61 @@ function createPostingWithProps(obj) {
     let reqMnemo = docMnemo + '.tr.';
     
     //КВФО
-    //posting.setProperty(KFO, obj.kfo ?? obj.tableRec.get(reqMnemo + 'KVFO')[0]);
-    //let resultKfo = obj.kfo ?? (obj.tableRec.get(reqMnemo + 'KVFO') ? obj.tableRec.get(reqMnemo + 'KVFO')[0] : false) ?? null;
-    
-    let resultKfo = obj.kfo ?? (obj.tableRec.get(reqMnemo + 'KVFO')?.[0]) ?? null;
-    if (resultKfo) {
-        posting.setProperty(KFO, resultKfo);
+    if ("kfo" in obj){
+        obj.kfo && posting.setProperty(KFO, obj.kfo);
+    } else {
+       obj.tableRec.get(reqMnemo + 'KVFO')?.[0] && posting.setProperty(KFO, obj.tableRec.get(reqMnemo + 'KVFO')[0]);
     }
-    
-    
     //Дебет
-    posting.setDebit(obj.debit ?? obj.tableRec.get(reqMnemo + 'Debet'));
-    posting.setDebitProperty(KPS, obj.debitKps ?? obj.tableRec.get(reqMnemo + 'KPSDb').getCode());
-    if (obj.debitKosgu !== undefined){
-        posting.setDebitProperty(KOSGU, obj.debitKosgu.slice(0,3));
-        posting.setDebitProperty(KOSGUEKR, obj.debitKosgu);
+    if('debit' in obj){
+        obj.debit && posting.setDebit(obj.debit)
+    } else {
+        obj.tableRec.get(reqMnemo + 'Debet') && posting.setDebit(obj.tableRec.get(reqMnemo + 'Debet'));
+    }
+    if('debitKps' in obj){
+        obj.debitKps && posting.setDebitProperty(KPS, obj.debitKps)
+    } else {
+       obj.tableRec.get(reqMnemo + 'KPSDb')?.getCode() && posting.setDebitProperty(KPS, obj.tableRec.get(reqMnemo + 'KPSDb').getCode());
+    }
+    if('debitKosgu' in obj){
+        obj.debitKosgu && (posting.setDebitProperty(KOSGU, obj.debitKosgu.slice(0,3)) && posting.setDebitProperty(KOSGUEKR, obj.debitKosgu));
     } else if (obj.debit && getKOSGUDebit(obj.debit)){
         posting.setDebitProperty(KOSGU, getKOSGUDebit(obj.debit).slice(0,3));
         posting.setDebitProperty(KOSGUEKR, getKOSGUDebit(obj.debit));
     } else {
-        posting.setDebitProperty(KOSGU, obj.tableRec.get(reqMnemo + 'KOSGUDb').getCode().slice(0,3));
-        posting.setDebitProperty(KOSGUEKR, obj.tableRec.get(reqMnemo + 'KOSGUDb').getCode());
+        obj.tableRec.get(reqMnemo + 'KOSGUDb')?.getCode() && (posting.setDebitProperty(KOSGU, obj.tableRec.get(reqMnemo + 'KOSGUDb').getCode().slice(0,3))
+                                                              && posting.setDebitProperty(KOSGUEKR, obj.tableRec.get(reqMnemo + 'KOSGUDb').getCode()));
     }
     //Кредит
-    posting.setCredit(obj.credit ?? obj.tableRec.get(reqMnemo + 'Kredit'));
-    posting.setCreditProperty(KPS, obj.creditKps ?? obj.tableRec.get(reqMnemo + 'KPSKr').getCode());
-    if (obj.creditKosgu !== undefined){
-        posting.setCreditProperty(KOSGU, obj.creditKosgu.slice(0,3));
-        posting.setCreditProperty(KOSGUEKR, obj.creditKosgu);
+     if('credit' in obj){
+        obj.credit && posting.setCredit(obj.credit)
+    } else {
+        obj.tableRec.get(reqMnemo + 'Kredit') && posting.setCredit(obj.tableRec.get(reqMnemo + 'Kredit'));
+    }
+    if('creditKps' in obj){
+        obj.creditKps && posting.setCreditProperty(KPS, obj.creditKps)
+    } else {
+       obj.tableRec.get(reqMnemo + 'KPSKr')?.getCode() && posting.setCreditProperty(KPS, obj.tableRec.get(reqMnemo + 'KPSKr').getCode());
+    }
+    if('creditKosgu' in obj){
+        obj.creditKosgu && (posting.setCreditProperty(KOSGU, obj.creditKosgu.slice(0,3)) && posting.setCreditProperty(KOSGUEKR, obj.creditKosgu));
     } else if (obj.credit && getKOSGUCredit(obj.credit)){
         posting.setCreditProperty(KOSGU, getKOSGUCredit(obj.credit).slice(0,3));
         posting.setCreditProperty(KOSGUEKR, getKOSGUCredit(obj.credit));
     } else {
-        posting.setCreditProperty(KOSGU, obj.tableRec.get(reqMnemo + 'KOSGUKr').getCode().slice(0,3));
-        posting.setCreditProperty(KOSGUEKR, obj.tableRec.get(reqMnemo + 'KOSGUKr').getCode());
+        obj.tableRec.get(reqMnemo + 'KOSGUKr')?.getCode() && (posting.setCreditProperty(KOSGU, obj.tableRec.get(reqMnemo + 'KOSGUKr').getCode().slice(0,3))
+                                                              && posting.setCreditProperty(KOSGUEKR, obj.tableRec.get(reqMnemo + 'KOSGUKr').getCode()));
     }
-    //Номер журнала
-    if ((obj.debit !== undefined) && (obj.credit !== undefined)){
+
+   //Номер журнала
+    let arrJournals = ['', ''];
+    if ( obj.debit && obj.credit ){
         arrJournals = getPriorityJournal(obj.debit, obj.credit);
-    } else if (obj.debit !== undefined) {
+    } else if (obj.debit  && obj.tableRec.get(reqMnemo + 'Kredit')) {
         arrJournals = getPriorityJournal(obj.debit, obj.tableRec.get(reqMnemo + 'Kredit'));
-    } else if (obj.credit !== undefined) {
+    } else if (obj.credit && obj.tableRec.get(reqMnemo + 'Debet')) {
         arrJournals = getPriorityJournal(obj.tableRec.get(reqMnemo + 'Debet'), obj.credit);
-    } else {
+    } else if (obj.tableRec.get(reqMnemo + 'Debet') && obj.tableRec.get(reqMnemo + 'Kredit')){
         arrJournals = getPriorityJournal(obj.tableRec.get(reqMnemo + 'Debet'), obj.tableRec.get(reqMnemo + 'Kredit'));
     }
     //posting.setProperty(JOURNAL, arrJournals[0]);
@@ -76,28 +88,43 @@ function createPostingWithProps(obj) {
     if (arrJournals[1] != '') {
         posting.setProperty(DOPJOURNAL, arrJournals[1]);
     }
+    
+    
     //Сумма
-    posting.setValue(obj.summa ?? obj.tableRec.get(reqMnemo + 'VsegoSNDS') ?? obj.tableRec.get(reqMnemo + 'Summa') ?? 0);
+    if('summa' in obj){
+        posting.setValue(obj.summa ?? '0')
+    } else {
+        posting.setValue(obj.tableRec.get(reqMnemo + 'VsegoSNDS') ?? obj.tableRec.get(reqMnemo + 'Summa') ?? '0')
+    }
+    
     //Количество
-    posting.setProperty(KOLVO, obj.kolvo ?? obj.tableRec.get(reqMnemo + 'Kolichestvo') ?? '0');
+     if('kolvo' in obj){
+        posting.setProperty(KOLVO, obj.kolvo ?? 0)
+    } else {
+        posting.setProperty(KOLVO, obj.tableRec.get(reqMnemo + 'Kolichestvo') ?? '0')
+    }
+  
     //Комментарий
-    if (obj.comment !== undefined){
-        posting.setComment(obj.comment)
-    } else if (obj.tableRec.get(reqMnemo + 'Operaciya')){
-        posting.setComment(obj.tableRec.get(reqMnemo + 'Operaciya').get(MODULEMNEMO + '.Operacii.PolnoeNaimenovanie'))
-    }
+     if('comment' in obj){
+         obj.comment && posting.setComment(obj.comment)
+     } else {
+         obj.tableRec.get(reqMnemo + 'Operaciya') && posting.setComment(obj.tableRec.get(reqMnemo + 'Operaciya').get(MODULEMNEMO + '.Operacii.PolnoeNaimenovanie'))
+     }
+    
     //Расшифровка операции
-    if (obj.rasOper !== undefined){
-        posting.setProperty(RASOPER, obj.rasOper);
-    } else if (obj.tableRec.get(reqMnemo + 'RasshifrovkaOperacii')){
-        posting.setProperty(RASOPER, obj.tableRec.get(reqMnemo + 'RasshifrovkaOperacii'));
-    }
+    if('rasOper' in obj){
+         obj.rasOper && posting.setProperty(RASOPER, obj.rasOper);
+     } else {
+         obj.tableRec.get(reqMnemo + 'RasshifrovkaOperacii') && posting.setProperty(RASOPER, obj.tableRec.get(reqMnemo + 'RasshifrovkaOperacii'))
+     }
+    
     //Цена
-    if (obj.cena !== undefined){
-        posting.setProperty(CENA, obj.cena);
-    } else if (obj.tableRec.get(reqMnemo + 'Cena')){
-        posting.setProperty(CENA,obj.tableRec.get(reqMnemo + 'Cena'))
-    }
+    if('cena' in obj){
+         obj.cena && posting.setProperty(CENA, obj.cena);
+     } else {
+         obj.tableRec.get(reqMnemo + 'Cena') && posting.setProperty(CENA,obj.tableRec.get(reqMnemo + 'Cena'))
+     }
+     
     //Межрасчетный период
     if (obj.vnePeriod !== undefined){
         posting.setProperty(VNEPERIOD, obj.vnePeriod);

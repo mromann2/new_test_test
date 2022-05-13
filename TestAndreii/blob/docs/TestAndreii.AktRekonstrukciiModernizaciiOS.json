@@ -37,7 +37,7 @@
         "description": {}
       },
       "type": {
-        "mnemo": "TestAndreii.Sotrudniki"
+        "mnemo": "TestAndreii.Podrazdeleniya"
       },
       "properties": {},
       "required": false
@@ -92,7 +92,7 @@
       "properties": {
         "showanalytic": "true"
       },
-      "required": false
+      "required": true
     },
     {
       "istotal": false,
@@ -339,7 +339,17 @@
     "title": "Скрипт документа Акты реконструкции, модернизации ОС",
     "sources": ""
   },
-  "algorithms": [],
+  "algorithms": [
+    {
+      "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.IzmenenieStoimostiIAmortizacii"
+    },
+    {
+      "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.KorrektirovkaAmortizacii"
+    },
+    {
+      "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.IzmenenieStoimostiS40110106hhAmortizaciiSoSchetaZatrat"
+    }
+  ],
   "printedformset": [],
   "grants": {},
   "meta": {

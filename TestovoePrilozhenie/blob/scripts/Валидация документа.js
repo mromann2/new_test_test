@@ -30,9 +30,10 @@ function hasNotValidPostings(currentDocument) {
 
         // 1. Пустой Дебет и/или Кредит
         if (debitAccountCode == null || creditAccountCode == null){
-            let debitText = debitAccountCode ? debitAccountCode : '--';
-            let creditText = creditAccountCode ? creditAccountCode : '--';
-            resultPostingValidate.addValueError('Проводка Дт ' + debitText + ' Кт ' + creditText + ' . Проведение невозможно: не указан счет дебета или счет кредита.');
+            resultPostingValidate.addValueError('Проводка Дт ' + (debitAccountCode ? debitAccountCode : '--') + 
+                    ' Кт ' + (creditAccountCode ? creditAccountCode : '--') + '. ' +  
+                    (!debitAccountCode ? 'Не указан счет дебета. ' : '') + 
+                    (!creditAccountCode ? 'Не указан счет кредита.' : ''));
             continue;
         }
         // 3. Комбинация Баланса и забаланса
@@ -63,6 +64,14 @@ function hasNotValidPostings(currentDocument) {
         }
         if (!postingRec.getCreditProperty(KPS)){
             resultPostingValidate.addValueError(postingInfo + 'не указан КПС счета кредита.');
+            continue;
+        }
+        if (!postingRec.getDebitProperty(KOSGU)){
+            resultPostingValidate.addValueError(postingInfo + 'не указан КОСГУ счета дебета.');
+            continue;
+        }
+        if (!postingRec.getCreditProperty(KOSGU)){
+            resultPostingValidate.addValueError(postingInfo + 'не указан КОСГУ счета кредита.');
             continue;
         }
         // 6. Какая то аналитика по дебету или кредиту не заполнена
