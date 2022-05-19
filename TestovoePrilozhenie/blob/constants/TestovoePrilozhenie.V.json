@@ -3,7 +3,7 @@
     "meta": {
       "mnemo": "TestovoePrilozhenie.V",
       "title": {
-        "ru_RU": "v",
+        "ru_RU": "v1_0000",
         "en_EN": "v"
       },
       "description": {}
@@ -19,7 +19,7 @@
   "meta": {
     "mnemo": "TestovoePrilozhenie.V",
     "title": {
-      "ru_RU": "v",
+      "ru_RU": "v1_0000",
       "en_EN": "v"
     },
     "description": {}
