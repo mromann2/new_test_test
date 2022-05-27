@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "Test_multy_virt.2ndRab",
+      "title": {
+        "ru_RU": "2nd rab",
+        "en_EN": "2nd rab"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "14"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Test_multy_virt.2ndRab",
+    "title": {
+      "ru_RU": "2nd rab",
+      "en_EN": "2nd rab"
+    },
+    "description": {}
+  }
+}
