@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "TestovoePrilozhenie.55",
+      "title": {
+        "ru_RU": "55",
+        "en_EN": "55"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.integer"
+    },
+    "properties": {
+      "length": "14",
+      "unsigned": "false"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.55",
+    "title": {
+      "ru_RU": "55",
+      "en_EN": "55"
+    },
+    "description": {}
+  }
+}
