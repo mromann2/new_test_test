@@ -1,0 +1,125 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Test_multy_virt.Virt.hr.1Virt",
+        "title": {
+          "ru_RU": "1 virt",
+          "en_EN": "1 virt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Test_multy_virt.Virt.hr.2Virt",
+        "title": {
+          "ru_RU": "2 virt",
+          "en_EN": "2 virt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Test_multy_virt.Virt.tr.1TablVirt",
+        "title": {
+          "ru_RU": "1 tabl virt",
+          "en_EN": "1 tabl virt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Test_multy_virt.Virt.tr.2TablVirt",
+        "title": {
+          "ru_RU": "2 tabl virt",
+          "en_EN": "2 tabl virt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа virt",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "Test_multy_virt.Virt.AlgoVirt"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Test_multy_virt.Virt",
+    "title": {
+      "ru_RU": "virt",
+      "en_EN": "virt"
+    },
+    "description": {}
+  }
+}
