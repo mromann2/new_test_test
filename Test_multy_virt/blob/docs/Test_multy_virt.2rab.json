@@ -65,6 +65,42 @@
         "length": "14"
       },
       "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Test_multy_virt.2rab.hr.41",
+        "title": {
+          "ru_RU": "41",
+          "en_EN": "41"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Test_multy_virt.2rab.hr.51",
+        "title": {
+          "ru_RU": "51",
+          "en_EN": "51"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
     }
   ],
   "tablerequsites": [],
