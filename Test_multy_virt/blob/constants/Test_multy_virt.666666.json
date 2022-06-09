@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "Test_multy_virt.666666",
+      "title": {
+        "ru_RU": "666666",
+        "en_EN": "666666"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "14"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Test_multy_virt.666666",
+    "title": {
+      "ru_RU": "666666",
+      "en_EN": "666666"
+    },
+    "description": {}
+  }
+}
