@@ -12,8 +12,8 @@
       "mnemo": "primitive.text"
     },
     "properties": {
-      "length": "14",
-      "unlimited": "true"
+      "unlimited": "true",
+      "length": "14"
     },
     "required": false
   },
