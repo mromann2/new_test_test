@@ -137,6 +137,24 @@
         "length": "14"
       },
       "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Test_multy_virt.2rab.hr.Cuk",
+        "title": {
+          "ru_RU": "цук",
+          "en_EN": "cuk"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
     }
   ],
   "tablerequsites": [],
