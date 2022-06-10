@@ -1,7 +1,5 @@
 {
-  "mastermnemo": {
-    "mnemo": "tap.Nomenklatura"
-  },
+  "mastermnemos": [],
   "publiccatalog": true,
   "levelscount": 2,
   "kodlength": 5,
