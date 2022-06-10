@@ -1,10 +1,10 @@
 {
   "value": {
     "meta": {
-      "mnemo": "Test_multy_virt.55",
+      "mnemo": "Test_multy_virt.66",
       "title": {
-        "ru_RU": "55",
-        "en_EN": "55"
+        "ru_RU": "66",
+        "en_EN": "66"
       },
       "description": {}
     },
@@ -12,18 +12,18 @@
       "mnemo": "primitive.text"
     },
     "properties": {
-      "unlimited": "false",
-      "length": "14"
+      "length": "14",
+      "unlimited": "true"
     },
     "required": false
   },
   "periodical": false,
   "grants": {},
   "meta": {
-    "mnemo": "Test_multy_virt.55",
+    "mnemo": "Test_multy_virt.66",
     "title": {
-      "ru_RU": "55",
-      "en_EN": "55"
+      "ru_RU": "66",
+      "en_EN": "66"
     },
     "description": {}
   }

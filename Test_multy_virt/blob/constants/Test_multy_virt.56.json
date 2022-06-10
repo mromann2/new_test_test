@@ -1,10 +1,10 @@
 {
   "value": {
     "meta": {
-      "mnemo": "Test_multy_virt.55",
+      "mnemo": "Test_multy_virt.56",
       "title": {
-        "ru_RU": "55",
-        "en_EN": "55"
+        "ru_RU": "56",
+        "en_EN": "56"
       },
       "description": {}
     },
@@ -20,10 +20,10 @@
   "periodical": false,
   "grants": {},
   "meta": {
-    "mnemo": "Test_multy_virt.55",
+    "mnemo": "Test_multy_virt.56",
     "title": {
-      "ru_RU": "55",
-      "en_EN": "55"
+      "ru_RU": "56",
+      "en_EN": "56"
     },
     "description": {}
   }
