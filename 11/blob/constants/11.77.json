@@ -3,7 +3,7 @@
     "meta": {
       "mnemo": "11.77",
       "title": {
-        "ru_RU": "333",
+        "ru_RU": "1111",
         "en_EN": "77"
       },
       "description": {}
@@ -12,8 +12,8 @@
       "mnemo": "primitive.text"
     },
     "properties": {
-      "unlimited": "false",
-      "length": "14"
+      "length": "14",
+      "unlimited": "false"
     },
     "required": false
   },
@@ -22,7 +22,7 @@
   "meta": {
     "mnemo": "11.77",
     "title": {
-      "ru_RU": "333",
+      "ru_RU": "1111",
       "en_EN": "77"
     },
     "description": {}
