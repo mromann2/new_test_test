@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "ПРОБА 1",
+    "ПРОБА 2"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.VidyDvizheniya",
+    "title": {
+      "ru_RU": "Виды движения",
+      "en_EN": "Vidy dvizheniya"
+    },
+    "description": {}
+  }
+}

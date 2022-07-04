@@ -1,0 +1,68 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.Zhurnaly.Prioritet",
+        "title": {
+          "ru_RU": "Приоритет",
+          "en_EN": "Prioritet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.PrioritetyZhurnalovOperaciii"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Журналы операций",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.Zhurnaly",
+    "title": {
+      "ru_RU": "Журналы операций",
+      "en_EN": "Zhurnaly"
+    },
+    "description": {}
+  }
+}

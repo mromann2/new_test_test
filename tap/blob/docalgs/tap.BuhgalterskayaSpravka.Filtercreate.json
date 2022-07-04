@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(cc){\r\n    \r\n    //let d1 \u003d EntityFactory.getDocuments().get(\"tap.BuhgalterskayaSpravka\").get(0);\r\n    let acc \u003d cc.get(\u0027tap.BuhgalterskayaSpravka.hr.Spravochnik2\u0027)\r\n    let myReg \u003d Register.get(\"tap.Testovyii2\")\r\n    \r\n    let condition \u003d  \r\n        {\r\n            //Date: d1.getDate(),\r\n            //Document: d1,\r\n            Dimensions: {\r\n                \"tap.Testovyii2.dm.1\": \u002710127\u0027,\r\n            },\r\n            Requisites: {\r\n                \"tap.Testovyii2.rg.3\": \u0027что-то\u0027\r\n            }\r\n        };\r\n        let collection\u003dmyReg.find(condition)\r\n//\r\n     //            return collection.size()\r\n//let x \u003d []\r\nreturn [collection[0].getDimension(\u0027tap.Testovyii2.dm.1\u0027).getAnalytics().get(0)?.getCode(), collection[1].getDimension(\u0027tap.Testovyii2.dm.1\u0027).getAnalytics().get(1)?.getCode(), \r\n    collection[2].getDimension(\u0027tap.Testovyii2.dm.1\u0027).getAnalytics().get(0)?.getCode()]\r\n//cc.set(\u0027tap.BuhgalterskayaSpravka.hr.Spravochnik2\u0027, collection[2].getRequisite(\u0027tap.Testovyii2.rg.3\u0027))\r\n//    cc.save()\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskayaSpravka.Filtercreate",
+    "title": {
+      "ru_RU": "filter.create",
+      "en_EN": "filtercreate"
+    },
+    "description": {}
+  }
+}

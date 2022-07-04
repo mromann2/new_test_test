@@ -1,0 +1,652 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Postavshik",
+        "title": {
+          "ru_RU": "Поставщик",
+          "en_EN": "Postavshik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.MOL",
+        "title": {
+          "ru_RU": "МОЛ",
+          "en_EN": "MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Poluchatel",
+        "title": {
+          "ru_RU": "Получатель",
+          "en_EN": "Poluchatel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Sklad",
+        "title": {
+          "ru_RU": "Склад",
+          "en_EN": "Sklad"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Doverennost",
+        "title": {
+          "ru_RU": "Доверенность",
+          "en_EN": "Doverennost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Primechanie",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.NomSoprDokumenta",
+        "title": {
+          "ru_RU": "№ сопр. документа",
+          "en_EN": "Nom sopr dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.TipSoprdokumenta",
+        "title": {
+          "ru_RU": "Тип сопр. документа",
+          "en_EN": "Tip soprdokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.TipySoprovoditelnyhDokumentov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.hr.Komissiya",
+        "title": {
+          "ru_RU": "Комиссия",
+          "en_EN": "Komissiya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Komissii"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Operacii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.TMC",
+        "title": {
+          "ru_RU": "ТМЦ",
+          "en_EN": "TMC"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.MaterialnyeZapasy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.EdinicyIzmereniyaOKEI"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.Cena",
+        "title": {
+          "ru_RU": "Цена",
+          "en_EN": "Cena"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.SummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.NDS",
+        "title": {
+          "ru_RU": "НДС%",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.SummaNDS",
+        "title": {
+          "ru_RU": "Сумма НДС",
+          "en_EN": "Summa NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.VsegoSNDS",
+        "title": {
+          "ru_RU": "Всего с НДС",
+          "en_EN": "Vsego s NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KVFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.Tovaroproizvoditel",
+        "title": {
+          "ru_RU": "Товаропроизводитель",
+          "en_EN": "Tovaroproizvoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Strany"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.GTD",
+        "title": {
+          "ru_RU": "№ ГТД",
+          "en_EN": " GTD"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.NomerDeklaraciiOSootvetstviiLP",
+        "title": {
+          "ru_RU": "№ Декларации о соответствии ЛП",
+          "en_EN": "№ Deklaracii o sootvetstvii LP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.AkcizVTch",
+        "title": {
+          "ru_RU": "Акциз в т.ч.",
+          "en_EN": "Akciz v tch"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.SeriyaNomer",
+        "title": {
+          "ru_RU": "Серия, №",
+          "en_EN": "Seriya №"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.SrokGodnosti",
+        "title": {
+          "ru_RU": "Срок годности",
+          "en_EN": "Srok godnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.PrihodnyeOrdera.tr.MestoHraneniya",
+        "title": {
+          "ru_RU": "Место хранения",
+          "en_EN": "Mesto hraneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.MestaHraneniya"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Приходные ордера",
+    "sources": "//После проведения документа - пишем в регистр\r\nfunction postActivate(currentDocument) {\r\n    let resultValidate \u003d currentDocument.validate();\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let regName \u003d MODULEMNEMO + \u0027.OstatkiTMC\u0027;\r\n    let partia;\r\n    let zeroPartia\r\n    \r\n    if (currentDocument.isActivated())  {       \r\n\r\n        //ищем в справочнике Партии подменную НУЛЕВУЮ ПАРТИЮ\r\n        //if (EntityFactory.getCatalogs().get(MODULEMNEMO + \".Partii\").findByCode(\"0-0\").size() !\u003d 0) { \r\n            zeroPartia \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.Partii\u0027).findByCode(\u0027A1\u0027).get(0);\r\n            resultValidate.addValueError(\u0027 + \u0027 + zeroPartia);\r\n        //}    \r\n    \r\n                resultValidate.addValueError(\u0027 ++ \u0027 + zeroPartia);\r\n            return  resultValidate;  \r\n        }\r\n//            \r\n//        for (let tableRec of currentDocument.getRows()){\r\n//            //получаем партию из аналитики дебета\r\n//            partia \u003d getAnaliticFromAccount(tableRec.get(docMnemo + \u0027.tr.Debet\u0027), \u0027Partii\u0027);\r\n//            if (!partia) {\r\n//                partia \u003d zeroPartia;\r\n//            }\r\n//        \r\n//       \r\n//            //заполняем регистр\r\n//            FillRegistr(regName, currentDocument, [\u0027Schet\u0027, \u0027MOL\u0027, \u0027Sklad\u0027, \u0027Partiya\u0027, \u0027TMC\u0027], \r\n//                                                  [tableRec.get(docMnemo + \u0027.tr.Debet\u0027), currentDocument.get(docMnemo + \u0027.hr.MOL\u0027), currentDocument.get(docMnemo + \u0027.hr.Sklad\u0027), partia, tableRec.get(docMnemo + \u0027.tr.TMC\u0027)], \r\n//                                                  [\u0027VidDvizheniya\u0027], \r\n//                                                  [docMnemo], \r\n//                                                  [\u0027Kolichestvo\u0027, \u0027Summa\u0027], \r\n//                                                  [tableRec.get(docMnemo + \u0027.tr.Kolichestvo\u0027), tableRec.get(docMnemo + \u0027.tr.SummaBezNDS\u0027)]);\r\n//        };   \r\n//    };\r\n}\r\n////После снятия с проведения документа - удяляем из регистра\r\n//function postDeactivate(currentDocument) {\r\n//    //Удаляем регистры при снятии с проведения\r\n//    let docMnemo \u003d currentDocument.getMnemo();\r\n//    let regName \u003d MODULEMNEMO + \u0027.OstatkiTMC\u0027;\r\n//    \r\n//    let sh_cap \u003d regName + \u0027.dm.Schet\u0027;\r\n//    let mol_cap \u003d regName + \u0027.dm.MOL\u0027;\r\n//    let skl_cap \u003d regName + \u0027.dm.Sklad\u0027;\r\n//    let part_cap \u003d regName + \u0027.dm.Partiya\u0027;\r\n//    let tmc_cap \u003d regName + \u0027.dm.TMC\u0027;   \r\n//            \r\n//    let sh;\r\n//    let mol \u003d currentDocument.get(docMnemo + \u0027.hr.MOL\u0027);\r\n//    let skl \u003d currentDocument.get(docMnemo + \u0027.hr.Sklad\u0027);\r\n//    let part;\r\n//    let tmc;\r\n//    \r\n//    req1 \u003d regName + \u0027.rg.VidDvizheniya\u0027;\r\n//    \r\n//    let condition;\r\n//    let myReg;\r\n//    \r\n//    //ищем в справочнике Партии подменную НУЛЕВУЮ ПАРТИЮ\r\n//    let zeroPartia;\r\n//    if (EntityFactory.getCatalogs().get(MODULEMNEMO + \".Partii\").findByCode(\"0\").size() \u003e 0) {    \r\n//        zeroPartia \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \".Partii\").findByCode(\"0\").get(0);\r\n//    }    \r\n//    \r\n//    for (let tableRec of currentDocument.getRows()){\r\n//         sh \u003d tableRec.get(docMnemo + \u0027.tr.Debet\u0027);\r\n//         //получаем партию из аналитики дебета         \r\n//         part \u003d getAnaliticFromAccount(sh, \u0027Partii\u0027);         \r\n//         if (!part) {\r\n//            part \u003d zeroPartia;\r\n//         }        \r\n//        \r\n//         //condition \u003d new filter().dimension(sh_cap, sh).and().dimension(mol_cap, mol).and().dimension(skl_cap, skl).and().dimension(part_cap, part).and().dimension(tmc_cap, tmc).and().requisite(req1, docMnemo);\r\n//         condition \u003d new filter().dimension(sh_cap, sh).and().dimension(skl_cap, skl).and().dimension(tmc_cap, tmc).and().requisite(req1, docMnemo);\r\n//                  \r\n//         myReg \u003d Register.get(regName);\r\n//         myReg.delete(condition);         \r\n//    }   \r\n//}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "Kassa.PrihodnyeOrdera.PrihodMZSVydeleniemNDS"
+    },
+    {
+      "mnemo": "Kassa.PrihodnyeOrdera.PrihodMZSKreditaScheta"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.PrihodnyeOrdera",
+    "title": {
+      "ru_RU": "Приходные ордера",
+      "en_EN": "Prihodnye ordera"
+    },
+    "description": {}
+  }
+}

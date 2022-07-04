@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "10641",
+  "name": {
+    "ru_RU": "Вложения в основные средства - объекты финансовой аренды"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "310",
+  "kosgukr": "410",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10641",
+    "title": {
+      "ru_RU": "10641"
+    },
+    "description": {}
+  }
+}

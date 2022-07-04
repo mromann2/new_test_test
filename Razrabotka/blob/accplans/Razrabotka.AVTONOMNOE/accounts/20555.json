@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20555",
+  "name": {
+    "ru_RU": "Расчеты по поступлениям текущего характера от иных резидентов (за исключением сектора государственного управления и организаций государственного сектора)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "5",
+  "kosgudb": "564",
+  "kosgukr": "664",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20555",
+    "title": {
+      "ru_RU": "20555"
+    },
+    "description": {}
+  }
+}

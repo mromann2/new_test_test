@@ -1,0 +1,145 @@
+{
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "template": {
+    "universal": true,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": [
+      {
+        "row": [
+          {
+            "celltype": "ROW_SOURCE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "DEBIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.VariantRegistracii"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CREDIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.DokumentDoplaty"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY_SUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "EXCHANGE_RATE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "COUNT",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SUM",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.Dogovor"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "POSTING_DESCRIPTION",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.IdentifikatorGoskontrakta"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SOURCE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "JOURNAL_NUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          }
+        ],
+        "rownum": 0,
+        "condition": "аа",
+        "conditionEnabled": true
+      }
+    ]
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Test3.KorrektirovochnyiiSchetfakturaVydannyii.8",
+    "title": {
+      "ru_RU": "8",
+      "en_EN": "8"
+    },
+    "description": {}
+  }
+}

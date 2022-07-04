@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20940",
+  "name": {
+    "ru_RU": "Расчеты по штрафам, пеням, неустойкам, возмещениям ущерба"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20940",
+    "title": {
+      "ru_RU": "20940"
+    },
+    "description": {}
+  }
+}

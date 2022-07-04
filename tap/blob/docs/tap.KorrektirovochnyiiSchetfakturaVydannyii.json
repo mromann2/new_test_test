@@ -1,0 +1,977 @@
+{
+  "periodictype": "WithInYear",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 8,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": true,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.DokumentOsnovanie",
+        "title": {
+          "ru_RU": "Документ - основание",
+          "en_EN": "Dokument  osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.SchetFaktura"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.VariantRegistracii",
+        "title": {
+          "ru_RU": "Вариант регистрации",
+          "en_EN": "Variant registracii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VariantyRegistraciiKSFV"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {
+          "ru_RU": "Покупатель"
+        }
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.Dogovor",
+        "title": {
+          "ru_RU": "Договор",
+          "en_EN": "Dogovor"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.DokumentDoplaty",
+        "title": {
+          "ru_RU": "Документ доплаты",
+          "en_EN": "Dokument doplaty"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.PrichinaNalogooblozheniya",
+        "title": {
+          "ru_RU": "Причина налогообложения",
+          "en_EN": "Prichina nalogooblozheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PrichinyNalogooblozheniya"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.IdentifikatorGoskontrakta",
+        "title": {
+          "ru_RU": "Идентификатор госконтракта",
+          "en_EN": "Identifikator goskontrakta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "25"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KorrPeriod",
+        "title": {
+          "ru_RU": "Корр. период",
+          "en_EN": "Korr period"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.PrinyatNDSKVychetu",
+        "title": {
+          "ru_RU": "Принять НДС к вычету",
+          "en_EN": "Prinyat NDS k vychetu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.SummaBezNDSUvelichenie",
+        "title": {
+          "ru_RU": "Сумма без НДС (Увеличение)",
+          "en_EN": "Summa bez NDS Uvelichenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.SummaBezNDSUmenshenie",
+        "title": {
+          "ru_RU": "Сумма без НДС (Уменьшение)",
+          "en_EN": "Summa bez NDS Umenshenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.NDSUvelichenie",
+        "title": {
+          "ru_RU": "НДС (Увеличение)",
+          "en_EN": "NDS Uvelichenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.NDSUmenshenie",
+        "title": {
+          "ru_RU": "НДС (Уменьшение)",
+          "en_EN": "NDS Umenshenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.VsegoUvelichenie",
+        "title": {
+          "ru_RU": "Всего (Увеличение)",
+          "en_EN": "Vsego Uvelichenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.VsegoUmenshenie",
+        "title": {
+          "ru_RU": "Всего (Уменьшение)",
+          "en_EN": "Vsego Umenshenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KSchetufakture",
+        "title": {
+          "ru_RU": "К счету-фактуре №",
+          "en_EN": "K schetufakture "
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "40"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.DataSchetafaktury",
+        "title": {
+          "ru_RU": "Дата счета-фактуры",
+          "en_EN": "Data schetafaktury"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KodVidaOperacii",
+        "title": {
+          "ru_RU": "Код вида операции",
+          "en_EN": "Kod vida operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KodyVidovOperaciiiDlyaSfv"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.PlatezhnyeDokumenty",
+        "title": {
+          "ru_RU": "Платежные документы",
+          "en_EN": "Platezhnye dokumenty"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.NaimenovanieProdavca",
+        "title": {
+          "ru_RU": "Наименование продавца",
+          "en_EN": "Naimenovanie prodavca"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.NaimenovaniePokupatelya",
+        "title": {
+          "ru_RU": "Наименование покупателя",
+          "en_EN": "Naimenovanie pokupatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.AdresProdavca",
+        "title": {
+          "ru_RU": "Адрес продавца",
+          "en_EN": "Adres prodavca"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.AdresPokupatelya",
+        "title": {
+          "ru_RU": "Адрес покупателя",
+          "en_EN": "Adres pokupatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.INNProdavca",
+        "title": {
+          "ru_RU": "ИНН продавца",
+          "en_EN": "INN prodavca"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "12"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.INNPokupatelya",
+        "title": {
+          "ru_RU": "ИНН покупателя",
+          "en_EN": "INN pokupatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "12"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KPPProdavca",
+        "title": {
+          "ru_RU": "КПП продавца",
+          "en_EN": "KPP prodavca"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "9"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KPPPokupatelya",
+        "title": {
+          "ru_RU": "КПП покупателя",
+          "en_EN": "KPP pokupatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "9"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.SchetfakturaVystavlen",
+        "title": {
+          "ru_RU": "Счет-фактура выставлен",
+          "en_EN": "Schetfaktura vystavlen"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.DataVystavleniya",
+        "title": {
+          "ru_RU": "Дата выставления",
+          "en_EN": "Data vystavleniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.SposobVystavleniya",
+        "title": {
+          "ru_RU": "Способ выставления",
+          "en_EN": "Sposob vystavleniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.SposobyVystavleniyaSF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.Rukovoditel",
+        "title": {
+          "ru_RU": "Руководитель",
+          "en_EN": "Rukovoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.GlavnyiiBuhgalter",
+        "title": {
+          "ru_RU": "Главный бухгалтер",
+          "en_EN": "Glavnyii buhgalter"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.TovarRabotaUsluga",
+        "title": {
+          "ru_RU": "Товар, работа, услуга",
+          "en_EN": "Tovar rabota usluga"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.EdinicyIzmereniii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.KolichestvodoIzmeneniya",
+        "title": {
+          "ru_RU": "Количество (до изменения)",
+          "en_EN": "Kolichestvo do izmeneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "3",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.CenadoIzmeneniya",
+        "title": {
+          "ru_RU": "Цена (до изменения)",
+          "en_EN": "Cena do izmeneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Cena",
+        "title": {
+          "ru_RU": "Цена",
+          "en_EN": "Cena"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.SummaBezNDSdoIzmeneniya",
+        "title": {
+          "ru_RU": "Сумма без НДС (до изменения)",
+          "en_EN": "Summa bez NDS do izmeneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.SummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.StavkadoIzmeneniya",
+        "title": {
+          "ru_RU": "Ставка (до изменения)",
+          "en_EN": "Stavka do izmeneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Stavka",
+        "title": {
+          "ru_RU": "Ставка",
+          "en_EN": "Stavka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.NDSdoIzmeneniya",
+        "title": {
+          "ru_RU": "НДС (до изменения)",
+          "en_EN": "NDS do izmeneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.NDS",
+        "title": {
+          "ru_RU": "НДС",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.VsegodoIzmeneniya",
+        "title": {
+          "ru_RU": "Всего (до изменения)",
+          "en_EN": "Vsego do izmeneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Vsego",
+        "title": {
+          "ru_RU": "Всего",
+          "en_EN": "Vsego"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.KPSDt",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS dt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Schet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.KOSGUDt",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU dt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС 303.04",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Schet334",
+        "title": {
+          "ru_RU": "Счет 303.04",
+          "en_EN": "Schet 334"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ 303.04",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Корректировочные счета-фактуры выданные",
+    "sources": "function baseOn(base, targetMnemo){\r\n\r\n    let organization \u003d base.getOrganization();\r\n    let currentDocument \u003d EntityFactory.createDocument(targetMnemo)\r\n\t\r\n    currentDocument.setParent(base);\r\n    currentDocument.setNumber(\u0027001\u0027)  \r\n    currentDocument.setOrganization(organization); \r\n   \r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.DokumentOsnovanie\", base );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.Kontragent\", base.get(\u0027tap.SchetFaktura.hr.Kontragent\u0027) );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.Dogovor\", base.get(\u0027tap.SchetFaktura.hr.Dogovor\u0027) );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.PrichinaNalogooblozheniya\", base.get(\u0027tap.SchetFaktura.hr.PrichinaNalogooblozheniya\u0027) );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.PrinyatNDSKVychetu\", true ); \r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KSchetufakture\", base.getNumber() );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.DataSchetafaktury\", base.getDate());\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KodVidaOperacii\", base.get(\u0027tap.SchetFaktura.hr.KodVidaOperacii\u0027) );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.NaimenovanieProdavca\", organization.get(\"tap.organization.PolnoeNaimenovanie\") );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.AdresProdavca\", organization.get(\"tap.organization.IUridicheskiiiAdres\") );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.INNProdavca\", organization.get(\"tap.organization.INN\") );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KPPProdavca\", organization.get(\"tap.organization.KPP\") );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.NaimenovaniePokupatelya\", base.get(\u0027tap.SchetFaktura.hr.Kontragent\u0027)?.get(\"tap.Kontragenty.OficialnoeNaimenovanie\") );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.AdresPokupatelya\", base.get(\u0027tap.SchetFaktura.hr.Kontragent\u0027)?.get(\"tap.Kontragenty.IUridicheskiiiAdres\") );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.INNPokupatelya\", base.get(\u0027tap.SchetFaktura.hr.Kontragent\u0027)?.get(\"tap.Kontragenty.INN\") );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.KPPPokupatelya\", base.get(\u0027tap.SchetFaktura.hr.Kontragent\u0027)?.get(\"tap.Kontragenty.KPP\") );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.Rukovoditel\", base.get(\u0027tap.SchetFaktura.hr.Rukovoditel\u0027) );\r\n    currentDocument.set( \"tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.GlavnyiiBuhgalter\", base.get(\u0027tap.SchetFaktura.hr.GlavnyiiBuhgalter\u0027) );\r\n\r\n   \r\n    for (let tableRec of base.getRows()){\r\n        let row \u003d  currentDocument.addTableRow();\r\n        \r\n        try {\r\n            let s30304 \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002730304\u0027).get(0);\r\n            let taxes \u003d EntityFactory.getCatalogs().get(\"tap.VidyNalogovIPlatezheii\").findByCode(\"005\").get(0)\r\n            s30304.put(0, taxes);\r\n            row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Schet334\", s30304);\r\n        } catch (err) {}\r\n\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.TovarRabotaUsluga\", tableRec.get(\u0027tap.SchetFaktura.tr.TovarRabotaUsluga\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.EdinicaIzmereniya\", tableRec.get(\u0027tap.SchetFaktura.tr.EdinicaIzmereniya\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.KolichestvodoIzmeneniya\", tableRec.get(\u0027tap.SchetFaktura.tr.Kolichestvo\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Kolichestvo\", tableRec.get(\u0027tap.SchetFaktura.tr.Kolichestvo\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.CenadoIzmeneniya\", tableRec.get(\u0027tap.SchetFaktura.tr.CenaBezNDS\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Cena\", tableRec.get(\u0027tap.SchetFaktura.tr.CenaBezNDS\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.SummaBezNDSdoIzmeneniya\", tableRec.get(\u0027tap.SchetFaktura.tr.SummaBezNDS\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.SummaBezNDS\", tableRec.get(\u0027tap.SchetFaktura.tr.SummaBezNDS\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.StavkadoIzmeneniya\", tableRec.get(\u0027tap.SchetFaktura.tr.Stavka\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Stavka\", tableRec.get(\u0027tap.SchetFaktura.tr.Stavka\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.NDSdoIzmeneniya\", tableRec.get(\u0027tap.SchetFaktura.tr.NDS\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.NDS\", tableRec.get(\u0027tap.SchetFaktura.tr.NDS\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.VsegodoIzmeneniya\", tableRec.get(\u0027tap.SchetFaktura.tr.Vsego\u0027) );\r\n        row.put(\"tap.KorrektirovochnyiiSchetfakturaVydannyii.tr.Vsego\", tableRec.get(\u0027tap.SchetFaktura.tr.Vsego\u0027) );\r\n    }\r\n    \r\n    currentDocument.save()\r\n    return currentDocument;\r\n}\r\n\r\n"
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii.Standartnyii"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii",
+    "title": {
+      "ru_RU": "Корректировочные счета-фактуры выданные",
+      "en_EN": "Korrektirovochnyii schetfaktura vydannyii"
+    },
+    "description": {
+      "ru_RU": "Документ Корректировочный счет-фактура выданный"
+    }
+  }
+}

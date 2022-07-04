@@ -1,0 +1,148 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestB.Spravochnik1.RekvizitPerechislenie",
+        "title": {
+          "ru_RU": "Реквизит перечисление",
+          "en_EN": "Rekvizit perechislenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.Perechislenie1"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestB.Spravochnik1.RekvizitSpravochnik",
+        "title": {
+          "ru_RU": "Реквизит справочник",
+          "en_EN": "Rekvizit spravochnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.Spravochnik2"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestB.Spravochnik1.RekvizitSumma",
+        "title": {
+          "ru_RU": "Реквизит сумма",
+          "en_EN": "Rekvizit summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestB.Spravochnik1.RekvizitData",
+        "title": {
+          "ru_RU": "Реквизит дата",
+          "en_EN": "Rekvizit data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestB.Spravochnik1.RekvizitCHekboks",
+        "title": {
+          "ru_RU": "Реквизит чекбокс",
+          "en_EN": "Rekvizit chekboks"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Справочник 1",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.Spravochnik1",
+    "title": {
+      "ru_RU": "Справочник 1",
+      "en_EN": "Spravochnik 1"
+    },
+    "description": {}
+  }
+}

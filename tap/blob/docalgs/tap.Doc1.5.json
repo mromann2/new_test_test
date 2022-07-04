@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(currentDocument) {  \r\n    let catalog \u003d EntityFactory.getCatalogs().get(\"tap.TestovyiiSpravochnik\").findByCode(\u0027001\u0027).get(0)\r\n    \r\n    let Schett \u003d catalog.get(\u0027tap.TestovyiiSpravochnik.Schett\u0027)\r\n    let OsnovnyeSredstva \u003d EntityFactory.getCatalogs().get(\"tap.OsnovnyeSredstva\").findByCode(\u0027003\u0027).get(0)\r\n    let CentryMaterialnoiiOtvetstvennosti \u003d EntityFactory.getCatalogs().get(\"tap.CentryMaterialnoiiOtvetstvennosti\").findByCode(\u002701\u0027).get(0)\r\n    Schett.put(0, OsnovnyeSredstva)\r\n    Schett.put(1, CentryMaterialnoiiOtvetstvennosti)\r\n    catalog.set(\u0027tap.TestovyiiSpravochnik.Schett\u0027, Schett)\r\n    catalog.save()\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Doc1.5",
+    "title": {
+      "ru_RU": "5",
+      "en_EN": "5"
+    },
+    "description": {}
+  }
+}

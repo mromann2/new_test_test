@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "TestovoePrilozhenie.Konstanta",
+      "title": {
+        "ru_RU": "Константа",
+        "en_EN": "Konstanta"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "16"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.Konstanta",
+    "title": {
+      "ru_RU": "Константа",
+      "en_EN": "Konstanta"
+    },
+    "description": {}
+  }
+}

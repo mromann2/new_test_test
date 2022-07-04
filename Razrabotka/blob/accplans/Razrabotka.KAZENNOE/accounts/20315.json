@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20315",
+  "name": {
+    "ru_RU": "Средства иных организаций на счетах ООКО"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "2",
+  "kosgudb": "510",
+  "kosgukr": "610",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20315",
+    "title": {
+      "ru_RU": "20315"
+    },
+    "description": {}
+  }
+}

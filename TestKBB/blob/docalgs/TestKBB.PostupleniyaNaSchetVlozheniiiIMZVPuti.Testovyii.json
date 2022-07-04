@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа \r\nfunction activate(currentDocument) {\r\n    let resultValidate \u003d currentDocument.validate();\r\n    let docDate \u003d new Date(2021,1,1);\r\n    let beginDate;\r\n    let endDate;\r\n    let refMnemo \u003d MODULEMNEMO + \u0027.GranicyStoimostiOSDlya1Amortizacii\u0027;\r\n    \r\n    let OSBorders;\r\n\r\n//    beginDate \u003d new Date();\r\n//    for (let i\u003d0;i\u003c1000;i++) {\r\n//        OSBorders \u003d getOSCenaLimits(docDate);\r\n//    }\r\n//    endDate \u003d new Date();\r\n//    resultValidate.addValueError( \u00271 \u0027 + (endDate - beginDate) );\r\n\r\n//    beginDate \u003d new Date();\r\n//    for (let i\u003d0;i\u003c1000;i++) {\r\n//        OSBorders \u003d getOSCenaLimits1(docDate);\r\n//    }\r\n//    endDate \u003d new Date();\r\n//    resultValidate.addValueError( \u00272 \u0027 + (endDate - beginDate) );\r\n//    \r\n//    beginDate \u003d new Date();\r\n//    let catalog \u003d EntityFactory.getCatalogs().get(refMnemo);\r\n//    let arrBordersOS \u003d [];\r\n//    for (let recBordersOS of catalog) {\r\n//        arrBordersOS.push(recBordersOS);\r\n//    }\r\n//    \r\n//    arrBordersOS.sort( (a, b) \u003d\u003e b.get(refMnemo + \u0027.Data\u0027) - a.get(refMnemo + \u0027.Data\u0027) );\r\n//    let arrBordersOSFltr \u003d arrBordersOS.filter( item \u003d\u003e item.get(refMnemo + \u0027.Data\u0027) \u003c\u003d docDate );\r\n//    endDate \u003d new Date();\r\n//    resultValidate.addValueError( \u00273 \u0027 + (endDate - beginDate) );\r\n//    \r\n    \r\n    let LCena;\r\n    beginDate \u003d new Date();\r\n    for (let i\u003d0;i\u003c1000;i++) {\r\n        LCena \u003d GetLCena1(docDate);\r\n    }\r\n    endDate \u003d new Date();\r\n    resultValidate.addValueError( \u00274 \u0027 + (endDate - beginDate) );\r\n\r\n    beginDate \u003d new Date();\r\n    for (let i\u003d0;i\u003c1000;i++) {\r\n        LCena \u003d getOSCenaLimits(docDate);\r\n    }\r\n    endDate \u003d new Date();\r\n    resultValidate.addValueError( \u00275 \u0027 + (endDate - beginDate) );\r\n\r\n    return resultValidate;\r\n\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.PostupleniyaNaSchetVlozheniiiIMZVPuti.Testovyii",
+    "title": {
+      "ru_RU": "Тестовый",
+      "en_EN": "Testovyii"
+    },
+    "description": {}
+  }
+}

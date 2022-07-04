@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "50316",
+  "name": {
+    "ru_RU": "Бюджетные ассигнования в пути"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50316",
+    "title": {
+      "ru_RU": "50316"
+    },
+    "description": {}
+  }
+}

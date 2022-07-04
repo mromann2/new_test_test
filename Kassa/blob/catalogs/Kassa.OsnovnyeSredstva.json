@@ -1,0 +1,111 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.OsnovnyeSredstva.BalansovyiiSchet",
+        "title": {
+          "ru_RU": "Балансовый счет",
+          "en_EN": "Balansovyii schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.OsnovnyeSredstva.OKOF",
+        "title": {
+          "ru_RU": "ОКОФ",
+          "en_EN": "OKOF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.OKOF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.OsnovnyeSredstva.SPI",
+        "title": {
+          "ru_RU": "Срок полезного использования (в мес.)",
+          "en_EN": "SPI"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Основные средства",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.OsnovnyeSredstva",
+    "title": {
+      "ru_RU": "Основные средства",
+      "en_EN": "OS"
+    },
+    "description": {}
+  }
+}

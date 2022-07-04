@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "50140",
+  "name": {
+    "ru_RU": "Лимиты бюджетных обязательств второго года, следующего за очередным"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50140",
+    "title": {
+      "ru_RU": "50140"
+    },
+    "description": {}
+  }
+}

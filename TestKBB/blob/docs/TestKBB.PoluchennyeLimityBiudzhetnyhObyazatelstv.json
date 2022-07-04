@@ -1,0 +1,233 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.hr.Tip",
+        "title": {
+          "ru_RU": "Тип",
+          "en_EN": "Tip"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestKBB.TipyDokumentov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.hr.Opisanie",
+        "title": {
+          "ru_RU": "Описание",
+          "en_EN": "Opisanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestKBB.KVFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestKBB.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestKBB.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestKBB.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestKBB.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.tr.Opisanie",
+        "title": {
+          "ru_RU": "Описание",
+          "en_EN": "Opisanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Полученные лимиты бюджетных обязательств",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv.UchPolLBO"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.PoluchennyeLimityBiudzhetnyhObyazatelstv",
+    "title": {
+      "ru_RU": "Полученные лимиты бюджетных обязательств",
+      "en_EN": "Poluchennye limity biudzhetnyh obyazatelstv"
+    },
+    "description": {}
+  }
+}

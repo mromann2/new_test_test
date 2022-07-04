@@ -1,0 +1,197 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 64,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.hr.PrikazObOtzyve",
+        "title": {
+          "ru_RU": "Приказ об отзыве",
+          "en_EN": "Prikaz ob otzyve"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.PrikazyObOtzyveNagrazhdeniya"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.hr.PrikazOVrucheniiNagrady",
+        "title": {
+          "ru_RU": "Приказ о вручении награды",
+          "en_EN": "Prikaz o vruchenii nagrady"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.PrikazyONagrazhdenii"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.tr.UKogoOtozvat",
+        "title": {
+          "ru_RU": "У кого отозвать",
+          "en_EN": "U kogo otozvat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.SubektyNagrazhdeniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.tr.Nagrada",
+        "title": {
+          "ru_RU": "Награда",
+          "en_EN": "Nagrada"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.Nagrady"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.tr.NomerNagrady",
+        "title": {
+          "ru_RU": "Номер награды",
+          "en_EN": "Nomer nagrady"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "15"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.tr.NomerUdostovereniya",
+        "title": {
+          "ru_RU": "Номер удостоверения",
+          "en_EN": "Nomer udostovereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "15"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.tr.OsnovanieOtzyva",
+        "title": {
+          "ru_RU": "Основание отзыва",
+          "en_EN": "Osnovanie otzyva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "1000"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.tr.DataOtzyva",
+        "title": {
+          "ru_RU": "Дата отзыва",
+          "en_EN": "Data otzyva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyObOtzyveNagrazhdeniya.tr.NagradaOtozvana",
+        "title": {
+          "ru_RU": "Награда отозвана",
+          "en_EN": "Nagrada otozvana"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Акты об отзыве наград",
+    "sources": "function baseOn(base, targetMnemo){\r\n    let currentDocument \u003d EntityFactory.createDocument(targetMnemo);\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let baseMnemo \u003d base.getMnemo();\r\n    let actDocument \u003d base.get(baseMnemo + \u0027.hr.AktOVrucheniiNagrady\u0027);\r\n\r\n    currentDocument.setParent(base);\r\n    //currentDocument.setNumber(actDocument.getNumber() + \u0027 (акт об отзыве)\u0027);\r\n    currentDocument.setNumber(\u0027Акт об отзыве награды\u0027); \r\n    currentDocument.setOrganization(base.getOrganization()); \r\n    \r\n    currentDocument.set(docMnemo + \u0027.hr.PrikazObOtzyve\u0027, base);\r\n    currentDocument.set(docMnemo + \u0027.hr.PrikazOVrucheniiNagrady\u0027, actDocument.get(actDocument.getMnemo() + \u0027.hr.Prikaz\u0027));\r\n        \r\n    for (let tableRec of base.getRows()){\r\n        let row \u003d  currentDocument.addTableRow();\r\n\r\n        row.put(docMnemo + \u0027.tr.UKogoOtozvat\u0027, tableRec.get(baseMnemo + \u0027.tr.UKogoOtozvat\u0027));\r\n        row.put(docMnemo + \u0027.tr.Nagrada\u0027, tableRec.get(baseMnemo + \u0027.tr.Nagrada\u0027));\r\n        row.put(docMnemo + \u0027.tr.NomerNagrady\u0027, tableRec.get(baseMnemo + \u0027.tr.NomerNagrady\u0027));\r\n        row.put(docMnemo + \u0027.tr.NomerUdostovereniya\u0027, tableRec.get(baseMnemo + \u0027.tr.NomerUdostovereniya\u0027));\r\n        row.put(docMnemo + \u0027.tr.OsnovanieOtzyva\u0027, tableRec.get(baseMnemo + \u0027.tr.OsnovanieOtzyva\u0027));\r\n    }\r\n\r\n    currentDocument.save();\r\n    return currentDocument;\r\n}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "Module.AktyObOtzyveNagrazhdeniya.Uchet"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Module.AktyObOtzyveNagrazhdeniya",
+    "title": {
+      "ru_RU": "Акты об отзыве наград",
+      "en_EN": "Akty ob otzyve nagrad"
+    },
+    "description": {}
+  }
+}

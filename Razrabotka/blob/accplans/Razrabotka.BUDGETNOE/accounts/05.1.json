@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "code": "05.1",
+  "name": {
+    "ru_RU": "ОС, оплаченные по центр.снабжению"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "AverageWeighted",
+  "journalnumber": "7",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.MaterialnyeZapasy"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "051",
+    "title": {
+      "ru_RU": "05.1"
+    },
+    "description": {}
+  }
+}

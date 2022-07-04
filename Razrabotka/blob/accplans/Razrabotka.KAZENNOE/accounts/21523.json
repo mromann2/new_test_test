@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "21523",
+  "name": {
+    "ru_RU": "Вложения в иные ценные бумаги, кроме акций"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "520",
+  "kosgukr": "620",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21523",
+    "title": {
+      "ru_RU": "21523"
+    },
+    "description": {}
+  }
+}

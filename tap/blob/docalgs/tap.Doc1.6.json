@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) { \r\n    let catalog \u003d currentDocument.get(\u0027tap.Doc1.hr.1\u0027)\r\n    let Schett \u003d currentDocument.get(\u0027tap.Doc1.hr.Schett\u0027)\r\n    catalog.set(\u0027tap.TestovyiiSpravochnik.Schett\u0027, Schett)\r\n    catalog.save()\r\n    \r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Doc1.6",
+    "title": {
+      "ru_RU": "6",
+      "en_EN": "6"
+    },
+    "description": {}
+  }
+}

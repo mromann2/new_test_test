@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "20581",
+  "name": {
+    "ru_RU": "Расчеты по невыясненным поступлениям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20581",
+    "title": {
+      "ru_RU": "20581"
+    },
+    "description": {}
+  }
+}

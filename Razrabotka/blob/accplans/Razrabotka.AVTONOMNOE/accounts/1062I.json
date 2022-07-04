@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "1062I",
+  "name": {
+    "ru_RU": "Вложения в программное обеспечение и базы данных – особо ценное движимое имущество"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "320",
+  "kosgukr": "420",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "1062",
+    "title": {
+      "ru_RU": "1062I"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 2,
+  "kodlength": 9,
+  "titlelength": 90,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyZatrat.KEK",
+        "title": {
+          "ru_RU": "КЭК",
+          "en_EN": "KEK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyZatrat.VidDeyatelnostiNU",
+        "title": {
+          "ru_RU": "Вид затрат предназначен для учета затрат",
+          "en_EN": "Vid deyatelnosti NU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyDeyatelnostiNU"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyZatrat.VidRashodovNU",
+        "title": {
+          "ru_RU": "Вид расходов (НУ)",
+          "en_EN": "Vid rashodov NU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyRashodovNU"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Виды затрат",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyZatrat",
+    "title": {
+      "ru_RU": "Виды затрат"
+    },
+    "description": {
+      "ru_RU": "Справочник Виды затрат"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(cc){\r\n\r\n\r\nlet myReg \u003d Register.get(\"tap.Testovyii2\").get(0);\r\n//return myReg\r\n\r\n//let req \u003d  myReg.getRequsiite(\u0027tap.Testovyii2.rg.3\u0027)\r\nlet req \u003d  myReg.getRequisite(\u0027tap.Testovyii2.rg.3\u0027)\r\n\r\nreturn req\r\n\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskayaSpravka.GetRequisite",
+    "title": {
+      "ru_RU": "getRequisite",
+      "en_EN": "getRequisite"
+    },
+    "description": {}
+  }
+}

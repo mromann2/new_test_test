@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "\r\n//Проведение документа\r\nfunction activate(currentDocument) {\r\n     if (!notValid(currentDocument)) {\r\n         for (let tableRec of currentDocument.getRows()){\r\n\r\n            //создание и заполнение проводки\r\n            let posting \u003d EntityFactory.createPosting();\r\n            posting.setComment(tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.NaimenovanieIOpisanieOperacii\u0027));\r\n            posting.setValue(tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.Summa\u0027));\r\n            posting.setDebit(tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.NomerSchetaPoDebitu\u0027));\r\n            posting.setCredit(tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.NomerSchetaPoKreditu\u0027));\r\n            currentDocument.addPosting(posting);\r\n            \r\n            \r\n            let myReg2 \u003d Register.get(\"tap.Testovyii2\")//.get(0);\r\n            let doc \u003d currentDocument;\r\n            let dem \u003d currentDocument.get(\u0027tap.BuhgalterskayaSpravka.hr.Spravochnik\u0027).getTitle();\r\n            let dem2 \u003d currentDocument.get(\u0027tap.BuhgalterskayaSpravka.hr.Spravochnik2\u0027);\r\n            let res \u003d tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.Summa\u0027);\r\n            let res2 \u003d tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.Kolichestvo\u0027); \r\n            let req \u003d currentDocument.get(\u0027tap.BuhgalterskayaSpravka.hr.Perechislenie\u0027);\r\n\r\n\r\n            let record \u003d myReg2.create(); \r\n\r\n            record.setDate(new Date());\r\n            record.setDocument(doc);\r\n            record.setDimension(\u0027tap.Testovyii2.dm.1\u0027, dem);\r\n            record.setDimension(\u0027tap.Testovyii2.dm.11\u0027, dem2);\r\n            record.set(\u0027tap.Testovyii2.rs.2\u0027, res);\r\n            record.set(\u0027tap.Testovyii2.rs.21\u0027, res2);\r\n            record.setRequisite(\u0027tap.Testovyii2.rg.3\u0027, req); \r\n            record.create();\r\n\r\n            \r\n        };\r\n        //устанавливаем текущую дату проводки\r\n        currentDocument.setExecuted();\r\n        //сохранение документа с проводками\r\n        currentDocument.save();\r\n        \r\n        \r\n        \r\n\r\n        \r\n       \r\n        return;  \r\n    } else \r\n        return notValid(currentDocument);\r\n}\r\n\r\n//Снятие документа с проведения\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.unPostingAndSave();\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) { \r\n    let resultValidate \u003d currentDocument.validate();\r\n \r\n    if (!currentDocument.getRows().size()){\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    }\r\n\r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n        return  resultValidate;\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskayaSpravka.Tust_ZapisPriProvedeniiDokumenta",
+    "title": {
+      "ru_RU": "тест_ запись при проведении документа",
+      "en_EN": "tust_ zapis pri provedenii dokumenta"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "30406:1",
+  "name": {
+    "ru_RU": "Расчеты с прочими кредиторами гКБК"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "834",
+  "kosgukr": "734",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "304061",
+    "title": {
+      "ru_RU": "30406:1"
+    },
+    "description": {}
+  }
+}

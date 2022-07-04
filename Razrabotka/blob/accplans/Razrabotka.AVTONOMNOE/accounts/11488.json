@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "code": "11488",
+  "name": {
+    "ru_RU": "Резерв под снижение стоимости товаров"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "AverageWeighted",
+  "journalnumber": "7",
+  "kosgudb": "440",
+  "kosgukr": "440",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.MaterialnyeZapasy"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "11488",
+    "title": {
+      "ru_RU": "11488"
+    },
+    "description": {}
+  }
+}

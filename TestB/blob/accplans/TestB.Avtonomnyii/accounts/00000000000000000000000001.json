@@ -1,0 +1,25 @@
+{
+  "active": true,
+  "code": "00000000000000000000000001",
+  "name": {
+    "ru_RU": "Автономный счет",
+    "en_EN": ""
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "00000000000000000000000001",
+    "title": {
+      "ru_RU": "00000000000000000000000001"
+    },
+    "description": {}
+  }
+}

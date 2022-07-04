@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    //проверка документа\r\n    let validationResult \u003d notValid(currentDocument);\r\n    if (validationResult) {\r\n        return validationResult;\r\n    }\r\n    \r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let regName \u003d MODULEMNEMO + \u0027.OstatkiTMC\u0027;\r\n    let zeroPartia;\r\n    //ищем в справочнике Партии подменную НУЛЕВУЮ ПАРТИЮ\r\n    if (EntityFactory.getCatalogs().get(MODULEMNEMO + \".Partii\").findByCode(\"0\").size() \u003e 0) {    \r\n        zeroPartia \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \".Partii\").findByCode(\"0\").get(0);\r\n    }      \r\n    \r\n    let tmc;\r\n    //ищем в справочнике Партии подменную НУЛЕВУЮ ПАРТИЮ\r\n    if (EntityFactory.getCatalogs().get(MODULEMNEMO + \".MaterialnyeZapasy\").findByCode(\"001\").size() \u003e 0) {    \r\n        tmc \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \".MaterialnyeZapasy\").findByCode(\"001\").get(0);\r\n    }    \r\n    //MaterialnyeZapasy\r\n    \r\n    let myReg \u003d Register.get(regName);\r\n    let record \u003d myReg.create();\r\n\r\n    record.setDate(currentDocument.getDate());\r\n    record.setDocument(currentDocument);\r\n    \r\n            \r\n    record.setDimension(regName + \u0027.dm.Schet\u0027, getAccountByCode(\u002712345\u0027));\r\n    record.setDimension(regName + \u0027.dm.MOL\u0027, currentDocument.get(docMnemo + \u0027.hr.MOL\u0027));\r\n    record.setDimension(regName + \u0027.dm.Sklad\u0027, currentDocument.get(docMnemo + \u0027.hr.Sklad\u0027));\r\n    record.setDimension(regName + \u0027.dm.Partiya\u0027, zeroPartia);\r\n    record.setDimension(regName + \u0027.dm.TMC\u0027, tmc);\r\n    \r\n    record.setRequisite(regName + \u0027.rg.VidDvizheniya\u0027, docMnemo);\r\n    \r\n    record.set(regName + \u0027.rs.Kolichestvo\u0027, 10);\r\n    record.set(regName + \u0027.rs.Summa\u0027, 500);\r\n    \r\n    record.create();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.PrihodnyeOrdera.PROBA1",
+    "title": {
+      "ru_RU": "ПРОБА 1",
+      "en_EN": "PROBA 1"
+    },
+    "description": {}
+  }
+}

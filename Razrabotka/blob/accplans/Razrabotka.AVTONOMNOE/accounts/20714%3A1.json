@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20714:1",
+  "name": {
+    "ru_RU": "Расчеты по предоставленным займам, ссудам (штрафы, пени)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "540",
+  "kosgukr": "640",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "207141",
+    "title": {
+      "ru_RU": "20714:1"
+    },
+    "description": {}
+  }
+}

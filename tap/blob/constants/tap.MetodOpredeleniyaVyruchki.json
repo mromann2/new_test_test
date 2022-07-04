@@ -1,0 +1,31 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.MetodOpredeleniyaVyruchki",
+      "title": {
+        "ru_RU": "Метод определения выручки",
+        "en_EN": "Metod opredeleniya vyruchki"
+      },
+      "description": {
+        "ru_RU": "Метод определения выручки от реализации для учета НДС"
+      }
+    },
+    "type": {
+      "mnemo": "tap.MetodyOpredeleniyaVyruchki"
+    },
+    "properties": {},
+    "required": true
+  },
+  "periodical": true,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.MetodOpredeleniyaVyruchki",
+    "title": {
+      "ru_RU": "Метод определения выручки",
+      "en_EN": "Metod opredeleniya vyruchki"
+    },
+    "description": {
+      "ru_RU": "Метод определения выручки от реализации для учета НДС"
+    }
+  }
+}

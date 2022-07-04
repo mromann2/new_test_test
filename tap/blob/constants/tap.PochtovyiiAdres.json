@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.PochtovyiiAdres",
+      "title": {
+        "ru_RU": "Почтовый адрес",
+        "en_EN": "Pochtovyii adres"
+      },
+      "description": {
+        "ru_RU": "Почтовый адрес организации"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "240"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PochtovyiiAdres",
+    "title": {
+      "ru_RU": "Почтовый адрес",
+      "en_EN": "Pochtovyii adres"
+    },
+    "description": {
+      "ru_RU": "Почтовый адрес организации"
+    }
+  }
+}

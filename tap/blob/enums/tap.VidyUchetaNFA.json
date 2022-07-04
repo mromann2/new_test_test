@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Индивидуальный учет",
+    "Групповой учет"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyUchetaNFA",
+    "title": {
+      "ru_RU": "Виды учета НФА",
+      "en_EN": "Vidy ucheta NFA"
+    },
+    "description": {}
+  }
+}

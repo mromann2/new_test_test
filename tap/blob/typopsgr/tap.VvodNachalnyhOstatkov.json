@@ -1,0 +1,11 @@
+{
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VvodNachalnyhOstatkov",
+    "title": {
+      "ru_RU": "Ввод начальных остатков",
+      "en_EN": "Vvod nachalnyh ostatkov"
+    },
+    "description": {}
+  }
+}

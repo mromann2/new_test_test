@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "40127",
+  "name": {
+    "ru_RU": "Расходы прошлых финансовых лет, выявленные по контрольным мероприятиям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "10",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40127",
+    "title": {
+      "ru_RU": "40127"
+    },
+    "description": {}
+  }
+}

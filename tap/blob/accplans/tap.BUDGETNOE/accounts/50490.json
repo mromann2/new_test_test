@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "50490",
+  "name": {
+    "ru_RU": "Сметные (плановые, прогнозные) назначения на иные очередные годы (за пределами планового периода)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50490",
+    "title": {
+      "ru_RU": "50490"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "plantype": "BUDGET",
+  "detailplantype": "KAZENNOE",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KAZENNOE",
+    "title": {
+      "ru_RU": "Казенный",
+      "en_EN": "Federal Treasury"
+    },
+    "description": {
+      "ru_RU": "Казенный",
+      "en_EN": "Federal Treasury"
+    }
+  }
+}

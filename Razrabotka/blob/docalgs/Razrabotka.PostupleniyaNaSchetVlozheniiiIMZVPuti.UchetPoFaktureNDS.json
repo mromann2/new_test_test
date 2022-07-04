@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа \r\nfunction activate(currentDocument) {\r\n    //проверка документа\r\n    let validationResult \u003d notValid(currentDocument);\r\n    if (validationResult) {\r\n        return validationResult;\r\n    }\r\n\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let recMnemo \u003d docMnemo + \u0027.tr.\u0027;\r\n    \r\n    let isHasAccount21012 \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002721012\u0027).size() \u003e 0;\r\n    \r\n    for (let tableRec of currentDocument.getRows()){\r\n        //добавление основной проводки\r\n        currentDocument.addPosting(createPostingWithProps({\r\n            tableRec,\r\n            currentDocument,\r\n            summa: tableRec.get(recMnemo + \u0027SummaBezNDS\u0027),\r\n        }));\r\n        \r\n        if (!tableRec.get(recMnemo + \u0027SummaNDS\u0027)) continue;\r\n        //проводка по НДС\r\n        let account21012 \u003d isHasAccount21012?EntityFactory.getPlan().getAccounts().findByCode(\u002721012\u0027).get(0):undefined;\r\n        currentDocument.addPosting(createPostingWithProps({\r\n            tableRec,\r\n            currentDocument,\r\n            debitKps: tableRec.get(recMnemo + \u0027KPSKr\u0027)?.getCode(), \r\n            debit: account21012,\r\n            summa: tableRec.get(recMnemo + \u0027SummaNDS\u0027),\r\n            kolvo: undefined,\r\n            cena: undefined,\r\n        }));\r\n        \r\n    }\r\n    \r\n    //проверка проводок\r\n    let postingValidationResult \u003d hasNotValidPostings(currentDocument);\r\n    if (postingValidationResult) {\r\n        return postingValidationResult;\r\n    }\r\n    //устанавливаем признак проведения и текущую дату\r\n    currentDocument.setExecuted();\r\n    //устанавливаем сумму операции\r\n    currentDocument.setOperationSum(getCalculatedSum(currentDocument, docMnemo + \u0027.tr.Summa\u0027));\r\n    //сохранение документа с проводками\r\n    currentDocument.save();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.PostupleniyaNaSchetVlozheniiiIMZVPuti.UchetPoFaktureNDS",
+    "title": {
+      "ru_RU": "Учет по фактуре + НДС",
+      "en_EN": "Uchet po fakture  NDS"
+    },
+    "description": {}
+  }
+}

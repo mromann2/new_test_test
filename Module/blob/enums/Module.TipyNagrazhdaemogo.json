@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Сотрудник",
+    "Физическое лицо",
+    "Юридическое лицо"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Module.TipyNagrazhdaemogo",
+    "title": {
+      "ru_RU": "Типы награждаемого",
+      "en_EN": "Tipy nagrazhdaemogo"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    //проверка документа\r\n    let validationResult \u003d notValid(currentDocument);\r\n    if (validationResult) {\r\n        return validationResult;\r\n    }\r\n    \r\n    let myAccount \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002740110\u0027).get(0);\r\n    return myAccount.getProperty(\u0027JournalNumber\u0027);\r\n    \r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let reqMnemo \u003d docMnemo + \u0027.tr.\u0027;\r\n    for (let tableRec of currentDocument.getRows()){\r\n\r\n        //добавление проводки\r\n        let posting \u003d EntityFactory.createPosting();\r\n        posting.setComment(\u0027Проводка удалась\u0027);\r\n        posting.setValue(tableRec.get(reqMnemo + \u0027Summa\u0027));\r\n        posting.setDebit(tableRec.get(reqMnemo + \u0027Debet\u0027));\r\n        posting.setCredit(tableRec.get(reqMnemo + \u0027Kredit\u0027));\r\n        \r\n        posting.setProperty(\u0027123\u0027, tableRec.get(reqMnemo + \u0027KPSDb\u0027));\r\n        posting.setProperty(\u0027JournalNumber\u0027, 181);\r\n        posting.setProperty(KFO, tableRec.get(reqMnemo + \u0027KVFO\u0027));\r\n        posting.setProperty(\u0027Razrabotka.accounttransaction.rq.kfo\u0027, tableRec.get(reqMnemo + \u0027KVFO\u0027));\r\n        posting.setProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitTest\u0027, tableRec.get(reqMnemo + \u0027KPSDb\u0027));\r\n        posting.setProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitSchet\u0027, tableRec.get(reqMnemo + \u0027Debet\u0027));\r\n        posting.setProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitData\u0027, tableRec.get(reqMnemo + \u0027Data\u0027));\r\n        posting.setProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitCHislo\u0027, tableRec.get(reqMnemo + \u0027Debet\u0027));\r\n        posting.setProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitCHisloVeshestvennoe\u0027, tableRec.get(reqMnemo + \u0027Summa\u0027));\r\n        posting.setProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitTekst\u0027, tableRec.get(reqMnemo + \u0027Tekst\u0027));\r\n        posting.setProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitBoolean\u0027, tableRec.get(reqMnemo + \u0027Logicheskiii\u0027));\r\n        \r\n//        posting.setDebitProperty(KPS, tableRec.get(reqMnemo + \u0027KPSDb\u0027));\r\n//        posting.setCreditProperty(KPS, tableRec.get(reqMnemo + \u0027KPSKr\u0027));\r\n        posting.setDebitProperty(\u0027Razrabotka.accounttransaction.arq.kps\u0027, tableRec.get(reqMnemo + \u0027KPSDb\u0027));\r\n        posting.setCreditProperty(\u0027Razrabotka.accounttransaction.arq.kps\u0027, tableRec.get(reqMnemo + \u0027KPSKr\u0027));\r\n//        posting.setProperty(\u0027debit.Razrabotka.accounttransaction.arq.kps\u0027, tableRec.get(reqMnemo + \u0027KPSDb\u0027));\r\n\r\n        currentDocument.addPosting(posting);\r\n    };\r\n\r\n    //устанавливаем текущую дату проводки\r\n    currentDocument.setExecuted();\r\n    //устанавливаем сумму операции\r\n    currentDocument.setOperationSum(getCalculatedSum(currentDocument, docMnemo + \u0027.tr.Summa\u0027));\r\n    //сохранение документа с проводками\r\n    currentDocument.save();\r\n    \r\n    for (let postingRec of currentDocument.getPostings()){\r\n\r\n        return postingRec.getProperty(\u0027JournalNumber\u0027);\r\n        return postingRec.getProperty(\u0027123\u0027);\r\n        return postingRec.getProperty(KFO);\r\n//        return postingRec.getProperty(\u0027Razrabotka.accounttransaction.rq.kfo\u0027);\r\n//        return postingRec.getProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitTest\u0027);\r\n//        return postingRec.getProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitSchet\u0027);\r\n//        return postingRec.getProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitData\u0027);\r\n        return postingRec.getProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitCHislo\u0027);\r\n//        return postingRec.getProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitCHisloVeshestvennoe\u0027);\r\n//        return postingRec.getProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitTekst\u0027);\r\n//        return postingRec.getProperty(\u0027Razrabotka.accounttransaction.rq.RekvizitBoolean\u0027);\r\n\r\n//        return postingRec.getDebitProperty(KPS);\r\n//        return postingRec.getCreditProperty(KPS);\r\n//        return postingRec.getDebitProperty(\u0027Razrabotka.accounttransaction.arq.kps\u0027);\r\n//        return postingRec.getCreditProperty(\u0027Razrabotka.accounttransaction.arq.kps\u0027);\r\n//        return postingRec.getProperty(\u0027debit.Razrabotka.accounttransaction.arq.kps\u0027);\r\n    }\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.Testovyii.Test902",
+    "title": {
+      "ru_RU": "тест 902",
+      "en_EN": "test 902"
+    },
+    "description": {}
+  }
+}

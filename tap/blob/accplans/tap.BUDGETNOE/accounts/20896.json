@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20896",
+  "name": {
+    "ru_RU": "Расчеты с подотчетными лицами по оплате иных выплат текущего характера физическим лицам"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "3",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20896",
+    "title": {
+      "ru_RU": "20896"
+    },
+    "description": {}
+  }
+}

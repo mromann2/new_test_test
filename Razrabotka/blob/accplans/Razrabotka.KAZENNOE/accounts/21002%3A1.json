@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "21002:1",
+  "name": {
+    "ru_RU": "Расчеты по поступлениям в бюджет с ФО"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "2",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "210021",
+    "title": {
+      "ru_RU": "21002:1"
+    },
+    "description": {}
+  }
+}

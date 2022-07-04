@@ -1,0 +1,343 @@
+{
+  "group": {
+    "mnemo": "tap.DemonstracionnyeTipovyeOperacii"
+  },
+  "plan": {
+    "mnemo": "tap.BUDGETNOE"
+  },
+  "date": {
+    "celltype": "OPERATION_DATE",
+    "type": {
+      "mnemo": "primitive.date"
+    },
+    "value": "1623963600000",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "number": {
+    "celltype": "OPERATION_NUMBER",
+    "type": {
+      "mnemo": "primitive.internationalstring"
+    },
+    "value": "{\"ru_RU\":\"1\"}",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "summ": {
+    "celltype": "OPERATION_SUM",
+    "type": {
+      "mnemo": "primitive.real"
+    },
+    "value": "1000",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "operation_description": {
+    "celltype": "OPERATION_DESCRIPTION",
+    "type": {
+      "mnemo": "primitive.internationalstring"
+    },
+    "value": "{\"ru_RU\":\"Поступление БСО\"}",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "operations": [
+    {
+      "row": [
+        {
+          "celltype": "ROW_SOURCE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ACCOUNT",
+          "type": {
+            "mnemo": "primitive.datatypereference"
+          },
+          "value": "{\"mnemo\":\"00000000000000000000310000\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CREDIT_ACCOUNT",
+          "type": {
+            "mnemo": "primitive.datatypereference"
+          },
+          "value": "{\"mnemo\":\"00000000000000000010410000\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY_SUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "EXCHANGE_RATE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "COUNT",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "SUM",
+          "type": {
+            "mnemo": "primitive.real"
+          },
+          "value": "100",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {
+            "ru_RU": "сумма"
+          },
+          "index": 0
+        },
+        {
+          "celltype": "POSTING_DESCRIPTION",
+          "type": {
+            "mnemo": "primitive.internationalstring"
+          },
+          "value": "{\"ru_RU\":\"Поступление БСО\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {
+            "ru_RU": "Поступление БСО"
+          },
+          "index": 0
+        },
+        {
+          "celltype": "SOURCE",
+          "type": {
+            "mnemo": "primitive.internationalstring"
+          },
+          "value": "{\"ru_RU\":\"Первичный документ\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {
+            "ru_RU": "Основание"
+          },
+          "index": 0
+        },
+        {
+          "celltype": "JOURNAL_NUM",
+          "type": {
+            "mnemo": "primitive.internationalstring"
+          },
+          "value": "{\"ru_RU\":\"№ 15\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {
+            "ru_RU": "Номер журнала"
+          },
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ANALYTIC",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ANALYTIC",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 1
+        },
+        {
+          "celltype": "CREDIT_ANALYTIC",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        }
+      ],
+      "rownum": 0,
+      "condition": "",
+      "conditionEnabled": true
+    },
+    {
+      "row": [
+        {
+          "celltype": "ROW_SOURCE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ACCOUNT",
+          "type": {
+            "mnemo": "primitive.datatypereference"
+          },
+          "value": "{\"mnemo\":\"00000000000000000000300000\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CREDIT_ACCOUNT",
+          "type": {
+            "mnemo": "primitive.datatypereference"
+          },
+          "value": "{\"mnemo\":\"00000000000000000010400000\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY_SUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "EXCHANGE_RATE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "COUNT",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "SUM",
+          "type": {
+            "mnemo": "primitive.real"
+          },
+          "value": "900",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {
+            "ru_RU": "сумма"
+          },
+          "index": 0
+        },
+        {
+          "celltype": "POSTING_DESCRIPTION",
+          "type": {
+            "mnemo": "primitive.internationalstring"
+          },
+          "value": "{\"ru_RU\":\"Поступление БСО\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {
+            "ru_RU": "Поступление БСО"
+          },
+          "index": 0
+        },
+        {
+          "celltype": "SOURCE",
+          "type": {
+            "mnemo": "primitive.internationalstring"
+          },
+          "value": "{\"ru_RU\":\"Первичный документ\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {
+            "ru_RU": "Основание"
+          },
+          "index": 0
+        },
+        {
+          "celltype": "JOURNAL_NUM",
+          "type": {
+            "mnemo": "primitive.internationalstring"
+          },
+          "value": "{\"ru_RU\":\"№16\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {
+            "ru_RU": "Номер журнала"
+          },
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ANALYTIC",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ANALYTIC",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 1
+        },
+        {
+          "celltype": "CREDIT_ANALYTIC",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        }
+      ],
+      "rownum": 1,
+      "condition": "",
+      "conditionEnabled": true
+    }
+  ],
+  "script": {
+    "title": "Скрипт операции Поступление БСО",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.DemonstracionnyeTipovyeOperacii.PostuplenieBSO",
+    "title": {
+      "ru_RU": "Поступление БСО",
+      "en_EN": "Postuplenie BSO"
+    },
+    "description": {
+      "ru_RU": "Поступление бланков строгой отчетности"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 9,
+  "titlelength": 150,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RezervyIOcenochnyeObyazatelstva.VidRezerva",
+        "title": {
+          "ru_RU": "Вид резерва",
+          "en_EN": "Vid rezerva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyRezervovIOcenochnyhObyazatelstv"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RezervyIOcenochnyeObyazatelstva.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Резервы и оценочные обязательства",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.RezervyIOcenochnyeObyazatelstva",
+    "title": {
+      "ru_RU": "Резервы и оценочные обязательства"
+    },
+    "description": {
+      "ru_RU": "Справочник Резервы и оценочные обязательства"
+    }
+  }
+}

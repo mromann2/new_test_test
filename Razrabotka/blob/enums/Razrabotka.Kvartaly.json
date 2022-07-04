@@ -1,0 +1,20 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "I квартал",
+    "II квартал",
+    "III квартал",
+    "IV квартал"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.Kvartaly",
+    "title": {
+      "ru_RU": "Кварталы",
+      "en_EN": "Kvartaly"
+    },
+    "description": {}
+  }
+}

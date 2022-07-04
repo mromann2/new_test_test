@@ -1,0 +1,87 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InDialog",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Raspredelenie.Polnomochie",
+        "title": {
+          "ru_RU": "Полномочие",
+          "en_EN": "Polnomochie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.PZPF"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Raspredelenie.Ispolnitel",
+        "title": {
+          "ru_RU": "Исполнитель",
+          "en_EN": "Ispolnitel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Распределение",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.Raspredelenie",
+    "title": {
+      "ru_RU": "Распределение",
+      "en_EN": "Raspredelenie"
+    },
+    "description": {}
+  }
+}

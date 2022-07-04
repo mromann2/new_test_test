@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "10710",
+  "name": {
+    "ru_RU": "Недвижимое имущество учреждения в пути"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10710",
+    "title": {
+      "ru_RU": "10710"
+    },
+    "description": {}
+  }
+}

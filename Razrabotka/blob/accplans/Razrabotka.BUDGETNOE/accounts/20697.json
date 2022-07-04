@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20697",
+  "name": {
+    "ru_RU": "Расчеты по авансам по оплате иных выплат текущего характера организациям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "4",
+  "kosgudb": "564",
+  "kosgukr": "664",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20697",
+    "title": {
+      "ru_RU": "20697"
+    },
+    "description": {}
+  }
+}

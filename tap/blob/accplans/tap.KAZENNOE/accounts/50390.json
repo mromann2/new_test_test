@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "50390",
+  "name": {
+    "ru_RU": "Бюджетные ассигнования на иные очередные годы (за пределами планового периода)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50390",
+    "title": {
+      "ru_RU": "50390"
+    },
+    "description": {}
+  }
+}

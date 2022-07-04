@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20831",
+  "name": {
+    "ru_RU": "Расчеты с подотчетными лицами по приобретению основных средств"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "3",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20831",
+    "title": {
+      "ru_RU": "20831"
+    },
+    "description": {}
+  }
+}

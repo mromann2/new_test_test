@@ -1,0 +1,153 @@
+{
+  "group": {
+    "mnemo": "tap.VedomostNaVydachuMZNaNuzhdyUchrezhdeniya"
+  },
+  "plan": {
+    "mnemo": "tap.BUDGETNOE"
+  },
+  "date": {
+    "celltype": "OPERATION_DATE",
+    "formula": "currentDocument.getDate()",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "number": {
+    "celltype": "OPERATION_NUMBER",
+    "type": {
+      "mnemo": "primitive.internationalstring"
+    },
+    "value": "{\"ru_RU\":\"1\"}",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "summ": {
+    "celltype": "OPERATION_SUM",
+    "formula": "currentDocument.getDocumentSumma()",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "operation_description": {
+    "celltype": "OPERATION_DESCRIPTION",
+    "type": {
+      "mnemo": "primitive.internationalstring"
+    },
+    "value": "{\"ru_RU\":\"Перемещение материальных запасов между материально ответственными лицами\"}",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "operations": [
+    {
+      "row": [
+        {
+          "celltype": "ROW_SOURCE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ACCOUNT",
+          "formula": "if ( сurrentDocument.getCurrentRow().get(\"VidUcheta\") \u003d\u003d \"БУ\" )\n\tсurrentDocument.getCurrentRow().get(\"SchetUcheta\")",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CREDIT_ACCOUNT",
+          "formula": "if ( сurrentDocument.getCurrentRow().get(\"VidUcheta\") \u003d\u003d \"БУ\" )\n\tсurrentDocument.getCurrentRow().get(\"SchetUcheta\")",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY_SUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "EXCHANGE_RATE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "COUNT",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "SUM",
+          "formula": "сurrentDocument.getCurrentRow().get(\"Stoimost\")",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "POSTING_DESCRIPTION",
+          "formula": "\"Перемещение\" + сurrentDocument.getCurrentRow().get(\"Nomenklatura\")",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "SOURCE",
+          "type": {
+            "mnemo": "primitive.internationalstring"
+          },
+          "value": "{\"ru_RU\":\"Ведомость выдачи материальных ценностей на нужды учреждения\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "JOURNAL_NUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        }
+      ],
+      "rownum": 0,
+      "condition": "",
+      "conditionEnabled": true
+    }
+  ],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VedomostNaVydachuMZNaNuzhdyUchrezhdeniya.PeremeshenieMaterialnyhZapasovMezhduMaterialnoOtvetstvennymiLicami",
+    "title": {
+      "ru_RU": "Перемещение материальных запасов между материально ответственными лицами",
+      "en_EN": "Peremeshenie materialnyh zapasov mezhdu materialno otvetstvennymi licami"
+    },
+    "description": {}
+  }
+}

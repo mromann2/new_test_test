@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "1707",
+  "name": {
+    "ru_RU": "Поступление денежных средств на счета учреждения в иностранной валюте"
+  },
+  "foreign": true,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "1707",
+    "title": {
+      "ru_RU": "1707"
+    },
+    "description": {}
+  }
+}

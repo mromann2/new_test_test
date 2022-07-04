@@ -1,0 +1,31 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.OsnovnayaValiuta",
+      "title": {
+        "ru_RU": "Основная валюта",
+        "en_EN": "Osnovnaya valiuta"
+      },
+      "description": {
+        "ru_RU": "Значение по умолчанию"
+      }
+    },
+    "type": {
+      "mnemo": "tap.Valiuty"
+    },
+    "properties": {},
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.OsnovnayaValiuta",
+    "title": {
+      "ru_RU": "Основная валюта",
+      "en_EN": "Osnovnaya valiuta"
+    },
+    "description": {
+      "ru_RU": "Значение по умолчанию"
+    }
+  }
+}

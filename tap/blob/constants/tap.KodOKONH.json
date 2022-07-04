@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.KodOKONH",
+      "title": {
+        "ru_RU": "Код ОКОНХ",
+        "en_EN": "Kod OKONH"
+      },
+      "description": {
+        "ru_RU": "Код отрасли по ОКОНХ"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "20"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KodOKONH",
+    "title": {
+      "ru_RU": "Код ОКОНХ",
+      "en_EN": "Kod OKONH"
+    },
+    "description": {
+      "ru_RU": "Код отрасли по ОКОНХ"
+    }
+  }
+}

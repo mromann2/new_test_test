@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20313",
+  "name": {
+    "ru_RU": "Средства бюджтных учреждений на счетах ООКО"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "2",
+  "kosgudb": "510",
+  "kosgukr": "610",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20313",
+    "title": {
+      "ru_RU": "20313"
+    },
+    "description": {}
+  }
+}

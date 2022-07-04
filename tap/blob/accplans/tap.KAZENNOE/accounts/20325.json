@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20325",
+  "name": {
+    "ru_RU": "Средства иных организаций на счетах органа, осуществляющего кассовое обслуживание, в пути"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20325",
+    "title": {
+      "ru_RU": "20325"
+    },
+    "description": {}
+  }
+}

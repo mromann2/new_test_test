@@ -1,0 +1,13 @@
+{
+  "plantype": "BUDGET",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.BUDGETNOE",
+    "title": {
+      "ru_RU": "Бюджетный",
+      "en_EN": "Public sector"
+    },
+    "description": {}
+  }
+}
