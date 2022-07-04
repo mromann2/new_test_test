@@ -1,0 +1,30 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "11.888",
+      "title": {
+        "ru_RU": "888",
+        "en_EN": "888"
+      },
+      "description": {}
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "14"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "11.888",
+    "title": {
+      "ru_RU": "888",
+      "en_EN": "888"
+    },
+    "description": {}
+  }
+}
