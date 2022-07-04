@@ -3,7 +3,7 @@
     "item": {
       "major": 1,
       "minor": 1,
-      "counter": 43
+      "counter": 44
     }
   },
   "class": "com.argos.dfe.lib.module.Application"
