@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "ВПЛ21",
+  "name": {
+    "ru_RU": "Возвраты прошлых лет на счета в кредитной организации"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21",
+    "title": {
+      "ru_RU": "ВПЛ21"
+    },
+    "description": {}
+  }
+}

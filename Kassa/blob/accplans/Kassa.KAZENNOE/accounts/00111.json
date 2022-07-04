@@ -1,0 +1,54 @@
+{
+  "active": true,
+  "code": "00111",
+  "name": {
+    "ru_RU": "Недвижимое имущество, полученное в пользование по договорам безвозмездного пользования"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "00111",
+    "title": {
+      "ru_RU": "00111"
+    },
+    "description": {}
+  }
+}

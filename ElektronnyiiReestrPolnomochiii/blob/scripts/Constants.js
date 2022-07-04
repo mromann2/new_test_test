@@ -1,0 +1,1 @@
+const MODULEMNEMO = 'ElektronnyiiReestrPolnomochiii';

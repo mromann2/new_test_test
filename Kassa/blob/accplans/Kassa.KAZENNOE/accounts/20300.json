@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "20300",
+  "name": {
+    "ru_RU": "Средства на счетах органа, осуществляющего кассовое обслуживание"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20300",
+    "title": {
+      "ru_RU": "20300"
+    },
+    "description": {}
+  }
+}

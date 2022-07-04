@@ -1,0 +1,11 @@
+{
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.NachislenieKompensaciiUchashimsya",
+    "title": {
+      "ru_RU": "Начисление компенсации учащимся",
+      "en_EN": "Nachislenie kompensacii uchashimsya"
+    },
+    "description": {}
+  }
+}

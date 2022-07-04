@@ -1,0 +1,44 @@
+{
+  "active": true,
+  "code": "2064B",
+  "name": {
+    "ru_RU": "Расчеты по авансовым безвозмездным перечислениям текущего характера некоммерческим организациям и физическим лицам – производителям товаров, работ и услуг на продукцию"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "2064",
+    "title": {
+      "ru_RU": "2064B"
+    },
+    "description": {}
+  }
+}

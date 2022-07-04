@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "20400",
+  "name": {
+    "ru_RU": "Финансовые вложения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.ObektyFinansovyhVlozheniii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20400",
+    "title": {
+      "ru_RU": "20400"
+    },
+    "description": {}
+  }
+}

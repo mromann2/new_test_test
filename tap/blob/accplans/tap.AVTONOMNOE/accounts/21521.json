@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "21521",
+  "name": {
+    "ru_RU": "Вложения в облигации"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.ObektyFinansovyhVlozheniii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21521",
+    "title": {
+      "ru_RU": "21521"
+    },
+    "description": {}
+  }
+}

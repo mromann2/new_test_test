@@ -1,0 +1,661 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 5,
+  "kodlength": 11,
+  "titlelength": 150,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.VidDogovora",
+        "title": {
+          "ru_RU": "Вид договора",
+          "en_EN": "Vid dogovora"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyDogovora"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.SchetKontragenta",
+        "title": {
+          "ru_RU": "Счет контрагента",
+          "en_EN": "Schet kontragenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.BankovskieIKaznacheiiskieScheta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.PublichnoeNormativnoeObyazatelstvo",
+        "title": {
+          "ru_RU": "Публичное нормативное обязательство",
+          "en_EN": "Publichnoe normativnoe obyazatelstvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.Dolgosrochnyii",
+        "title": {
+          "ru_RU": "Долгосрочный",
+          "en_EN": "Dolgosrochnyii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.UchetPredmetaDogovora",
+        "title": {
+          "ru_RU": "Учет предмета договора",
+          "en_EN": "Uchet predmeta dogovora"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.ZakliuchaetsyaPoRezultatamKonkursnyhProcedur",
+        "title": {
+          "ru_RU": "Заключается по результатам конкурсных процедур",
+          "en_EN": "Zakliuchaetsya po rezultatam konkursnyh procedur"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.KonkursnyeProceduryZaversheny",
+        "title": {
+          "ru_RU": "Конкурсные процедуры завершены",
+          "en_EN": "Konkursnye procedury zaversheny"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.RezultatZaversheniyaKonkursnyhProcedur",
+        "title": {
+          "ru_RU": "Результат завершения конкурсных процедур",
+          "en_EN": "Rezultat zaversheniya konkursnyh procedur"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RezultatyZaversheniyaKonkursnyhProcedur"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.VidObyazatelstva",
+        "title": {
+          "ru_RU": "Вид обязательства",
+          "en_EN": "Vid obyazatelstva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PervichnyeDokumenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.DataZakliucheniyaDogovora",
+        "title": {
+          "ru_RU": "Дата заключения договора",
+          "en_EN": "Data zakliucheniya dogovora"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.NomerDogovora",
+        "title": {
+          "ru_RU": "Номер договора",
+          "en_EN": "Nomer dogovora"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "100"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.NormativnopravovoiiAkt",
+        "title": {
+          "ru_RU": "Нормативно-правовой акт",
+          "en_EN": "Normativnopravovoii akt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.KratkoeSoderzhaniecelevoeNaznachenie",
+        "title": {
+          "ru_RU": "Краткое содержание (целевое назначение)",
+          "en_EN": "Kratkoe soderzhanie celevoe naznachenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.TekstNaznacheniyaPlatezha",
+        "title": {
+          "ru_RU": "Текст назначения платежа",
+          "en_EN": "Tekst naznacheniya platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.NapravlenieDeyatelnosti",
+        "title": {
+          "ru_RU": "Направление деятельности",
+          "en_EN": "Napravlenie deyatelnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.NapravleniyaDeyatelnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.TipDogovoraDlyaCeleiiNDS",
+        "title": {
+          "ru_RU": "Тип договора для целей НДС",
+          "en_EN": "Tip dogovora dlya celeii NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.TipyDogorovDlyaNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.PoryadokRegistraciiSchetafakturyNaAvans",
+        "title": {
+          "ru_RU": "Порядок регистрации счета-фактуры на аванс",
+          "en_EN": "Poryadok registracii schetafaktury na avans"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PoryadkiRegistraciiSchetafakturyNaAvans"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.NePrimenyatKKT",
+        "title": {
+          "ru_RU": "Не применять ККТ",
+          "en_EN": "Ne primenyat KKT"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.NomenklaturaPlatezhaDlyaCHekaKKM",
+        "title": {
+          "ru_RU": "Номенклатура платежа для чека ККМ",
+          "en_EN": "Nomenklatura platezha dlya cheka KKM"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.PriznakSposobaRascheta",
+        "title": {
+          "ru_RU": "Признак способа расчета",
+          "en_EN": "Priznak sposoba rascheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PriznakiSposobovRascheta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.OplataVstrechnymPredostavleniem",
+        "title": {
+          "ru_RU": "Оплата встречным предоставлением",
+          "en_EN": "Oplata vstrechnym predostavleniem"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.KPSProdavca",
+        "title": {
+          "ru_RU": "КПС продавца",
+          "en_EN": "KPS prodavca"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.KodCeliProdavca",
+        "title": {
+          "ru_RU": "Код цели продавца",
+          "en_EN": "Kod celi prodavca"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyCelevyhSredstv"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.UchetnyiiNomerObyazatelstva",
+        "title": {
+          "ru_RU": "Учетный номер обязательства",
+          "en_EN": "Uchetnyii nomer obyazatelstva"
+        },
+        "description": {
+          "ru_RU": "Учетный номер обязательства, присвоенный органом казначейства"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.VidHarakteristiki",
+        "title": {
+          "ru_RU": "Вид характеристики",
+          "en_EN": "Vid harakteristiki"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyHarakteristikDogovora"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.ZnachenieHarakteristiki",
+        "title": {
+          "ru_RU": "Значение характеристики",
+          "en_EN": "Znachenie harakteristiki"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "150"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.DataOkonchaniyaDogovora",
+        "title": {
+          "ru_RU": "Дата окончания договора",
+          "en_EN": "Data okonchaniya dogovora"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.DogovorProsrochen",
+        "title": {
+          "ru_RU": "Договор просрочен",
+          "en_EN": "Dogovor prosrochen"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.KrupnayaSdelka",
+        "title": {
+          "ru_RU": "Крупная сделка",
+          "en_EN": "Krupnaya sdelka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.DogovoryIObyazatelstva.Dokumentosnovanie",
+        "title": {
+          "ru_RU": "Документ-основание",
+          "en_EN": "Dokumentosnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Договоры и иные основания возникновения обязательств",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.DogovoryIObyazatelstva",
+    "title": {
+      "ru_RU": "Договоры и иные основания возникновения обязательств",
+      "en_EN": "Dogovory i obyazatelstva"
+    },
+    "description": {}
+  }
+}

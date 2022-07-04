@@ -1,0 +1,44 @@
+{
+  "active": true,
+  "code": "УРН00",
+  "name": {
+    "ru_RU": "Расчеты по налогам и платежам в бюджет"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.VidyNalogovIPlatezheii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.DokumentyRaschetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "00",
+    "title": {
+      "ru_RU": "УРН00"
+    },
+    "description": {}
+  }
+}

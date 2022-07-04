@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "20210",
+  "name": {
+    "ru_RU": "Средства на счетах бюджета в органе Федерального казначейства"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20210",
+    "title": {
+      "ru_RU": "20210"
+    },
+    "description": {}
+  }
+}

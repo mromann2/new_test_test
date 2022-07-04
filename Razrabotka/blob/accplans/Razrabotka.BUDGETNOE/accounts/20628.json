@@ -1,0 +1,47 @@
+{
+  "active": true,
+  "code": "20628",
+  "name": {
+    "ru_RU": "Расчеты по авансам по услугам, работам для целей капитальных вложений"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "4",
+  "kosgudb": "564",
+  "kosgukr": "664",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.DogovoryGoskontrakty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20628",
+    "title": {
+      "ru_RU": "20628"
+    },
+    "description": {}
+  }
+}

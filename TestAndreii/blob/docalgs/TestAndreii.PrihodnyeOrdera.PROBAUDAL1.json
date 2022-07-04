@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    //проверка документа\r\n    let validationResult \u003d notValid(currentDocument);\r\n    if (validationResult) {\r\n        return validationResult;\r\n    }\r\n    \r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let regName \u003d MODULEMNEMO + \u0027.OstatkiTMC\u0027;\r\n    let zeroPartia;\r\n    //ищем в справочнике Партии подменную НУЛЕВУЮ ПАРТИЮ\r\n    if (EntityFactory.getCatalogs().get(MODULEMNEMO + \".Partii\").findByCode(\"0\").size() \u003e 0) {    \r\n        zeroPartia \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \".Partii\").findByCode(\"0\").get(0);\r\n    }      \r\n    \r\n    let tmc;\r\n    //ищем в справочнике Партии подменную НУЛЕВУЮ ПАРТИЮ\r\n    if (EntityFactory.getCatalogs().get(MODULEMNEMO + \".MaterialnyeZapasy\").findByCode(\"001\").size() \u003e 0) {    \r\n        tmc \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \".MaterialnyeZapasy\").findByCode(\"001\").get(0);\r\n    }    \r\n    //MaterialnyeZapasy\r\n    \r\n    let sh_cap \u003d regName + \u0027.dm.Schet\u0027;\r\n    let mol_cap \u003d regName + \u0027.dm.MOL\u0027;\r\n    let skl_cap \u003d regName + \u0027.dm.Sklad\u0027;\r\n    let part_cap \u003d regName + \u0027.dm.Partiya\u0027;\r\n    let tmc_cap \u003d regName + \u0027.dm.TMC\u0027;    \r\n    \r\n            \r\n    let sh \u003d getAccountByCode(\u002712345\u0027);\r\n    let mol \u003d currentDocument.get(docMnemo + \u0027.hr.MOL\u0027);\r\n    let skl \u003d currentDocument.get(docMnemo + \u0027.hr.Sklad\u0027);\r\n    let part \u003d zeroPartia;\r\n    //record.setDimension(regName + \u0027.dm.TMC\u0027, tmc);\r\n    \r\n    req1 \u003d regName + \u0027.rg.VidDvizheniya\u0027;\r\n   \r\n    let condition \u003d new filter().dimension(sh_cap, sh).and().dimension(mol_cap, mol).and().dimension(skl_cap, skl).and().dimension(part_cap, part).and().dimension(tmc_cap, tmc).and().requisite(req1, docMnemo);\r\n    //dimension(mol_cap, mol).and().dimension(skl_cap, skl).and().dimension(part_cap, part).and().dimension(tmc_cap, tmc).and()\r\n    //myReg.delete(condition);\r\n    //return \u0027Запись регистра удалена\u0027;        \r\n  \r\n    let myReg \u003d Register.get(regName);\r\n    //myReg.delete(condition);\r\n    let collection\u003dmyReg.find(condition);\r\n    \r\n    \r\n    let resultValidate \u003d currentDocument.validate();\r\n    \r\n    resultValidate.addValueError(collection.size() + \u0027 \u0027);\r\n    \r\n    return  resultValidate;      \r\n    //\r\n    //\r\n    //validationResult \u003d collection.size() + \u0027+++\u0027;\r\n    //return validationResult;\r\n    //return \u00271\u0027;\r\n    \r\n\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.PrihodnyeOrdera.PROBAUDAL1",
+    "title": {
+      "ru_RU": "ПРОБА УДАЛ 1",
+      "en_EN": "PROBA UDAL 1"
+    },
+    "description": {}
+  }
+}

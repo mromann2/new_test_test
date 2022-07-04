@@ -1,0 +1,45 @@
+{
+  "active": true,
+  "code": "20560",
+  "name": {
+    "ru_RU": "Расчеты по безвозмездным денежным поступлениям капитального характера"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20560",
+    "title": {
+      "ru_RU": "20560"
+    },
+    "description": {}
+  }
+}

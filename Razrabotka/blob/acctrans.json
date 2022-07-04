@@ -1,0 +1,262 @@
+{
+  "postingrequisites": [
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.rq.RasshifrovkaOperacii",
+        "title": {
+          "ru_RU": "Расшифровка операции",
+          "en_EN": "Rasshifrovka operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.rq.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.rq.Cena",
+        "title": {
+          "ru_RU": "Цена",
+          "en_EN": "Cena"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.rq.MezhraschetnyiiPeriod",
+        "title": {
+          "ru_RU": "Межрасчетный период",
+          "en_EN": "Mezhraschetnyii period"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.rq.ZhO",
+        "title": {
+          "ru_RU": "№ ЖО",
+          "en_EN": " ZhO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.rq.DopZhO",
+        "title": {
+          "ru_RU": "№ Доп. ЖО",
+          "en_EN": " Dop ZhO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.rq.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.rq.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "accountrequisites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.arq.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.arq.KOSGU",
+        "title": {
+          "ru_RU": "КОСГУ",
+          "en_EN": "KOSGU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.accounttransaction.arq.KOSGUEKR",
+        "title": {
+          "ru_RU": "КОСГУ(ЭКР)",
+          "en_EN": "KOSGUEKR"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "allowselection": true,
+  "ondebitcredit": false,
+  "forall": true,
+  "levelscount": 1,
+  "selectionbycurrency": false,
+  "selectionbysum": true,
+  "selectionbyamount": false,
+  "selectionbycurrencysum": false,
+  "selectionbyplan": false,
+  "complextransaction": true,
+  "sumprops": {
+    "length": 15,
+    "minlength": 4,
+    "maxlength": 18,
+    "precision": 2,
+    "maxprecision": 2,
+    "minprecision": 0,
+    "separatetriads": false
+  },
+  "amountprops": {
+    "length": 15,
+    "minlength": 7,
+    "maxlength": 18,
+    "precision": 3,
+    "maxprecision": 5,
+    "minprecision": 0,
+    "separatetriads": false
+  },
+  "currencysumprops": {
+    "length": 15,
+    "minlength": 4,
+    "maxlength": 18,
+    "precision": 2,
+    "maxprecision": 2,
+    "minprecision": 0,
+    "separatetriads": false
+  },
+  "accounttransactionjournal": [],
+  "requisiteheaders": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.accounttransaction",
+    "title": {
+      "ru_RU": "Проводка",
+      "en_EN": "Account Transaction"
+    },
+    "description": {
+      "ru_RU": "Проводка",
+      "en_EN": "Account Transaction"
+    }
+  }
+}

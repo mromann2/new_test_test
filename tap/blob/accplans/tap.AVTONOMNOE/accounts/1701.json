@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "1701",
+  "name": {
+    "ru_RU": "Поступление денежных средств на счета учреждения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "1701",
+    "title": {
+      "ru_RU": "1701"
+    },
+    "description": {}
+  }
+}

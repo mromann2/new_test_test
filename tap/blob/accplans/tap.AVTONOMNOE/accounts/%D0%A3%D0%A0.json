@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "УР",
+  "name": {
+    "ru_RU": "Расчеты по прочим операциям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "",
+    "title": {
+      "ru_RU": "УР"
+    },
+    "description": {}
+  }
+}

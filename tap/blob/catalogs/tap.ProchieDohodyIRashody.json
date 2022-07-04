@@ -1,0 +1,110 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.ProchieDohodyIRashody.VidRezhimaNalogooblozheniya",
+        "title": {
+          "ru_RU": "Вид режима налогообложения",
+          "en_EN": "Vid rezhima nalogooblozheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyRezhimaNalooblozheniya"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.ProchieDohodyIRashody.VidProchihDohodovIRashodov",
+        "title": {
+          "ru_RU": "Вид прочих доходов и расходов",
+          "en_EN": "Vid prochih dohodov i rashodov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.ProchieDohodyIRashody.PrinimaetsyaKNalogovomuUchetu",
+        "title": {
+          "ru_RU": "Принимается к налоговому учету",
+          "en_EN": "Prinimaetsya k nalogovomu uchetu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Прочие доходы и расходы",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.ProchieDohodyIRashody",
+    "title": {
+      "ru_RU": "Прочие доходы и расходы"
+    },
+    "description": {
+      "ru_RU": "Справочник Прочие доходы и расходы"
+    }
+  }
+}

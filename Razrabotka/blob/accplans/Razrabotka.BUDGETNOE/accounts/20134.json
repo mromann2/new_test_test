@@ -1,0 +1,47 @@
+{
+  "active": true,
+  "code": "20134",
+  "name": {
+    "ru_RU": "Касса"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "1",
+  "kosgudb": "510",
+  "kosgukr": "610",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20134",
+    "title": {
+      "ru_RU": "20134"
+    },
+    "description": {}
+  }
+}

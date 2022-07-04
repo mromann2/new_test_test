@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "Н43",
+  "name": {
+    "ru_RU": "Готовая продукция"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "43",
+    "title": {
+      "ru_RU": "Н43"
+    },
+    "description": {}
+  }
+}

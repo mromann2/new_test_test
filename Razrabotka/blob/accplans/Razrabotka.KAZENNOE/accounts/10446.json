@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "10446",
+  "name": {
+    "ru_RU": "Амортизация прав пользования инвентарем производственным и хозяйственным"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "451",
+  "kosgukr": "451",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10446",
+    "title": {
+      "ru_RU": "10446"
+    },
+    "description": {}
+  }
+}

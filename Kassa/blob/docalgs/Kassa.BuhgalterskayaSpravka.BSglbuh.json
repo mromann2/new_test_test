@@ -1,0 +1,164 @@
+{
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "template": {
+    "plan": {
+      "mnemo": "Kassa.BUDGETNOE"
+    },
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formula": "currentDocument.getDate();",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "type": {
+        "mnemo": "primitive.internationalstring"
+      },
+      "value": "{\"ru_RU\":\"1\"}",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formula": " currentDocument.getDocumentSumma();",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "requisite": {
+        "mnemo": "Kassa.BuhgalterskayaSpravka.hr.Opisanie"
+      },
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": [
+      {
+        "row": [
+          {
+            "celltype": "ROW_SOURCE",
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "value": "Faktura",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "DEBIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.BuhgalterskayaSpravka.tr.Debet"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CREDIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.BuhgalterskayaSpravka.tr.Kredit"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY_SUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "EXCHANGE_RATE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "COUNT",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SUM",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.BuhgalterskayaSpravka.tr.Summa"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "POSTING_DESCRIPTION",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.BuhgalterskayaSpravka.hr.Opisanie"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SOURCE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "JOURNAL_NUM",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "Kassa.BuhgalterskayaSpravka.hr.ZhurnalOperaciii"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          }
+        ],
+        "rownum": 0,
+        "condition": "",
+        "conditionEnabled": true
+      }
+    ]
+  },
+  "runastemplate": true,
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.BuhgalterskayaSpravka.BSglbuh",
+    "title": {
+      "ru_RU": "БС (гл.бух.)",
+      "en_EN": "BS glbuh"
+    },
+    "description": {}
+  }
+}

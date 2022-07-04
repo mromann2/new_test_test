@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "11411",
+  "name": {
+    "ru_RU": "Обесценение жилых помещений - недвижимого имущества учреждения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "412",
+  "kosgukr": "412",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "11411",
+    "title": {
+      "ru_RU": "11411"
+    },
+    "description": {}
+  }
+}

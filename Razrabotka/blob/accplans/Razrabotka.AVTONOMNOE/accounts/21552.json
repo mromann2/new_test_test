@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "21552",
+  "name": {
+    "ru_RU": "Вложения в международные организации"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "550",
+  "kosgukr": "650",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21552",
+    "title": {
+      "ru_RU": "21552"
+    },
+    "description": {}
+  }
+}

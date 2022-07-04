@@ -1,0 +1,66 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestB.Dokum2.hr.111",
+        "title": {
+          "ru_RU": "111",
+          "en_EN": "111"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа докум2",
+    "sources": ""
+  },
+  "algorithms": [],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.Dokum2",
+    "title": {
+      "ru_RU": "докум2",
+      "en_EN": "dokum2"
+    },
+    "description": {}
+  }
+}

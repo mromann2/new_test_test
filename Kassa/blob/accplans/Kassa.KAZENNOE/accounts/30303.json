@@ -1,0 +1,44 @@
+{
+  "active": true,
+  "code": "30303",
+  "name": {
+    "ru_RU": "Расчеты по налогу на прибыль организаций"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.VidyNalogovIPlatezheii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30303",
+    "title": {
+      "ru_RU": "30303"
+    },
+    "description": {}
+  }
+}

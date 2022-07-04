@@ -1,0 +1,17 @@
+{
+  "type": {
+    "mnemo": "primitive.plan"
+  },
+  "enum": [
+    "TestB1.PlanB1"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB1.TipOrg",
+    "title": {
+      "ru_RU": "тип орг",
+      "en_EN": "tip org"
+    },
+    "description": {}
+  }
+}

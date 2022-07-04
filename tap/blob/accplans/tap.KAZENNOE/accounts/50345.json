@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "50345",
+  "name": {
+    "ru_RU": "Полученные бюджетные ассигнования"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50345",
+    "title": {
+      "ru_RU": "50345"
+    },
+    "description": {}
+  }
+}

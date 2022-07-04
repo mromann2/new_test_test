@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Поставщики",
+    "Заказчики"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.TipyUchastnikaDogovoraGosKontrakta",
+    "title": {
+      "ru_RU": "Типы участника договора, гос. контракта",
+      "en_EN": "Tipy uchastnika dogovora gos kontrakta"
+    },
+    "description": {}
+  }
+}

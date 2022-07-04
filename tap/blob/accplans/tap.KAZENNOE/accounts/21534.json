@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "21534",
+  "name": {
+    "ru_RU": "Вложения в иные формы участия в капитале"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.ObektyFinansovyhVlozheniii"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21534",
+    "title": {
+      "ru_RU": "21534"
+    },
+    "description": {}
+  }
+}

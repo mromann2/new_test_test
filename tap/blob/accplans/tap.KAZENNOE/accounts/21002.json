@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "21002",
+  "name": {
+    "ru_RU": "Расчеты с финансовым органом по поступлениям в бюджет"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "2",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21002",
+    "title": {
+      "ru_RU": "21002"
+    },
+    "description": {}
+  }
+}

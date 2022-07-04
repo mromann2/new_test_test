@@ -1,0 +1,71 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.SootvetstviyaAnaliticheskihSchetovKEK.Schet",
+        "title": {
+          "ru_RU": "Счет",
+          "en_EN": "Schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "5",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Соответствия аналитических счетов КЭК",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SootvetstviyaAnaliticheskihSchetovKEK",
+    "title": {
+      "ru_RU": "Соответствия аналитических счетов КЭК",
+      "en_EN": "Sootvetstviya analiticheskih schetov KEK"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.KratkoeNaimenovanie",
+        "title": {
+          "ru_RU": "Краткое наименование",
+          "en_EN": "Kratkoe naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.Organizaciya",
+        "title": {
+          "ru_RU": "Организация",
+          "en_EN": "Organizaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.FizicheskoeLico",
+        "title": {
+          "ru_RU": "Физическое лицо",
+          "en_EN": "Fizicheskoe lico"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.Sotrudnik",
+        "title": {
+          "ru_RU": "Сотрудник",
+          "en_EN": "Sotrudnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.DataVozniknoveniya",
+        "title": {
+          "ru_RU": "Дата возникновения",
+          "en_EN": "Data vozniknoveniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.DataPogasheniya",
+        "title": {
+          "ru_RU": "Дата погашения",
+          "en_EN": "Data pogasheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.GodovoiiProcentPoKreditussude",
+        "title": {
+          "ru_RU": "Годовой процент по кредиту (ссуде)",
+          "en_EN": "Godovoii procent po kreditu ssude"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "5",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.Schet",
+        "title": {
+          "ru_RU": "Счет",
+          "en_EN": "Schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.VidyRaschetovPoKreditam.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyRaschetovPoKreditam",
+    "title": {
+      "ru_RU": "Виды расчетов по кредитам"
+    },
+    "description": {
+      "ru_RU": "Справочник Виды расчетов по кредитам"
+    }
+  }
+}

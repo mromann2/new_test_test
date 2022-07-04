@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "Н9001",
+  "name": {
+    "ru_RU": "Выручка от реализации товаров, работ, услуг собственного производства"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "9001",
+    "title": {
+      "ru_RU": "Н9001"
+    },
+    "description": {}
+  }
+}

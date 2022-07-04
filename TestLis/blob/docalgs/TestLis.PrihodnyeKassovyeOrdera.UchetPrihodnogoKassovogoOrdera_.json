@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    if (let resultValidate \u003d notValid(currentDocument)) {\r\n        return resultValidate;\r\n    }\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n        \r\n    for (let tableRec of currentDocument.getRows()){\r\n        //Проводка 1 - по фактуре \r\n        currentDocument.addPosting(createPostingWithProps({tableRec, docMnemo)}));\r\n        \r\n        //Проводка 2 - условие \u003d кредит \u003d 40110\r\n        //       Дебет \u003d 40110, КПС\u003dКПС кредита фактуры, аналитика \u003d аналитика из кредита\r\n        //       Кредит \u003d 30304, КПС\u003dКПС для счета 30304 из шапки (новое поле),\r\n        //                       КОСГУ \u003d КОСГУ кредит из плана счетов\r\n        //       сумма \u003d сумма НДС\r\n        let accKr \u003d tableRec.get(docMnemo + \u0027.tr.Kredit\u0027);\r\n        let acc30304 \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002730304\u0027).get(0);\r\n        if (accKr.getCode() \u003d\u003d \u002740110\u0027) {\r\n            let posting \u003d createPostingWithProps({tableRec, \r\n                                                  docMnemo,\r\n                                                  debit: accKr,\r\n                                                  debitKps: tableRec.get(docMnemo + \u0027.tr.KPSKr\u0027),\r\n                                                  credit: acc30304,\r\n                                                  creditKps: currentDocument.get(docMnemo + \u0027.hr.KPSDlyaScheta334\u0027),\r\n                                                  creditKosgu: acc30304.getKOSGUCredit(),\r\n                                                  summa: tableRec.get(docMnemo + \u0027.tr.SummaNDS\u0027)\r\n                                                 });\r\n            currentDocument.addPosting(posting);\r\n        }\r\n    }\r\n    \r\n    //проверка проводок\r\n    if (let resultValidate \u003d hasNotValidPostings(currentDocument)) {\r\n        return resultValidate;\r\n    }\r\n    //устанавливаем признак проведения и текущую дату\r\n    currentDocument.setExecuted();\r\n    //устанавливаем сумму операции\r\n    currentDocument.setOperationSum(getCalculatedSum(currentDocument, docMnemo + \u0027.tr.VsegoSNDS\u0027));\r\n    //сохранение документа с проводками\r\n    currentDocument.save();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestLis.PrihodnyeKassovyeOrdera.UchetPrihodnogoKassovogoOrdera_",
+    "title": {
+      "ru_RU": "Учет приходного кассового ордера",
+      "en_EN": "Uchet prihodnogo kassovogo ordera"
+    },
+    "description": {}
+  }
+}

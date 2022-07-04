@@ -1,0 +1,714 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.Sotrudnik",
+        "title": {
+          "ru_RU": "Сотрудник",
+          "en_EN": "Sotrudnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.ZayavlenieNaVydachuAvansa",
+        "title": {
+          "ru_RU": "Заявление на выдачу аванса",
+          "en_EN": "Zayavlenie na vydachu avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.RazdelLicevogoScheta",
+        "title": {
+          "ru_RU": "Раздел лицевого счета",
+          "en_EN": "Razdel licevogo scheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.OsnovaniePrinyatiyaObyazatelstva",
+        "title": {
+          "ru_RU": "Основание принятия обязательства",
+          "en_EN": "Osnovanie prinyatiya obyazatelstva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.NaznachenieAvansa",
+        "title": {
+          "ru_RU": "Назначение аванса",
+          "en_EN": "Naznachenie avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "400"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.OstatokPredydushegoAvansa",
+        "title": {
+          "ru_RU": "Остаток предыдущего аванса",
+          "en_EN": "Ostatok predydushego avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.PererashodPredydushegoAvansa",
+        "title": {
+          "ru_RU": "Перерасход предыдущего аванса",
+          "en_EN": "Pererashod predydushego avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.DokumentVydachiAvansa",
+        "title": {
+          "ru_RU": "Документ выдачи аванса",
+          "en_EN": "Dokument vydachi avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.SummaVydachiAvansa",
+        "title": {
+          "ru_RU": "Сумма выдачи аванса",
+          "en_EN": "Summa vydachi avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.DokumentVydachiPererashoda",
+        "title": {
+          "ru_RU": "Документ выдачи перерасхода",
+          "en_EN": "Dokument vydachi pererashoda"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.SummaVydachiPererashoda",
+        "title": {
+          "ru_RU": "Сумма выдачи перерасхода",
+          "en_EN": "Summa vydachi pererashoda"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.DokumentVneseniyaOstatka",
+        "title": {
+          "ru_RU": "Документ внесения остатка",
+          "en_EN": "Dokument vneseniya ostatka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PrihodnyeKassovyeOrdera"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.SummaVnesennogoOstatka",
+        "title": {
+          "ru_RU": "Сумма внесенного остатка",
+          "en_EN": "Summa vnesennogo ostatka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.Rukovoditel",
+        "title": {
+          "ru_RU": "Руководитель",
+          "en_EN": "Rukovoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.RukovoditelPodrazdeleniya",
+        "title": {
+          "ru_RU": "Руководитель подразделения",
+          "en_EN": "Rukovoditel podrazdeleniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.GlBuhgalter",
+        "title": {
+          "ru_RU": "Гл. бухгалтер",
+          "en_EN": "Gl buhgalter"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.Buhgalter",
+        "title": {
+          "ru_RU": "Бухгалтер",
+          "en_EN": "Buhgalter"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.BuhgalterKassir",
+        "title": {
+          "ru_RU": "Бухгалтер - кассир",
+          "en_EN": "Buhgalter  kassir"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.hr.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.PrihodnyiiDokument",
+        "title": {
+          "ru_RU": "Приходный документ",
+          "en_EN": "Prihodnyii dokument"
+        },
+        "description": {
+          "ru_RU": "Указыается при налии (необязателен)"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.Data",
+        "title": {
+          "ru_RU": "Дата",
+          "en_EN": "Data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.Nomer",
+        "title": {
+          "ru_RU": "Номер",
+          "en_EN": "Nomer"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "30"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.KomuZaCHtoIPoKakomuDokumentuUplacheno",
+        "title": {
+          "ru_RU": "Кому, за что и по какому документу уплачено",
+          "en_EN": "Komu za chto i po kakomu dokumentu uplacheno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "200"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.PoOtchetu",
+        "title": {
+          "ru_RU": "По отчету",
+          "en_EN": "Po otchetu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.PrinyatoKUchetu",
+        "title": {
+          "ru_RU": "Принято к учету",
+          "en_EN": "Prinyato k uchetu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.StavkaNDS",
+        "title": {
+          "ru_RU": "Ставка НДС",
+          "en_EN": "Stavka NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.PredyavlenSF",
+        "title": {
+          "ru_RU": "Предъявлен СФ",
+          "en_EN": "Predyavlen SF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.BlankStrogoiiOtchetnosti",
+        "title": {
+          "ru_RU": "Бланк строгой отчетности",
+          "en_EN": "Blank strogoii otchetnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.DataSF",
+        "title": {
+          "ru_RU": "Дата СФ",
+          "en_EN": "Data SF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.NomerSF",
+        "title": {
+          "ru_RU": "Номер СФ",
+          "en_EN": "Nomer SF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "30"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.Postavshik",
+        "title": {
+          "ru_RU": "Поставщик",
+          "en_EN": "Postavshik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.Schetfaktura",
+        "title": {
+          "ru_RU": "Счет-фактура",
+          "en_EN": "Schetfaktura"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.SchetFakturaPoluchennyii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.KEK",
+        "title": {
+          "ru_RU": "КЭК",
+          "en_EN": "KEK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.SchetDebeta",
+        "title": {
+          "ru_RU": "Счет Дебета",
+          "en_EN": "Schet Debeta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.KPSDt",
+        "title": {
+          "ru_RU": "КПС(Дт)",
+          "en_EN": "KPSDt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.SchetKredita",
+        "title": {
+          "ru_RU": "Счет Кредита",
+          "en_EN": "Schet Kredita"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.KPSKt",
+        "title": {
+          "ru_RU": "КПС(Кт)",
+          "en_EN": "KPSKt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.AvansovyeOtchety.tr.SchetNU",
+        "title": {
+          "ru_RU": "Счет НУ",
+          "en_EN": "Schet NU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [
+      {
+        "mnemo": "tap.RashodnyeKassovyeOrdera"
+      }
+    ],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Авансовые отчеты",
+    "sources": "////Проведение документа\r\n//function activate(currentDocument) {\r\n//    if (!notValid(currentDocument)) {\r\n//\r\n//        //Дополнительные проводки в том случае, если имеется заявление-основание\r\n//        if (currentDocument.get(\u0027tap.AvansovyeOtchety.hr.ZayavlenieNaVydachuAvansa\u0027)) {\r\n//            let statement \u003d currentDocument.get(\u0027tap.AvansovyeOtchety.hr.ZayavlenieNaVydachuAvansa\u0027);\r\n//            let commitment \u003d statement.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo\u0027) ?\r\n//                statement.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo\u0027) : \u0027\u0027;\r\n//            let persAccSection \u003d statement.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027) ? \r\n//                statement.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027) : \u0027\u0027;\r\n//\r\n//\r\n//            // Обратные проводки из заявления\r\n//            let statementPostings \u003d currentDocument.get(\u0027tap.AvansovyeOtchety.hr.ZayavlenieNaVydachuAvansa\u0027).getPostingList();\r\n//            for (let statementPosting of statementPostings) {\r\n//                let posting \u003d EntityFactory.createPosting();\r\n//                posting.setComment( statementPosting.getComment() );\r\n//                posting.setValue( \u0027-\u0027 + statementPosting.getValue() );\r\n//                posting.setDebit( statementPosting.getDebit() );\r\n//                posting.setCredit( statementPosting.getCredit() );\r\n//                posting.setAnalyticsList( statementPosting.getAnalyticsList() );\r\n//                currentDocument.addPosting(posting);\r\n//            }\r\n//        \r\n//            for (let tableRec of currentDocument.getRows()){\r\n//\r\n//                //Корректировка денежных обязательст\r\n//                let posting \u003d EntityFactory.createPosting();\r\n//                posting.setComment(\u0027Корректировка денежных обязательств\u0027);\r\n//                posting.setValue(tableRec.get(\u0027tap.AvansovyeOtchety.tr.PrinyatoKUchetu\u0027));\r\n//                    //счет дб 50211\r\n//                let debit \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u002700000000000000000050211000\u0027).get(0);\r\n//                debit.put(0, tableRec.get(\u0027tap.AvansovyeOtchety.tr.KEK\u0027)); //Аналитика 1: КэК\r\n//                debit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//                debit.put(2, persAccSection); //Аналитика 3: Разделы лиц счетов\r\n//                posting.setDebit(debit);\r\n//\r\n//                    //счет кр 50212\r\n//                let credit \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u002700000000000000000050212000\u0027).get(0);\r\n//                credit.put(0, tableRec.get(\u0027tap.AvansovyeOtchety.tr.KEK\u0027)); //Аналитика 1: КэК\r\n//                credit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//                credit.put(2, persAccSection); //Аналитика 3: Разделы лиц счетов\r\n//                posting.setCredit(credit);\r\n//\r\n//                currentDocument.addPosting(posting);\r\n//            };\r\n//        }\r\n//        \r\n//        //Расходы подотчетного лица\r\n//        for (let tableRec of currentDocument.getRows()){\r\n//            let posting \u003d EntityFactory.createPosting();\r\n//            posting.setComment(tableRec.get(\u0027tap.AvansovyeOtchety.tr.KomuZaCHtoIPoKakomuDokumentuUplacheno\u0027));\r\n//            posting.setValue(tableRec.get(\u0027tap.AvansovyeOtchety.tr.PrinyatoKUchetu\u0027));\r\n//                //счет дб\r\n//            let debit \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u002700000000000000000050211000\u0027).get(0);\r\n//            debit.put(0, tableRec.get(\u0027tap.AvansovyeOtchety.tr.KEK\u0027)); //Аналитика 1: КэК\r\n//            debit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//            debit.put(2, persAccSection); //Аналитика 3: Разделы лиц счетов\r\n//            posting.setDebit(debit);\r\n//\r\n//                //счет кр 50212\r\n//            let credit \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u002700000000000000000050212000\u0027).get(0);\r\n//            credit.put(0, tableRec.get(\u0027tap.AvansovyeOtchety.tr.KEK\u0027)); //Аналитика 1: КэК\r\n//            credit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//            credit.put(2, persAccSection); //Аналитика 3: Разделы лиц счетов\r\n//            posting.setCredit(credit);\r\n//\r\n//            currentDocument.addPosting(posting);\r\n//        };\r\n//        \r\n//        \r\n//        \r\n//        currentDocument.setExecuted();\r\n//        currentDocument.save();\r\n//    \r\n//        return;  \r\n//    } else \r\n//        return notValid(currentDocument);\r\n//}\r\n//\r\n////Снятие документа с проведения\r\n//function deactivate(currentDocument) {\r\n//    currentDocument.removeAllPostings();\r\n//    currentDocument.setExecutedDate(null);\r\n//    currentDocument.save();\r\n//    return;\r\n//}\r\n//\r\n////Проверка документа на полное заполнение\r\n//function notValid(currentDocument) { \r\n//    let resultValidate \u003d currentDocument.validate();\r\n// \r\n//    if (!currentDocument.getRows().size()){\r\n//        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n//    }\r\n//\r\n//    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n//        return  resultValidate;\r\n//}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.AvansovyeOtchety.Standartnyii"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.AvansovyeOtchety",
+    "title": {
+      "ru_RU": "Авансовые отчеты",
+      "en_EN": "Avansovye otchety"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50300",
+  "name": {
+    "ru_RU": "Бюджетные ассигнования"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50300",
+    "title": {
+      "ru_RU": "50300"
+    },
+    "description": {}
+  }
+}

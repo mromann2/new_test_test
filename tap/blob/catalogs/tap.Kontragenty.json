@@ -1,0 +1,1148 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 3,
+  "kodlength": 8,
+  "titlelength": 30,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.VidKontragenta",
+        "title": {
+          "ru_RU": "Вид контрагента",
+          "en_EN": "Vid kontragenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyKontragentov"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.TipKontragenta",
+        "title": {
+          "ru_RU": "Тип контрагента",
+          "en_EN": "Tip kontragenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.TipyKontragentov"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.ObosoblennoePodrazdelenie",
+        "title": {
+          "ru_RU": "Обособленное подразделение",
+          "en_EN": "Obosoblennoe podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.GolovnayaOrganizaciya",
+        "title": {
+          "ru_RU": "Головная организация",
+          "en_EN": "Golovnaya organizaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.OficialnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Официальное наименование",
+          "en_EN": "Oficialnoe naimenovanie"
+        },
+        "description": {
+          "ru_RU": "Наименование в соответствии с учредительными документами, ФИО для физических лиц"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Сокращенное наименование",
+          "en_EN": "Kratkoe naimenovanie"
+        },
+        "description": {
+          "ru_RU": ""
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.StranaRegistracii",
+        "title": {
+          "ru_RU": "Страна регистрации",
+          "en_EN": "Strana registracii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StranyMira"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": true,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.INN",
+        "title": {
+          "ru_RU": "ИНН",
+          "en_EN": "INN"
+        },
+        "description": {
+          "ru_RU": "Идентификационный номер налогоплательщика"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "12",
+        "unsigned": "true"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.KPP",
+        "title": {
+          "ru_RU": "КПП",
+          "en_EN": "KPP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "9",
+        "unsigned": "true"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.OGRN",
+        "title": {
+          "ru_RU": "ОГРН",
+          "en_EN": "OGRN"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "13"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.DataRegistracii",
+        "title": {
+          "ru_RU": "Дата регистрации",
+          "en_EN": "Data registracii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.KodOKPO",
+        "title": {
+          "ru_RU": "Код ОКПО",
+          "en_EN": "Kod OKPO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.Biudzhet",
+        "title": {
+          "ru_RU": "Бюджет",
+          "en_EN": "Biudzhet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Biudzhety"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.GlavaPoBK",
+        "title": {
+          "ru_RU": "Глава по БК",
+          "en_EN": "Glava po BK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.GlavyPoBK"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.KodPoRPBS",
+        "title": {
+          "ru_RU": "Код по РПБС",
+          "en_EN": "Kod po RPBS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "13"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.Rasporyaditel",
+        "title": {
+          "ru_RU": "Распорядитель",
+          "en_EN": "Rasporyaditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.IUridicheskiiiAdres",
+        "title": {
+          "ru_RU": "Юридический адрес",
+          "en_EN": "IUridicheskiii adres"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "85"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.PochtovyiiAdres",
+        "title": {
+          "ru_RU": "Фактический адрес",
+          "en_EN": "Fakticheskii adres"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "85"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.AdresZaPredelamiRF",
+        "title": {
+          "ru_RU": "Адрес за пределами РФ",
+          "en_EN": "Adres za predelami RF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "85"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.MezhdunarodnyiiAdres",
+        "title": {
+          "ru_RU": "Международный адрес",
+          "en_EN": "Mezhdunarodnyii adres"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "85"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.Telefony",
+        "title": {
+          "ru_RU": "Телефон",
+          "en_EN": "Telefon"
+        },
+        "description": {
+          "ru_RU": "Телефоны по юридическому адресу и действительному местонахождению"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.Email",
+        "title": {
+          "ru_RU": "Email",
+          "en_EN": "Email"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "85"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.Drugoe",
+        "title": {
+          "ru_RU": "Другое (любая другая контактная информация)",
+          "en_EN": "Drugoe"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.OsobennostNalogooblozheniyaNDS",
+        "title": {
+          "ru_RU": "Особенность налогообложения НДС",
+          "en_EN": "Osobennost nalogooblozheniya NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.OsobennostiNalogooblozheniyaNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.KodStatusaPostavshikapodryadchikaIspolnitelya",
+        "title": {
+          "ru_RU": "Код статуса поставщика (подрядчика, исполнителя)",
+          "en_EN": "Kod statusa postavshika podryadchika ispolnitelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "2"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.KodOKOPF",
+        "title": {
+          "ru_RU": "Код ОКОПФ",
+          "en_EN": "Kod OKOPF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.OKOPF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.SubektFederacii",
+        "title": {
+          "ru_RU": "Субъект федерации",
+          "en_EN": "Subekt federacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.SubektyRF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.StranaMestaNahozhdeniya",
+        "title": {
+          "ru_RU": "Страна места нахождения",
+          "en_EN": "Strana mesta nahozhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StranyMira"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.FIO",
+        "title": {
+          "ru_RU": "ФИО",
+          "en_EN": "FIO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.Pol",
+        "title": {
+          "ru_RU": "Пол",
+          "en_EN": "Pol"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PolSotrudnika"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.SNILS",
+        "title": {
+          "ru_RU": "СНИЛС",
+          "en_EN": "SNILS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.NomerPolisaOMS",
+        "title": {
+          "ru_RU": "Номер полиса ОМС",
+          "en_EN": "Nomer polisa OMS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.DataRozhdeniya",
+        "title": {
+          "ru_RU": "Дата рождения",
+          "en_EN": "Data rozhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.MestoRozhdeniya",
+        "title": {
+          "ru_RU": "Место рождения",
+          "en_EN": "Mesto rozhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Kontragenty.VidDokumenta",
+        "title": {
+          "ru_RU": "Вид документа",
+          "en_EN": "Vid dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyDokumenta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Kontragenty.DokumentSeriya",
+        "title": {
+          "ru_RU": "Серия документа",
+          "en_EN": "Seriya Dokumenta"
+        },
+        "description": {
+          "ru_RU": "Серия документа, удостоверяющего личность (для контрагентов - физических лиц)"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Kontragenty.DokumentNomer",
+        "title": {
+          "ru_RU": "Номер документа",
+          "en_EN": "Nomer Dokumenta"
+        },
+        "description": {
+          "ru_RU": "Номер документа, удостоверяющего личность (для контрагентов - физических лиц)"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Kontragenty.DokumentKemVydan",
+        "title": {
+          "ru_RU": "Кем выдан",
+          "en_EN": "Kem vydan"
+        },
+        "description": {
+          "ru_RU": "Организация, выдавшая документ"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "150"
+      },
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Kontragenty.DokumentDataVydachi",
+        "title": {
+          "ru_RU": "Дата выдачи",
+          "en_EN": "Data vydachi"
+        },
+        "description": {
+          "ru_RU": "Дата выдачи документа, удостоверяющего личность (для контрагентов - физических лиц)"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Kontragenty.Grazhdanstvo",
+        "title": {
+          "ru_RU": "Гражданство",
+          "en_EN": "Grazhdanstvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StranyMira"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Kontragenty.LicoBezGrazhdanstva",
+        "title": {
+          "ru_RU": "Лицо без гражданства",
+          "en_EN": "Lico bez grazhdanstva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.OGRNIP",
+        "title": {
+          "ru_RU": "ОГРНИП",
+          "en_EN": "OGRNIP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.DataSvidetelstva",
+        "title": {
+          "ru_RU": "Дата свидетельства",
+          "en_EN": "Data svidetelstva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.SeriyaINomerSvidetelstva",
+        "title": {
+          "ru_RU": "Серия и номер свидетельства",
+          "en_EN": "Seriya i nomer svidetelstva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "25"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.NaimenovanieIP",
+        "title": {
+          "ru_RU": "Наименование ИП",
+          "en_EN": "Naimenovanie IP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "160"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.AdresPoPropiske",
+        "title": {
+          "ru_RU": "Адрес по прописке",
+          "en_EN": "Adres po propiske"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "85"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.AdresMestaProzhivaniya",
+        "title": {
+          "ru_RU": "Адрес места проживания",
+          "en_EN": "Adres mesta prozhivaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "85"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.AdresDlyaInformirovaniya",
+        "title": {
+          "ru_RU": "Адрес для информирования",
+          "en_EN": "Adres dlya informirovaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "85"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.DrugoeFizicheskogoLica",
+        "title": {
+          "ru_RU": "Другая информация физ. лица",
+          "en_EN": "Drugoe fizicheskogo lica"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.YAvlyaetsyaSotrudnikomOrganizacii",
+        "title": {
+          "ru_RU": "Является сотрудником организации",
+          "en_EN": "YAvlyaetsya sotrudnikom organizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.BankovskieIKaznacheiiskieScheta",
+        "title": {
+          "ru_RU": "Банковские и казначейские счета",
+          "en_EN": "Bankovskie i kaznacheiiskie scheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.BankovskieIKaznacheiiskieScheta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Kontragenty.OsnovnoiiDogovor",
+        "title": {
+          "ru_RU": "Договоры",
+          "en_EN": "Dogovori"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Контрагенты",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Kontragenty",
+    "title": {
+      "ru_RU": "Контрагенты"
+    },
+    "description": {
+      "ru_RU": "Справочник Контрагенты"
+    }
+  }
+}

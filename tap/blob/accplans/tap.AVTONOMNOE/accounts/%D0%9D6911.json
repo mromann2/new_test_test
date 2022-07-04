@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "Н6911",
+  "name": {
+    "ru_RU": "Дополнительные взносы на страховую часть пенсии работникам, занятым на работах с тяжелыми условиями труда"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "6911",
+    "title": {
+      "ru_RU": "Н6911"
+    },
+    "description": {}
+  }
+}

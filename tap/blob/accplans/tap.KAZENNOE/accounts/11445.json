@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "11445",
+  "name": {
+    "ru_RU": "Обесценение прав пользования транспортными средствами"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "11445",
+    "title": {
+      "ru_RU": "11445"
+    },
+    "description": {}
+  }
+}

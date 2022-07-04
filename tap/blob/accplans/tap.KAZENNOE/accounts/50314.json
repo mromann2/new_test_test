@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "50314",
+  "name": {
+    "ru_RU": "Переданные бюджетные ассигнования"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50314",
+    "title": {
+      "ru_RU": "50314"
+    },
+    "description": {}
+  }
+}

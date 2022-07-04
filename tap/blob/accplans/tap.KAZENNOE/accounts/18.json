@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "18",
+  "name": {
+    "ru_RU": "Выбытия денежных средств"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "18",
+    "title": {
+      "ru_RU": "18"
+    },
+    "description": {}
+  }
+}

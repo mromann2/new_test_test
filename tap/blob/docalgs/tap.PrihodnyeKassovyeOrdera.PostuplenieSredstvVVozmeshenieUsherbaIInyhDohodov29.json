@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Поступление средств в возмещение ущерба и иных доходов (209)\r\nfunction activate(currentDocument) {\r\n\r\n    if (!notValid(currentDocument)) {\r\n\r\n        if(currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.Oplacheno\u0027)){\r\n            \r\n            let korSchet \u003d currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.KorSchet\u0027);\r\n            let korSchetSynthetic \u003d korSchet.getCode().substr(18,3);\r\n            \r\n            for (let tableRec of currentDocument.getRows()){\r\n                let posDebit \u003d posCredit \u003d \u0027\u0027;\r\n                let posValue \u003d tableRec.get(\u0027tap.PrihodnyeKassovyeOrdera.tr.Summa\u0027);\r\n                let posComment \u003d currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.Osnovanie\u0027);\r\n                let kfo \u003d tableRec.get(\u0027tap.PrihodnyeKassovyeOrdera.tr.KFO\u0027);\r\n                let needRazdLicSch \u003d currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.ProvodkiPlanaDohodov\u0027) \u0026\u0026 ((kfo !\u003d null) \u0026\u0026 (kfo.getCode() !\u003d 1));\r\n\r\n                if (currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.Oplacheno\u0027)){\r\n\r\n//              Поступление денежных средств\r\n                    posDebit \u003d currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.SchetDt\u0027);\r\n                    posCredit \u003d tableRec.get(\u0027tap.PrihodnyeKassovyeOrdera.tr.SchetRaschetov\u0027);\r\n                    createPosting();\r\n                    posCredit \u003d \u0027\u0027;\r\n\r\n                    if ( needRazdLicSch ){\r\n//              Получено финансового обеспечения\r\n                        posDebit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050810000\u0027).get(0);\r\n                        posCredit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050710000\u0027).get(0);\r\n                        posCredit.put(0, currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.RazdelLicevyhSchetov\u0027)); //Аналитика 1: Разделы лиц счетов\r\n                        createPosting();\r\n                        posCredit \u003d \u0027\u0027;\r\n                    }\r\n\r\n//              Забалансовая проводка\r\n                    posDebit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u00270000000000000000000НД00000\u0027).get(0);\r\n                    createPosting();\r\n\r\n                    if (currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.VozvratProshlyhLet\u0027)){\r\n                        if (kfo !\u003d null){\r\n                            if (kfo.getCode() !\u003d 1){\r\n//              Проводка по счету 17 (возврат прошлых лет, БУ и АУ)\r\n                                posDebit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000001734000\u0027).get(0);\r\n                                createPosting();\r\n                            } else {\r\n//              Проводка по счету 18 (возврат прошлых лет, КУ)\r\n                                posDebit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000001834000\u0027).get(0);\r\n                                createPosting();\r\n                            }\r\n                        }\r\n//              Возврат прошлых лет\r\n                        posDebit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u0027000000000000000000ВПЛ34000\u0027).get(0);\r\n                        posComment \u003d \u0027Возврат прошлых лет\u0027;\r\n                        createPosting();\r\n                        posComment \u003d currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.Osnovanie\u0027);\r\n                    } else {\r\n//              Проводка по счету 17\r\n                        posDebit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000001734000\u0027).get(0);\r\n                        createPosting();\r\n                    }\r\n\r\n                }\r\n\r\n//          Общая функция создания и заполнения проводки\r\n                function createPosting() {\r\n                    let posting \u003d EntityFactory.createPosting();\r\n                    if (posDebit)\r\n                        posting.setDebit(posDebit);\r\n                    if (posCredit)\r\n                        posting.setCredit(posCredit);\r\n                    if (posValue)\r\n                        posting.setValue(posValue);\r\n                    if (posComment)\r\n                        posting.setComment(posComment);\r\n                    currentDocument.addPosting(posting);\r\n                    return;\r\n                }\r\n            }\r\n        }    \r\n    \r\n        currentDocument.setExecuted();\r\n        currentDocument.save();\r\n        \r\n        return;  \r\n    \r\n    } else \r\n        return notValid(currentDocument);\r\n}\r\n\r\n//Снятие документа с проведения\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.removeAllPostings();\r\n    currentDocument.setExecutedDate(null);\r\n    currentDocument.save();\r\n    return;\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) {\r\n    let resultValidate \u003d currentDocument.validate();\r\n\r\n    if (!currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.Oplacheno\u0027))\r\n            resultValidate.addValueError(\u0027tap.PrihodnyeKassovyeOrdera.hr.Oplacheno\u0027, \u0027Для проведения ордер должен быть оплачен.\u0027);\r\n        \r\n    if (currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.SchetDt\u0027) \u0026\u0026\r\n        currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.SchetDt\u0027).getCode().substr(18,5) !\u003d \u002720134\u0027)\r\n            resultValidate.addValueError(\u0027Счет Дт должен принимать значение 201.34\u0027);\r\n                    \r\n    if (currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.KorSchet\u0027) \u0026\u0026\r\n        currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.KorSchet\u0027).getCode().substr(18,3) !\u003d \u0027209\u0027)\r\n            resultValidate.addValueError(\u0027tap.PrihodnyeKassovyeOrdera.hr.KorSchet\u0027, \u0027Счет должен относиться к группе счетов 209.00.\u0027);\r\n\r\n\r\n    if (!currentDocument.getRows().size())\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    else {\r\n        let sum \u003d currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.Summa\u0027);\r\n        let sumChek \u003d 0.00;\r\n\r\n        for (let tableRec of currentDocument.getRows()){\r\n            \r\n            let kfoCheck \u003d tableRec.get(\u0027tap.PrihodnyeKassovyeOrdera.tr.KFO\u0027);\r\n            let needRazdLicSchCheck \u003d currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.ProvodkiPlanaDohodov\u0027) \u0026\u0026 ((kfoCheck !\u003d null) \u0026\u0026 (kfoCheck.getCode() !\u003d 1)) \u0026\u0026 !currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.RazdelLicevyhSchetov\u0027);\r\n            \r\n            if (!tableRec.get(\u0027tap.PrihodnyeKassovyeOrdera.tr.SchetRaschetov\u0027))\r\n                  resultValidate.addValueError(\u0027tap.PrihodnyeKassovyeOrdera.tr.SchetRaschetov\u0027, \u0027Не заполнено обязательное поле в табличной части.\u0027);\r\n            \r\n            if (needRazdLicSchCheck)\r\n              resultValidate.addValueError(\u0027tap.PrihodnyeKassovyeOrdera.hr.RazdelLicevyhSchetov\u0027, \u0027Не заполнено обязательное поле.\u0027);\r\n\r\n            if (tableRec.get(\u0027tap.PrihodnyeKassovyeOrdera.tr.SchetRaschetov\u0027) \u0026\u0026 (tableRec.get(\u0027tap.PrihodnyeKassovyeOrdera.tr.SchetRaschetov\u0027).getCode() !\u003d currentDocument.get(\u0027tap.PrihodnyeKassovyeOrdera.hr.KorSchet\u0027).getCode()))\r\n                  resultValidate.addValueError(\u0027tap.PrihodnyeKassovyeOrdera.tr.SchetRaschetov\u0027, \u0027Должен совпадать со значением поля \"Кор. счет\".\u0027);\r\n            \r\n            sumChek +\u003d +tableRec.get(\u0027tap.PrihodnyeKassovyeOrdera.tr.Summa\u0027);\r\n        }\r\n\r\n//      сумма документа \u003d сумме из строк\r\n        if (+sumChek.toFixed(2) !\u003d +sum)\r\n            resultValidate.addValueError(\u0027tap.PrihodnyeKassovyeOrdera.hr.Summa\u0027, \u0027Сумма документа не совпадает с суммой в табличной части.\u0027);\r\n    }\r\n    \r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors()) \r\n        return  resultValidate;\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PrihodnyeKassovyeOrdera.PostuplenieSredstvVVozmeshenieUsherbaIInyhDohodov29",
+    "title": {
+      "ru_RU": "Поступление средств в возмещение ущерба и иных доходов (209)",
+      "en_EN": "Postuplenie sredstv v vozmeshenie usherba i inyh dohodov 29"
+    },
+    "description": {}
+  }
+}

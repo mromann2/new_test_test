@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50149",
+  "name": {
+    "ru_RU": "Утвержденные лимиты бюджетных обязательств"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50149",
+    "title": {
+      "ru_RU": "50149"
+    },
+    "description": {}
+  }
+}

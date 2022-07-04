@@ -1,0 +1,470 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.hr.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.hr.Postavshik",
+        "title": {
+          "ru_RU": "Поставщик",
+          "en_EN": "Postavshik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.hr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.hr.KodUslugiRabot",
+        "title": {
+          "ru_RU": "Код услуги, работ",
+          "en_EN": "Kod uslugi rabot"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.MaterialnyeZapasy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.hr.Primechanie",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.TMC",
+        "title": {
+          "ru_RU": "ТМЦ",
+          "en_EN": "TMC"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.MaterialnyeZapasy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.EdinicyIzmereniyaOKEI"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.Tovaroproizvoditel",
+        "title": {
+          "ru_RU": "Товаропроизводитель",
+          "en_EN": "Tovaroproizvoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Strany"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.NGTD",
+        "title": {
+          "ru_RU": "№ ГТД",
+          "en_EN": "№ GTD"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.AkcizVTch",
+        "title": {
+          "ru_RU": "Акциз в т.ч.",
+          "en_EN": "Akciz v tch"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.SummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.NDS",
+        "title": {
+          "ru_RU": "НДС%",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.SummaNDS",
+        "title": {
+          "ru_RU": "Сумма НДС",
+          "en_EN": "Summa NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug.tr.VsegoSNDS",
+        "title": {
+          "ru_RU": "Всего с НДС",
+          "en_EN": "Vsego s NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Акты приемки работ (услуг)",
+    "sources": "function preSave(currentDocument) {\r\n    processDocument(currentDocument, \r\n        new DocNdsHandler(),\r\n        new DocSummaHandler(), \r\n        new DocReferenceHandler(\u0027TMC\u0027, [\u0027EdIzm\u0027, \u0027Strana\u0027], [\u0027EdinicaIzmereniya\u0027, \u0027Tovaroproizvoditel\u0027]), \r\n        new DocFillTableByHatHandler(\u0027Operaciya\u0027, \u0027Operaciya\u0027), \r\n        new DocReferenceHandler(\u0027Operaciya\u0027, [\u0027KVFO\u0027, \u0027KPSDebet\u0027, \u0027Debet\u0027, \u0027KPSKredit\u0027, \u0027Kredit\u0027], [\u0027KVFO\u0027, \u0027KPSDb\u0027, \u0027Debet\u0027, \u0027KPSKr\u0027, \u0027Kredit\u0027])\r\n    );\r\n}\r\n\r\n//то же самое(за исключением НДС и заполнения дб, кр и тд из операции) - как пример простого, понятного решения\r\nfunction preSaveSimpleForUnderstanding(currentDocument) { \r\n    let mnemo \u003d currentDocument.getMnemo(); \r\n    currentDocument.set(mnemo + \u0027.hr.Summa\u0027, getCalculatedSum(currentDocument, mnemo + \u0027.tr.VsegoSNDS\u0027));\r\n    \r\n    let operation \u003d currentDocument.get(mnemo + \u0027.hr.Operaciya\u0027);\r\n    for (let tableRec of currentDocument.getRows()){\r\n        if (operation \u0026\u0026 !tableRec.get(mnemo + \u0027.tr.Operaciya\u0027)){\r\n            tableRec.put(mnemo + \u0027.tr.Operaciya\u0027, operation);\r\n        }\r\n        \r\n        let tmc \u003d tableRec.get(mnemo + \u0027.tr.\u0027 + \u0027TMC\u0027);\r\n        if (tmc) {\r\n            tableRec.put(mnemo + \u0027.tr.\u0027 + \u0027EdinicaIzmereniya\u0027, tmc.get(tmc.getMnemo() + \u0027.\u0027 + \u0027EdIzm\u0027));\r\n            tableRec.put(mnemo + \u0027.tr.\u0027 + \u0027Tovaroproizvoditel\u0027, tmc.get(tmc.getMnemo() + \u0027.\u0027 + \u0027Strana\u0027));\r\n        }        \r\n    }\r\n}\r\n\r\nfunction baseOn(base, targetMnemo){\r\n    let baseMnemo \u003d base.getMnemo();\r\n    let currentDocument \u003d EntityFactory.createDocument(targetMnemo);\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n\r\n    currentDocument.setParent(base);\r\n    currentDocument.setNumber(\u0027\u0027);  \r\n    currentDocument.setOrganization(base.getOrganization()); \r\n    \r\n    switch (baseMnemo) {\r\n        case MODULEMNEMO + \u0027.ZayavkiNaKassovyiiRashod\u0027:\r\n        case MODULEMNEMO + \u0027.PlatezhnyePorucheniyaspisanieSoScheta\u0027:\r\n            /* Заявки на кассовый расход / Платежные поручения \r\n            Из шапки в шапку Акта приемки работ\r\n                Сумма -\u003e Сумма, Получатель -\u003e Поставщик\r\n            Из фактуры ЗКР в фактуру Акта\r\n                КВФО -\u003e КВФО, Дебет+КПСдб+Аналитика -\u003e Кредит+КПСкр+Аналитика, Сумма без НДС -\u003e Сумма без НДС, НДС% -\u003e НДС%, Сумма НДС -\u003e Сумма НДС, Сумма -\u003e Всего с НДС */   \r\n            currentDocument.set(docMnemo + \u0027.hr.Summa\u0027, base.get(baseMnemo + \u0027.hr.Summa\u0027));\r\n            currentDocument.set(docMnemo + \u0027.hr.Postavshik\u0027, base.get(baseMnemo + \u0027.hr.Poluchatel\u0027));\r\n\r\n            for (let tableRec of base.getRows()){\r\n                let row \u003d  currentDocument.addTableRow();\r\n\r\n                row.put(docMnemo + \u0027.tr.KVFO\u0027, tableRec.get(baseMnemo + \u0027.tr.KVFO\u0027));\r\n                row.put(docMnemo + \u0027.tr.KPSKr\u0027, tableRec.get(baseMnemo + \u0027.tr.KPSDb\u0027));\r\n                row.put(docMnemo + \u0027.tr.Kredit\u0027, tableRec.get(baseMnemo + \u0027.tr.Debet\u0027));\r\n                row.put(docMnemo + \u0027.tr.SummaBezNDS\u0027, tableRec.get(baseMnemo + \u0027.tr.SummaBezNDS\u0027));\r\n                row.put(docMnemo + \u0027.tr.NDS\u0027, tableRec.get(baseMnemo + \u0027.tr.NDS\u0027));\r\n                row.put(docMnemo + \u0027.tr.SummaNDS\u0027, tableRec.get(baseMnemo + \u0027.tr.SummaNDS\u0027));\r\n                row.put(docMnemo + \u0027.tr.VsegoSNDS\u0027, tableRec.get(baseMnemo + \u0027.tr.Summa\u0027));\r\n            }\r\n            break;\r\n        case MODULEMNEMO + \u0027.SchetafakturyPoluchennye\u0027:\r\n            /* Из шапки Счета-фактуры полученного в шапку Акта приемки работ (услуг)\r\n               Сумма -\u003e Сумма, Продавец -\u003e Поставщик, Подразделение -\u003e Подразделение, Назначение платежа -\u003e Примечание\r\n            */\r\n            copyFieldValuesHr(base, \r\n                              currentDocument, \r\n                              [\u0027Summa\u0027, [\u0027Postavshik\u0027, \u0027Prodavec\u0027], \u0027Podrazdelenie\u0027, [\u0027Primechanie\u0027, \u0027NaznacheniePlatezha\u0027]]);             \r\n            \r\n            /* Из шапки в фактуру \r\n               Балансовый счет -\u003e Кредит, \r\n               аналитика 1: Контрагенты -\u003e аналитика 1: Контрагенты, \r\n               аналитика 2: Счета-фактуры полученные -\u003e аналитика 2: Счета-фактуры  полученные, \r\n               аналитика 3: Договоры, гос.контракты -\u003e аналитика 3: Договоры, гос.контракты (аналитики Кредита)  \r\n            */\r\n\r\n            let acc \u003d base.get(baseMnemo + \u0027.hr.BalansovyiiSchet\u0027);\r\n \r\n            /* \r\n               Из фактуры в фактуру\r\n               ТМЦ -\u003e ТМЦ, Единица измерения -\u003e Единица измерения, Количество -\u003e Количество, \r\n               Товаропроизводитель -\u003e Товаропроизводитель, № ГТД -\u003e № ГТД, Акциз в т.ч. -\u003e Акциз в т.ч., \r\n               Сумма без НДС -\u003e Сумма без НДС, НДС% -\u003e НДС%, Сумма НДС -\u003e Сумма НДС, Всего с НДС -\u003e Всего с НДС\r\n            */ \r\n            \r\n            for (let tableRec of base.getRows()){\r\n                let row \u003d  currentDocument.addTableRow();\r\n                \r\n                copyFieldValuesTr(tableRec, row, baseMnemo, docMnemo,\r\n                    [\u0027TMC\u0027, \u0027EdinicaIzmereniya\u0027, \u0027Kolichestvo\u0027, \u0027Tovaroproizvoditel\u0027, [\u0027NGTD\u0027, \u0027GTD\u0027], [\u0027AkcizVTch\u0027, \u0027AkcizVTCH\u0027], \u0027SummaBezNDS\u0027, \u0027NDS\u0027, \u0027SummaNDS\u0027, \u0027VsegoSNDS\u0027]);\r\n                \r\n                row.put(docMnemo + \u0027.tr.Kredit\u0027, acc);\r\n                row.put(docMnemo + \u0027.tr.EdinicaIzmereniya\u0027, tableRec.get(baseMnemo + \u0027.tr.EdinicaIzmereniya\u0027));\r\n                row.put(docMnemo + \u0027.tr.Tovaroproizvoditel\u0027, tableRec.get(baseMnemo + \u0027.tr.Tovaroproizvoditel\u0027));                                \r\n            }     \r\n            \r\n            break;\r\n    }\r\n    currentDocument.save()\r\n    return currentDocument;\r\n}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "Razrabotka.AktyPriemkiRabotuslug.AktPriemkiSKreditaScheta"
+    },
+    {
+      "mnemo": "Razrabotka.AktyPriemkiRabotuslug.AktPriemkiSVydeleniemNDS"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.AktyPriemkiRabotuslug",
+    "title": {
+      "ru_RU": "Акты приемки работ (услуг)",
+      "en_EN": "Akty priemki rabot uslug"
+    },
+    "description": {}
+  }
+}

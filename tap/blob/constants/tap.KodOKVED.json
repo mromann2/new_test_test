@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.KodOKVED",
+      "title": {
+        "ru_RU": "Код ОКВЭД",
+        "en_EN": "Kod OKVED"
+      },
+      "description": {
+        "ru_RU": "Код вида экономической деятельности по ОКВЭД"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "250"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KodOKVED",
+    "title": {
+      "ru_RU": "Код ОКВЭД",
+      "en_EN": "Kod OKVED"
+    },
+    "description": {
+      "ru_RU": "Код вида экономической деятельности по ОКВЭД"
+    }
+  }
+}

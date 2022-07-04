@@ -1,0 +1,399 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 2,
+  "kodlength": 11,
+  "titlelength": 80,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.VidNalogaIliPlatezha",
+        "title": {
+          "ru_RU": "Вид налога или платежа",
+          "en_EN": "Vid naloga ili platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyNalogovIPlatezheii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.TamozhennyiiPlatezh",
+        "title": {
+          "ru_RU": "Таможенный платеж",
+          "en_EN": "Tamozhennyii platezh"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.ZapolnyatNezapolnennyeRekvizityNulem",
+        "title": {
+          "ru_RU": "Заполнять незаполненные реквизиты нулем",
+          "en_EN": "Zapolnyat nezapolnennye rekvizity nulem"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.OcherednostPlatezha",
+        "title": {
+          "ru_RU": "Очередность платежа",
+          "en_EN": "Ocherednost platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "1",
+        "unsigned": "true"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.StatusSostavitelya101",
+        "title": {
+          "ru_RU": "Статус составителя (101)",
+          "en_EN": "Status sostavitelya (101)"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StatusySostavitelya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.TekstNaznacheniyaVidaPlatezha",
+        "title": {
+          "ru_RU": "Текст назначения вида платежа",
+          "en_EN": "Tekst naznacheniya vida platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.RegistracionnyiiNomer",
+        "title": {
+          "ru_RU": "Регистрационный номер",
+          "en_EN": "Registracionnyii nomer"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.KodOKTMO105",
+        "title": {
+          "ru_RU": "Код ОКТМО (105)",
+          "en_EN": "Kod OKTMO (105)"
+        },
+        "description": {
+          "ru_RU": "При оформлении платежей с 01.01.2014 г. применяется код ОКТМО"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "11"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.KodOKATO105",
+        "title": {
+          "ru_RU": "Код ОКАТО (105)",
+          "en_EN": "Kod OKATO (105)"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "11"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.PokazatelOsnovaniya106",
+        "title": {
+          "ru_RU": "Показатель основания (106)",
+          "en_EN": "Pokazatel osnovaniya (106)"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.OsnovaniyaPlatezha"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.PokazatelPerioda107",
+        "title": {
+          "ru_RU": "Показатель периода (107)",
+          "en_EN": "Pokazatel perioda (107)"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PokazateliPerioda"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.PokazatelTipaPlatezha110",
+        "title": {
+          "ru_RU": "Показатель типа платежа (110)",
+          "en_EN": "Pokazatel tipa platezha (110)"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PokazateliTipa"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.TekstNaznacheniyaPlatezha",
+        "title": {
+          "ru_RU": "Текст назначения платежа",
+          "en_EN": "Tekst naznacheniya platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.INNPlatelshika",
+        "title": {
+          "ru_RU": "ИНН плательщика",
+          "en_EN": "INN platelshika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "12"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.KPPPlatelshika",
+        "title": {
+          "ru_RU": "КПП плательщика",
+          "en_EN": "KPP platelshika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "9"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.Kotragent",
+        "title": {
+          "ru_RU": "Котрагент",
+          "en_EN": "Kotragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.NalogiIPlatezhiOrganizacii.SchetKontragenta",
+        "title": {
+          "ru_RU": "Счет контрагента",
+          "en_EN": "Schet kontragenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.BankovskieIKaznacheiiskieScheta"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.NalogiIPlatezhiOrganizacii",
+    "title": {
+      "ru_RU": "Налоги и платежи организации"
+    },
+    "description": {
+      "ru_RU": "Справочник Налоги и платежи организации"
+    }
+  }
+}

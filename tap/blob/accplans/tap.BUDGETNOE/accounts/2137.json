@@ -1,0 +1,45 @@
+{
+  "active": true,
+  "code": "2137",
+  "name": {
+    "ru_RU": "Биологические ресурсы – иное движимое имущество учреждения"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "2137",
+    "title": {
+      "ru_RU": "2137"
+    },
+    "description": {}
+  }
+}

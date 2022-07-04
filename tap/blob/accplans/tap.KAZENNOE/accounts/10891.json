@@ -1,0 +1,45 @@
+{
+  "active": true,
+  "code": "10891",
+  "name": {
+    "ru_RU": "Недвижимое имущество концедента, составляющее казну"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10891",
+    "title": {
+      "ru_RU": "10891"
+    },
+    "description": {}
+  }
+}

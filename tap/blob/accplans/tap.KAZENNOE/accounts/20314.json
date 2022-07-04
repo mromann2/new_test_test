@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "20314",
+  "name": {
+    "ru_RU": "Средства автономных учреждений на счетах органа, осуществляющего кассовое обслуживание"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20314",
+    "title": {
+      "ru_RU": "20314"
+    },
+    "description": {}
+  }
+}

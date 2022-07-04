@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "30304:1",
+  "name": {
+    "ru_RU": "Расчеты по налогу на добавленную стоимость у налогового агента"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "5",
+  "kosgudb": "831",
+  "kosgukr": "731",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "303041",
+    "title": {
+      "ru_RU": "30304:1"
+    },
+    "description": {}
+  }
+}

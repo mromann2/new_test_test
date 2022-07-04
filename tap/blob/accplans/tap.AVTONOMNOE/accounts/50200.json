@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "50200",
+  "name": {
+    "ru_RU": "Обязательства"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50200",
+    "title": {
+      "ru_RU": "50200"
+    },
+    "description": {}
+  }
+}

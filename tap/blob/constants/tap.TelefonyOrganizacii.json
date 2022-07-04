@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.TelefonyOrganizacii",
+      "title": {
+        "ru_RU": "Телефоны организации",
+        "en_EN": "Telefony organizacii"
+      },
+      "description": {
+        "ru_RU": "Телефоны по юридическому адресу и действительному местонахождению"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "50"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.TelefonyOrganizacii",
+    "title": {
+      "ru_RU": "Телефоны организации",
+      "en_EN": "Telefony organizacii"
+    },
+    "description": {
+      "ru_RU": "Телефоны по юридическому адресу и действительному местонахождению"
+    }
+  }
+}

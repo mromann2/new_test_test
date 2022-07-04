@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "50310",
+  "name": {
+    "ru_RU": "Бюджетные ассигнования текущего финансового года"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50310",
+    "title": {
+      "ru_RU": "50310"
+    },
+    "description": {}
+  }
+}

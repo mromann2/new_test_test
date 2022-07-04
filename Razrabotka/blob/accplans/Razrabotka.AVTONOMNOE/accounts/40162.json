@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "40162",
+  "name": {
+    "ru_RU": "Резерв на оплату обязательств, по которым не поступили расчетные документы"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40162",
+    "title": {
+      "ru_RU": "40162"
+    },
+    "description": {}
+  }
+}

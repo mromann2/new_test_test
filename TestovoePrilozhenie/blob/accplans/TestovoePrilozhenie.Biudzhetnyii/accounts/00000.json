@@ -1,0 +1,51 @@
+{
+  "active": true,
+  "code": "00000",
+  "name": {
+    "ru_RU": "Вспомогательный",
+    "en_EN": ""
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "TestovoePrilozhenie.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "TestovoePrilozhenie.CelevyeStati"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {
+    "TestovoePrilozhenie.Kosgu_kr": "250",
+    "TestovoePrilozhenie.Kosgu_dt": "290"
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "00000",
+    "title": {
+      "ru_RU": "00000"
+    },
+    "description": {}
+  }
+}

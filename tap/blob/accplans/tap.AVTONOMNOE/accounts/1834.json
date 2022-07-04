@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "1834",
+  "name": {
+    "ru_RU": "Выбытия денежных средств из кассы учреждения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "1834",
+    "title": {
+      "ru_RU": "1834"
+    },
+    "description": {}
+  }
+}

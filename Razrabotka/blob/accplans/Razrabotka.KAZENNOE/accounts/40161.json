@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "40161",
+  "name": {
+    "ru_RU": "Резерв на оплату отпусков зв фактически отработанное время"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40161",
+    "title": {
+      "ru_RU": "40161"
+    },
+    "description": {}
+  }
+}

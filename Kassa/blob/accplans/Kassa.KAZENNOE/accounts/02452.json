@@ -1,0 +1,44 @@
+{
+  "active": true,
+  "code": "02452",
+  "name": {
+    "ru_RU": "ОС - движимое имущество казны, переданное в доверительное управление"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "02452",
+    "title": {
+      "ru_RU": "02452"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "20233",
+  "name": {
+    "ru_RU": "Средства бюджета на депозитных счетах в иностранной валюте"
+  },
+  "foreign": true,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20233",
+    "title": {
+      "ru_RU": "20233"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "Н2602",
+  "name": {
+    "ru_RU": "Косвенные общехозяйственные расходы"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.VidyZatrat"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "2602",
+    "title": {
+      "ru_RU": "Н2602"
+    },
+    "description": {}
+  }
+}

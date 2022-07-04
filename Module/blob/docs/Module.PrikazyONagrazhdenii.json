@@ -1,0 +1,131 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 64,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": false,
+  "automovedeletion": false,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Module.PrikazyONagrazhdenii.hr.HodataiistvoONagrazhdenii",
+        "title": {
+          "ru_RU": "Ходатайство о награждении",
+          "en_EN": "Hodataiistvo o nagrazhdenii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.HodataiistvaONagrazhdenii"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Module.PrikazyONagrazhdenii.tr.Soglasuiushiii",
+        "title": {
+          "ru_RU": "Согласующий",
+          "en_EN": "Soglasuiushiii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.SubektySoglasovaniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.PrikazyONagrazhdenii.tr.DataOtpravkiSoglasuiushemu",
+        "title": {
+          "ru_RU": "Дата отправки согласующему",
+          "en_EN": "Data otpravki soglasuiushemu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.PrikazyONagrazhdenii.tr.Primechanie",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.PrikazyONagrazhdenii.tr.DataSoglasovaniya",
+        "title": {
+          "ru_RU": "Дата согласования",
+          "en_EN": "Data soglasovaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [
+      {
+        "mnemo": "Module.AktyOVrucheniiNagrady"
+      }
+    ],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Приказы о награждении",
+    "sources": "function baseOn(base, targetMnemo){\r\n    \r\n    let currentDocument \u003d EntityFactory.createDocument(targetMnemo);\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n\r\n    currentDocument.setParent(base);\r\n    //currentDocument.setNumber(base.getNumber() + \u0027 (приказ)\u0027);\r\n    currentDocument.setNumber(\u0027Приказ о награждении\u0027);\r\n    currentDocument.setOrganization(base.getOrganization()); \r\n    \r\n    currentDocument.set(docMnemo + \u0027.hr.HodataiistvoONagrazhdenii\u0027, base); \r\n    \r\n    currentDocument.save();\r\n    return currentDocument;\r\n}\r\n"
+  },
+  "algorithms": [],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Module.PrikazyONagrazhdenii",
+    "title": {
+      "ru_RU": "Приказы (распоряжения) о награждении",
+      "en_EN": "Prikazy o nagrazhdenii"
+    },
+    "description": {}
+  }
+}

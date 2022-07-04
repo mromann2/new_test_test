@@ -1,0 +1,470 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.RaschetnyiiSchetPlatelshika",
+        "title": {
+          "ru_RU": "Расчетный счет плательщика",
+          "en_EN": "Raschetnyii schet platelshika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityUchetnoiiOrganizacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.DoverennoeLico",
+        "title": {
+          "ru_RU": "Доверенное лицо",
+          "en_EN": "Doverennoe lico"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.OtvetstvennoeLico",
+        "title": {
+          "ru_RU": "Ответственное лицо",
+          "en_EN": "Otvetstvennoe lico"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.SeriyaCHeka",
+        "title": {
+          "ru_RU": "Серия чека",
+          "en_EN": "Seriya cheka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.NomerCHeka",
+        "title": {
+          "ru_RU": "Номер чека",
+          "en_EN": "Nomer cheka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.DataCHeka",
+        "title": {
+          "ru_RU": "Дата чека",
+          "en_EN": "Data cheka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.SrokDeiistviyaCHeka",
+        "title": {
+          "ru_RU": "Срок действия чека",
+          "en_EN": "Srok deiistviya cheka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.Simvol",
+        "title": {
+          "ru_RU": "Символ чека",
+          "en_EN": "Simvol"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.SimvolyKassovogoPlana"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.DataPodpisaniya",
+        "title": {
+          "ru_RU": "Дата подписания",
+          "en_EN": "Data podpisaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.hr.PredelnayaDataIspolneniya",
+        "title": {
+          "ru_RU": "Предельная дата исполнения",
+          "en_EN": "Predelnaya data ispolneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.BORO",
+        "title": {
+          "ru_RU": "БО (РО)",
+          "en_EN": "BO RO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.RasshifrovkaOperaciii",
+        "title": {
+          "ru_RU": "Расшифровка операций",
+          "en_EN": "Rasshifrovka operaciii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RasshifrovkiOperaciii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.Primechanie",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.DopKlassifikaciya",
+        "title": {
+          "ru_RU": "Доп. классификация",
+          "en_EN": "Dop klassifikaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.KBK",
+        "title": {
+          "ru_RU": "КБК",
+          "en_EN": "KBK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.TipBK",
+        "title": {
+          "ru_RU": "Тип БК",
+          "en_EN": "Tip BK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.TipyKBK"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.tr.NaznacheniePlatezha",
+        "title": {
+          "ru_RU": "Назначение платежа",
+          "en_EN": "Naznachenie platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Заявки на получение наличных средств",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv.UchetZayavkiNaPoluchenieNalichnyh"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.ZayavkiNaPoluchenieNalichnyhSredstv",
+    "title": {
+      "ru_RU": "Заявки на получение наличных средств",
+      "en_EN": "Zayavki na poluchenie nalichnyh sredstv"
+    },
+    "description": {}
+  }
+}

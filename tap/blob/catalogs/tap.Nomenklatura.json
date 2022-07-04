@@ -1,0 +1,750 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 4,
+  "kodlength": 9,
+  "titlelength": 50,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Полное наименование",
+          "en_EN": "Polnoe naimenovanie"
+        },
+        "description": {
+          "ru_RU": "Полное наименование, краткие характеристики"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "1000"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.TipNomenklatury",
+        "title": {
+          "ru_RU": "Тип номенклатуры",
+          "en_EN": "Tip nomenklatury"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.TipyNomenklatury"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.KodPoOKPDOKP",
+        "title": {
+          "ru_RU": "Код по ОКПД (ОКП)",
+          "en_EN": "Kod po OKPD OKP"
+        },
+        "description": {
+          "ru_RU": "Код по общероссийскому классификатору продукции по видам экономической деятельности"
+        }
+      },
+      "type": {
+        "mnemo": "tap.ObsherossiiiskiiiKlassifikatorProdukciiPoVidamEkonomicheskoiiDeyatelnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.TNVED",
+        "title": {
+          "ru_RU": "ТН ВЭД",
+          "en_EN": "TN VED"
+        },
+        "description": {
+          "ru_RU": "Товарная номенклатура внешнеэкономической деятельности Евразийского экономического союза"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "10"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.NomenklaturnyiiNomer",
+        "title": {
+          "ru_RU": "Номенклатурный номер",
+          "en_EN": "Nomenklaturnyii nomer"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "30"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.EdinicyIzmereniii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.SchetUcheta",
+        "title": {
+          "ru_RU": "Счет учета",
+          "en_EN": "Schet ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.NDS",
+        "title": {
+          "ru_RU": "НДС",
+          "en_EN": "NDS"
+        },
+        "description": {
+          "ru_RU": "Используется в качестве значения по умолчанию в документах поступления и реализации"
+        }
+      },
+      "type": {
+        "mnemo": "tap.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.VkliuchitVSostavVneooborotnyhAktivov",
+        "title": {
+          "ru_RU": "Включить в состав внеооборотных активов",
+          "en_EN": "Vkliuchit v sostav vneooborotnyh aktivov"
+        },
+        "description": {
+          "ru_RU": "Номенклатурная позиция применяется для целей формирования капитальных вложений. В бухгалтерской (финансовой) отчетности информация раскрывается по строке \"Внеоборотные материальные запасы\"."
+        }
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.NaimenovanieDlyaCHekaKKM",
+        "title": {
+          "ru_RU": "Наименование для чека ККМ",
+          "en_EN": "Naimenovanie dlya cheka KKM"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.PriznakPredmetaRascheta",
+        "title": {
+          "ru_RU": "Признак предмета расчета",
+          "en_EN": "Priznak predmeta rascheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PriznakiPredmetaRascheta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.BSO",
+        "title": {
+          "ru_RU": "БСО",
+          "en_EN": "BSO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.BlankiStrogoiiOtchetnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.KodKataloga",
+        "title": {
+          "ru_RU": "Код каталога",
+          "en_EN": "Kod kataloga"
+        },
+        "description": {
+          "ru_RU": "Заполняется при осуществлении продажи или закупки для обеспечения государственных и муниципальных нужд."
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "27"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.KodPoKTRU",
+        "title": {
+          "ru_RU": "Код по КТРУ",
+          "en_EN": "Kod po KTRU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "100"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.VidKontrolyaProdukcii",
+        "title": {
+          "ru_RU": "Вид контроля продукции",
+          "en_EN": "Vid kontrolya produkcii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyKontrolyaProdukcii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.KodVidaNomenklaturnoiiKlassifikacii",
+        "title": {
+          "ru_RU": "Код вида номенклатурной классификации",
+          "en_EN": "Kod vida nomenklaturnoii klassifikacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "18"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.StranaProishozhdeniya",
+        "title": {
+          "ru_RU": "Страна происхождения",
+          "en_EN": "Strana proishozhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StranyMira"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.NomerGTD",
+        "title": {
+          "ru_RU": "Номер ГТД",
+          "en_EN": "Nomer GTD"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.NomeraGruzovyhTamozhennyhDeklaraciii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.OsnovnayaSpecifikaciya",
+        "title": {
+          "ru_RU": "Основная спецификация",
+          "en_EN": "Osnovnaya specifikaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.SpecifikaciiNomenklatury"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.SpecifikaciiNomenklatury",
+        "title": {
+          "ru_RU": "Спецификации номенклатуры",
+          "en_EN": "Specifikacii nomenklatury"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.SpecifikaciiNomenklatury"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.SoderzhanieDragMetallovBudetOpredelenorPosleSpisaniyaIUtilizacii",
+        "title": {
+          "ru_RU": "Содержание драг. металлов будет определенор после списания и утилизации",
+          "en_EN": "Soderzhanie drag metallov budet opredelenor posle spisaniya i utilizacii"
+        },
+        "description": {
+          "ru_RU": "В данной номенклатуре могут находиться драгоценные металлы и (или) драгоценные камни, содержание которых будет определено после списания и утилизации."
+        }
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Nomenklatura.SvedeniyaDeiistvuiutS",
+        "title": {
+          "ru_RU": "Сведения действуют с",
+          "en_EN": "Svedeniya deiistvuiut s"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.StoiimostUslugi",
+        "title": {
+          "ru_RU": "Стоимость услуги",
+          "en_EN": "Stoiimost uslugi"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.KEK",
+        "title": {
+          "ru_RU": "КЭК",
+          "en_EN": "KEK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.KodPoOKTMO15",
+        "title": {
+          "ru_RU": "Код по ОКТМО (105)",
+          "en_EN": "Kod po OKTMO 15"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "11"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.StatusSostavitelya",
+        "title": {
+          "ru_RU": "Статус составителя (101)",
+          "en_EN": "Status sostavitelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StatusySostavitelya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.PokazatelOsnovaniya",
+        "title": {
+          "ru_RU": "Показатель основания (106)",
+          "en_EN": "Pokazatel osnovaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.OsnovaniyaPlatezha"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.PokazatelPerioda",
+        "title": {
+          "ru_RU": "Показатель периода (107)",
+          "en_EN": "Pokazatel perioda"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PokazateliPerioda"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.PokazatelTipaPlatezha",
+        "title": {
+          "ru_RU": "Показатель типа платежа (110)",
+          "en_EN": "Pokazatel tipa platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PokazateliTipa"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.TipProizvodstvennoiiOperacii",
+        "title": {
+          "ru_RU": "Тип производственной операции",
+          "en_EN": "Tip proizvodstvennoii operacii"
+        },
+        "description": {
+          "ru_RU": "Используется при списании материалов на эту номенклатурную группу: \n Сборка - на номенклатурную группу списываются материалы, указанные в спецификации; \n Разборка - на номенклатурную группу списывается материал, указанный в реквизите Исходное сырье."
+        }
+      },
+      "type": {
+        "mnemo": "tap.TipyProizvodstvennyhOperaciii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.MetodRaspredeleniyaStoimostiProizvodstva",
+        "title": {
+          "ru_RU": "Метод распределения стоимости производства",
+          "en_EN": "Metod raspredeleniya stoimosti proizvodstva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.MetodyRaspredeleniyaStoimostiProizvodstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.Nomenklatura",
+        "title": {
+          "ru_RU": "Номенклатура",
+          "en_EN": "Nomenklatura"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Nomenklatura.Koefficent",
+        "title": {
+          "ru_RU": "Коэффицент",
+          "en_EN": "Koefficent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "5",
+        "unsigned": "true"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Номенклатура",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Nomenklatura",
+    "title": {
+      "ru_RU": "Номенклатура"
+    },
+    "description": {
+      "ru_RU": "Товары, продукция и услуги"
+    }
+  }
+}

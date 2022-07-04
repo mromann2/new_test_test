@@ -1,0 +1,383 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.hr.Smeta",
+        "title": {
+          "ru_RU": "Смета",
+          "en_EN": "Smeta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.TipySmet"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.hr.Tip",
+        "title": {
+          "ru_RU": "Тип",
+          "en_EN": "Tip"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.TipyDokumentov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.hr.NomerIzmenyaemoiiSmety",
+        "title": {
+          "ru_RU": "Номер изменяемой сметы",
+          "en_EN": "Nomer izmenyaemoii smety"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.hr.Subsidiya",
+        "title": {
+          "ru_RU": "Субсидия",
+          "en_EN": "Subsidiya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Subsidii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.hr.Opisanie",
+        "title": {
+          "ru_RU": "Описание",
+          "en_EN": "Opisanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.PpZapisiRazresheniya",
+        "title": {
+          "ru_RU": "№ п/п записи разрешения",
+          "en_EN": " pp zapisi razresheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.TekusheeIzmenenie",
+        "title": {
+          "ru_RU": "Текущее изменение",
+          "en_EN": "Tekushee izmenenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.Kvartal",
+        "title": {
+          "ru_RU": "Квартал",
+          "en_EN": "Kvartal"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kvartaly"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.SummaNaGod",
+        "title": {
+          "ru_RU": "Сумма на год",
+          "en_EN": "Summa na god"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.RasshifrovkaOperacii",
+        "title": {
+          "ru_RU": "Расшифровка операции",
+          "en_EN": "Rasshifrovka operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RasshifrovkiOperaciii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.tr.Opisanie",
+        "title": {
+          "ru_RU": "Описание",
+          "en_EN": "Opisanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Сметы, планы поступлений и выплат",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.UchetSmetyPlanaPostupleniiiIVyplat"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat",
+    "title": {
+      "ru_RU": "Сметы, планы поступлений и выплат",
+      "en_EN": "Smety plany postupleniii i vyplat"
+    },
+    "description": {}
+  }
+}

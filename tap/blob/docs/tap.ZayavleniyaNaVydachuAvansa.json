@@ -1,0 +1,288 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.Sotrudnik",
+        "title": {
+          "ru_RU": "Сотрудник",
+          "en_EN": "Sotrudnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.ZadolzhnostPoRaneeVydannymAvansam",
+        "title": {
+          "ru_RU": "Задолжность по ранее выданным авансам",
+          "en_EN": "Zadolzhnost po ranee vydannym avansam"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.NaznachenieAvansa",
+        "title": {
+          "ru_RU": "Назначение аванса",
+          "en_EN": "Naznachenie avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "400"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo",
+        "title": {
+          "ru_RU": "Обязательство",
+          "en_EN": "Obyazatelstvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta",
+        "title": {
+          "ru_RU": "Раздел лицевого счета",
+          "en_EN": "Razdel licevogo scheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.SummaAvansa",
+        "title": {
+          "ru_RU": "Сумма аванса",
+          "en_EN": "Summa avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.NaSrokDo",
+        "title": {
+          "ru_RU": "На срок до",
+          "en_EN": "Na srok do"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.hr.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.tr.KomuIZaCHtoTrebuetsyaUplatit",
+        "title": {
+          "ru_RU": "Кому и за что требуется уплатить",
+          "en_EN": "Komu i za chto trebuetsya uplatit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "200"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.tr.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.tr.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.tr.KEK",
+        "title": {
+          "ru_RU": "КЭК",
+          "en_EN": "KEK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.ZayavleniyaNaVydachuAvansa.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [
+      {
+        "mnemo": "tap.AvansovyeOtchety"
+      }
+    ],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Заявления на выдачу аванса",
+    "sources": "////Проведение документа\r\n//function activate(currentDocument) {\r\n//\r\n//    if (!notValid(currentDocument)) {\r\n//        for (let tableRec of currentDocument.getRows()){\r\n//            let posting \u003d EntityFactory.createPosting();\r\n//            posting.setComment(tableRec.get(\u0027tap.ZayavleniyaNaVydachuAvansa.tr.KomuIZaCHtoTrebuetsyaUplatit\u0027));\r\n//            posting.setValue(tableRec.get(\u0027tap.ZayavleniyaNaVydachuAvansa.tr.Summa\u0027));\r\n//\r\n//            //счет дб 50211\r\n//            let debit \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u002700000000000000000050211000\u0027).get(0);\r\n//            debit.put(0, tableRec.get(\u0027tap.ZayavleniyaNaVydachuAvansa.tr.KEK\u0027)); //Аналитика 1: КэК\r\n//            debit.put(1, currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo\u0027)); //Аналитика 2: Принятые обязательства\r\n//            \r\n//            let razdel \u003d currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027);\r\n//            debit.put(2, razdel);\r\n//            \r\n//            /*if (currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027))\r\n//                debit.put(2, currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027)); //Аналитика 3: Разделы лиц счетов\r\n//            else\r\n//                debit.put(2,\u0027\u0027);\r\n//            posting.setDebit(debit);*/\r\n//            \r\n//            \r\n//            //счет кр 50212\r\n//            let credit \u003d EntityFactory.getPlans().get(\"tap.Plan1\").findByCode(\u002700000000000000000050212000\u0027).get(0);\r\n//            credit.put(0, tableRec.get(\u0027tap.ZayavleniyaNaVydachuAvansa.tr.KEK\u0027)); //Аналитика 1: КэК\r\n//            credit.put(1, currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo\u0027)); //Аналитика 2: Принятые обязательства\r\n//            if (currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027))\r\n//                credit.put(2, currentDocument.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027)); //Аналитика 3: Разделы лиц счетов\r\n//            posting.setCredit(credit);\r\n//            \r\n//            currentDocument.addPosting(posting);\r\n//        };\r\n//        \r\n//        currentDocument.setExecuted();\r\n//        currentDocument.save();\r\n//    \r\n//        return;  \r\n//    } else \r\n//        return notValid(currentDocument);\r\n//}\r\n//\r\n////Снятие документа с проведения\r\n//function deactivate(currentDocument) {\r\n//    currentDocument.removeAllPostings();\r\n//    currentDocument.setExecutedDate(null);\r\n//    currentDocument.save();\r\n//    return;\r\n//}\r\n//\r\n////Проверка документа на полное заполнение\r\n//function notValid(currentDocument) { \r\n//    let resultValidate \u003d currentDocument.validate();\r\n// \r\n//    if (!currentDocument.getRows().size()){\r\n//        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n//    }\r\n//\r\n//    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n//        return  resultValidate;\r\n//}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.ZayavleniyaNaVydachuAvansa.Standartnyii"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.ZayavleniyaNaVydachuAvansa",
+    "title": {
+      "ru_RU": "Заявления на выдачу аванса",
+      "en_EN": "Zayavleniya na vydachu avansa"
+    },
+    "description": {}
+  }
+}

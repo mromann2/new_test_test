@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "НКВ",
+  "name": {
+    "ru_RU": "Амортизационная премия"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "",
+    "title": {
+      "ru_RU": "НКВ"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "1807",
+  "name": {
+    "ru_RU": "Выбытия денежных средств со счетов учреждения в иностранной валюте"
+  },
+  "foreign": true,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "1807",
+    "title": {
+      "ru_RU": "1807"
+    },
+    "description": {}
+  }
+}

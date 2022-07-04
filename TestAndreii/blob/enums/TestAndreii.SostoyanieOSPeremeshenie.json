@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Ввод в эксплуатацию",
+    "Не меняется"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.SostoyanieOSPeremeshenie",
+    "title": {
+      "ru_RU": "Состояние ОС (Перемещение)",
+      "en_EN": "Sostoyanie OS Peremeshenie"
+    },
+    "description": {}
+  }
+}

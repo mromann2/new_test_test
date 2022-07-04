@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20651",
+  "name": {
+    "ru_RU": "Расчеты по перечислениям другим бюджетам бюджетной системы Российской Федерации"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "4",
+  "kosgudb": "561",
+  "kosgukr": "661",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20651",
+    "title": {
+      "ru_RU": "20651"
+    },
+    "description": {}
+  }
+}

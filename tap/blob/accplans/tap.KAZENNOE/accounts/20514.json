@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "20514",
+  "name": {
+    "ru_RU": "Расчеты с плательщиками по обязательным страховым взносам"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "5",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20514",
+    "title": {
+      "ru_RU": "20514"
+    },
+    "description": {}
+  }
+}

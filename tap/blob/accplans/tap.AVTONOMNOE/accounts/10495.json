@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "10495",
+  "name": {
+    "ru_RU": "Амортизация транспортных средств в концессии"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10495",
+    "title": {
+      "ru_RU": "10495"
+    },
+    "description": {}
+  }
+}

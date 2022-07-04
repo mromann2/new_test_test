@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "19",
+  "name": {
+    "ru_RU": "Невыясненные поступления бюджета прошлых лет"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "19",
+    "title": {
+      "ru_RU": "19"
+    },
+    "description": {}
+  }
+}

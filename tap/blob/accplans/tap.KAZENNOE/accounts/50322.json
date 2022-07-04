@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "50322",
+  "name": {
+    "ru_RU": "Бюджетные ассигнования к распределению"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50322",
+    "title": {
+      "ru_RU": "50322"
+    },
+    "description": {}
+  }
+}

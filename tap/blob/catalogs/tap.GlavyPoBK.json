@@ -1,0 +1,106 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 2,
+  "kodlength": 5,
+  "titlelength": 0,
+  "autonumerizer": false,
+  "uniquecontrol": false,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.GlavyPoBK.Biudzhet",
+        "title": {
+          "ru_RU": "Бюджет",
+          "en_EN": "Biudzhet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Biudzhety"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.GlavyPoBK.DataNachalaDeiistviya",
+        "title": {
+          "ru_RU": "Дата начала действия",
+          "en_EN": "Data nachala deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.GlavyPoBK.DataOkonchaniyaDeiistviya",
+        "title": {
+          "ru_RU": "Дата окончания действия",
+          "en_EN": "Data okonchaniya deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.GlavyPoBK",
+    "title": {
+      "ru_RU": "Главы по БК",
+      "en_EN": "Glavy po BK"
+    },
+    "description": {}
+  }
+}

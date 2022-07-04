@@ -1,0 +1,45 @@
+{
+  "active": true,
+  "code": "10310",
+  "name": {
+    "ru_RU": "Непроизведенные активы – недвижимое имущество учреждения"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10310",
+    "title": {
+      "ru_RU": "10310"
+    },
+    "description": {}
+  }
+}

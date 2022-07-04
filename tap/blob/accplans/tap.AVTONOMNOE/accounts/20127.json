@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "20127",
+  "name": {
+    "ru_RU": "Денежные средства учреждения в иностранной валюте на счетах в кредитной организации"
+  },
+  "foreign": true,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "2",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20127",
+    "title": {
+      "ru_RU": "20127"
+    },
+    "description": {}
+  }
+}

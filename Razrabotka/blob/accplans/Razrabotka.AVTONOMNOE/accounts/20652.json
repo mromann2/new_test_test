@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20652",
+  "name": {
+    "ru_RU": "Расчеты по авансовым перечислениям наднациональным организациям и правительствам иностранных государств"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "4",
+  "kosgudb": "568",
+  "kosgukr": "668",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20652",
+    "title": {
+      "ru_RU": "20652"
+    },
+    "description": {}
+  }
+}

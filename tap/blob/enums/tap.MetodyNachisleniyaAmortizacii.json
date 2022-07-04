@@ -1,0 +1,20 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Линейный",
+    "Нелинейный"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.MetodyNachisleniyaAmortizacii",
+    "title": {
+      "ru_RU": "Методы начисления амортизации",
+      "en_EN": "Metody nachisleniya amortizacii"
+    },
+    "description": {
+      "ru_RU": "Методы начисления амортизации для целей налогового учета"
+    }
+  }
+}

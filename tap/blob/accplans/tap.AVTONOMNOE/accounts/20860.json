@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "20860",
+  "name": {
+    "ru_RU": "Расчеты с подотчетными лицами по социальному обеспечению"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20860",
+    "title": {
+      "ru_RU": "20860"
+    },
+    "description": {}
+  }
+}

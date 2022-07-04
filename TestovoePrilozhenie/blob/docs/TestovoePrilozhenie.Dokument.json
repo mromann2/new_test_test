@@ -1,0 +1,196 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Dokument.hr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Dokument.hr.Ves",
+        "title": {
+          "ru_RU": "Вес",
+          "en_EN": "Ves"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "3",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Dokument.tr.Naimenovanie",
+        "title": {
+          "ru_RU": "Наименование",
+          "en_EN": "Naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Dokument.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Dokument.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Dokument.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Dokument.tr.NomerZhurnalaDt",
+        "title": {
+          "ru_RU": "Номер журнала Дт",
+          "en_EN": "Nomer zhurnala Dt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestovoePrilozhenie.Zhurnaly"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.Dokument.tr.NomerZhurnalaKt",
+        "title": {
+          "ru_RU": "Номер журнала Кт",
+          "en_EN": "Nomer zhurnala Kt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestovoePrilozhenie.Zhurnaly"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Документ",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "TestovoePrilozhenie.Dokument.Standart"
+    },
+    {
+      "mnemo": "TestovoePrilozhenie.Dokument.Spravochnik"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.Dokument",
+    "title": {
+      "ru_RU": "Документ",
+      "en_EN": "Dokument"
+    },
+    "description": {}
+  }
+}

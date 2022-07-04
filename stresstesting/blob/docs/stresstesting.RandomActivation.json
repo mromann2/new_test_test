@@ -1,0 +1,70 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 12,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "stresstesting.RandomActivation.hr.EntriesNumber",
+        "title": {
+          "ru_RU": "Количество проводок",
+          "en_EN": "Entries number"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "true"
+      },
+      "required": true
+    }
+  ],
+  "tablerequsites": [],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Случайные проводки",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "stresstesting.RandomActivation.RandomEntries"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "stresstesting.RandomActivation",
+    "title": {
+      "ru_RU": "Случайные проводки",
+      "en_EN": "Random activation"
+    },
+    "description": {}
+  }
+}

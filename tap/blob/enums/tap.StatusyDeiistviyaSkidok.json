@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Действует",
+    "Отменена"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.StatusyDeiistviyaSkidok",
+    "title": {
+      "ru_RU": "Статусы действия скидок",
+      "en_EN": "Statusy deiistviya skidok"
+    },
+    "description": {}
+  }
+}

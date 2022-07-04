@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "20200",
+  "name": {
+    "ru_RU": "Средства на счетах бюджета"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20200",
+    "title": {
+      "ru_RU": "20200"
+    },
+    "description": {}
+  }
+}

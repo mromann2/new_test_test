@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "Н99",
+  "name": {
+    "ru_RU": "Прибыли и убытки"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "99",
+    "title": {
+      "ru_RU": "Н99"
+    },
+    "description": {}
+  }
+}

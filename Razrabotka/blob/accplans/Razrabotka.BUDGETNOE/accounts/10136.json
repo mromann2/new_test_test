@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "code": "10136",
+  "name": {
+    "ru_RU": "Инвентарь производственный и хозяйственный - иное движимое имущество учреждения"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "AverageWeighted",
+  "journalnumber": "7",
+  "kosgudb": "310",
+  "kosgukr": "410",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10136",
+    "title": {
+      "ru_RU": "10136"
+    },
+    "description": {}
+  }
+}

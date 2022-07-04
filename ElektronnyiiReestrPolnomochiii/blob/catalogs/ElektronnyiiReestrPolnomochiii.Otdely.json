@@ -1,0 +1,166 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "InDialog",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely.RoditelskiiiOtdel",
+        "title": {
+          "ru_RU": "Родительский отдел",
+          "en_EN": "Roditelskiii otdel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely.Opisanie",
+        "title": {
+          "ru_RU": "Описание",
+          "en_EN": "Opisanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely.NormativnyiiPravovoiiAkt",
+        "title": {
+          "ru_RU": "Нормативный правовой акт",
+          "en_EN": "Normativnyii pravovoii akt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely.Rukovoditel",
+        "title": {
+          "ru_RU": "Руководитель",
+          "en_EN": "Rukovoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely.DataNachala",
+        "title": {
+          "ru_RU": "Дата начала",
+          "en_EN": "Data nachala"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely.DataOkonchaniya",
+        "title": {
+          "ru_RU": "Дата окончания",
+          "en_EN": "Data okonchaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Отделы",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely",
+    "title": {
+      "ru_RU": "Отделы",
+      "en_EN": "Otdely"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "0",
+    "1",
+    "ПЕ",
+    "ПЦ"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.TipyNalogovyhPlatezheii",
+    "title": {
+      "ru_RU": "Типы налоговых платежей",
+      "en_EN": "tipy nalogovyh platezheii"
+    },
+    "description": {}
+  }
+}

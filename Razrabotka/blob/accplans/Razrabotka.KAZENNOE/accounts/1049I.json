@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "1049I",
+  "name": {
+    "ru_RU": "Амортизация прав пользования программным обеспечением и базами данных"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "452",
+  "kosgukr": "452",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "1049",
+    "title": {
+      "ru_RU": "1049I"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 2,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": false,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.ElementyBiudzheta",
+    "title": {
+      "ru_RU": "Элементы бюджета",
+      "en_EN": "Elementy biudzheta"
+    },
+    "description": {}
+  }
+}

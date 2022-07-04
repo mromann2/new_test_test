@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "code": "33",
+  "name": {
+    "ru_RU": "Ценные бумаги по договорам репо"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "33",
+    "title": {
+      "ru_RU": "33"
+    },
+    "description": {}
+  }
+}

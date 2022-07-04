@@ -1,0 +1,15 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB1.232",
+    "title": {
+      "ru_RU": "232",
+      "en_EN": "333"
+    },
+    "description": {}
+  }
+}

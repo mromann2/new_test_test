@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Создание записи регистра\r\nfunction activate(currentDocument) {\r\n    // Контроль\r\n    let validationResult \u003d notValid(currentDocument);\r\n    if (validationResult) {\r\n        return validationResult;\r\n    }\r\n    \r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let registerMnemo \u003d MODULEMNEMO + \u0027.Nagrazhdeniya\u0027;\r\n    let orderDocument \u003d currentDocument.get(docMnemo + \u0027.hr.PrikazObOtzyve\u0027);\r\n    let orderNumber \u003d orderDocument.getNumber();\r\n    let orderDate \u003d orderDocument.getDate();\r\n    \r\n    for (let tableRec of currentDocument.getRows()){\r\n        let rewarded \u003d tableRec.get(docMnemo + \u0027.tr.UKogoOtozvat\u0027);\r\n        let reward \u003d tableRec.get(docMnemo + \u0027.tr.Nagrada\u0027);\r\n        \r\n        //добавление записи в регистр\r\n        if (tableRec.get(docMnemo + \u0027.tr.DataOtzyva\u0027) \u0026\u0026 tableRec.get(docMnemo + \u0027.tr.NagradaOtozvana\u0027)) {\r\n            let registerRecord \u003d Register.get(registerMnemo).create();\r\n            registerRecord.setDate(new Date());\r\n            registerRecord.setDocument(currentDocument);\r\n            //измерения\r\n            registerRecord.setDimension(registerMnemo + \u0027.dm.Nagrazhdennyii\u0027, rewarded);\r\n            registerRecord.setDimension(registerMnemo + \u0027.dm.Nagrada\u0027, reward);\r\n            \r\n            //ресурсы\r\n            registerRecord.set(registerMnemo + \u0027.rs.Kolichestvo\u0027, -1);\r\n            //реквизиты\r\n            if (tableRec.get(docMnemo + \u0027.tr.NomerNagrady\u0027))\r\n                registerRecord.setRequisite(registerMnemo + \u0027.rg.NomerNagrady\u0027, tableRec.get(docMnemo + \u0027.tr.NomerNagrady\u0027));\r\n            if (tableRec.get(docMnemo + \u0027.tr.NomerUdostovereniya\u0027))\r\n                registerRecord.setRequisite(registerMnemo + \u0027.rg.NomerUdostovereniya\u0027, tableRec.get(docMnemo + \u0027.tr.NomerUdostovereniya\u0027));\r\n            registerRecord.setRequisite(registerMnemo + \u0027.rg.Otozvana\u0027, true);\r\n            registerRecord.setRequisite(registerMnemo + \u0027.rg.NomerPrikazaOtzyva\u0027, orderNumber);\r\n            registerRecord.setRequisite(registerMnemo + \u0027.rg.DataPrikazaOtzyva\u0027, orderDate);\r\n            if (tableRec.get(docMnemo + \u0027.tr.OsnovanieOtzyva\u0027))\r\n                registerRecord.setRequisite(registerMnemo + \u0027.rg.OsnovanieOtzyva\u0027, tableRec.get(docMnemo + \u0027.tr.OsnovanieOtzyva\u0027));\r\n            registerRecord.setRequisite(registerMnemo + \u0027.rg.DataOtzyva\u0027, tableRec.get(docMnemo + \u0027.tr.DataOtzyva\u0027));\r\n            \r\n            registerRecord.create();\r\n        }\r\n    }\r\n    \r\n    //устанавливаем признак проведения и текущую дату\r\n    currentDocument.setExecuted();\r\n    //сохранение документа\r\n    currentDocument.save();\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) { \r\n    let resultValidate \u003d currentDocument.validate();\r\n    \r\n    if (!currentDocument.getRows().size()){\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    }\r\n    \r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n        return  resultValidate;\r\n}\r\n\r\nfunction deactivate(currentDocument) {\r\n    let registerMnemo \u003d MODULEMNEMO + \u0027.Nagrazhdeniya\u0027;\r\n    let registerRecord \u003d Register.get(registerMnemo);\r\n    registerRecord.delete ({\r\n        Document: currentDocument,\r\n    });\r\n    currentDocument.unPostingAndSave();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Module.AktyObOtzyveNagrazhdeniya.Uchet",
+    "title": {
+      "ru_RU": "Учет",
+      "en_EN": "Uchet"
+    },
+    "description": {}
+  }
+}

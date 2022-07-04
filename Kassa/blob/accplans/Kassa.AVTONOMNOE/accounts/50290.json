@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50290",
+  "name": {
+    "ru_RU": "Обязательства на иные очередные годы (за пределами планового периода)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50290",
+    "title": {
+      "ru_RU": "50290"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "active": true,
+  "code": "10980",
+  "name": {
+    "ru_RU": "Общехозяйственные расходы"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.VidyZatrat"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10980",
+    "title": {
+      "ru_RU": "10980"
+    },
+    "description": {}
+  }
+}

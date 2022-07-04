@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.plan"
+  },
+  "enum": [
+    "TestovoePrilozhenie.Biudzhetnyii",
+    "TestovoePrilozhenie.Avtonomnyii",
+    "TestovoePrilozhenie.Kazennyii"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.TipUchrezhdeniya",
+    "title": {
+      "ru_RU": "Тип учреждения",
+      "en_EN": "Tip uchrezhdeniya"
+    },
+    "description": {}
+  }
+}

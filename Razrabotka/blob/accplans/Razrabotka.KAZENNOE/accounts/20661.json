@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20661",
+  "name": {
+    "ru_RU": "Расчеты по авансовым платежам (перечислениям) по обязательным видам страхования"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "4",
+  "kosgudb": "565",
+  "kosgukr": "665",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20661",
+    "title": {
+      "ru_RU": "20661"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "active": true,
+  "code": "2652",
+  "name": {
+    "ru_RU": "Движимое имущество, составляющее казну, переданное в безвозмездное пользование"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "2652",
+    "title": {
+      "ru_RU": "2652"
+    },
+    "description": {}
+  }
+}

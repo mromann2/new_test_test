@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Регистрировать счета-фактуры всегда при получении аванса",
+    "Не регистрировать счета-фактуры на авансы, зачтенные в течение 5-ти календарных дней",
+    "Не регистрировать счета-фактуры на авансы (п.13 ст.167 НК РФ)"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PoryadkiRegistraciiSchetafakturyNaAvans",
+    "title": {
+      "ru_RU": "Порядки регистрации счета-фактуры на аванс",
+      "en_EN": "Poryadki registracii schetafaktury na avans"
+    },
+    "description": {}
+  }
+}

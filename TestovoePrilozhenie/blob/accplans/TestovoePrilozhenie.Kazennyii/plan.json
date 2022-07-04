@@ -1,0 +1,13 @@
+{
+  "plantype": "BUDGET",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.Kazennyii",
+    "title": {
+      "ru_RU": "Казенный",
+      "en_EN": "Kazennyii"
+    },
+    "description": {}
+  }
+}
