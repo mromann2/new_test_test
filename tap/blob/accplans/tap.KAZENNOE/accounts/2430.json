@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "2430",
+  "name": {
+    "ru_RU": "Иное движимое имущество, переданное в доверительное управление"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "2430",
+    "title": {
+      "ru_RU": "2430"
+    },
+    "description": {}
+  }
+}

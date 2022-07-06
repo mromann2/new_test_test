@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "Н9900",
+  "name": {
+    "ru_RU": "Прибыли и убытки"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "9900",
+    "title": {
+      "ru_RU": "Н9900"
+    },
+    "description": {}
+  }
+}

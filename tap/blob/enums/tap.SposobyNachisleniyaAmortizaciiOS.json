@@ -1,0 +1,21 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Линейный",
+    "Уменьшаемого остатка",
+    "По сумме чисел лет",
+    "Пропорционально объему продукции работ",
+    "По единым нормам"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SposobyNachisleniyaAmortizaciiOS",
+    "title": {
+      "ru_RU": "Способы начисления амортизации ОС",
+      "en_EN": "Sposoby nachisleniya amortizacii OS"
+    },
+    "description": {}
+  }
+}

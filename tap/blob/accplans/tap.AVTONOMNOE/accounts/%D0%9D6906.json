@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "Н6906",
+  "name": {
+    "ru_RU": "Расчеты по страховым взносам на обязательное медицинское страхование в Федеральный ФОМС"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "6906",
+    "title": {
+      "ru_RU": "Н6906"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Полный",
+    "Сокращенный"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.TipyZayavokRegistraciiVOFK",
+    "title": {
+      "ru_RU": "Типы заявок регистрации в ОФК",
+      "en_EN": "Tipy zayavok registracii v OFK"
+    },
+    "description": {}
+  }
+}

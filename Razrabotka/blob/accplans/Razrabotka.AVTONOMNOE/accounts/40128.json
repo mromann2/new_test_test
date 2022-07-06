@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "40128",
+  "name": {
+    "ru_RU": "Расходы финансового года, предшествующего отчетному, выявленные в отчетном году"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "10",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40128",
+    "title": {
+      "ru_RU": "40128"
+    },
+    "description": {}
+  }
+}

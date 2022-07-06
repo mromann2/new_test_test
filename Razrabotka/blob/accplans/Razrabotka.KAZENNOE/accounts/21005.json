@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "21005",
+  "name": {
+    "ru_RU": "Расчеты с прочими дебиторами"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "kosgudb": "564",
+  "kosgukr": "664",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21005",
+    "title": {
+      "ru_RU": "21005"
+    },
+    "description": {}
+  }
+}

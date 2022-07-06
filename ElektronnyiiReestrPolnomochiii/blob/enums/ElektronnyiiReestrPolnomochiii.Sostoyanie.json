@@ -1,0 +1,20 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Действует",
+    "Не действует",
+    "Не вступил в силу",
+    "Утратил силу"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.Sostoyanie",
+    "title": {
+      "ru_RU": "Состояние",
+      "en_EN": "Sostoyanie"
+    },
+    "description": {}
+  }
+}

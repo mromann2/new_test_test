@@ -1,0 +1,164 @@
+{
+  "dimensions": [
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Razrabotka.OstatkiTMC.dm.Schet",
+        "title": {
+          "ru_RU": "Счет",
+          "en_EN": "Schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Razrabotka.OstatkiTMC.dm.MOL",
+        "title": {
+          "ru_RU": "МОЛ",
+          "en_EN": "MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Razrabotka.OstatkiTMC.dm.Sklad",
+        "title": {
+          "ru_RU": "Склад",
+          "en_EN": "Sklad"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Razrabotka.OstatkiTMC.dm.Partiya",
+        "title": {
+          "ru_RU": "Партия",
+          "en_EN": "Partiya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Partii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Razrabotka.OstatkiTMC.dm.TMC",
+        "title": {
+          "ru_RU": "ТМЦ",
+          "en_EN": "TMC"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.MaterialnyeZapasy"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "resources": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.OstatkiTMC.rs.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.OstatkiTMC.rs.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "requisites": [
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.OstatkiTMC.rg.VidDvizheniya",
+        "title": {
+          "ru_RU": "Вид движения",
+          "en_EN": "Vid dvizheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    }
+  ],
+  "type": "Remainders",
+  "period": "Month",
+  "fast": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.OstatkiTMC",
+    "title": {
+      "ru_RU": "Остатки ТМЦ",
+      "en_EN": "Ostatki TMC"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20611",
+  "name": {
+    "ru_RU": "Расчеты по оплате труда"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "6",
+  "kosgudb": "567",
+  "kosgukr": "667",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20611",
+    "title": {
+      "ru_RU": "20611"
+    },
+    "description": {}
+  }
+}

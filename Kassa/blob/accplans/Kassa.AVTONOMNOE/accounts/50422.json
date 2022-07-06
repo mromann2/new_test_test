@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50422",
+  "name": {
+    "ru_RU": "Сметные (плановые) назначения по расходам (выплатам)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50422",
+    "title": {
+      "ru_RU": "50422"
+    },
+    "description": {}
+  }
+}

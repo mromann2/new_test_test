@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "20899",
+  "name": {
+    "ru_RU": "Расчеты с подотчетными лицами по оплате иных выплат капитального характера организациям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20899",
+    "title": {
+      "ru_RU": "20899"
+    },
+    "description": {}
+  }
+}

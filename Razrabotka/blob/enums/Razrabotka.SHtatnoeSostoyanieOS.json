@@ -1,0 +1,20 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "в эксплуатации",
+    "в ремонте",
+    "на тех.обслуживании",
+    "на списании"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.SHtatnoeSostoyanieOS",
+    "title": {
+      "ru_RU": "Штатное состояние ОС",
+      "en_EN": "SHtatnoe sostoyanie OS"
+    },
+    "description": {}
+  }
+}

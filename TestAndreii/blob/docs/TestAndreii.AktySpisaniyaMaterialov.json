@@ -1,0 +1,488 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.OtpravitelMOL",
+        "title": {
+          "ru_RU": "Отправитель (МОЛ)",
+          "en_EN": "Otpravitel MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.Podrazdelenieotkuda",
+        "title": {
+          "ru_RU": "Подразделение (откуда)",
+          "en_EN": "Podrazdelenie otkuda"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.PoluchatelMOL",
+        "title": {
+          "ru_RU": "Получатель (МОЛ)",
+          "en_EN": "Poluchatel MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.Podrazdeleniekuda",
+        "title": {
+          "ru_RU": "Подразделение (куда)",
+          "en_EN": "Podrazdelenie kuda"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.OrganizaciyabezvozmezdnayaPeredachaVozvrat",
+        "title": {
+          "ru_RU": "Организация (безвозмездная передача, возврат)",
+          "en_EN": "Organizaciya bezvozmezdnaya peredacha vozvrat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.Osnovanie",
+        "title": {
+          "ru_RU": "Основание",
+          "en_EN": "Osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.hr.Komissiya",
+        "title": {
+          "ru_RU": "Комиссия",
+          "en_EN": "Komissiya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.Operacii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.TMC",
+        "title": {
+          "ru_RU": "ТМЦ",
+          "en_EN": "TMC"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.MaterialnyeZapasy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.EdinicyIzmereniyaOKEI"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.Cena",
+        "title": {
+          "ru_RU": "Цена",
+          "en_EN": "Cena"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.CenaPostavshika",
+        "title": {
+          "ru_RU": "Цена поставщика",
+          "en_EN": "Cena postavshika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestAndreii.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.AkcizVTch",
+        "title": {
+          "ru_RU": "Акциз в т.ч.",
+          "en_EN": "Akciz v tch"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktySpisaniyaMaterialov.tr.SrokGodnosti",
+        "title": {
+          "ru_RU": "Срок годности",
+          "en_EN": "Srok godnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Акты списания материалов",
+    "sources": "//При сохранении - расчет суммы по стоимости, амортизации. \r\n//Обработка поля Операция, по фактуре: После заполнения операции заполняются поля для проводки (дебет, кредит и прочее -аналитика, КПС, КВФО)\r\nfunction preSave(currentDocument) {\r\n    let mnemo \u003d currentDocument.getMnemo(); \r\n    //Суммируем стоимость\r\n    currentDocument.set(mnemo + \u0027.hr.Summa\u0027, getCalculatedSum(currentDocument, mnemo + \u0027.tr.Summa\u0027));\r\n    \r\n    //Заполняем операцию и поля для проводки по ней...\r\n    processDocument(currentDocument, \r\n        new DocFillTableByHatHandler(\u0027Operaciya\u0027, \u0027Operaciya\u0027), \r\n        new DocReferenceHandler(\u0027Operaciya\u0027, [\u0027KVFO\u0027, \u0027KPSDebet\u0027, \u0027Debet\u0027, \u0027KPSKredit\u0027, \u0027Kredit\u0027], [\u0027KVFO\u0027, \u0027KPSDb\u0027, \u0027Debet\u0027, \u0027KPSKr\u0027, \u0027Kredit\u0027])        \r\n    );\r\n \r\n}\r\n\r\n//После проведения документа - пишем в регистр\r\nfunction postActivate(currentDocument) {    \r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let regName \u003d MODULEMNEMO + \u0027.OstatkiTMC\u0027;\r\n    let partia;\r\n    let mol;\r\n    let skl;\r\n    let sh;\r\n    \r\n    if (currentDocument.isActivated())  {\r\n        //ищем в справочнике подменные нулевые значения\r\n        let zeroPartia \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.Partii\u0027).findByCode(\u00270\u0027)[0]; \r\n        let zeroMol \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.Sotrudniki\u0027).findByCode(\u00270\u0027)[0];\r\n        let zeroSkl \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.Podrazdeleniya\u0027).findByCode(\u00270\u0027)[0];    \r\n    \r\n        for (let tableRec of currentDocument.getRows()){\r\n            sh \u003d tableRec.get(docMnemo + \u0027.tr.Kredit\u0027);\r\n            //получаем значения аналитик кредита\r\n            partia \u003d getValOrZeroVal(sh, \u0027Partii\u0027, zeroPartia);\r\n            mol \u003d getValOrZeroVal(sh, \u0027Sotrudniki\u0027, zeroMol);\r\n            skl \u003d getValOrZeroVal(sh, \u0027Podrazdeleniya\u0027, zeroSkl);\r\n          \r\n            //заполняем регистр\r\n            FillRegistr(regName, currentDocument, [\u0027Schet\u0027, \u0027MOL\u0027, \u0027Sklad\u0027, \u0027Partiya\u0027, \u0027TMC\u0027], \r\n                                                  [sh, mol, skl, partia, tableRec.get(docMnemo + \u0027.tr.TMC\u0027)], \r\n                                                  [\u0027VidDvizheniya\u0027], \r\n                                                  [docMnemo], \r\n                                                  [\u0027Kolichestvo\u0027, \u0027Summa\u0027], \r\n                                                  [-tableRec.get(docMnemo + \u0027.tr.Kolichestvo\u0027) , -tableRec.get(docMnemo + \u0027.tr.Summa\u0027)]);\r\n        \r\n        }    \r\n    }\r\n}\r\n\r\n//После снятия с проведения документа - удаляем из регистра\r\nfunction postDeactivate(currentDocument) {\r\n    //Удаляем регистры при снятии с проведения\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let regName \u003d MODULEMNEMO + \u0027.OstatkiTMC\u0027;\r\n    \r\n    let sh_cap \u003d regName + \u0027.dm.Schet\u0027;\r\n    let mol_cap \u003d regName + \u0027.dm.MOL\u0027;\r\n    let skl_cap \u003d regName + \u0027.dm.Sklad\u0027;\r\n    let part_cap \u003d regName + \u0027.dm.Partiya\u0027;\r\n    let tmc_cap \u003d regName + \u0027.dm.TMC\u0027;   \r\n            \r\n    let sh;\r\n    let mol;\r\n    let skl;    \r\n    let part;\r\n    let tmc;\r\n    \r\n    req1 \u003d regName + \u0027.rg.VidDvizheniya\u0027;\r\n    \r\n    let condition;\r\n    let myReg;\r\n    \r\n    //ищем в справочнике подменные нулевые значения\r\n    let zeroPartia \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.Partii\u0027).findByCode(\u00270\u0027)[0]; \r\n    let zeroMol \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.Sotrudniki\u0027).findByCode(\u00270\u0027)[0];\r\n    let zeroSkl \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.Podrazdeleniya\u0027).findByCode(\u00270\u0027)[0];\r\n    \r\n    for (let tableRec of currentDocument.getRows()){\r\n         sh \u003d tableRec.get(docMnemo + \u0027.tr.Kredit\u0027);\r\n         //получаем партию из аналитики кредита         \r\n         part \u003d getValOrZeroVal(sh, \u0027Partii\u0027, zeroPartia);\r\n         mol \u003d getValOrZeroVal(sh, \u0027Sotrudniki\u0027, zeroMol);\r\n         skl \u003d getValOrZeroVal(sh, \u0027Podrazdeleniya\u0027, zeroSkl);       \r\n        \r\n         condition \u003d new filter().dimension(sh_cap, sh).and().dimension(mol_cap, mol).and().dimension(skl_cap, skl).and().dimension(part_cap, part).and().dimension(tmc_cap, tmc).and().requisite(req1, docMnemo);\r\n         \r\n         myReg \u003d Register.get(regName);\r\n         myReg.delete(condition);          \r\n    }   \r\n}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "TestAndreii.AktySpisaniyaMaterialov.SpisanieMZNedostachiHisheniya"
+    },
+    {
+      "mnemo": "TestAndreii.AktySpisaniyaMaterialov.SpisanieMZVDebetScheta"
+    },
+    {
+      "mnemo": "TestAndreii.AktySpisaniyaMaterialov.SpisanieMZIPerevodNa27"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.AktySpisaniyaMaterialov",
+    "title": {
+      "ru_RU": "Акты списания материалов",
+      "en_EN": "Akty spisaniya materialov"
+    },
+    "description": {}
+  }
+}

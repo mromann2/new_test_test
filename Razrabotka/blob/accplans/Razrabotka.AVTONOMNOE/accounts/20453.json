@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20453",
+  "name": {
+    "ru_RU": "Прочие финансовые активы"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "kosgudb": "550",
+  "kosgukr": "650",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20453",
+    "title": {
+      "ru_RU": "20453"
+    },
+    "description": {}
+  }
+}

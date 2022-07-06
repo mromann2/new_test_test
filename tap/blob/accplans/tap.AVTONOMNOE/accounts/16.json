@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "16",
+  "name": {
+    "ru_RU": "Переплаты пенсий и пособий вследствие неправильного применения законодательства о пенсиях и пособиях, счетных ошибок"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "16",
+    "title": {
+      "ru_RU": "16"
+    },
+    "description": {}
+  }
+}

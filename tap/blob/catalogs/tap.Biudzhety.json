@@ -1,0 +1,219 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 11,
+  "titlelength": 25,
+  "autonumerizer": false,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Biudzhety.KodPoOKTMO",
+        "title": {
+          "ru_RU": "Код по ОКТМО",
+          "en_EN": "Kod po OKTMO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "11",
+        "unsigned": "true"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Biudzhety.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Полное наименование",
+          "en_EN": "Polnoe naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Biudzhety.Element",
+        "title": {
+          "ru_RU": "Элемент",
+          "en_EN": "Element"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.ElementyBiudzheta"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Biudzhety.NaimenovaniePublichnopravovogoObrazovaniya",
+        "title": {
+          "ru_RU": "Наименование публично-правового образования",
+          "en_EN": "Naimenovanie publichnopravovogo obrazovaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Biudzhety.NaimenovanieFinansovogoOrgana",
+        "title": {
+          "ru_RU": "Наименование финансового органа",
+          "en_EN": "Naimenovanie finansovogo organa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Biudzhety.KodOKPOFinansovogoOrgana",
+        "title": {
+          "ru_RU": "Код ОКПО финансового органа",
+          "en_EN": "Kod OKPO finansovogo organa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "8"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Biudzhety.KodOrganaFK",
+        "title": {
+          "ru_RU": "Код органа ФК",
+          "en_EN": "Kod organa FK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "4"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Biudzhety.VyshestoyashiiiBiudzhet",
+        "title": {
+          "ru_RU": "Вышестоящий бюджет",
+          "en_EN": "Vyshestoyashiii biudzhet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Biudzhety"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Бюджеты",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Biudzhety",
+    "title": {
+      "ru_RU": "Бюджеты",
+      "en_EN": "Biudzhety"
+    },
+    "description": {}
+  }
+}

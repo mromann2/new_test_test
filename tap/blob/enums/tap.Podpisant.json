@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Руководитель",
+    "Представитель"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Podpisant",
+    "title": {
+      "ru_RU": "Подписант",
+      "en_EN": "Podpisant"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n     if (!notValid(currentDocument)) {\r\n         for (let tableRec of currentDocument.getRows()){\r\n            //создание и заполнение проводки\r\n            let posting \u003d EntityFactory.createPosting();\r\n            posting.setComment(tableRec.get(\u0027Kassa.PrihodnyiiKassovyiiOrder.tr.Opisanie\u0027));\r\n            posting.setValue(tableRec.get(\u0027Kassa.PrihodnyiiKassovyiiOrder.tr.Summa\u0027));\r\n            posting.setDebit(tableRec.get(\u0027Kassa.PrihodnyiiKassovyiiOrder.tr.Debet\u0027));\r\n            posting.setCredit(tableRec.get(\u0027Kassa.PrihodnyiiKassovyiiOrder.tr.Kredit\u0027));\r\n            currentDocument.addPosting(posting);\r\n            \r\n            if (tableRec.get(\u0027Kassa.PrihodnyiiKassovyiiOrder.tr.Debet\u0027).GetCode() \u003d\u003d \u002740110\u0027) {\r\n                posting \u003d EntityFactory.createPosting();\r\n                posting.setComment(\u0027Сумма НДС\u0027);\r\n                let nds \u003d tableRec.get(\u0027Kassa.PrihodnyiiKassovyiiOrder.tr.Summa\u0027) * tableRec.get(\u0027Kassa.PrihodnyiiKassovyiiOrder.tr.StavkaNDS\u0027) / 100;\r\n                posting.setValue(tableRec.get(\u0027Kassa.PrihodnyiiKassovyiiOrder.tr.Summa\u0027));\r\n                posting.setDebit(EntityFactory.getPlan().findByCode(\u002740110\u0027));\r\n                posting.setCredit(EntityFactory.getPlan().findByCode(\u002730304\u0027));\r\n                currentDocument.addPosting(posting);\r\n                \r\n            }\r\n        };\r\n        //устанавливаем текущую дату проводки\r\n        currentDocument.setExecuted();\r\n\r\n        //сохранение документа с проводками\r\n        currentDocument.save();\r\n       \r\n        return;  \r\n    } else \r\n        return notValid(currentDocument);\r\n}\r\n\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.unPostingAndSave();\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) { \r\n    let resultValidate \u003d currentDocument.validate();\r\n \r\n    if (!currentDocument.getRows().size()){        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    }\r\n\r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n        return  resultValidate;\r\n}\r\n\r\nclass TableRecWrapper{\r\n    constructor(tableRec, docMnemo){\r\n        this._tableRec \u003d tableRec;\r\n        //это, конечно, всё временно, но сейчас мне просто больно смотреть на getValue через полное mnemo\r\n        this._mnemo \u003d `${docMnemo}.tr`; //и вообще, настаиваю на том, чтоб у таблицы тоже был доступ к своему мнемо \u003d)\r\n        \r\n        tableRec.getRequisiteValueMap().entrySet()\r\n                .forEach(requisite \u003d\u003e {\r\n                    let requisiteName \u003d requisite.getKey().replace(this._mnemo + \".\", \"\");\r\n                    this[requisiteName] \u003d requisite.getValue(); //это, пожалуй, самое важное из всей кучи кода:\r\n                });                                             //добавляем в обертку удобный способ доступа к полям таблицы\r\n                \r\n        this._analitics \u003d new Array();\r\n        this.Debet \u0026\u0026 this.Debet.getProperties() \r\n                .forEach((key, value) \u003d\u003e this._analitics.push(new Analytics(\u0027Debit\u0027, key, value)));\r\n        this.Kredit \u0026\u0026 this.Kredit.getProperties() \r\n                .forEach((key, value) \u003d\u003e this._analitics.push(new Analytics(\u0027Kredit\u0027, key, value)));\r\n\r\n    }\r\n    \r\n    get rec(){\r\n        return this._tableRec;\r\n    }\r\n    \r\n    get analitics(){\r\n        return this._analitics;\r\n    }\r\n}\r\n\r\nclass DocumentForScriptExtention{\r\n    constructor(document){\r\n        this._document \u003d document;\r\n        this._table \u003d new Array();\r\n        this._validator \u003d new DefaultDocumentValidator();\r\n        document.getTableRecList()\r\n            .forEach((item) \u003d\u003e { \r\n                let recWraper \u003d new TableRecWrapper(item, document.getMnemo());\r\n                this.table.push(recWraper);\r\n            });\r\n    };\r\n    \r\n    get table() {\r\n        return this._table;\r\n    }\r\n    \r\n    get validator(){\r\n        return this._validator;\r\n    }\r\n    \r\n    get originalDocument(){\r\n        return this._document;\r\n    }\r\n    \r\n    isValid(validator \u003d this._validator){\r\n        return validator.validate();\r\n    }\r\n}\r\n"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.PrihodnyiiKassovyiiOrder.UchPKO",
+    "title": {
+      "ru_RU": "УчПКО",
+      "en_EN": "UchPKO"
+    },
+    "description": {}
+  }
+}

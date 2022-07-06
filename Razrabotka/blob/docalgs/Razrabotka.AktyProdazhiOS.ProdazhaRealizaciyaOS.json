@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(currentDocument) {\r\n    let activator \u003d new DefaultActivator(currentDocument);\r\n    //1. проводка по остаточной стоймости\r\n    let ostStoimostBuilder \u003d activator.postingBuilders[0];\r\n    \r\n    let fGetOstStoimost \u003d function(tableRec, trMnemo) {\r\n        return tableRec.get(trMnemo + \u0027Stoimost\u0027)\r\n             - tableRec.get(trMnemo + \u0027Amortizaciya\u0027)\r\n             - tableRec.get(trMnemo + \u0027UbytokOtObesceneniya\u0027);\r\n    };\r\n    \r\n    ostStoimostBuilder.checkCondition \u003d function(tableRec) {\r\n        return fGetOstStoimost(tableRec, this.trMnemo) \u003e 0;\r\n    };\r\n    ostStoimostBuilder.getObj \u003d function(tableRec) {\r\n        return {summa: fGetOstStoimost(tableRec, this.trMnemo)};\r\n    };\r\n    \r\n    //2. проводка по сумме амортизации\r\n    let amortBuilder \u003d new PostingBuilderWithCreatePostingWithProps(currentDocument); \r\n    \r\n    amortBuilder.checkCondition \u003d function(tableRec) {\r\n        return tableRec.get(this.trMnemo + \u0027Amortizaciya\u0027) \u003e 0;\r\n    };\r\n    amortBuilder.getObj \u003d function(tableRec) {\r\n        let creditAccount \u003d tableRec.get(this.trMnemo + \u0027Kredit\u0027);\r\n        return {\r\n            debitKps: tableRec.get(this.trMnemo + \u0027KPSKr\u0027).getCode(),\r\n            debit: fillAccountByAnalytics(getLinkedAccount(creditAccount, \u0027SchetAmortizacii\u0027), creditAccount),\r\n            summa: tableRec.get(this.trMnemo + \u0027Amortizaciya\u0027)\r\n        };\r\n    };\r\n\r\n    //3. проводка по убытку от обесценения\r\n    let obescenBuilder \u003d new PostingBuilderWithCreatePostingWithProps(currentDocument); \r\n    \r\n    obescenBuilder.checkCondition \u003d function(tableRec) {\r\n        return tableRec.get(this.trMnemo + \u0027UbytokOtObesceneniya\u0027) \u003e 0;\r\n    };\r\n    obescenBuilder.getObj \u003d function(tableRec) {\r\n        let creditAccount \u003d tableRec.get(this.trMnemo + \u0027Kredit\u0027);\r\n        return {\r\n            debitKps: tableRec.get(this.trMnemo + \u0027KPSKr\u0027).getCode(),\r\n            debit: fillAccountByAnalytics(getLinkedAccount(creditAccount, \u0027SchetObesceneniya\u0027), creditAccount),\r\n            summa: tableRec.get(this.trMnemo + \u0027UbytokOtObesceneniya\u0027)\r\n        };\r\n    };\r\n    \r\n    //4. проводка на второй счет для ОС\r\n    let vtoroiiSchetBuilder \u003d new PostingBuilderWithCreatePostingWithProps(currentDocument); \r\n    \r\n    vtoroiiSchetBuilder.checkCondition \u003d function(tableRec) {\r\n        return Boolean(tableRec.get(this.trMnemo + \u0027VtoroiiSchet\u0027));\r\n    };\r\n    let debit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000\u0027).get(0);\r\n    vtoroiiSchetBuilder.getObj \u003d function(tableRec) {\r\n        let creditAccount \u003d tableRec.get(this.trMnemo + \u0027Kredit\u0027);\r\n        return {\r\n            debitKps: \u00270\u0027.repeat(17),\r\n            debit: debit,\r\n            debitKosgu: \u0027000\u0027,\r\n            credit: fillAccountByAnalytics(tableRec.get(this.trMnemo + \u0027VtoroiiSchet\u0027), creditAccount),\r\n            creditKosgu: \u0027000\u0027,\r\n            summa: tableRec.get(this.trMnemo + \u0027Stoimost\u0027)\r\n        };\r\n    };\r\n\r\n    activator.getOperationSum \u003d function() {\r\n        return getCalculatedSum(this.document, this.trMnemo + \u0027Stoimost\u0027) - \r\n               getCalculatedSum(this.document, this.trMnemo + \u0027Amortizaciya\u0027) - \r\n               getCalculatedSum(this.document, this.trMnemo + \u0027UbytokOtObesceneniya\u0027);\r\n    };\r\n    \r\n    return activator.addBuilders(amortBuilder, obescenBuilder, vtoroiiSchetBuilder).run();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.AktyProdazhiOS.ProdazhaRealizaciyaOS",
+    "title": {
+      "ru_RU": "Продажа, реализация ОС",
+      "en_EN": "Prodazha realizaciya OS"
+    },
+    "description": {}
+  }
+}

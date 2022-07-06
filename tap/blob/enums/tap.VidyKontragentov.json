@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Юридическое лицо",
+    "Физическое лицо"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyKontragentov",
+    "title": {
+      "ru_RU": "Виды контрагентов",
+      "en_EN": "Vidy kontragentov"
+    },
+    "description": {}
+  }
+}

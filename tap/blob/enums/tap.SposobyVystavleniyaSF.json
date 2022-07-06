@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "На бумажном носителе",
+    "В электронном виде"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SposobyVystavleniyaSF",
+    "title": {
+      "ru_RU": "Способы выставления СФ",
+      "en_EN": "Sposoby vystavleniya SF"
+    },
+    "description": {}
+  }
+}

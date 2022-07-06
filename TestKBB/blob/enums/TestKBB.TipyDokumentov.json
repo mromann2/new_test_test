@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "исходный",
+    "изменения"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.TipyDokumentov",
+    "title": {
+      "ru_RU": "Типы документов",
+      "en_EN": "Tipy dokumentov"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "journaltype": "Normal",
+  "useasjournalofsubordinatedocuments": false,
+  "useascompletedocumentjournal": false,
+  "documentrefs": [],
+  "columns": [],
+  "journalforms": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.1",
+    "title": {
+      "ru_RU": "1",
+      "en_EN": "1"
+    },
+    "description": {}
+  }
+}

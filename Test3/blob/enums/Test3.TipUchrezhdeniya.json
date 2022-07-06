@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.plan"
+  },
+  "enum": [
+    "Test3.AVTONOMNOE",
+    "Test3.BUDGETNOE",
+    "Test3.KAZENNOE"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Test3.TipUchrezhdeniya",
+    "title": {
+      "ru_RU": "Тип Учреждения",
+      "en_EN": "Tip Uchrezhdeniya"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.hr.MOL",
+        "title": {
+          "ru_RU": "МОЛ",
+          "en_EN": "MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.hr.Stoimost",
+        "title": {
+          "ru_RU": "Стоимость",
+          "en_EN": "Stoimost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.hr.Amortizaciya",
+        "title": {
+          "ru_RU": "Амортизация",
+          "en_EN": "Amortizaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.hr.Primechanie",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "256"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.OsnovnoeSredstvo",
+        "title": {
+          "ru_RU": "Основное средство",
+          "en_EN": "Osnovnoe sredstvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.SchetOS",
+        "title": {
+          "ru_RU": "Счет ОС",
+          "en_EN": "Schet OS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.Stoimost",
+        "title": {
+          "ru_RU": "Стоимость",
+          "en_EN": "Stoimost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.Amortizaciya",
+        "title": {
+          "ru_RU": "Амортизация",
+          "en_EN": "Amortizaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.UbytokOtObesceneniya",
+        "title": {
+          "ru_RU": "Убыток от обесценения",
+          "en_EN": "Ubytok ot obesceneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.IzmenenieStoimosti",
+        "title": {
+          "ru_RU": "Изменение стоимости",
+          "en_EN": "Izmenenie stoimosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.IzmenenieAmortizacii",
+        "title": {
+          "ru_RU": "Изменение амортизации",
+          "en_EN": "Izmenenie amortizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS Db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU Db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS Kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU Kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Акты реконструкции, модернизации ОС",
+    "sources": "//При сохранении - расчет суммы по стоимости, амортизации. \r\n//Обработка поля Операция, по фактуре: После заполнения операции заполняются поля для проводки (дебет, кредит и прочее -аналитика, КПС, КВФО)\r\nfunction preSave(currentDocument) {\r\n    let mnemo \u003d currentDocument.getMnemo(); \r\n    //Суммируем стоимость и амортизацию\r\n    currentDocument.set(mnemo + \u0027.hr.Stoimost\u0027, getCalculatedSum(currentDocument, mnemo + \u0027.tr.IzmenenieStoimosti\u0027));\r\n    currentDocument.set(mnemo + \u0027.hr.Amortizaciya\u0027, getCalculatedSum(currentDocument, mnemo + \u0027.tr.IzmenenieAmortizacii\u0027));    \r\n    \r\n    //Заполняем операцию и поля для проводки по ней...\r\n    processDocument(currentDocument, \r\n        new DocFillTableByHatHandler(\u0027Operaciya\u0027, \u0027Operaciya\u0027), \r\n        new DocReferenceHandler(\u0027Operaciya\u0027, [\u0027KVFO\u0027, \u0027KPSDebet\u0027, \u0027Debet\u0027, \u0027KPSKredit\u0027, \u0027Kredit\u0027], [\u0027KVFO\u0027, \u0027KPSDb\u0027, \u0027Debet\u0027, \u0027KPSKr\u0027, \u0027Kredit\u0027]),        \r\n    );\r\n \r\n}\r\n"
+  },
+  "algorithms": [
+    {
+      "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.IzmenenieStoimostiS40110106hhAmortizaciiSoSchetaZatrat__"
+    },
+    {
+      "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.KorrektirovkaAmortizacii__"
+    },
+    {
+      "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS.IzmenenieStoimostiIAmortizacii__"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.AktRekonstrukciiModernizaciiOS",
+    "title": {
+      "ru_RU": "Акты реконструкции, модернизации ОС",
+      "en_EN": "Akt rekonstrukcii modernizacii OS"
+    },
+    "description": {}
+  }
+}

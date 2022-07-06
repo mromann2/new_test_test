@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "Н6903",
+  "name": {
+    "ru_RU": "Расчеты по страховым взносам на обязательное пенсионное страхование на выплату накопительной части трудовой пенсии"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "6903",
+    "title": {
+      "ru_RU": "Н6903"
+    },
+    "description": {}
+  }
+}

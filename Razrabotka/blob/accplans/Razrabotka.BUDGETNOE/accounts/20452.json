@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20452",
+  "name": {
+    "ru_RU": "Доли в международных организациях"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "kosgudb": "550",
+  "kosgukr": "650",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20452",
+    "title": {
+      "ru_RU": "20452"
+    },
+    "description": {}
+  }
+}

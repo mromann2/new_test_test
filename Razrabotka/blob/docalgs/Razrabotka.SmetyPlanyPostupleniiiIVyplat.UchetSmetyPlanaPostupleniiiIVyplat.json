@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(currentDocument) {\r\n    if (notValid(currentDocument)) {\r\n        return notValid(currentDocument)\r\n    }\r\n        \r\n    for (let tableRec of currentDocument.getRows()){\r\n\r\n        let summa \u003d tableRec.get(MODULEMNEMO + \u0027.SmetyPlanyPostupleniiiIVyplat.tr.TekusheeIzmenenie\u0027);\r\n\r\n        let postingProps \u003d {\r\n            tableRec, \r\n            currentDocument,\r\n            summa,\r\n        };\r\n        currentDocument.addPosting(createPostingWithProps(postingProps));         \r\n    };\r\n\r\n    let postingsValidateResult \u003d hasNotValidPostings(currentDocument)\r\n    if(postingsValidateResult){\r\n        return postingsValidateResult;\r\n    }\r\n\r\n    //устанавливаем текущую дату проводки\r\n    currentDocument.setExecuted();\r\n    //устанавливаем сумму операции\r\n    currentDocument.setOperationSum(getCalculatedSum(currentDocument, MODULEMNEMO + \u0027.SmetyPlanyPostupleniiiIVyplat.tr.TekusheeIzmenenie\u0027));\r\n    //сохранение документа с проводками\r\n    currentDocument.save();   \r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.SmetyPlanyPostupleniiiIVyplat.UchetSmetyPlanaPostupleniiiIVyplat",
+    "title": {
+      "ru_RU": "Учёт сметы, плана поступлений и выплат",
+      "en_EN": "Uchet smety plana postupleniii i vyplat"
+    },
+    "description": {}
+  }
+}

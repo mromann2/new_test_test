@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(cc){\r\n\r\n//let d1 \u003d EntityFactory.getDocuments().get(\"tap.BuhgalterskayaSpravka\").get(1); \r\n//let d1 \u003d cc.get(\"tap.BuhgalterskayaSpravka.hr.Spravochnik\"); \r\n//let c3 \u003d EntityFactory.getCatalogs().get(\"tap.OKVEDred1\").get(1);\r\n//let dem \u003d cc.get(\"tap.BuhgalterskayaSpravka.hr.Spravochnik\").getTitle();\r\n//let req \u003d EntityFactory.getEnumeration(\u0027tap.VidyUchetaNFA\u0027).get(0);\r\n\r\n//    record.setDimension(\u0027TestB.RegistrTest.dm.Sklad\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Sklad\u0027).getTitle());\r\n//    record.setDimension(\u0027TestB.RegistrTest.dm.Mebel\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Mebel\u0027).getTitle());\r\n//    record.setRequisite(\u0027TestB.RegistrTest.rg.VidDvizheniya\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.VidDvizheniyaTMC\u0027));\r\n//    record.setRequisite(\u0027TestB.RegistrTest.rg.Rekvizit2\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Rekvizit2\u0027));\r\n\r\nlet skl \u003d cc.get(\"TestB.Testovyii.hr.Sklad\").getTitle(); \r\nlet meb \u003d cc.get(\"TestB.Testovyii.hr.Mebel\").getTitle(); \r\nlet vidDv \u003d cc.get(\"TestB.Testovyii.hr.VidDvizheniyaTMC\");\r\nlet req2 \u003d cc.get(\"TestB.Testovyii.hr.Rekvizit2\");\r\n\r\n\r\n//let2 condition \u003dnew filter().dimension(\"d1\", cfs).and().dimension(\"d2\", cfs2).and().dimension(\"d3\", cfs3)) \r\n//let condition \u003d new filter().dimension(\u0027TestB.RegistrTest.dm.Sklad\u0027, skl).and().requisite(\u0027TestB.RegistrTest.rg.VidDvizheniya\u0027,vidDv); //находит правильно\r\nlet condition \u003d new filter().dimension(\u0027TestB.RegistrTest.dm.Mebel\u0027, meb).and().requisite(\u0027TestB.RegistrTest.rg.Rekvizit2\u0027,req2); //находит \r\n//let condition \u003d filter.dimension(\u0027TestB.RegistrTest.dm.1\u0027, d1).and().requisite(\u0027TestB.RegistrTest.rg.Rekvizit2\u0027,c3).and().filter.dimension(\u0027TestB.RegistrTest.dm.11\u0027, dem).and().requisite(\u0027TestB.RegistrTest.rg.31\u0027,req);\r\n\r\n\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).or(filter.dimension(d2, meb).and().requisite(req2, rek2)); //Resource exhausted: Stack overflow\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).and(filter.dimension(d2, meb).and().requisite(req2, rek2)); //Resource exhausted: Stack overflow\r\n\r\n//let dbc1 \u003d filter.dimension(d1, skl).and().requisite(req, vd); //правильно находит 2 записей\r\n//let dbc2 \u003d filter.dimension(d2, meb).and().requisite(req2, rek2); //правильно находит 1 записей\r\n//let condition \u003d dbc1.or(dbc2); //Resource exhausted: Stack overflow\r\n//\"Resource exhausted: Stack overflow\" теперьпоменялась на: \"Ошибка интерпретации скрипта : activate:61 Cannot invoke \"com.argos.dfe.lib.core.userdata.Matcher.getValue()\" because \r\n//the return value of \"com.argos.dfe.lib.core.userdata.Criteria.getMatcher()\" is null let collection\u003dmyReg.find(condition)\"\r\n\r\n\r\nlet myReg3 \u003d Register.get(\"TestB.RegistrTest\")//.get(0);\r\nlet collection\u003dmyReg3.find(condition)\r\nreturn collection.size();\r\n\r\n}\r\n\r\n\r\n\r\n\r\n"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.Testovyii.FindStrochnyii",
+    "title": {
+      "ru_RU": "find строчный",
+      "en_EN": "find strochnyii"
+    },
+    "description": {}
+  }
+}

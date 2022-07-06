@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Ввод в эксплуатацию",
+    "Приход на склад"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.SostoyanieOSPrihod",
+    "title": {
+      "ru_RU": "СостояниеОСПриход",
+      "en_EN": "SostoyanieOSPrihod"
+    },
+    "description": {}
+  }
+}

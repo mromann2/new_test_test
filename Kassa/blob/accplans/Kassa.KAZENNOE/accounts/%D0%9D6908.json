@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "Н6908",
+  "name": {
+    "ru_RU": "Расчеты по дополнительным страховым взносам на пенсионное страхование"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "6908",
+    "title": {
+      "ru_RU": "Н6908"
+    },
+    "description": {}
+  }
+}

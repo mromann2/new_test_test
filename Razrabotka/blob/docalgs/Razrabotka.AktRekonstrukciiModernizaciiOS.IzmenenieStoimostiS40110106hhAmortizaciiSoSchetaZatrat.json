@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    const DOCMNEMO \u003d \u0027AktRekonstrukciiModernizaciiOS\u0027;\r\n    let resultValidate \u003d currentDocument.validate();\r\n    let summ \u003d 0;\r\n    let Kart;\r\n    let SubKart;    \r\n    \r\n    if (notValid(currentDocument)) {\r\n        return notValid(currentDocument);\r\n    };            \r\n        \r\n    for (let tableRec of currentDocument.getRows()){\r\n         let summs \u003d tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.IzmenenieStoimosti\u0027);     \r\n         let summAmo \u003d tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.IzmenenieAmortizacii\u0027);\r\n         summs \u003d summs * 1;\r\n         summAmo \u003d summAmo * 1;\r\n         \r\n         if (summs !\u003d 0) {             \r\n             //---ПО 1 ПРОВОДКЕ\r\n             let postingProps \u003d {\r\n                 tableRec,\r\n                 currentDocument,\r\n                 docMnemo: MODULEMNEMO + \u0027.\u0027 + DOCMNEMO,\r\n                 summa: summs,\r\n             }      \r\n             \r\n             //добавление проводки 1         \r\n             currentDocument.addPosting(createPostingWithProps(postingProps));             \r\n         }\r\n         \r\n         if (summAmo !\u003d 0) {\r\n             let AccOS \u003d tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.SchetOS\u0027).getCode();\r\n             let Kredit \u003d null;\r\n             let Debet \u003d null;\r\n             let KreditKosgu;\r\n             let KpsDebet;\r\n             let Ekr;\r\n             let EkrS;\r\n             let krd \u003d tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.Kredit\u0027).getCode();\r\n             krd \u003d krd.slice(0,3);\r\n             \r\n             if ((krd \u003d\u003d \u0027106\u0027) || (krd \u003d\u003d \u0027302\u0027)) {\r\n                 KpsDebet \u003d tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.KPSKr\u0027).getCode()\r\n             } else {\r\n                 KpsDebet \u003d tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.KPSDb\u0027).getCode()\r\n             }\r\n                 \r\n             \r\n             if (EntityFactory.getCatalogs().get(MODULEMNEMO + \".KOSGUEKR\").findByCode(\"271\").size() \u003e 0) {    \r\n                 Ekr \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \".KOSGUEKR\").findByCode(\"271\").get(0);\r\n                 EkrS \u003d Ekr.getCode();\r\n             }             \r\n             \r\n             if (EntityFactory.getCatalogs().get(MODULEMNEMO + \".SootvetstviyaSchetov\").findByCode(AccOS).size() \u003e 0) { \r\n                Kart \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \".SootvetstviyaSchetov\").findByCode(AccOS);\r\n                SubKart \u003d Kart.get(0);                 \r\n                 \r\n                //счет Дебет \r\n                if (SubKart.get(MODULEMNEMO + \".SootvetstviyaSchetov.SchetZatrat\") !\u003d null) {\r\n                     let AccZatrat \u003d SubKart.get(MODULEMNEMO + \".SootvetstviyaSchetov.SchetZatrat\").getCode();                        \r\n                     \r\n                     if (EntityFactory.getPlan().getAccounts().findByCode(AccZatrat).size() \u003e 0 ) {\r\n                         Debet \u003d EntityFactory.getPlan().getAccounts().findByCode(AccZatrat).get(0);                         \r\n                         Debet \u003d SetAnaliticInAccount(Debet, \u0027KOSGUEKR\u0027, Ekr);\r\n                     }    \r\n                     \r\n                }                   \r\n                // Счет Кредит\r\n                if (SubKart.get(MODULEMNEMO + \".SootvetstviyaSchetov.SchetAmortizacii\") !\u003d null) {\r\n                     let AccAmo \u003d SubKart.get(MODULEMNEMO + \".SootvetstviyaSchetov.SchetAmortizacii\").getCode();                       \r\n                     \r\n                     if (EntityFactory.getPlan().getAccounts().findByCode(AccAmo).size() \u003e 0 ) {\r\n                         Kredit \u003d EntityFactory.getPlan().getAccounts().findByCode(AccAmo).get(0);                         \r\n                         KreditKosgu \u003d getKOSGUCredit(Kredit);\r\n                         Kredit \u003d fillAccountByAnalytics(Kredit, tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.Debet\u0027));\r\n                     }    \r\n                 }    \r\n             }  \r\n             \r\n             //добавление проводки 2\r\n             let postingProps2 \u003d {\r\n                 tableRec,\r\n                 currentDocument,\r\n                 docMnemo: MODULEMNEMO + \u0027.\u0027 + DOCMNEMO,\r\n                 debitKps: KpsDebet,            \r\n                 debitKosgu: EkrS,\r\n                 debit: Debet,\r\n                 creditKps: tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.KPSDb\u0027).getCode(),\r\n                 creditKosgu: KreditKosgu,\r\n                 credit: Kredit,\r\n                 summa: summAmo,\r\n             }\r\n            \r\n             //добавление проводки 2         \r\n             currentDocument.addPosting(createPostingWithProps(postingProps2));             \r\n         }\r\n        \r\n         //Вычисление общей суммы операции\r\n         summ +\u003d +tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.Stoimost\u0027);  \r\n    }     \r\n       \r\n    //проверка проводок\r\n    let postingValidationResult \u003d hasNotValidPostings(currentDocument);\r\n    if (postingValidationResult) {\r\n        return postingValidationResult;\r\n    }        \r\n    \r\n    //устанавливаем текущую дату проводки\r\n    currentDocument.setExecuted();\r\n    //устанавливаем сумму операции\r\n    currentDocument.setOperationSum(summ);\r\n\r\n    //сохранение документа с проводками\r\n    currentDocument.save();\r\n    //   return  resultValidate;\r\n     \r\n    //resultValidate.addValueError(Ekr.getCode());\r\n    //return  resultValidate;       \r\n    return;  \r\n}    "
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.AktRekonstrukciiModernizaciiOS.IzmenenieStoimostiS40110106hhAmortizaciiSoSchetaZatrat",
+    "title": {
+      "ru_RU": "Изменение стоимости с 40110,106хх, амортизации со счета затрат",
+      "en_EN": "Izmenenie stoimosti s 40110106hh amortizacii so scheta zatrat"
+    },
+    "description": {}
+  }
+}

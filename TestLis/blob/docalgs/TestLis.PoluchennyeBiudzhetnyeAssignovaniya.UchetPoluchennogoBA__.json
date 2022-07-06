@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    //проверка документа\r\n    let validationResult \u003d notValid(currentDocument);\r\n    if (validationResult) {\r\n        return validationResult;\r\n    }\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    for (let tableRec of currentDocument.getRows()){\r\n        currentDocument.addPosting(createPostingWithProps({tableRec, currentDocument}));\r\n    }\r\n    //проверка проводок\r\n    let postingValidationResult \u003d hasNotValidPostings(currentDocument);\r\n    if (postingValidationResult) {\r\n        return postingValidationResult;\r\n    }\r\n    //устанавливаем текущую дату проводки\r\n    currentDocument.setExecuted();\r\n    //устанавливаем сумму операции\r\n    currentDocument.setOperationSum(getCalculatedSum(currentDocument, docMnemo + \u0027.tr.Summa\u0027));\r\n    //сохранение документа с проводками\r\n    currentDocument.save();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestLis.PoluchennyeBiudzhetnyeAssignovaniya.UchetPoluchennogoBA__",
+    "title": {
+      "ru_RU": "Учет полученного БА",
+      "en_EN": "Uchet poluchennogo BA"
+    },
+    "description": {}
+  }
+}

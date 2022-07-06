@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20334",
+  "name": {
+    "ru_RU": "Средства автономных учреждений на счетах для выплаты наличных денег"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20334",
+    "title": {
+      "ru_RU": "20334"
+    },
+    "description": {}
+  }
+}

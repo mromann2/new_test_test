@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "50225",
+  "name": {
+    "ru_RU": "Исполненные денежные обязательства на первый год, следующий за текущим (на очередной финансовый год)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50225",
+    "title": {
+      "ru_RU": "50225"
+    },
+    "description": {}
+  }
+}

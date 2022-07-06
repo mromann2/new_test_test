@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "26.6",
+  "name": {
+    "ru_RU": "МЗ-Имущество, переданное в безвозмездное пользование"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "266",
+    "title": {
+      "ru_RU": "26.6"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "active": true,
+  "code": "04",
+  "name": {
+    "ru_RU": "Забалансовый",
+    "en_EN": ""
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "TestB.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "04",
+    "title": {
+      "ru_RU": "04"
+    },
+    "description": {}
+  }
+}

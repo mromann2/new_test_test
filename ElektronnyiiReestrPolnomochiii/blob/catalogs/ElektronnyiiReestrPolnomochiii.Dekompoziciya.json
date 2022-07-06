@@ -1,0 +1,234 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InDialog",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.OIV",
+        "title": {
+          "ru_RU": "ОИВ",
+          "en_EN": "OIV"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.Otdel",
+        "title": {
+          "ru_RU": "Отдел",
+          "en_EN": "Otdel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.Polnomochie",
+        "title": {
+          "ru_RU": "Полномочие",
+          "en_EN": "Polnomochie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.PZPF"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.Dolzhnost",
+        "title": {
+          "ru_RU": "Должность",
+          "en_EN": "Dolzhnost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.LokalnayaFormulirovka",
+        "title": {
+          "ru_RU": "Локальная формулировка",
+          "en_EN": "Lokalnaya formulirovka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "1500"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.StepenSlozhnosti",
+        "title": {
+          "ru_RU": "Степень сложности",
+          "en_EN": "Stepen slozhnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.StepenSlozhnosti"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.VremyaVypolneniya",
+        "title": {
+          "ru_RU": "Время выполнения",
+          "en_EN": "Vremya vypolneniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.KolichestvoDeiistviii",
+        "title": {
+          "ru_RU": "Количество действий",
+          "en_EN": "Kolichestvo deiistviii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya.SHtatnayaCHislennost",
+        "title": {
+          "ru_RU": "Штатная численность",
+          "en_EN": "SHtatnaya chislennost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Декомпозиция",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.Dekompoziciya",
+    "title": {
+      "ru_RU": "Декомпозиция",
+      "en_EN": "Dekompoziciya"
+    },
+    "description": {}
+  }
+}

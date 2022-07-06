@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.plan"
+  },
+  "enum": [
+    "Razrabotka.BUDGETNOE",
+    "Razrabotka.AVTONOMNOE",
+    "Razrabotka.KAZENNOE"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.TipUchrezhdeniya",
+    "title": {
+      "ru_RU": "Тип учреждения",
+      "en_EN": "Tip uchrezhdeniya"
+    },
+    "description": {}
+  }
+}

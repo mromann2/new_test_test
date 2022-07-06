@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Государственная должность",
+    "Государственный гражданский служащий",
+    "Негосударственный гражданский служащий"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.TipDolzhnosti",
+    "title": {
+      "ru_RU": "Тип должности",
+      "en_EN": "Tip dolzhnosti"
+    },
+    "description": {}
+  }
+}

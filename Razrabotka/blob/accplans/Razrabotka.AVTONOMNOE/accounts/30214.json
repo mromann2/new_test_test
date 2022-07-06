@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "30214",
+  "name": {
+    "ru_RU": "Расчеты по прочим несоциальным выплатам персоналу в натуральной форме"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "6",
+  "kosgudb": "837",
+  "kosgukr": "737",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30214",
+    "title": {
+      "ru_RU": "30214"
+    },
+    "description": {}
+  }
+}

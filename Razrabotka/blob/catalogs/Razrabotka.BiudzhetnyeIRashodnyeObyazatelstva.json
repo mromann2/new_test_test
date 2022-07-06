@@ -1,0 +1,522 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.NomerBORO",
+        "title": {
+          "ru_RU": "Номер БО (РО)",
+          "en_EN": "Nomer BORO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.NomerSvedeniii",
+        "title": {
+          "ru_RU": "Номер сведений",
+          "en_EN": "Nomer svedeniii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.ZaregistrVTOFK",
+        "title": {
+          "ru_RU": "Зарегистрировано в ТОФК",
+          "en_EN": "Zaregistr v TOFK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.Data",
+        "title": {
+          "ru_RU": "Дата",
+          "en_EN": "Data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.Cumma",
+        "title": {
+          "ru_RU": "Cумма",
+          "en_EN": "Cumma"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.LicevoiiSchetUchOrganizacii",
+        "title": {
+          "ru_RU": "Лицевой счет уч организации",
+          "en_EN": "Licevoii schet uch organizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityUchetnoiiOrganizacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.KOSGU",
+        "title": {
+          "ru_RU": "КОСГУ",
+          "en_EN": "KOSGU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.Konkurs",
+        "title": {
+          "ru_RU": "Конкурс",
+          "en_EN": "Konkurs"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.CelevyeProgrammy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.LSKontragenta",
+        "title": {
+          "ru_RU": "ЛС контрагента",
+          "en_EN": "LS kontragenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityKontragenta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.Tab",
+        "title": {
+          "ru_RU": "Табельный №",
+          "en_EN": "Tab"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.VidDokumentaOsnovaniya",
+        "title": {
+          "ru_RU": "Вид документа-основания",
+          "en_EN": "Vid dokumenta  osnovaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.VidyDokumentovosnovaniii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.Dogovor",
+        "title": {
+          "ru_RU": "Договор",
+          "en_EN": "Dogovor"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.DogovoryGoskontrakty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.InoeOsnovanie",
+        "title": {
+          "ru_RU": "Иное основание",
+          "en_EN": "Inoe osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.Opisanie",
+        "title": {
+          "ru_RU": "Описание",
+          "en_EN": "Opisanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.DopolnitelnayaKlassifikaciya",
+        "title": {
+          "ru_RU": "Дополнительная классификация",
+          "en_EN": "Dopolnitelnaya klassifikaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.KBKPoluchatelya",
+        "title": {
+          "ru_RU": "КБК получателя",
+          "en_EN": "KBK poluchatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KlassifikaciyaBiudzhetovRFdohodyDeficit"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.ZayavkiNaIzmenenie",
+        "title": {
+          "ru_RU": "№ заявки на изменение",
+          "en_EN": " zayavki na izmenenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.ZayavkiNaPereregistraciiu",
+        "title": {
+          "ru_RU": "№ заявки на перерегистрацию",
+          "en_EN": " zayavki na pereregistraciiu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.KodCelevoiiSubsidii",
+        "title": {
+          "ru_RU": "Код целевой субсидии",
+          "en_EN": "Kod celevoii subsidii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.SummaAvansa",
+        "title": {
+          "ru_RU": "Сумма аванса",
+          "en_EN": "Summa avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.AvansovyiiPlatezhproc",
+        "title": {
+          "ru_RU": "Авансовый платеж (проц.)",
+          "en_EN": "Avansovyii platezhproc"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva.PerenesenoNaSleduiushiiiGod",
+        "title": {
+          "ru_RU": "Перенесено на следующий год",
+          "en_EN": "Pereneseno na sleduiushiii god"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Бюджетные и расходные обязательства",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva",
+    "title": {
+      "ru_RU": "Бюджетные и расходные обязательства",
+      "en_EN": "Biudzhetnye i rashodnye obyazatelstva"
+    },
+    "description": {}
+  }
+}

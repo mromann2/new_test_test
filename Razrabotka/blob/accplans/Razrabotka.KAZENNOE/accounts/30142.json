@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "30142",
+  "name": {
+    "ru_RU": "Расчеты с кредиторами по государственным (муниципальным) ценным бумагам в иностранной валюте"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "820",
+  "kosgukr": "720",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30142",
+    "title": {
+      "ru_RU": "30142"
+    },
+    "description": {}
+  }
+}

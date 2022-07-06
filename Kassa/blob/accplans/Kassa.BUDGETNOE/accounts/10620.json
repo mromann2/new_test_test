@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "10620",
+  "name": {
+    "ru_RU": "Вложения в особо ценное движимое имущество"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10620",
+    "title": {
+      "ru_RU": "10620"
+    },
+    "description": {}
+  }
+}
