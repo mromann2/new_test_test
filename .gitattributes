@@ -1,0 +1,10 @@
+*.js		text eol=lf
+*.java		text eol=lf
+*.xml		text eol=lf
+*.txt		text eol=lf
+*.lst		text eol=lf
+*.properties		text eol=lf
+*.html		text eol=lf
+*.css		text eol=lf
+*.less		text eol=lf
+*.json		text eol=lf
