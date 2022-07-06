@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "02450",
+  "name": {
+    "ru_RU": "Имущество казны, переданное в доверительное управление"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "02450",
+    "title": {
+      "ru_RU": "02450"
+    },
+    "description": {}
+  }
+}

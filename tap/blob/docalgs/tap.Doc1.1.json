@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(currentDocument) { \r\n    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n    catalog.setCode(\u00270002\u0027);\r\n    catalog.setTitle(\u0027через скрипт\u0027);\r\n    catalog.set(\u0027tap.TestovyiiSpravochnik.Rekvizit1\u0027, \"111\")\r\n    catalog.save()\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Doc1.1",
+    "title": {
+      "ru_RU": "createCatalogRecord",
+      "en_EN": "1"
+    },
+    "description": {}
+  }
+}

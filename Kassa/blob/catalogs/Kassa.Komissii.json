@@ -1,0 +1,362 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 2,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.NomerPrikazaNaznacheniyaKomissii",
+        "title": {
+          "ru_RU": "Номер приказа назначения комиссии",
+          "en_EN": "Nomer prikaza naznacheniya komissii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.DataNaznacheniya",
+        "title": {
+          "ru_RU": "Дата назначения",
+          "en_EN": "Data naznacheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.RabocheeMestoNaznacheniya",
+        "title": {
+          "ru_RU": "Рабочее место назначения",
+          "en_EN": "Rabochee mesto naznacheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.NomerPrikazaObInventarizacii",
+        "title": {
+          "ru_RU": "Номер приказа об инвентаризации",
+          "en_EN": "Nomer prikaza ob inventarizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.DataPrikazaObInventarizacii",
+        "title": {
+          "ru_RU": "Дата приказа об инвентаризации",
+          "en_EN": "Data prikaza ob inventarizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.PredsedatelKomissii",
+        "title": {
+          "ru_RU": "Председатель комиссии",
+          "en_EN": "Predsedatel komissii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.Rukovoditel",
+        "title": {
+          "ru_RU": "Руководитель",
+          "en_EN": "Rukovoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.GlavnyiiBuhgalter",
+        "title": {
+          "ru_RU": "Главный бухгалтер",
+          "en_EN": "Glavnyii buhgalter"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.CHlenKomissii1",
+        "title": {
+          "ru_RU": "Член комиссии №1",
+          "en_EN": "CHlen komissii 1"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.CHlenKomissii2",
+        "title": {
+          "ru_RU": "Член комиссии №2",
+          "en_EN": "CHlen komissii 2"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.CHlenKomissii3",
+        "title": {
+          "ru_RU": "Член комиссии №3",
+          "en_EN": "CHlen komissii 3"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.CHlenKomissii4",
+        "title": {
+          "ru_RU": "Член комиссии №4",
+          "en_EN": "CHlen komissii 4"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.CHlenKomissii5",
+        "title": {
+          "ru_RU": "Член комиссии №5",
+          "en_EN": "CHlen komissii 5"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.CHlenKomissii6",
+        "title": {
+          "ru_RU": "Член комиссии №6",
+          "en_EN": "CHlen komissii 6"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "Kassa.Komissii.CHlenKomissii7",
+        "title": {
+          "ru_RU": "Член комиссии №7",
+          "en_EN": "CHlen komissii 7"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Комиссии",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.Komissii",
+    "title": {
+      "ru_RU": "Комиссии",
+      "en_EN": "Komissii"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "21521",
+  "name": {
+    "ru_RU": "Вложения в облигации"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "520",
+  "kosgukr": "620",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "21521",
+    "title": {
+      "ru_RU": "21521"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PostuplenieBSO",
+    "title": {
+      "ru_RU": "Поступление БСО",
+      "en_EN": "Postuplenie BSO"
+    },
+    "description": {}
+  }
+}

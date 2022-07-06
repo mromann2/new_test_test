@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "11446",
+  "name": {
+    "ru_RU": "Обесценение прав пользования производственным и хозяйственным инвентарем"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "451",
+  "kosgukr": "451",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "11446",
+    "title": {
+      "ru_RU": "11446"
+    },
+    "description": {}
+  }
+}

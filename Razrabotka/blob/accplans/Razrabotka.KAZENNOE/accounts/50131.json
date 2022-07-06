@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "50131",
+  "name": {
+    "ru_RU": "Доведенные лимиты бюджетных обязательств (второй год)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50131",
+    "title": {
+      "ru_RU": "50131"
+    },
+    "description": {}
+  }
+}

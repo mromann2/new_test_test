@@ -1,0 +1,11 @@
+{
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PrihodnyiiKassovyiiOrder",
+    "title": {
+      "ru_RU": "Приходный кассовый ордер",
+      "en_EN": "Prihodnyii kassovyii order"
+    },
+    "description": {}
+  }
+}

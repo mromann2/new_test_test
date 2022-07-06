@@ -1,0 +1,117 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 2,
+  "kodlength": 9,
+  "titlelength": 100,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Izgotoviteli.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Полное наименование",
+          "en_EN": "Polnoe naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "512"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Izgotoviteli.KodOKPO",
+        "title": {
+          "ru_RU": "Код ОКПО",
+          "en_EN": "Kod OKPO"
+        },
+        "description": {
+          "ru_RU": "Код по общероссийскому классификатору предприятий и организаций"
+        }
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "10"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Izgotoviteli.Adres",
+        "title": {
+          "ru_RU": "Адрес",
+          "en_EN": "Adres"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Izgotoviteli",
+    "title": {
+      "ru_RU": "Изготовители",
+      "en_EN": "Izgotoviteli"
+    },
+    "description": {}
+  }
+}

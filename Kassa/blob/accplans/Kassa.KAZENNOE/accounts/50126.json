@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50126",
+  "name": {
+    "ru_RU": "Лимиты бюджетных обязательств в пути"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50126",
+    "title": {
+      "ru_RU": "50126"
+    },
+    "description": {}
+  }
+}

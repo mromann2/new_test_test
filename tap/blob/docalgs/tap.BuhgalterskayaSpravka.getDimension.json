@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(cc){\r\n\r\n\r\nlet myReg \u003d Register.get(\"tap.Testovyii2\").get(0);\r\n//return myReg\r\n\r\nlet dem \u003d  myReg.getDimension(\"tap.Testovyii2.dm.1\")\r\n\r\nreturn dem\r\n\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskayaSpravka.getDimension",
+    "title": {
+      "ru_RU": ".getDimension",
+      "en_EN": "getDimension"
+    },
+    "description": {}
+  }
+}

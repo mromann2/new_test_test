@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "40127",
+  "name": {
+    "ru_RU": "Расходы прошлых финансовых лет, выявленные по контрольным мероприятиям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "8-ош",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40127",
+    "title": {
+      "ru_RU": "40127"
+    },
+    "description": {}
+  }
+}

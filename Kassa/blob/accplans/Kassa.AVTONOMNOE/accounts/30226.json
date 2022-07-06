@@ -1,0 +1,54 @@
+{
+  "active": true,
+  "code": "30226",
+  "name": {
+    "ru_RU": "Расчеты по прочим работам, услугам"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "tap.DokumentyRaschetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30226",
+    "title": {
+      "ru_RU": "30226"
+    },
+    "description": {}
+  }
+}

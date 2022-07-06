@@ -1,0 +1,393 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.hr.Stoimost",
+        "title": {
+          "ru_RU": "Стоимость",
+          "en_EN": "Stoimost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.hr.Amortizaciya",
+        "title": {
+          "ru_RU": "Амортизация",
+          "en_EN": "Amortizaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.hr.MOL",
+        "title": {
+          "ru_RU": "МОЛ",
+          "en_EN": "MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.hr.Sostoyanie",
+        "title": {
+          "ru_RU": "Состояние",
+          "en_EN": "Sostoyanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.SostoyanieOSPrihod"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.hr.Postavshik",
+        "title": {
+          "ru_RU": "Поставщик",
+          "en_EN": "Postavshik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.hr.Dogovor",
+        "title": {
+          "ru_RU": "Договор",
+          "en_EN": "Dogovor"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.DogovoryGoskontrakty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.hr.Primechanie",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.OsnovnoeSredstvo",
+        "title": {
+          "ru_RU": "Основное средство",
+          "en_EN": "Osnovnoe sredstvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.Stoimost",
+        "title": {
+          "ru_RU": "Стоимость",
+          "en_EN": "Stoimost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.Amortizaciya",
+        "title": {
+          "ru_RU": "Амортизация",
+          "en_EN": "Amortizaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.AmortizaciyaDo100",
+        "title": {
+          "ru_RU": "Амортизация до 100%",
+          "en_EN": "Amortizaciya do 100"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS Db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU Db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS Kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU Kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PrihodnyiiAktOS.tr.DataVvodaVEkspluataciiu",
+        "title": {
+          "ru_RU": "Дата ввода в эксплуатацию",
+          "en_EN": "Data vvoda v ekspluataciiu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Приходные акты ОС",
+    "sources": ""
+  },
+  "algorithms": [],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.PrihodnyiiAktOS",
+    "title": {
+      "ru_RU": "Приходные акты ОС",
+      "en_EN": "Prihodnyii akt OS"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,1319 @@
+{
+  "form": {
+    "mainform": {
+      "controltype": "Form",
+      "cellX": 0,
+      "cellY": 0,
+      "spanSize": {
+        "width": 6,
+        "height": 18
+      },
+      "x": 0,
+      "y": 0,
+      "padLeft": 0,
+      "padRight": 0,
+      "padTop": 0,
+      "padBottom": 0,
+      "size": {
+        "width": 70,
+        "height": 23
+      },
+      "fontSize": 12,
+      "bold": false,
+      "alignment": "LEFT",
+      "background": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "foreground": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "visible": true,
+      "enabled": true,
+      "meta": {
+        "mnemo": "Module.OtchetPoVsemNagrazhdennym.form",
+        "title": {
+          "ru_RU": "Отчет по всем награжденным",
+          "en_EN": "Otchet po vsem nagrazhdennym"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    "formcontrols": [
+      {
+        "controltype": "Label",
+        "cellX": 1,
+        "cellY": 0,
+        "spanSize": {
+          "width": 3,
+          "height": 1
+        },
+        "x": 170,
+        "y": 0,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 510,
+          "height": 36
+        },
+        "fontSize": 18,
+        "bold": true,
+        "alignment": "CENTER",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.PoluchennyeNagradyIPooshreniya",
+          "title": {
+            "ru_RU": "Полученные награды и поощрения",
+            "en_EN": "Poluchennye nagrady i pooshreniya"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Button",
+        "cellX": 1,
+        "cellY": 15,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 540,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.Otchet",
+          "title": {
+            "ru_RU": "Отчет",
+            "en_EN": "Otchet"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 2,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 72,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 170,
+          "height": 36
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "formula": "",
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.NachaloPerioda",
+          "title": {
+            "ru_RU": "Начало периода",
+            "en_EN": "Nachalo perioda"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.date"
+        },
+        "properties": {},
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 3,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 108,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 170,
+          "height": 36
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.KonecPerioda",
+          "title": {
+            "ru_RU": "Конец периода",
+            "en_EN": "Konec perioda"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.date"
+        },
+        "properties": {},
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 2,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 72,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 170,
+          "height": 36
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.NachaloPeriodaTekst",
+          "title": {
+            "ru_RU": "Начало периода",
+            "en_EN": "Nachalo perioda"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 3,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 108,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.KonecPeriodaTekst",
+          "title": {
+            "ru_RU": "Конец периода",
+            "en_EN": "Konec perioda"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 4,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 144,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.VidNagrady",
+          "title": {
+            "ru_RU": "Вид награды",
+            "en_EN": "Vid nagrady"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "Module.VidyNagrad"
+        },
+        "properties": {},
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 4,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 144,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.VidNagradyTekst",
+          "title": {
+            "ru_RU": "Вид награды",
+            "en_EN": "Vid nagrady"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 6,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 216,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.SferaDeyatelnosti",
+          "title": {
+            "ru_RU": "Сфера деятельности",
+            "en_EN": "Sfera deyatelnosti"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "Module.SferyDeyatelnosti"
+        },
+        "properties": {},
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 6,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 216,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.SferaDeyatelnostiTekst",
+          "title": {
+            "ru_RU": "Сфера деятельности",
+            "en_EN": "Sfera deyatelnosti"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 7,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 252,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.MestoRabotyTekst",
+          "title": {
+            "ru_RU": "Место работы",
+            "en_EN": "Mesto raboty"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 7,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 252,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.MestoRaboty",
+          "title": {
+            "ru_RU": "Место работы",
+            "en_EN": "Mesto raboty"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 8,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 288,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.Podrazdelenie",
+          "title": {
+            "ru_RU": "Подразделение",
+            "en_EN": "Podrazdelenie"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "150"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 8,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 288,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.PodrazdelenieTekst",
+          "title": {
+            "ru_RU": "Подразделение",
+            "en_EN": "Podrazdelenie"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 1,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 36,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.SubektyNagrazhdeniya",
+          "title": {
+            "ru_RU": "Субъекты награждения",
+            "en_EN": "Subekty nagrazhdeniya"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "Module.TipyNagrazhdaemogo"
+        },
+        "properties": {},
+        "required": true
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 1,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 36,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.SubektyNagrazhdeniyaTekst",
+          "title": {
+            "ru_RU": "Тип награжденного",
+            "en_EN": "Subekty nagrazhdeniya"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 5,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 180,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.NagradaTekst",
+          "title": {
+            "ru_RU": "Награда",
+            "en_EN": "Nagrada"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 5,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 180,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.Nagrada",
+          "title": {
+            "ru_RU": "Награда",
+            "en_EN": "Nagrada"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "Module.Nagrady"
+        },
+        "properties": {},
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 9,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 324,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.Kategoriya",
+          "title": {
+            "ru_RU": "Категория",
+            "en_EN": "Kategoriya"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "Module.KategoriiFizicheskogoLica"
+        },
+        "properties": {},
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 9,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 324,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 5,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.KategoriyaTekst",
+          "title": {
+            "ru_RU": "Категория",
+            "en_EN": "Kategoriya"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 10,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 360,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.RozhdennyeS",
+          "title": {
+            "ru_RU": "Рожденные с",
+            "en_EN": "Rozhdennye s"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.date"
+        },
+        "properties": {},
+        "required": false
+      },
+      {
+        "controltype": "Input",
+        "cellX": 1,
+        "cellY": 11,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 170,
+        "y": 396,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 70,
+          "height": 23
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.RozhdennyePo",
+          "title": {
+            "ru_RU": "Рожденные по",
+            "en_EN": "Rozhdennye po"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.date"
+        },
+        "properties": {},
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 11,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 396,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 170,
+          "height": 36
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.RozhdennyePoTekst",
+          "title": {
+            "ru_RU": "Рожденные в период по",
+            "en_EN": "po"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 10,
+        "spanSize": {
+          "width": 1,
+          "height": 1
+        },
+        "x": 0,
+        "y": 360,
+        "padLeft": 0,
+        "padRight": 10,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 170,
+          "height": 36
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.RozhdennyeSTekst",
+          "title": {
+            "ru_RU": "Рожденные в период с",
+            "en_EN": "c"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      },
+      {
+        "controltype": "Label",
+        "cellX": 0,
+        "cellY": 12,
+        "spanSize": {
+          "width": 2,
+          "height": 2
+        },
+        "x": 0,
+        "y": 432,
+        "padLeft": 0,
+        "padRight": 0,
+        "padTop": 0,
+        "padBottom": 0,
+        "size": {
+          "width": 340,
+          "height": 72
+        },
+        "fontSize": 12,
+        "bold": false,
+        "alignment": "LEFT",
+        "background": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "foreground": {
+          "r": 255,
+          "g": 0,
+          "b": 0
+        },
+        "visible": true,
+        "enabled": true,
+        "meta": {
+          "mnemo": "Module.OtchetPoVsemNagrazhdennym.Errors",
+          "title": {
+            "ru_RU": "Errors",
+            "en_EN": "Errors"
+          },
+          "description": {}
+        },
+        "type": {
+          "mnemo": "primitive.text"
+        },
+        "properties": {
+          "unlimited": "false",
+          "length": "14"
+        },
+        "required": false
+      }
+    ]
+  },
+  "formscript": {
+    "title": "script",
+    "sources": "const MODULEMNEMO \u003d \u0027Module\u0027; // Мнемоника модуля\r\n\r\n// При загрузке формы\r\nfunction onOpen() {\r\n    // Установка дефолтовых значений\r\n    set(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Errors\u0027, \u0027\u0027);\r\n\r\n    setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.MestoRaboty\u0027, false);\r\n    setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Podrazdelenie\u0027, false);\r\n    setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Kategoriya\u0027, false);\r\n    setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyeS\u0027, false);\r\n    setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyePo\u0027, false);\r\n}\r\n\r\n// При изменении значения компонентов\r\nfunction onChange(mnemo, value) {\r\n    if (mnemo \u003d\u003d MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.SubektyNagrazhdeniya\u0027) {\r\n        if (value \u003d\u003d \u0027Сотрудник\u0027 || value \u003d\u003d \u0027Физическое лицо\u0027) {\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.MestoRaboty\u0027, true);\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Podrazdelenie\u0027, true);\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Kategoriya\u0027, true);\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyeS\u0027, true);\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyePo\u0027, true);    \r\n        } else {\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.MestoRaboty\u0027, false);\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Podrazdelenie\u0027, false);\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Kategoriya\u0027, false);\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyeS\u0027, false);\r\n            setEditable(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyePo\u0027, false);\r\n            \r\n            set(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.MestoRaboty\u0027, \u0027\u0027);\r\n            set(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Podrazdelenie\u0027, \u0027\u0027);\r\n            set(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Kategoriya\u0027, \u0027\u0027);\r\n            set(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyeS\u0027, \u0027\u0027);\r\n            set(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyePo\u0027, \u0027\u0027);\r\n        }\r\n    }\r\n}\r\n\r\n// При нажатие кнопки\r\nfunction onClick(mnemo) {\r\n    if (mnemo \u003d\u003d MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Otchet\u0027) {\r\n        if (!get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.SubektyNagrazhdeniya\u0027)) {\r\n            set(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Errors\u0027, \u0027Необходимо выбрать тип награжденного\u0027);\r\n        } else {\r\n            set(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Errors\u0027, \u0027\u0027);\r\n            console.log(get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.SferaDeyatelnosti\u0027));\r\n            let data \u003d {\r\n                inputData: [\r\n                    {key: \u0027type\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.SubektyNagrazhdeniya\u0027)},\r\n                    {key: \u0027startDate\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.NachaloPerioda\u0027)},\r\n                    {key: \u0027finishDate\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.KonecPerioda\u0027)},\r\n                    {key: \u0027rewardType\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.VidNagrady\u0027)},\r\n                    {key: \u0027reward\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Nagrada\u0027)},\r\n                    {key: \u0027sphere\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.SferaDeyatelnosti\u0027)},\r\n                    {key: \u0027job\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.MestoRaboty\u0027)},\r\n                    {key: \u0027subdivision\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Podrazdelenie\u0027)},\r\n                    {key: \u0027category\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Kategoriya\u0027)},\r\n                    {key: \u0027startBirthDate\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyeS\u0027)},\r\n                    {key: \u0027finishBirthDate\u0027, value: get(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.RozhdennyePo\u0027)}\r\n                ],\r\n                outputFormat: \u0027pdf\u0027,\r\n                reportId: MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym\u0027\r\n                }\r\n            generateReport(data);   \r\n        }\r\n    }\r\n}\r\n\r\n// При получении фокуса на компонент\r\nfunction onFocus(mnemo) {\r\n}\r\n\r\n// При потери фокуса с компонента\r\nfunction onBlur(mnemo) {\r\n}\r\n"
+  },
+  "reportscript": {
+    "title": "Скрипт отчета Отчет по награжденным",
+    "sources": "//Параметры фильтра\r\nlet type \u003d Input.get(\u0027type\u0027);\r\n\r\n//Тип награжденного\r\nlet typeFilter;\r\nif (type !\u003d \u0027\u0027) {\r\n    typeFilter \u003d type;\r\n}\r\n\r\n//Начало периода\r\nlet startDateFilter \u003d Input.get(\u0027startDate\u0027);\r\n\r\n//Конец периода\r\nlet finishDateFilter \u003d Input.get(\u0027finishDate\u0027);\r\n\r\n//Вид награды\r\nlet rewardTypeFilter;\r\nif (Input.get(\u0027rewardType\u0027) !\u003d \u0027\u0027) {\r\n    rewardTypeFilter \u003d EntityFactory.getCatalogs().get(Input.get(\u0027rewardType\u0027).mnemo).findByCode(Input.get(\u0027rewardType\u0027).code).get(0);\r\n}\r\n\r\n//Награда\r\nlet rewardFilter;\r\nif (Input.get(\u0027reward\u0027) !\u003d \u0027\u0027) {\r\n    rewardFilter \u003d EntityFactory.getCatalogs().get(Input.get(\u0027reward\u0027).mnemo).findByCode(Input.get(\u0027reward\u0027).code).get(0);\r\n}\r\n//Cфера дейтельности\r\nlet sphereFilter;\r\nif (Input.get(\u0027sphere\u0027) !\u003d \u0027\u0027) {\r\n    sphereFilter \u003d EntityFactory.getCatalogs().get(Input.get(\u0027sphere\u0027).mnemo).findByCode(Input.get(\u0027sphere\u0027).code).get(0);\r\n}\r\n\r\n//Место работы\r\nlet jobFilter;\r\nif (Input.get(\u0027job\u0027)) {\r\n    jobFilter \u003d Input.get(\u0027job\u0027);\r\n}\r\n\r\n//Подразделение\r\nlet subdivisionFilter \u003d Input.get(\u0027subdivision\u0027);\r\n\r\n//Категория\r\nlet categoryFilter \u003d Input.get(\u0027category\u0027);\r\n\r\n//Рожденные в преиод с\r\nlet startBirthDateFilter \u003d Input.get(\u0027startBirthDate\u0027);\r\n\r\n//Рожденные в преиод по\r\nlet finishBirthDateFilter \u003d Input.get(\u0027finishBirthDate\u0027);\r\n\r\nlet subjectRegisterMnemo \u003d MODULEMNEMO + \u0027.Nagrazhdennye\u0027;\r\nlet subjectRegister \u003d Register.get(subjectRegisterMnemo);\r\nlet registerMnemo \u003d MODULEMNEMO + \u0027.Nagrazhdeniya\u0027;\r\nlet register \u003d Register.get(registerMnemo);\r\nlet cancelRegister \u003d Register.get(registerMnemo);\r\n\r\n//Выбор шаблона и заполнение шапок шаблонов\r\nif (type \u003d\u003d \u0027Юридическое лицо\u0027) {\r\n    Templates.select(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.IUridicheskieLica\u0027);\r\n    \r\n    let headerSection \u003d Templates.getSection(\u0027A1:D2\u0027);\r\n    Table.addSection(headerSection);\r\n\r\n} else if (type \u003d\u003d \u0027Сотрудник\u0027) {\r\n    Templates.select(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.Sotrudniki\u0027);\r\n    \r\n    let headerSection \u003d Templates.getSection(\u0027A1:I2\u0027);\r\n    Table.addSection(headerSection);\r\n    \r\n} else if (type \u003d\u003d \u0027Физическое лицо\u0027) {\r\n    Templates.select(MODULEMNEMO + \u0027.OtchetPoVsemNagrazhdennym.FizicheskieLica\u0027);\r\n    \r\n    let headerSection \u003d Templates.getSection(\u0027A1:I2\u0027);\r\n    Table.addSection(headerSection);\r\n    \r\n}\r\n\r\n//Заполнение данных шаблонов\r\nfor (let record of subjectRegister) {\r\n    let subject \u003d record.getDimension(subjectRegisterMnemo + \u0027.dm.Nagrazhdennyii\u0027);\r\n    let collection \u003d register.find({\r\n        Dimensions: {[registerMnemo + \u0027.dm.Nagrazhdennyii\u0027]: subject,\r\n                        //[registerMnemo + \u0027.dm.TipNagrazhdennogo\u0027]: typeFilter,\r\n                    //[registerMnemo + \u0027.dm.MestoRaboty\u0027]: null,\r\n                    //[registerMnemo + \u0027.dm.SferaDeyatelnosti\u0027]: sphereFilter\r\n//                    [registerMnemo + \u0027.dm.Podrazdelenie\u0027]: subdivisionFilter,\r\n                //    [registerMnemo + \u0027.dm.Kategoriya\u0027]: categoryFilter,\r\n                        //[registerMnemo + \u0027.dm.Nagrada\u0027]: rewardFilter,\r\n                        //[registerMnemo + \u0027.dm.VidNagrady\u0027]: rewardTypeFilter\r\n        },\r\n        Requisites: {[registerMnemo + \u0027.rg.Otozvana\u0027]: false }\r\n    });\r\n    \r\n    if (collection.size()) {\r\n        \r\n        for (let record of collection) {\r\n            let organizationName \u003d subject.get(MODULEMNEMO + \u0027.SubektyNagrazhdeniya.NaimenovanieOrganizacii\u0027) ?? \u0027\u0027;\r\n            let sphere \u003d record.getDimension(registerMnemo + \u0027.dm.SferaDeyatelnosti\u0027)?.getTitle() ?? \u0027\u0027;\r\n            let reward \u003d record.getDimension(registerMnemo + \u0027.dm.Nagrada\u0027).getTitle() ?? \u0027\u0027;\r\n            let orderNumber \u003d record.getRequisite(registerMnemo + \u0027.rg.NomerPrikaza\u0027);\r\n            let orderDate \u003d formatDate(record.getRequisite(registerMnemo + \u0027.rg.DataPrikaza\u0027));\r\n            let order \u003d orderNumber + \u0027 от \u0027 + orderDate;\r\n            let tn \u003d subject.get(MODULEMNEMO + \u0027.SubektyNagrazhdeniya.TabelnyiiNomer\u0027) ?? \u0027\u0027;\r\n            let fio \u003d subject.get(MODULEMNEMO + \u0027.SubektyNagrazhdeniya.FIO\u0027) ?? \u0027\u0027;\r\n            let job \u003d record.getDimension(registerMnemo + \u0027.dm.MestoRaboty\u0027) ?? \u0027\u0027;\r\n            let jobFunction \u003d subject.get(MODULEMNEMO + \u0027.SubektyNagrazhdeniya.Dolzhnost\u0027)?.getTitle() ?? \u0027\u0027;\r\n            let petitioner \u003d record.getRequisite(registerMnemo + \u0027.rg.KtoHodataiistvuet\u0027) ?? \u0027\u0027;\r\n            let birthDate \u003d formatDate(subject.get(MODULEMNEMO + \u0027.SubektyNagrazhdeniya.DataRozhdeniya\u0027)) ?? \u0027\u0027;\r\n            \r\n            if (type \u003d\u003d \u0027Юридическое лицо\u0027) {\r\n\r\n                let subjectSection \u003d Templates.getSection(\u0027A3:D3\u0027);\r\n                let subjectData \u003d {name: organizationName,\r\n                                   //sphere: sphereFilter,\r\n                                   sphere: sphere,\r\n                                   reward: reward,\r\n                                   order: order\r\n                };\r\n                Table.addSection(subjectSection, subjectData);\r\n\r\n            } else if (type \u003d\u003d \u0027Сотрудник\u0027) {\r\n\r\n                let subjectSection \u003d Templates.getSection(\u0027A3:I3\u0027);\r\n                let subjectData \u003d {tn: tn,\r\n                                   fio: fio,\r\n                                   job: job,\r\n                                   jobFunction: jobFunction,\r\n                                   reward: reward,\r\n                                   order: order,\r\n                                   petitioner: petitioner,\r\n                                   birthDate : birthDate\r\n                };\r\n                Table.addSection(subjectSection, subjectData);\r\n\r\n            } else if (type \u003d\u003d \u0027Физическое лицо\u0027) {\r\n\r\n                let subjectSection \u003d Templates.getSection(\u0027A3:I3\u0027);\r\n                let subjectData \u003d {tn: tn,\r\n                                   fio: fio,\r\n                                   job: job,\r\n                                   jobFunction: jobFunction,\r\n                                   reward: reward,\r\n                                   order: order,\r\n                                   petitioner: petitioner,\r\n                                   birthDate : birthDate\r\n                };\r\n                Table.addSection(subjectSection, subjectData);\r\n            }\r\n        }\r\n    }    \r\n}\r\n\r\n\r\n\r\n"
+  },
+  "reporttemplates": [
+    {
+      "class": "com.argos.dfe.lib.reports.template.Template",
+      "meta": "{\"mnemo\":\"Module.OtchetPoVsemNagrazhdennym.Obshiii\",\"title\":{\"ru_RU\":\"Общий\",\"en_EN\":\"Obshiii\"},\"description\":{}}",
+      "body": "{\"d\":{\"columnWidth\":75,\"rowHeight\":16,\"colmargin\":0,\"rowmargin\":0},\"c\":[{\"y\":12,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":7,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":7,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":7,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":0,\"w\":2,\"h\":1,\"v\":\"ФИО/ Наименование субъекта награждения:\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":7,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":2,\"w\":7,\"h\":1,\"v\":\"\\u003dsubject\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":7,\"x\":5,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":7,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":7,\"x\":8,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":15,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":5,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":10,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":10,\"x\":5,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":0,\"x\":0,\"w\":9,\"h\":1,\"v\":\"Отчет по полученным наградам и поощрениям\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":18,\"b\":false,\"i\":false}}},{\"y\":18,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":13,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":0,\"x\":10,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":8,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":8,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":8,\"x\":8,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":11,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":11,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":6,\"x\":0,\"w\":9,\"h\":1,\"v\":\"\\u003dinfo\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":11,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":1,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":1,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":1,\"x\":8,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":14,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":4,\"x\":0,\"w\":4,\"h\":1,\"v\":\"Полученные награды и поощрения: fgdgf вап вва вап ФИО/ Наименование субъекта награждения: ФИО/ Наименование субъекта награждения: ФИО/ Наименование субъекта награждения:\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":9,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":9,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":9,\"x\":5,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":9,\"x\":6,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":4,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}}],\"rc\":{\"r\":[{\"y\":0,\"h\":28},{\"y\":1,\"h\":7},{\"y\":2,\"h\":54},{\"y\":3,\"h\":8},{\"y\":5,\"h\":7}],\"c\":[{\"x\":1,\"w\":83},{\"x\":2,\"w\":109},{\"x\":8,\"w\":78},{\"x\":0,\"w\":77}]}}"
+    },
+    {
+      "class": "com.argos.dfe.lib.reports.template.Template",
+      "meta": "{\"mnemo\":\"Module.OtchetPoVsemNagrazhdennym.IUridicheskieLica\",\"title\":{\"ru_RU\":\"Юридические лица\",\"en_EN\":\"IUridicheskie lica\"},\"description\":{}}",
+      "body": "{\"d\":{\"columnWidth\":75,\"rowHeight\":16,\"colmargin\":0,\"rowmargin\":0},\"c\":[{\"y\":3,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":7,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\\u003dname\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\\u003dsphere\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\\u003dreward\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\\u003dorder\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":6,\"x\":3,\"w\":1,\"h\":1,\"v\":\"12344er44\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":1,\"x\":0,\"w\":1,\"h\":1,\"v\":\"Наименование организации\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":1,\"w\":1,\"h\":1,\"v\":\"Сфера деятельности\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":2,\"w\":1,\"h\":1,\"v\":\"Награда\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":3,\"w\":1,\"h\":1,\"v\":\"Дата и номер приказа\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":5,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":0,\"x\":0,\"w\":4,\"h\":1,\"v\":\"Отчет по награжденным юридическим лицам\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":12,\"b\":true,\"i\":false}}},{\"y\":4,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":4,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":-1,\"x\":-1,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":4,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":4,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}}],\"rc\":{\"r\":[{\"y\":-1,\"h\":30},{\"y\":0,\"h\":23},{\"y\":1,\"h\":20},{\"y\":2,\"h\":97}],\"c\":[{\"x\":1,\"w\":117},{\"x\":2,\"w\":122},{\"x\":3,\"w\":125},{\"x\":0,\"w\":144}]}}"
+    },
+    {
+      "class": "com.argos.dfe.lib.reports.template.Template",
+      "meta": "{\"mnemo\":\"Module.OtchetPoVsemNagrazhdennym.Sotrudniki\",\"title\":{\"ru_RU\":\"Сотрудники\",\"en_EN\":\"Sotrudniki\"},\"description\":{}}",
+      "body": "{\"d\":{\"columnWidth\":75,\"rowHeight\":16,\"colmargin\":0,\"rowmargin\":0},\"c\":[{\"y\":4,\"x\":6,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\\u003dtn\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\\u003dfio\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\\u003djob\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\\u003djobFunction\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\\u003dreward\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":5,\"w\":1,\"h\":1,\"v\":\"\\u003dorder\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":6,\"w\":1,\"h\":1,\"v\":\"\\u003dpetitioner\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\\u003dbirthDate\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":8,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":0,\"x\":0,\"w\":9,\"h\":1,\"v\":\"Отчет по награжденным сотрудникам\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":12,\"b\":true,\"i\":false}}},{\"y\":10,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":6,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":1,\"x\":0,\"w\":1,\"h\":1,\"v\":\"ТН\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":1,\"w\":1,\"h\":1,\"v\":\"ФИО\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":11,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":1,\"x\":2,\"w\":1,\"h\":1,\"v\":\"Место работы\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":3,\"w\":1,\"h\":1,\"v\":\"Должность\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":4,\"w\":1,\"h\":1,\"v\":\"Награда\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":5,\"w\":1,\"h\":1,\"v\":\"Дата и номер приказа\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":6,\"w\":1,\"h\":1,\"v\":\"Кто ходатайствует\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":7,\"w\":1,\"h\":1,\"v\":\"Дата рождения\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":8,\"w\":1,\"h\":1,\"v\":\"Полных лет\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":9,\"x\":7,\"w\":1,\"h\":1,\"v\":\"1252\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}}],\"rc\":{\"r\":[],\"c\":[]}}"
+    },
+    {
+      "class": "com.argos.dfe.lib.reports.template.Template",
+      "meta": "{\"mnemo\":\"Module.OtchetPoVsemNagrazhdennym.FizicheskieLica\",\"title\":{\"ru_RU\":\"Физические лица\",\"en_EN\":\"Fizicheskie lica\"},\"description\":{}}",
+      "body": "{\"d\":{\"columnWidth\":75,\"rowHeight\":16,\"colmargin\":0,\"rowmargin\":0},\"c\":[{\"y\":4,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":4,\"x\":8,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":12,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\\u003dtn\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\\u003dfio\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\\u003djob\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\\u003djobFunction\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\\u003dreward\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":5,\"w\":1,\"h\":1,\"v\":\"\\u003dorder\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":6,\"w\":1,\"h\":1,\"v\":\"\\u003dpetitioner\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\\u003dbirthDate\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":2,\"x\":8,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":10,\"b\":false,\"i\":false}}},{\"y\":10,\"x\":3,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":10,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":0,\"x\":0,\"w\":9,\"h\":1,\"v\":\"Отчет по награжденным физическим лицам\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":12,\"b\":true,\"i\":false}}},{\"y\":5,\"x\":7,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":0,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":2,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":3,\"x\":5,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":1,\"x\":0,\"w\":1,\"h\":1,\"v\":\"ТН\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":1,\"w\":1,\"h\":1,\"v\":\"ФИО\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":2,\"w\":1,\"h\":1,\"v\":\"Место работы\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":6,\"x\":5,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":1,\"x\":3,\"w\":1,\"h\":1,\"v\":\"Должность\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":4,\"w\":1,\"h\":1,\"v\":\"Награда\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":5,\"w\":1,\"h\":1,\"v\":\"Дата и номер приказа\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":6,\"w\":1,\"h\":1,\"v\":\"Кто ходатайствует\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":7,\"w\":1,\"h\":1,\"v\":\"Дата рождения\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":1,\"x\":8,\"w\":1,\"h\":1,\"v\":\"Полных лет\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":1,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI Полужирный\",\"s\":10,\"b\":true,\"i\":false}}},{\"y\":9,\"x\":3,\"w\":1,\"h\":1,\"v\":\"12238525452\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":4,\"x\":1,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}},{\"y\":4,\"x\":4,\"w\":1,\"h\":1,\"v\":\"\",\"m\":\"\",\"p\":{\"f\":{\"r\":0,\"g\":0,\"b\":0},\"b\":{\"r\":255,\"g\":255,\"b\":255},\"r\":{\"t\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"b\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"l\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0},\"r\":{\"w\":0,\"c\":{\"r\":0,\"g\":0,\"b\":0},\"s\":0}},\"a\":{\"v\":1,\"h\":0},\"n\":{\"n\":\"Segoe UI\",\"s\":12,\"b\":false,\"i\":false}}}],\"rc\":{\"r\":[],\"c\":[]}}"
+    }
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Module.OtchetPoVsemNagrazhdennym",
+    "title": {
+      "ru_RU": "Отчет по награжденным",
+      "en_EN": "Otchet po vsem nagrazhdennym"
+    },
+    "description": {}
+  }
+}

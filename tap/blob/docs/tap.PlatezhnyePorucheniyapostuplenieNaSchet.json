@@ -1,0 +1,638 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.NomerPP",
+        "title": {
+          "ru_RU": "Номер ПП",
+          "en_EN": "Nomer PP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.DataPP",
+        "title": {
+          "ru_RU": "Дата ПП",
+          "en_EN": "Data PP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.RaschetnyiiSchetPoluchatelya",
+        "title": {
+          "ru_RU": "Расчетный счет получателя",
+          "en_EN": "Raschetnyii schet poluchatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityUchetnoiiOrganizacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.Platelshik",
+        "title": {
+          "ru_RU": "Плательщик",
+          "en_EN": "Platelshik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.RaschetnyiiSchetPlatelshika",
+        "title": {
+          "ru_RU": "Расчетный счет плательщика",
+          "en_EN": "Raschetnyii schet platelshika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityKontragenta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.PoluchenoPoSubsidii",
+        "title": {
+          "ru_RU": "Получено по субсидии",
+          "en_EN": "Polucheno po subsidii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Subsidii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.BORO",
+        "title": {
+          "ru_RU": "БО (РО)",
+          "en_EN": "BO RO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.PoluchenoPoRaschetamPoDohodam",
+        "title": {
+          "ru_RU": "Получено по \"Расчетам по доходам\"",
+          "en_EN": "Polucheno po Raschetam po dohodam"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RaschetyPoDohodam"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.KBK",
+        "title": {
+          "ru_RU": "КБК",
+          "en_EN": "KBK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KlassifikaciyaBiudzhetovRFdohodyDeficit"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.NaznacheniePlatezha",
+        "title": {
+          "ru_RU": "Назначение платежа",
+          "en_EN": "Naznachenie platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.SummaOplatyPlastKartoii",
+        "title": {
+          "ru_RU": "Сумма оплаты пласт. картой",
+          "en_EN": "Summa oplaty plast kartoii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.ProcentKomissiiOplPlastKartoii",
+        "title": {
+          "ru_RU": "Процент комиссии опл. пласт. картой",
+          "en_EN": "Procent komissii opl plast kartoii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.SummaKomissiiOplPlastKartoii",
+        "title": {
+          "ru_RU": "Сумма комиссии опл. пласт. картой",
+          "en_EN": "Summa komissii opl plast kartoii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.SchetRaschetySZakazchikami",
+        "title": {
+          "ru_RU": "Счет \"Расчеты с заказчиками\" опл. пласт. картой",
+          "en_EN": "Schet Raschety s zakazchikami"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.KOSGUSRZ",
+        "title": {
+          "ru_RU": "КОСГУ СРЗ",
+          "en_EN": "KOSGU SRZ"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.SchetRashodovOplatPlastKartoii",
+        "title": {
+          "ru_RU": "Счет расходов оплат. пласт. картой",
+          "en_EN": "Schet rashodov oplat plast kartoii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.KPSKRB",
+        "title": {
+          "ru_RU": "КПС КРБ",
+          "en_EN": "KPS KRB"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.KPSKDB",
+        "title": {
+          "ru_RU": "КПС КДБ",
+          "en_EN": "KPS KDB"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.hr.KPSDlyaScheta334",
+        "title": {
+          "ru_RU": "КПС для счета 30304",
+          "en_EN": "KPS dlya scheta 334"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.RasshifrovkaOperacii",
+        "title": {
+          "ru_RU": "Расшифровка операции",
+          "en_EN": "Rasshifrovka operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RasshifrovkiOperaciii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.PoluchenoPoRaschetamPoDohodam",
+        "title": {
+          "ru_RU": "Получено по \"Расчетам по доходам\"",
+          "en_EN": "Polucheno po Raschetam po dohodam"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RaschetyPoDohodam"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.SummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.NDS",
+        "title": {
+          "ru_RU": "НДС%",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.tr.SummaNDS",
+        "title": {
+          "ru_RU": "Сумма НДС",
+          "en_EN": "Summa NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Платежные поручения (поступление на счет)",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet.UchetCHPP"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PlatezhnyePorucheniyapostuplenieNaSchet",
+    "title": {
+      "ru_RU": "Платежные поручения (поступление на счет)",
+      "en_EN": "Platezhnye porucheniya postuplenie na schet"
+    },
+    "description": {}
+  }
+}

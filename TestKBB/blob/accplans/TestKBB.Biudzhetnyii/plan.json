@@ -1,0 +1,13 @@
+{
+  "plantype": "BUDGET",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.Biudzhetnyii",
+    "title": {
+      "ru_RU": "Бюджетный",
+      "en_EN": "Biudzhetnyii"
+    },
+    "description": {}
+  }
+}

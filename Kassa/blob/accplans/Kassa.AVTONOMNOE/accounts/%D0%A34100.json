@@ -1,0 +1,44 @@
+{
+  "active": true,
+  "code": "У4100",
+  "name": {
+    "ru_RU": "Расходы на приобретение товаров (УСН)"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Nomenklatura"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.RashodyUSN"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "4100",
+    "title": {
+      "ru_RU": "У4100"
+    },
+    "description": {}
+  }
+}

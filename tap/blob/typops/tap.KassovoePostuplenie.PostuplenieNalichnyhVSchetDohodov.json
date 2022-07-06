@@ -1,0 +1,145 @@
+{
+  "group": {
+    "mnemo": "tap.KassovoePostuplenie"
+  },
+  "plan": {
+    "mnemo": "tap.BUDGETNOE"
+  },
+  "date": {
+    "celltype": "OPERATION_DATE",
+    "formula": "currentDocument.getDate()",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "number": {
+    "celltype": "OPERATION_NUMBER",
+    "type": {
+      "mnemo": "primitive.internationalstring"
+    },
+    "value": "{\"ru_RU\":\"2\"}",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "summ": {
+    "celltype": "OPERATION_SUM",
+    "formula": "currentDocument.getDocumentSumma()",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "operation_description": {
+    "celltype": "OPERATION_DESCRIPTION",
+    "type": {
+      "mnemo": "primitive.internationalstring"
+    },
+    "value": "{\"ru_RU\":\"Поступление наличных в счет доходов (210 03)\"}",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "operations": [
+    {
+      "row": [
+        {
+          "celltype": "ROW_SOURCE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ACCOUNT",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CREDIT_ACCOUNT",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY_SUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "EXCHANGE_RATE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "COUNT",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "SUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "POSTING_DESCRIPTION",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "SOURCE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "JOURNAL_NUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        }
+      ],
+      "rownum": 0,
+      "condition": "",
+      "conditionEnabled": true
+    }
+  ],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KassovoePostuplenie.PostuplenieNalichnyhVSchetDohodov",
+    "title": {
+      "ru_RU": "Поступление наличных в счет доходов",
+      "en_EN": "Postuplenie nalichnyh v schet dohodov"
+    },
+    "description": {}
+  }
+}

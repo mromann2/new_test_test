@@ -1,0 +1,47 @@
+{
+  "active": true,
+  "code": "50211",
+  "name": {
+    "ru_RU": "Принятые обязательства текущего года КРБ"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50211",
+    "title": {
+      "ru_RU": "50211"
+    },
+    "description": {}
+  }
+}

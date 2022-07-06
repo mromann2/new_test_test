@@ -1,0 +1,251 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.VidRBP",
+        "title": {
+          "ru_RU": "Вид РБП",
+          "en_EN": "Vid RBP"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyRBP"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.PriznanieRashodov",
+        "title": {
+          "ru_RU": "Признание расходов",
+          "en_EN": "Priznanie rashodov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyPriznaniyaRashodov"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.SummaSpisaniya",
+        "title": {
+          "ru_RU": "Сумма списания",
+          "en_EN": "Summa spisaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.NachaloSpisaniya",
+        "title": {
+          "ru_RU": "Начало списания",
+          "en_EN": "Nachalo spisaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.OkonchanieSpisaniya",
+        "title": {
+          "ru_RU": "Окончание списания",
+          "en_EN": "Okonchanie spisaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.OtrazhaiutsyaVBuhgalterskomUchete",
+        "title": {
+          "ru_RU": "Отражаются в бухгалтерском учете",
+          "en_EN": "Otrazhaiutsya v buhgalterskom uchete"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.SchetRashodov",
+        "title": {
+          "ru_RU": "Счет расходов",
+          "en_EN": "Schet rashodov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.OtrazhaiutsyaVNalogovomUchete",
+        "title": {
+          "ru_RU": "Отражаются в налоговом учете",
+          "en_EN": "Otrazhaiutsya v nalogovom uchete"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.SchetRashodovNU",
+        "title": {
+          "ru_RU": "Счет расходов (НУ)",
+          "en_EN": "Schet rashodov NU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "false"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RashodyBudushihPeriodov.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Расходы будущих периодов",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.RashodyBudushihPeriodov",
+    "title": {
+      "ru_RU": "Расходы будущих периодов"
+    },
+    "description": {
+      "ru_RU": "Справочник Расходы будущих периодов"
+    }
+  }
+}

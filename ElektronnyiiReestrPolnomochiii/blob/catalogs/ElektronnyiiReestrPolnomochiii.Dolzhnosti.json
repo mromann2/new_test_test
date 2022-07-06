@@ -1,0 +1,166 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 200,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti.Otdel",
+        "title": {
+          "ru_RU": "Отдел",
+          "en_EN": "Otdel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Otdely"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti.TipDolzhnosti",
+        "title": {
+          "ru_RU": "Тип должности",
+          "en_EN": "Tip dolzhnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.TipDolzhnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti.Kategoriya",
+        "title": {
+          "ru_RU": "Категория",
+          "en_EN": "Kategoriya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.KategoriyaDolzhnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti.Gruppa",
+        "title": {
+          "ru_RU": "Группа",
+          "en_EN": "Gruppa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.GruppaDolzhnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti.KodDolzhnosti",
+        "title": {
+          "ru_RU": "Код должности",
+          "en_EN": "Kod dolzhnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti.Status",
+        "title": {
+          "ru_RU": "Статус",
+          "en_EN": "Status"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.StatusDolzhnosti"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Должности",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.Dolzhnosti",
+    "title": {
+      "ru_RU": "Должности",
+      "en_EN": "Dolzhnosti"
+    },
+    "description": {}
+  }
+}

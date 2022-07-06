@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "50122",
+  "name": {
+    "ru_RU": "Лимиты бюджетных обязательств к распределению"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50122",
+    "title": {
+      "ru_RU": "50122"
+    },
+    "description": {}
+  }
+}

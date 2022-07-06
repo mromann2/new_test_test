@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "10800",
+  "name": {
+    "ru_RU": "Нефинансовые активы имущества казны"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10800",
+    "title": {
+      "ru_RU": "10800"
+    },
+    "description": {}
+  }
+}

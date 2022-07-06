@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "39",
+  "name": {
+    "ru_RU": "Доходы от инвестиций на создание и (или) реконструкцию объекта концессии"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "39",
+    "title": {
+      "ru_RU": "39"
+    },
+    "description": {}
+  }
+}

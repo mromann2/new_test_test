@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "Н90",
+  "name": {
+    "ru_RU": "Доходы и расходы по обычным видам деятельности"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "90",
+    "title": {
+      "ru_RU": "Н90"
+    },
+    "description": {}
+  }
+}

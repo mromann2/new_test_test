@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "40230",
+  "name": {
+    "ru_RU": "Результат прошлых отчетных периодов по кассовому исполнению бюджета"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40230",
+    "title": {
+      "ru_RU": "40230"
+    },
+    "description": {}
+  }
+}

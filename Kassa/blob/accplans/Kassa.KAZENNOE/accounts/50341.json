@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50341",
+  "name": {
+    "ru_RU": "Доведенные бюджетные ассигнования"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50341",
+    "title": {
+      "ru_RU": "50341"
+    },
+    "description": {}
+  }
+}

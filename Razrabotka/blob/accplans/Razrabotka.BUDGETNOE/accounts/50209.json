@@ -1,0 +1,47 @@
+{
+  "active": true,
+  "code": "50209",
+  "name": {
+    "ru_RU": "Отложенные обязательства"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50209",
+    "title": {
+      "ru_RU": "50209"
+    },
+    "description": {}
+  }
+}

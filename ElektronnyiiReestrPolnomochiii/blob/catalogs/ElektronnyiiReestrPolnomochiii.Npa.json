@@ -1,0 +1,343 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 500,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Number",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "InDialog",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Полное наименование",
+          "en_EN": "Polnoe naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.UrovenOrgana",
+        "title": {
+          "ru_RU": "Уровень органа",
+          "en_EN": "Uroven organa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.UrovenOrgana"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.Status",
+        "title": {
+          "ru_RU": "Статус",
+          "en_EN": "Status"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Status"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.Tip",
+        "title": {
+          "ru_RU": "Тип",
+          "en_EN": "Tip"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.TipNPA"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.VidPolnomochiii",
+        "title": {
+          "ru_RU": "Вид полномочий",
+          "en_EN": "Vid polnomochiii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.VidPolnomochiii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.URLSylkaNaKonsultant",
+        "title": {
+          "ru_RU": "URL cсылка на Консультант",
+          "en_EN": "URL csylka na Konsultant"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.URLSylkaNaPravogov",
+        "title": {
+          "ru_RU": "URL cсылка на pravo.gov",
+          "en_EN": "URL csylka na pravogov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.DataPrinyatiyaNPA",
+        "title": {
+          "ru_RU": "Дата принятия НПА",
+          "en_EN": "Data prinyatiya NPA"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.DataNachalaDeiistviyaNPA",
+        "title": {
+          "ru_RU": "Дата начала действия НПА",
+          "en_EN": "Data nachala deiistviya NPA"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.DataOkonchaniyaDeiistviyaNPA",
+        "title": {
+          "ru_RU": "Дата окончания действия НПА",
+          "en_EN": "Data okonchaniya deiistviya NPA"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.DataVstupleniyaRedakciiVSilu",
+        "title": {
+          "ru_RU": "Дата вступления редакции в силу",
+          "en_EN": "Data vstupleniya redakcii v silu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.DataOkonchaniyaDeiistviyaRedakcii",
+        "title": {
+          "ru_RU": "Дата окончания действия редакции",
+          "en_EN": "Data okonchaniya deiistviya redakcii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.Redakciya",
+        "title": {
+          "ru_RU": "Редакция",
+          "en_EN": "Redakciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.Sostoyanie",
+        "title": {
+          "ru_RU": "Состояние",
+          "en_EN": "Sostoyanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Sostoyanie"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.Npa.Gruppa",
+        "title": {
+          "ru_RU": "Группа",
+          "en_EN": "Gruppa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "ElektronnyiiReestrPolnomochiii.GruppyNPA"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Нормативно-правовой акт",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.Npa",
+    "title": {
+      "ru_RU": "Нормативно-правовой акт",
+      "en_EN": "Npa"
+    },
+    "description": {}
+  }
+}

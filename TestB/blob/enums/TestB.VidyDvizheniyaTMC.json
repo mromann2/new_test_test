@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Поступление",
+    "Перемещение",
+    "Реализация"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.VidyDvizheniyaTMC",
+    "title": {
+      "ru_RU": "Виды движения ТМЦ",
+      "en_EN": "Vidy dvizheniya TMC"
+    },
+    "description": {}
+  }
+}

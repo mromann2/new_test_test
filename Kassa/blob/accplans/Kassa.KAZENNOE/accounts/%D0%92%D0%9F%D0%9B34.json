@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "ВПЛ34",
+  "name": {
+    "ru_RU": "Возвраты прошлых лет в кассу"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "34",
+    "title": {
+      "ru_RU": "ВПЛ34"
+    },
+    "description": {}
+  }
+}

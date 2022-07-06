@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    //Константа мнемо документа\r\n    const DOCMNEMO \u003d \u0027PostupleniyaNaSchetVlozheniiiOS\u0027;\r\n\r\n    if (notValid(currentDocument)) {\r\n        return notValid(currentDocument);\r\n    } else {\r\n        \r\n        let acc21012 \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002721012\u0027).get(0);\r\n        let kosgu21012 \u003d acc21012.getKOSGUDebit(); \r\n    \r\n        for (let tableRec of currentDocument.getRows()){\r\n\r\n            let summaBezNDS \u003d tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.SummaBezNDS\u0027);\r\n            let summaNDS \u003d tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.SummaNDS\u0027);\r\n\r\n            let postingProps1 \u003d {\r\n                tableRec,\r\n                docMnemo: MODULEMNEMO + \u0027.\u0027 + DOCMNEMO,\r\n                summa: summaBezNDS,\r\n            }\r\n\r\n            //добавление проводки 1\r\n            currentDocument.addPosting(createPostingWithProps(postingProps1));\r\n            \r\n            if (summaNDS \u003e 0 || summaNDS \u003c 0) { \r\n                let postingProps2 \u003d {\r\n                    tableRec,\r\n                    docMnemo: MODULEMNEMO + \u0027.\u0027 + DOCMNEMO,\r\n                    debitKps: tableRec.get(MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.KPSKr\u0027).getCode(), \r\n                    debitKosgu: kosgu21012,\r\n                    debit: acc21012,\r\n                    summa: summaNDS,\r\n                };\r\n              \r\n                //добавление проводки 2\r\n                currentDocument.addPosting(createPostingWithProps(postingProps2));\r\n            };     \r\n        };\r\n        \r\n        //устанавливаем текущую дату проводки\r\n        currentDocument.setExecuted();\r\n        //устанавливаем сумму операции\r\n        currentDocument.setOperationSum(getCalculatedSum(currentDocument, MODULEMNEMO + \u0027.\u0027 + DOCMNEMO + \u0027.tr.Summa\u0027));\r\n        //сохранение документа с проводками\r\n        currentDocument.save();\r\n    }\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.PostupleniyaNaSchetVlozheniiiOS.UchetPostuplNaSchetVlozheniiiOS",
+    "title": {
+      "ru_RU": "Учет_ПоступлНаСчетВложенийОС",
+      "en_EN": "UchetPostuplNaSchetVlozheniiiOS"
+    },
+    "description": {}
+  }
+}

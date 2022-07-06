@@ -1,0 +1,279 @@
+{
+  "dimensions": [
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.dm.Schet",
+        "title": {
+          "ru_RU": "Счет",
+          "en_EN": "Schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    }
+  ],
+  "resources": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rs.DebetSumma",
+        "title": {
+          "ru_RU": "Дебет сумма",
+          "en_EN": "Debet summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rs.KreditSumma",
+        "title": {
+          "ru_RU": "Кредит сумма",
+          "en_EN": "Kredit summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rs.DebetKolichestvo",
+        "title": {
+          "ru_RU": "Дебет количество",
+          "en_EN": "Debet kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rs.KreditKolichestvo",
+        "title": {
+          "ru_RU": "Кредит количество",
+          "en_EN": "Kredit kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "requisites": [
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.KOSGU",
+        "title": {
+          "ru_RU": "КОСГУ",
+          "en_EN": "KOSGU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.Journal",
+        "title": {
+          "ru_RU": "Номер журнала операций",
+          "en_EN": "Journal"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.DopJournal",
+        "title": {
+          "ru_RU": "Дополнительный номер журнала операций",
+          "en_EN": "DopJournal"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.RasshifrovkaOperacii",
+        "title": {
+          "ru_RU": "Расшифровка операции",
+          "en_EN": "Rasshifrovka operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RasshifrovkiOperaciii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.Cena",
+        "title": {
+          "ru_RU": "Цена",
+          "en_EN": "Cena"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Razrabotka.RegistrOtchet.rg.Vneperiod",
+        "title": {
+          "ru_RU": "Межрасчетный период",
+          "en_EN": "Vneperiod"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "type": "Remainders",
+  "period": "Month",
+  "fast": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.RegistrOtchet",
+    "title": {
+      "ru_RU": "Регистр Отчет",
+      "en_EN": "Registr Otchet"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Testovyii_DrugieNastroiiki.TipKontrolyaNaOshibkiPriUchete_znachenie",
+        "title": {
+          "ru_RU": "Тип контроля на ошибки при учете",
+          "en_EN": "Tip kontrolya na oshibki pri uchete_znachenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.ZnacheniyaParametrov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Testovyii_DrugieNastroiiki.OsnovnoiiKassir",
+        "title": {
+          "ru_RU": "Основной кассир",
+          "en_EN": "Osnovnoii kassir"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.ZnacheniyaParametrov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Testovyii_DrugieNastroiiki.VidPlatezhaVPlatezhnomPoruchenii",
+        "title": {
+          "ru_RU": "Вид платежа в платежном поручении",
+          "en_EN": "Vid platezha v platezhnom poruchenii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.ZnacheniyaParametrov"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Тестовый_Другие настройки",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Testovyii_DrugieNastroiiki",
+    "title": {
+      "ru_RU": "Тестовый_Другие настройки",
+      "en_EN": "Testovyii_Drugie nastroiiki"
+    },
+    "description": {}
+  }
+}

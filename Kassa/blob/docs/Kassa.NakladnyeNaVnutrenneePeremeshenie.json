@@ -1,0 +1,447 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.OtpravitelMOL",
+        "title": {
+          "ru_RU": "Отправитель (МОЛ)",
+          "en_EN": "Otpravitel MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.Podrazdelenieotkuda",
+        "title": {
+          "ru_RU": "Подразделение (откуда)",
+          "en_EN": "Podrazdelenie otkuda"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.PoluchatelMOL",
+        "title": {
+          "ru_RU": "Получатель (МОЛ)",
+          "en_EN": "Poluchatel MOL"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.Podrazdeleniekuda",
+        "title": {
+          "ru_RU": "Подразделение (куда)",
+          "en_EN": "Podrazdelenie kuda"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.Osnovanie",
+        "title": {
+          "ru_RU": "Основание",
+          "en_EN": "Osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.CHerezKogo",
+        "title": {
+          "ru_RU": "Через кого",
+          "en_EN": "CHerez kogo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.hr.Podpisant",
+        "title": {
+          "ru_RU": "Подписант",
+          "en_EN": "Podpisant"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.TMC",
+        "title": {
+          "ru_RU": "ТМЦ",
+          "en_EN": "TMC"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.MaterialnyeZapasy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.EdIzm",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Ed izm"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.EdinicyIzmereniyaOKEI"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.Cena",
+        "title": {
+          "ru_RU": "Цена",
+          "en_EN": "Cena"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.CenaPostavshika",
+        "title": {
+          "ru_RU": "Цена поставщика",
+          "en_EN": "Cena postavshika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KVFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KOSGU"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Kassa.KOSGU"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Накладные на внутреннее перемещение",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie.VnutrenneePeremeshenieMZ"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.NakladnyeNaVnutrenneePeremeshenie",
+    "title": {
+      "ru_RU": "Накладные на внутреннее перемещение",
+      "en_EN": "Nakladnye na vnutrennee peremeshenie"
+    },
+    "description": {}
+  }
+}

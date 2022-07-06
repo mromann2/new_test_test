@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "38",
+  "name": {
+    "ru_RU": "Сметная стоимость создания (реконструкции) объекта концессии"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "38",
+    "title": {
+      "ru_RU": "38"
+    },
+    "description": {}
+  }
+}

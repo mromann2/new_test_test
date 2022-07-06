@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "code": "30253",
+  "name": {
+    "ru_RU": "Расчеты по перечислениям международным организациям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "4",
+  "kosgudb": "839",
+  "kosgukr": "739",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.SchetafakturyPoluchennye"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.DogovoryGoskontrakty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30253",
+    "title": {
+      "ru_RU": "30253"
+    },
+    "description": {}
+  }
+}

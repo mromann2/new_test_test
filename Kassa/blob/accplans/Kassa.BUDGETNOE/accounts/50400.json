@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50400",
+  "name": {
+    "ru_RU": "Сметные (плановые, прогнозные) назначения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50400",
+    "title": {
+      "ru_RU": "50400"
+    },
+    "description": {}
+  }
+}

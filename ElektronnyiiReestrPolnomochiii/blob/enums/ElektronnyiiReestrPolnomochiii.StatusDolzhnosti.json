@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Действует",
+    "Сокращена"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.StatusDolzhnosti",
+    "title": {
+      "ru_RU": "Статус должности",
+      "en_EN": "Status dolzhnosti"
+    },
+    "description": {}
+  }
+}

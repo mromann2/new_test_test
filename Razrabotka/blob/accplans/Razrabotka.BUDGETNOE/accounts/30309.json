@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "30309",
+  "name": {
+    "ru_RU": "Расчеты по дополнительным страховым взносам на пенсионное страхование"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "6",
+  "kosgudb": "831",
+  "kosgukr": "731",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30309",
+    "title": {
+      "ru_RU": "30309"
+    },
+    "description": {}
+  }
+}

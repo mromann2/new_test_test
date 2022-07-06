@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50800",
+  "name": {
+    "ru_RU": "Получено финансового обеспечения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50800",
+    "title": {
+      "ru_RU": "50800"
+    },
+    "description": {}
+  }
+}

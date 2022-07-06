@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "\r\n//Проведение документа\r\nfunction activate(currentDocument) {\r\n    //первый комит\r\n    \r\n    \r\n    let myReg \u003d Register.get(\"TestB.RegistrTest\");\r\n\r\n    //СОЗДАНИЕ ЗАПИСИ РЕГИСТРА\r\n    let record \u003d myReg.create();\r\n    record.setDate(currentDocument.getDate());\r\n    record.setDocument(currentDocument);\r\n    record.setDimension(\u0027TestB.RegistrTest.dm.Sklad\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Sklad\u0027).getTitle());\r\n    record.setDimension(\u0027TestB.RegistrTest.dm.Mebel\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Mebel\u0027).getTitle());\r\n    record.setRequisite(\u0027TestB.RegistrTest.rg.VidDvizheniya\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.VidDvizheniyaTMC\u0027));\r\n    record.setRequisite(\u0027TestB.RegistrTest.rg.Rekvizit2\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Rekvizit2\u0027));\r\n    record.create();\r\n\r\nreturn \u0027Запись регистра создана\u0027;\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.Testovyii.RegRecCreate",
+    "title": {
+      "ru_RU": "reg rec create",
+      "en_EN": "reg rec create"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "active": true,
+  "code": "002",
+  "name": {
+    "ru_RU": "",
+    "en_EN": ""
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "002",
+    "title": {
+      "ru_RU": "002"
+    },
+    "description": {}
+  }
+}

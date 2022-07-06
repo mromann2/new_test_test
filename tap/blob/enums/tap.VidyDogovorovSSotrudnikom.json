@@ -1,0 +1,21 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Трудовой договор",
+    "Контракт госслужащего",
+    "Договор муниципального служащего",
+    "Контракт военнослужащего",
+    "Военнослужащий по призыву"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyDogovorovSSotrudnikom",
+    "title": {
+      "ru_RU": "Виды договоров с сотрудником",
+      "en_EN": "Vidy dogovorov s sotrudnikom"
+    },
+    "description": {}
+  }
+}

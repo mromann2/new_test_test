@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "11422",
+  "name": {
+    "ru_RU": "Обесценение нежилых помещений (зданий и сооружений) – особо ценного движимого имущества учреждения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "11422",
+    "title": {
+      "ru_RU": "11422"
+    },
+    "description": {}
+  }
+}

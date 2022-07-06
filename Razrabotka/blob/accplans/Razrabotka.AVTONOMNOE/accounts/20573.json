@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "code": "20573",
+  "name": {
+    "ru_RU": "Расчеты по доходам от операций с непроизведенными активами"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "5",
+  "kosgudb": "564",
+  "kosgukr": "664",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.SchetafakturyVydannye"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.DogovoryGoskontrakty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20573",
+    "title": {
+      "ru_RU": "20573"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "10494",
+  "name": {
+    "ru_RU": "Амортизация машин и оборудования в концессии"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "411",
+  "kosgukr": "411",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10494",
+    "title": {
+      "ru_RU": "10494"
+    },
+    "description": {}
+  }
+}

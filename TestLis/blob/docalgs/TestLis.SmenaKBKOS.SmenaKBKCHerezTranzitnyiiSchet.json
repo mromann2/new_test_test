@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n    //проверка документа\r\n    let validationResult \u003d notValid(currentDocument);\r\n    if (validationResult) {\r\n        return validationResult;\r\n    }\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    for (let tableRec of currentDocument.getRows()){\r\n        //     Проводка 1 - по фактуре, сумма \u003d стоимость\r\n        currentDocument.addPosting(createPostingWithProps({tableRec, currentDocument, summa: tableRec.get(docMnemo + \u0027.tr.Stoimost\u0027)}));\r\n        \r\n        //    Проводка 3\r\n        //            Дебет \u003d счет Кредит, КПС\u003dНовый КПС, КВФО\u003dНовое КВФО, аналитика \u003dиз кредит, КОСГУ из плана счетов по умолчанию,\r\n        //            Кредит \u003d счет Дебет фактуры, КПС\u003dКПС дебет, аналитика \u003dиз Дебет\r\n        //            сумма \u003d стоимость\r\n        currentDocument.addPosting(createPostingWithProps({tableRec, \r\n                                              currentDocument,\r\n                                              debit: tableRec.get(docMnemo + \u0027.tr.Kredit\u0027),\r\n                                              debitKps: tableRec.get(docMnemo + \u0027.tr.NovyiiKPS\u0027),\r\n                                              kfo: tableRec.get(docMnemo + \u0027.tr.NovyiiKVFO\u0027),\r\n                                              credit: tableRec.get(docMnemo + \u0027.tr.Debet\u0027),\r\n                                              creditKps: tableRec.get(docMnemo + \u0027.tr.KPSDb\u0027),\r\n                                              summa: tableRec.get(docMnemo + \u0027.tr.Stoimost\u0027)\r\n                                             }));\r\n                                             \r\n        if (tableRec.get(docMnemo + \u0027.tr.Amortizaciya\u0027) \u003e 0) {\r\n            //    проводка 2 \u003d условие \u003d сумма амортизации больше 0\r\n            //           Дебет \u003d счет амортизации для счета Кредит из Соответствия,\r\n            //                         КПС\u003dКПС кредит, аналитика \u003dиз кредит, КОСГУ \u003dКОСГУ дебет из плана \r\n            //           Кредит \u003d счет Дебет,\r\n            //                         КПС\u003dКПС дебет, аналитика \u003dиз дебет\r\n            //                  сумма \u003d сумма амортизации\r\n            currentDocument.addPosting(createPostingWithProps({tableRec, \r\n                                                  currentDocument,\r\n                                                  debit: fillAccountByAnalytics(getLinkedAccount(tableRec.get(docMnemo + \u0027.tr.Kredit\u0027), \u0027SchetAmortizacii\u0027), tableRec.get(docMnemo + \u0027.tr.Kredit\u0027)),\r\n                                                  debitKps: tableRec.get(docMnemo + \u0027.tr.KPSKr\u0027),\r\n                                                  credit: tableRec.get(docMnemo + \u0027.tr.Debet\u0027),\r\n                                                  creditKps: tableRec.get(docMnemo + \u0027.tr.KPSDb\u0027),\r\n                                                  summa: tableRec.get(docMnemo + \u0027.tr.Amortizaciya\u0027)\r\n                                                 }));\r\n\r\n            //     Проводка 4 - условие \u003dсумма амортизации больше 0\r\n            //             Дебет \u003d счет Дебет фактуры, КПС, Аналитика из дебета\r\n            //             Кредит\u003dсчет амортизации для счета Кредит из Соответствия,\r\n            //                         КПС\u003dНовый КПС, Новый КВФО, аналитика \u003dиз кредит, КОСГУ \u003dКОСГУ кредит из плана\r\n            currentDocument.addPosting(createPostingWithProps({tableRec, \r\n                                                  currentDocument,\r\n                                                  debit: tableRec.get(docMnemo + \u0027.tr.Debet\u0027),\r\n                                                  credit: fillAccountByAnalytics(getLinkedAccount(tableRec.get(docMnemo + \u0027.tr.Kredit\u0027), \u0027SchetAmortizacii\u0027), tableRec.get(docMnemo + \u0027.tr.Kredit\u0027)),\r\n                                                  creditKps: tableRec.get(docMnemo + \u0027.tr.NovyiiKPS\u0027),\r\n                                                  summa: tableRec.get(docMnemo + \u0027.tr.Amortizaciya\u0027)\r\n                                                 }));\r\n        }\r\n    }\r\n    \r\n    //проверка проводок\r\n    let postingValidationResult \u003d hasNotValidPostings(currentDocument);\r\n    if (postingValidationResult) {\r\n        return postingValidationResult;\r\n    }\r\n    //устанавливаем признак проведения и текущую дату\r\n    currentDocument.setExecuted();\r\n    //устанавливаем сумму операции\r\n    currentDocument.setOperationSum(getCalculatedSum(currentDocument, docMnemo + \u0027.tr.Stoimost\u0027));\r\n    //сохранение документа с проводками\r\n    currentDocument.save();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestLis.SmenaKBKOS.SmenaKBKCHerezTranzitnyiiSchet",
+    "title": {
+      "ru_RU": "Смена КБК через транзитный счет",
+      "en_EN": "Smena KBK cherez tranzitnyii schet"
+    },
+    "description": {}
+  }
+}

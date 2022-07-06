@@ -1,0 +1,513 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Seriya",
+        "title": {
+          "ru_RU": "Серия",
+          "en_EN": "Seriya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Kassir",
+        "title": {
+          "ru_RU": "Кассир",
+          "en_EN": "Kassir"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.UIN",
+        "title": {
+          "ru_RU": "УИН",
+          "en_EN": "UIN"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.DataRozhdeniya",
+        "title": {
+          "ru_RU": "Дата рождения",
+          "en_EN": "Data rozhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.MestoZhitelstva",
+        "title": {
+          "ru_RU": "Место жительства",
+          "en_EN": "Mesto zhitelstva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.KodVidaDokumenta",
+        "title": {
+          "ru_RU": "Код вида документа",
+          "en_EN": "Kod vida dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.NaimenovanieDokumenta",
+        "title": {
+          "ru_RU": "Наименование документа",
+          "en_EN": "Naimenovanie dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.SeriyaDokumenta",
+        "title": {
+          "ru_RU": "Серия документа",
+          "en_EN": "Seriya dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Nomer",
+        "title": {
+          "ru_RU": "Номер",
+          "en_EN": "Nomer"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Vydan",
+        "title": {
+          "ru_RU": "Выдан",
+          "en_EN": "Vydan"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.Kem",
+        "title": {
+          "ru_RU": "Кем",
+          "en_EN": "Kem"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.OplataPlatezhnoiiKartoii",
+        "title": {
+          "ru_RU": "Оплата платежной картой",
+          "en_EN": "Oplata platezhnoii kartoii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.hr.VUplatu",
+        "title": {
+          "ru_RU": "В уплату",
+          "en_EN": "V uplatu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.Kod",
+        "title": {
+          "ru_RU": "Код",
+          "en_EN": "Kod"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.PraiisList"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.EdinicyIzmereniya",
+        "title": {
+          "ru_RU": "Единицы измерения",
+          "en_EN": "Edinicy izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.EdinicyIzmereniyaOKEI"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.Cena",
+        "title": {
+          "ru_RU": "Цена",
+          "en_EN": "Cena"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.KodPrichinyPrimeneniyaNalogovyhLgot",
+        "title": {
+          "ru_RU": "Код причины применения налоговых льгот",
+          "en_EN": "Kod prichiny primeneniya nalogovyh lgot"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.PrichinyPrimeneniyaNalogovyhLgot"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.SummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.NDS",
+        "title": {
+          "ru_RU": "НДС%",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.SummaNDS",
+        "title": {
+          "ru_RU": "Сумма НДС",
+          "en_EN": "Summa NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.Kvitancii.tr.VsegoSNDS",
+        "title": {
+          "ru_RU": "Всего с НДС",
+          "en_EN": "Vsego s NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Квитанции",
+    "sources": ""
+  },
+  "algorithms": [],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.Kvitancii",
+    "title": {
+      "ru_RU": "Квитанции",
+      "en_EN": "Kvitancii"
+    },
+    "description": {}
+  }
+}

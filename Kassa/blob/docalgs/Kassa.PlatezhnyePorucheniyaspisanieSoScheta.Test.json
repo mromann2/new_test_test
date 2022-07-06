@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(currentDocument) {\r\n    let resultValidate \u003d currentDocument.validate();\r\n    let list \u003d new DFENameSpace().getNamesList();\r\n    resultValidate.addValueError(list + \"\");\r\n\r\n    \r\n    return resultValidate;\r\n        \r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst DefaultPostingProperties \u003d {\r\n    p_KFO: new Property(KFO, \"KVFO\", PostingMethods.setProperty, fGetTableEnumValue),\r\n    p_JOURNAL: new Property(null, null, PostingMethods.setJournals, fGetPriorityJournal), \r\n    p_RASOPER: new Property(RASOPER, \"RasshifrovkaOperacii\", PostingMethods.setProperty, fGetTableRequisite),\r\n    p_KOLVO: new Property(KOLVO, \"Kolichestvo\", PostingMethods.setProperty, fGetTableRequisite),\r\n    p_CENA: new Property(CENA, \"Cena\", PostingMethods.setProperty, fGetTableRequisite),\r\n    p_VNEPERIOD: new Property(VNEPERIOD, null, PostingMethods.setProperty, fGetTableRequisite),\r\n\r\n    p_DEBET: new Property(null, \"Debet\", PostingMethods.setDebit, fGetTableRequisite),\r\n    p_KPSDb: new Property(KPS, \"KPSDb\", PostingMethods.setDebitProperty, fGetTableRequisiteCode),\r\n    p_KOSGUDb: new Property(KOSGU, null, PostingMethods.setDebitProperty, fGetKosguByDbEkrProperty),\r\n    p_KOSGUEKRDb: new Property(KOSGUEKR, \"KOSGUDb\", PostingMethods.setDebitProperty, fGetTableRequisiteCode),\r\n\r\n    p_KREDIT: new Property(null, \"Kredit\", PostingMethods.setCredit, fGetTableRequisite),\r\n    p_KPSKr: new Property(KPS, \"KPSKr\", PostingMethods.setCreditProperty, fGetTableRequisiteCode),\r\n    p_KOSGUKr: new Property(KOSGU, null, PostingMethods.setCreditProperty, fGetKosguByKrEkrProperty),\r\n    p_KOSGUEKRKr: new Property(KOSGUEKR, \"KOSGUKr\", PostingMethods.setCreditProperty, fGetTableRequisiteCode),\r\n\r\n    p_VALUE:  new Property(null, \"Summa\", PostingMethods.setValue, fGetTableRequisite),\r\n    p_COMMENT: new Property(null, \"Operaciya\", PostingMethods.setComment, fGetOperationName)\r\n};\r\n\r\nconst NdsPostingProperties \u003d {\r\n    __proto__: DefaultPostingProperties,\r\n    \r\n    p_DEBET: new Property(null, \"21011\", PostingMethods.setDebit, fGetAccountByCode, true),\r\n    p_KPSDb: new Property(KPS, \"KPSKr\", PostingMethods.setDebitProperty, fGetTableRequisiteCode),\r\n    p_KOSGUEKRDb: new Property(KOSGUEKR, null, PostingMethods.setDebitProperty, fGetDbKosguByDbAccountProperty),\r\n    \r\n    p_KREDIT: new Property(null, \"30304\", PostingMethods.setCredit, fGetAccountByCode, true),\r\n    p_KPSKr: new Property(KPS, \"KPSDlyaScheta334\", PostingMethods.setCreditProperty, fGetHeadRequisiteCode, true),\r\n    p_KOSGUEKRKr: new Property(KOSGUEKR, null, PostingMethods.setCreditProperty, fGetKrKosguByKrAccountProperty),\r\n    \r\n    p_VALUE: new Property(null, \"SummaNDS\", PostingMethods.setValue, fGetTableRequisite)    \r\n}\r\n\r\nfunction activateForDebug(currentDocument) {\r\n    let resultValidate \u003d currentDocument.validate();\r\n    let organization \u003d currentDocument.getOrganization();\r\n    if (organization.isKazennoe()) {\r\n        \r\n    }\r\n        \r\n       \r\n    let defaultPostingBuilder \u003d new PostingBuilder(currentDocument);\r\n    let ndsPostingBuilder \u003d new PostingBuilder(currentDocument, NdsPostingProperties);\r\n    \r\n//    for (let prop in ndsPostingBuilder.properties) {\r\n//        resultValidate.addValueError(prop);\r\n//    }\r\n    \r\n//    return resultValidate;\r\n    \r\n    for (let tableRec of currentDocument.getRows()){\r\n //       let acc \u003d tableRec.get(currentDocument.getMnemo() + \".tr.\" + \"Kredit\");   \r\n//        let anm \u003d EntityFactory.getPlan().getAccounts().getAnalyticMnemo(acc.getCode(), 0);\r\n//        resultValidate.addValueError(anm + \"\");\r\n//        return resultValidate;\r\n        currentDocument.addPosting(defaultPostingBuilder.build(tableRec));\r\n        currentDocument.addPosting(ndsPostingBuilder.build(tableRec));\r\n//        currentDocument.addPosting(createPostingWithProps({\r\n//            tableRec, \r\n//            currentDocument,\r\n//        }));\r\n    }\r\n    postActivateGeneral(currentDocument);\r\n    \r\n    currentDocument.setExecuted();\r\n    currentDocument.setOperationSum(getCalculatedSum(currentDocument, MODULEMNEMO + \u0027.PlatezhnyePorucheniyaspisanieSoScheta.tr.Summa\u0027));\r\n    currentDocument.save(); \r\n//    let val \u003d currentDocument.getPostings()[0].getValue();\r\n//    resultValidate.addValueError(val * 1 + \"\");  \r\n//    resultValidate.addValueError(postActivateGeneral(currentDocument) + \"\");\r\n//    return resultValidate;\r\n//    currentDocument.save();    \r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.PlatezhnyePorucheniyaspisanieSoScheta.Test",
+    "title": {
+      "ru_RU": "тест",
+      "en_EN": "test"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Принципал, продажа товаров",
+    "Агент, продажа товаров",
+    "Агент, покупка товаров"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.VidyPosrednicheskihSdelokSZakazchikami",
+    "title": {
+      "ru_RU": "Виды посреднических сделок с заказчиками",
+      "en_EN": "Vidy posrednicheskih sdelok s zakazchikami"
+    },
+    "description": {}
+  }
+}

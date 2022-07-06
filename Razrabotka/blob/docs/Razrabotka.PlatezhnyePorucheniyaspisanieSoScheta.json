@@ -1,0 +1,940 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.VidPlatezha",
+        "title": {
+          "ru_RU": "Вид платежа",
+          "en_EN": "Vid platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.VidyPlatezheii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.VidOperacii",
+        "title": {
+          "ru_RU": "Вид операции",
+          "en_EN": "Vid operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.OcherednostPlatezha",
+        "title": {
+          "ru_RU": "Очередность платежа",
+          "en_EN": "Ocherednost platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.SrokPlatezha",
+        "title": {
+          "ru_RU": "Срок платежа",
+          "en_EN": "Srok platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.NaznacheniePlatezhaKodovoe",
+        "title": {
+          "ru_RU": "Назначение платежа кодовое",
+          "en_EN": "Naznachenie platezha kodovoe"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KodyVidovDohoda"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.RaschetnyiiSchetPlatelshika",
+        "title": {
+          "ru_RU": "Расчетный счет плательщика",
+          "en_EN": "Raschetnyii schet platelshika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityUchetnoiiOrganizacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.Poluchatel",
+        "title": {
+          "ru_RU": "Получатель",
+          "en_EN": "Poluchatel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.RaschetnyiiSchetPoluchatelya",
+        "title": {
+          "ru_RU": "Расчетный счет получателя",
+          "en_EN": "Raschetnyii schet poluchatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityKontragenta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.IspolnenoPoSubsidii",
+        "title": {
+          "ru_RU": "Исполнено по субсидии",
+          "en_EN": "Ispolneno po subsidii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Subsidii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.EKR",
+        "title": {
+          "ru_RU": "ЭКР",
+          "en_EN": "EKR"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.BORO",
+        "title": {
+          "ru_RU": "БО (РО)",
+          "en_EN": "BO RO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BiudzhetnyeIRashodnyeObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.UIN",
+        "title": {
+          "ru_RU": "УИН",
+          "en_EN": "UIN"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.VozvratPoRaschetamPoDohodam",
+        "title": {
+          "ru_RU": "Возврат по \"Расчетам по доходам\"",
+          "en_EN": "Vozvrat po Raschetam po dohodam"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RaschetyPoDohodam"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.NaznacheniePlatezha",
+        "title": {
+          "ru_RU": "Назначение платежа",
+          "en_EN": "Naznachenie platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.StatusNalogplat",
+        "title": {
+          "ru_RU": "Статус налог. плат.",
+          "en_EN": "Status nalogplat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.StatusyPlatezheii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.KBKNalogplat",
+        "title": {
+          "ru_RU": "КБК налог. плат.",
+          "en_EN": "KBK nalogplat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KlassifikaciyaBiudzhetovRFdohodyDeficit"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.OKTMONalogplat",
+        "title": {
+          "ru_RU": "ОКТМО налог. плат.",
+          "en_EN": "OKTMO nalogplat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.OKTMO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.OsnovaniePlatezha",
+        "title": {
+          "ru_RU": "Основание налог. платежа",
+          "en_EN": "Osnovanie platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.OsnovaniyaPlatezheii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.NalogovyiiPeriod",
+        "title": {
+          "ru_RU": "Налоговый период",
+          "en_EN": "Nalogovyii period"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.NalDokumenta",
+        "title": {
+          "ru_RU": "№ налог. документа",
+          "en_EN": " nal dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.DataNalogDokumenta",
+        "title": {
+          "ru_RU": "Дата налог. документа",
+          "en_EN": "Data nalog dokumenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.TipNalogPlatezha",
+        "title": {
+          "ru_RU": "Тип налог. платежа",
+          "en_EN": "Tip nalog platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.TipyNalogovyhPlatezheii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.KodUslugRabotZhKH",
+        "title": {
+          "ru_RU": "Код услуг, работ ЖКХ",
+          "en_EN": "Kod uslug rabot ZhKH"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.PeriodOplatyZhKH",
+        "title": {
+          "ru_RU": "Период оплаты ЖКХ",
+          "en_EN": "Period oplaty ZhKH"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.NomerPlatezhnogoDokumentaZhKH",
+        "title": {
+          "ru_RU": "Номер плат. документа ЖКХ",
+          "en_EN": "Nomer platezhnogo dokumenta ZhKH"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.KPSKRB",
+        "title": {
+          "ru_RU": "КПС КРБ",
+          "en_EN": "KPS KRB"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.KPSKDB",
+        "title": {
+          "ru_RU": "КПС КДБ",
+          "en_EN": "KPS KDB"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.hr.KPSDlyaScheta334",
+        "title": {
+          "ru_RU": "КПС для счета 30304",
+          "en_EN": "KPS dlya scheta 334"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.RasshifrovkaOperacii",
+        "title": {
+          "ru_RU": "Расшифровка операции",
+          "en_EN": "Rasshifrovka operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RasshifrovkiOperaciii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.Dopklassifikaciya",
+        "title": {
+          "ru_RU": "Доп.классификация",
+          "en_EN": "Dopklassifikaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KodCeliPoluchatelya",
+        "title": {
+          "ru_RU": "Код цели получателя",
+          "en_EN": "Kod celi poluchatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.MesyacFinansirovaniya",
+        "title": {
+          "ru_RU": "Месяц финансирования",
+          "en_EN": "Mesyac finansirovaniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Mesyacy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KBKPlatelshika",
+        "title": {
+          "ru_RU": "КБК плательщика",
+          "en_EN": "KBK platelshika"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KBKPoluchatelya",
+        "title": {
+          "ru_RU": "КБК получателя",
+          "en_EN": "KBK poluchatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.TipBKPoluchatelya",
+        "title": {
+          "ru_RU": "Тип БК получателя",
+          "en_EN": "Tip BK poluchatelya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.TipyKBK"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.KIVF",
+        "title": {
+          "ru_RU": "КИВФ",
+          "en_EN": "KIVF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.NaznacheniePlatezha",
+        "title": {
+          "ru_RU": "Назначение платежа",
+          "en_EN": "Naznachenie platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.RBK",
+        "title": {
+          "ru_RU": "РБК",
+          "en_EN": "RBK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.RegionalnyiiKlassifikatorRashodov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.FedSubvencii",
+        "title": {
+          "ru_RU": "% Фед. субвенции",
+          "en_EN": " Fed subvencii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.SummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.NDS",
+        "title": {
+          "ru_RU": "НДС%",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.tr.SummaNDS",
+        "title": {
+          "ru_RU": "Сумма НДС",
+          "en_EN": "Summa NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [
+      {
+        "mnemo": "Razrabotka.PrihodnyeKassovyeOrdera"
+      },
+      {
+        "mnemo": "Razrabotka.AktyPriemkiRabotuslug"
+      }
+    ],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Платежные поручения (списание со счета)",
+    "sources": "function baseOn(base, targetMnemo){\r\n    let baseMnemo \u003d base.getMnemo();\r\n    let currentDocument \u003d EntityFactory.createDocument(targetMnemo);\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n\r\n    currentDocument.setParent(base);\r\n    currentDocument.setNumber(\u0027001\u0027);  \r\n    currentDocument.setOrganization(base.getOrganization()); \r\n    \r\n    switch (baseMnemo) {\r\n        case MODULEMNEMO + \u0027.PlatezhnyePorucheniyapostuplenieNaSchet\u0027:\r\n            /* Платежные поручения (списание со счета) / Платежные поручения (поступление на счет)\r\n            Из шапки ППч в шапку ППс\r\n                Плательщик -\u003e Получатель, Расчетный счет плательщика -\u003e Расчетный счет получателя, Назначение платежа -\u003e Назначение платежа, ЭКР –\u003e ЭКР\r\n            Из фактуры ППс в фактуру ПКО\r\n                КВФО -\u003e КВФО, Дебет+КПСдб+Аналитика -\u003e Кредит+КПСкр+Аналитика, Сумма без НДС -\u003e Сумма без НДС, НДС% -\u003e НДС%, Сумма НДС -\u003e Сумма НДС, Сумма -\u003e Сумма */\r\n            copyFieldValuesHr(base, currentDocument, [[\u0027Poluchatel\u0027,\u0027Platelshik\u0027],[\u0027RaschetnyiiSchetPoluchatelya\u0027,\u0027RaschetnyiiSchetPlatelshika\u0027],\r\n                    \u0027NaznacheniePlatezha\u0027,\u0027EKR\u0027])\r\n\r\n            for (let tableRec of base.getRows()){\r\n                let row \u003d  currentDocument.addTableRow();\r\n                copyFieldValuesTr(tableRec, row, baseMnemo, docMnemo, \r\n                    [\u0027KVFO\u0027,[\u0027KPSKr\u0027,\u0027KPSDb\u0027],[\u0027Kredit\u0027,\u0027Debet\u0027],\u0027SummaBezNDS\u0027,\u0027NDS\u0027,\u0027SummaNDS\u0027,\u0027Summa\u0027])\r\n            }\r\n            break;\r\n            \r\n        case MODULEMNEMO + \u0027.PerechisleniyaNaPlastikovyeKarty\u0027:\r\n            /* \r\n            Из шапки Перечисления на пластиковые карты в шапку Платежного поручения (списания со счета)\r\n            Сумма -\u003e Сумма, Получатель -\u003e Получателя, Банковские реквизиты плательщика -\u003e Расчетный счет плательщика, \r\n            Банковские реквизиты получателя -\u003e Расчетный счет получателя, Назначение платежа -\u003e Назначение платежа\r\n             */\r\n            copyFieldValuesHr(base, \r\n                              currentDocument, \r\n                              [\u0027Summa\u0027,\u0027Poluchatel\u0027,[\u0027RaschetnyiiSchetPlatelshika\u0027,\u0027BankovskieRekvizityPlatelshika\u0027],\r\n                              [\u0027RaschetnyiiSchetPoluchatelya\u0027,\u0027BankovskieRekvizityPoluchatelya\u0027],\u0027NaznacheniePlatezha\u0027]);\r\n     \r\n            for (let tableRec of base.getRows()){\r\n                let row \u003d  currentDocument.addTableRow();\r\n            /*\r\n            Из фактуры  Перечисления на пластиковые карты в фактуру Платежного поручения (списания со счета)\r\n            Сумма -\u003e Сумма            \r\n            */                \r\n                copyFieldValuesTr(tableRec, row, baseMnemo, docMnemo, \r\n                                  [\u0027Summa\u0027]);\r\n            /*\r\n            Из шапки Перечисления на пластиковые карты в фактуру Платежного поручения (списания со счета)\r\n            Кор. счет -\u003e Кредит, Счет -\u003e Дебет\r\n            */\r\n                setFieldValuesTr(row, docMnemo, [\u0027Kredit\u0027,\u0027Debet\u0027], getFieldValuesHr(base, [\u0027KorSchet\u0027,\u0027Schet\u0027]))\r\n            }\r\n\r\n            break;\r\n    }\r\n    currentDocument.save()\r\n    return currentDocument;\r\n}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta.UchPPs"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.PlatezhnyePorucheniyaspisanieSoScheta",
+    "title": {
+      "ru_RU": "Платежные поручения (списание со счета)",
+      "en_EN": "Platezhnye porucheniya spisanie so scheta"
+    },
+    "description": {}
+  }
+}

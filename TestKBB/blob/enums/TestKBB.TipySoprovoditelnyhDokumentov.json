@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Транспортная накладная;",
+    "Авианакладная"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.TipySoprovoditelnyhDokumentov",
+    "title": {
+      "ru_RU": "Типы сопроводительных документов",
+      "en_EN": "Tipy soprovoditelnyh dokumentov"
+    },
+    "description": {}
+  }
+}

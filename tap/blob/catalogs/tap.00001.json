@@ -1,0 +1,87 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.00001.INN",
+        "title": {
+          "ru_RU": "ИНН",
+          "en_EN": "INN"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.plan"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.00001.Dolzhnost",
+        "title": {
+          "ru_RU": "должность",
+          "en_EN": "dolzhnost"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Dolzhnosti"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника 00001",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.00001",
+    "title": {
+      "ru_RU": "00001",
+      "en_EN": "00001"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": false,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.hr.Opisanie",
+        "title": {
+          "ru_RU": "Описание",
+          "en_EN": "Opisanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.hr.Perechislenie",
+        "title": {
+          "ru_RU": "перечисление",
+          "en_EN": "perechislenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyNFA"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.hr.Spravochnik",
+        "title": {
+          "ru_RU": "справочник",
+          "en_EN": "spravochnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.hr.Spravochnik2",
+        "title": {
+          "ru_RU": "Справочник2",
+          "en_EN": "Spravochnik2"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.hr.1",
+        "title": {
+          "ru_RU": "1",
+          "en_EN": "1"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.tr.NaimenovanieIOpisanieOperacii",
+        "title": {
+          "ru_RU": "Наименование и описание проводки",
+          "en_EN": "Naimenovanie i opisanie operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.TestovyiiSpravochnik"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.tr.NomerSchetaPoDebitu",
+        "title": {
+          "ru_RU": "Номер счета по дебету",
+          "en_EN": "Nomer scheta po debitu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.tr.NomerSchetaPoKreditu",
+        "title": {
+          "ru_RU": "Номер счета по кредиту",
+          "en_EN": "Nomer scheta po kreditu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "17",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.BuhgalterskayaSpravka.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "количество",
+          "en_EN": "kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Бухгалтерские справки",
+    "sources": "function preSave(doc){\r\n\r\n   doc.set(\u0027tap.BuhgalterskayaSpravka.hr.Opisanie\u0027, \u0027из preSave\u0027)\r\n   \r\n}\r\n\r\n//\r\n//\r\n\r\n\r\n//\r\n\r\n//\r\n//\r\n//\r\n////Проведение документа\r\n//function activate(currentDocument) {\r\n//    \r\n////    let catalog \u003d EntityFactory.getCatalogs().get(\"tap.TestovyiiSpravochnik\").findByCode(\u002777\u0027).get(0)\r\n////    catalog.set(\u0027tap.TestovyiiSpravochnik.Rekvizit1\u0027, \u0027999\u0027)\r\n////    //return catalog.get(\u0027tap.TestovyiiSpravochnik.Rekvizit1\u0027)\r\n////    catalog.save()\r\n//    \r\n//    \r\n////return currentDocument;\r\n////    if (!notValid(currentDocument)) {\r\n////        let statement \u003d currentDocument.get(\u0027tap.AvansovyeOtchety.hr.ZayavlenieNaVydachuAvansa\u0027);\r\n////        let persAccSection \u003d statement ? statement.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027) : \r\n////            currentDocument.get(\u0027tap.AvansovyeOtchety.hr.RazdelLicevogoScheta\u0027);\r\n////        let commitment \u003d statement ? statement.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo\u0027) : \r\n////            currentDocument.get(\u0027tap.AvansovyeOtchety.hr.OsnovaniePrinyatiyaObyazatelstva\u0027);\r\n////        \r\n////\r\n////        // 1. Сторнирование проводки из заявления по 50211-50212 счетам\r\n////        if (statement) {\r\n////            let statementPostings \u003d statement.getPostingList();\r\n////            for (let statementPosting of statementPostings) {\r\n////                let posting \u003d EntityFactory.createPosting();\r\n////                posting.setComment( statementPosting.getComment() );\r\n////                posting.setValue( \u0027-\u0027 + statementPosting.getValue() );\r\n////                posting.setDebit( statementPosting.getDebit() );\r\n////                posting.setCredit( statementPosting.getCredit() );\r\n////                currentDocument.addPosting(posting);\r\n////            }\r\n////        }\r\n//        \r\n//        for (let tableRec of currentDocument.getRows()){\r\n//                  return tableRec\r\n//            \r\n//        //2. Корректировка денежных обязательст\r\n//            let posting \u003d EntityFactory.createPosting();\r\n//            posting.setComment(\u0027Корректировка денежных обязательств\u0027);\r\n//            posting.setValue(tableRec.get(\u0027tap.AvansovyeOtchety.tr.PrinyatoKUchetu\u0027));\r\n//                //счет дб 50211\r\n//            let debit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050211000\u0027).get(0); //TO DO: КПС должен браться из КПС(Кт)\r\n//            debit.put(0, persAccSection); //Аналитика 1: Разделы лиц счетов\r\n//            debit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//            posting.setDebit(debit);\r\n//                //счет кр 50212\r\n//            let credit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050212000\u0027).get(0);\r\n//            credit.put(0, persAccSection); //Аналитика 1: Разделы лиц счетов\r\n//            credit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//            posting.setCredit(credit);\r\n//\r\n//            currentDocument.addPosting(posting);\r\n//        \r\n//        \r\n//        //3.Расходы подотчетного лица\r\n//            let posting3 \u003d EntityFactory.createPosting();\r\n//            posting3.setComment(tableRec.get(\u0027tap.AvansovyeOtchety.tr.KomuZaCHtoIPoKakomuDokumentuUplacheno\u0027));\r\n//            posting3.setValue(tableRec.get(\u0027tap.AvansovyeOtchety.tr.PrinyatoKUchetu\u0027));\r\n//                //счет дб\r\n//            posting3.setDebit(tableRec.get(\u0027tap.AvansovyeOtchety.tr.SchetDebeta\u0027));\r\n//\r\n//                //счет кр\r\n//            let credit3 \u003d tableRec.get(\u0027tap.AvansovyeOtchety.tr.SchetKredita\u0027);\r\n//            credit.put(0, currentDocument.get(\u0027tap.AvansovyeOtchety.hr.Sotrudnik\u0027)); //Аналитика 1: КэК\r\n//            posting3.setCredit(credit);\r\n//\r\n//            currentDocument.addPosting(posting);\r\n//        \r\n//        }\r\n//        }       \r\n//        \r\n//    activate()    \r\n//        //Дополнительные проводки в том случае, если имеется заявление-основание\r\n//        if (currentDocument.get(\u0027tap.AvansovyeOtchety.hr.ZayavlenieNaVydachuAvansa\u0027)) {\r\n//            let statement \u003d currentDocument.get(\u0027tap.AvansovyeOtchety.hr.ZayavlenieNaVydachuAvansa\u0027);\r\n//            let commitment \u003d statement.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.Obyazatelstvo\u0027);\r\n//            let persAccSection \u003d statement.get(\u0027tap.ZayavleniyaNaVydachuAvansa.hr.RazdelLicevogoScheta\u0027);\r\n//\r\n//            // 1. Сторнирование проводки из заявления\r\n//            let statementPostings \u003d currentDocument.get(\u0027tap.AvansovyeOtchety.hr.ZayavlenieNaVydachuAvansa\u0027).getPostingList();\r\n//            for (let statementPosting of statementPostings) {\r\n//                let posting \u003d EntityFactory.createPosting();\r\n//                posting.setComment( statementPosting.getComment() );\r\n//                posting.setValue( \u0027-\u0027 + statementPosting.getValue() );\r\n//                posting.setDebit( statementPosting.getDebit() );\r\n//                posting.setCredit( statementPosting.getCredit() );\r\n//                currentDocument.addPosting(posting);\r\n//            }\r\n//            \r\n//            for (let tableRec of currentDocument.getRows()){\r\n//            //2. Корректировка денежных обязательст (полные счета из проводок завяления взяты)\r\n//                let posting \u003d EntityFactory.createPosting();\r\n//                posting.setComment(\u0027Корректировка денежных обязательств\u0027);\r\n//                posting.setValue(tableRec.get(\u0027tap.AvansovyeOtchety.tr.PrinyatoKUchetu\u0027));\r\n//                    //счет дб 50211\r\n//                let debit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050211000\u0027).get(0);\r\n//                debit.put(0, persAccSection); //Аналитика 1: Разделы лиц счетов\r\n//                debit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//                posting.setDebit(debit);\r\n//                    //счет кр 50212\r\n//                let credit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050212000\u0027).get(0);\r\n//                credit.put(0, persAccSection); //Аналитика 1: Разделы лиц счетов\r\n//                credit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//                posting.setCredit(credit);\r\n//\r\n//                currentDocument.addPosting(posting);\r\n//            };\r\n//        } else {\r\n//            //2. Корректировка денежных обязательст ()\r\n//            let posting \u003d EntityFactory.createPosting();\r\n//            posting.setComment(\u0027Корректировка денежных обязательств\u0027);\r\n//            posting.setValue(tableRec.get(\u0027tap.AvansovyeOtchety.tr.PrinyatoKUchetu\u0027));\r\n//                //счет дб 50211\r\n//            let debit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050211000\u0027).get(0);\r\n//            debit.put(0, persAccSection); //Аналитика 1: Разделы лиц счетов\r\n//            debit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//            posting.setDebit(debit);\r\n//                //счет кр 50212\r\n//            let credit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002700000000000000000050212000\u0027).get(0);\r\n//            credit.put(0, persAccSection); //Аналитика 1: Разделы лиц счетов\r\n//            credit.put(1, commitment); //Аналитика 2: Принятые обязательства\r\n//            posting.setCredit(credit);\r\n//\r\n//            currentDocument.addPosting(posting);\r\n//            \r\n//            \r\n//        }\r\n//        \r\n//        for (let tableRec of currentDocument.getRows()){\r\n//        \r\n//            //3.Расходы подотчетного лица\r\n//            let posting \u003d EntityFactory.createPosting();\r\n//            posting.setComment(tableRec.get(\u0027tap.AvansovyeOtchety.tr.KomuZaCHtoIPoKakomuDokumentuUplacheno\u0027));\r\n//            posting.setValue(tableRec.get(\u0027tap.AvansovyeOtchety.tr.PrinyatoKUchetu\u0027));\r\n//                //счет дб\r\n//            posting.setDebit(tableRec.get(\u0027tap.AvansovyeOtchety.tr.SchetDebeta\u0027));\r\n//\r\n//                //счет кр\r\n//            let credit \u003d tableRec.get(\u0027tap.AvansovyeOtchety.tr.SchetKredita\u0027);\r\n//            credit.put(0, currentDocument.get(\u0027tap.AvansovyeOtchety.hr.Sotrudnik\u0027)); //Аналитика 1: КэК\r\n//            posting.setCredit(credit);\r\n//\r\n//            currentDocument.addPosting(posting);\r\n//        \r\n//        \r\n//            // Налоговый учет\r\n//            let postingNU \u003d EntityFactory.createPosting();\r\n//            postingNU.setComment(tableRec.get(\u0027tap.AvansovyeOtchety.tr.KomuZaCHtoIPoKakomuDokumentuUplacheno\u0027));\r\n//            postingNU.setValue(tableRec.get(\u0027tap.AvansovyeOtchety.tr.PrinyatoKUchetu\u0027));\r\n//                //счет дб\r\n//            postingNU.setDebit(tableRec.get(\u0027tap.AvansovyeOtchety.tr.SchetDebeta\u0027));\r\n//\r\n//                //счет кр 50212\r\n//            let creditNU \u003d tableRec.get(\u0027tap.AvansovyeOtchety.tr.SchetKredita\u0027);\r\n//            creditNU.put(0, currentDocument.get(\u0027tap.AvansovyeOtchety.hr.Sotrudnik\u0027)); //Аналитика 1: КэК\r\n//            postingNU.setCredit(creditNU);\r\n//\r\n//            currentDocument.addPosting(posting);\r\n//        \r\n//        };\r\n//                \r\n//        \r\n//        \r\n//        currentDocument.setExecuted();\r\n//        currentDocument.save();\r\n//    \r\n//        return;  \r\n//    } else \r\n//        return notValid(currentDocument);\r\n//}\r\n//\r\n////Снятие документа с проведения\r\n//function deactivate(currentDocument) {\r\n//    currentDocument.removeAllPostings();\r\n//    currentDocument.setExecutedDate(null);\r\n//    currentDocument.save();\r\n//    return;\r\n//}\r\n//\r\n////Проверка документа на полное заполнение\r\n//function notValid(currentDocument) { \r\n//    let resultValidate \u003d currentDocument.validate();\r\n// \r\n//    if (!currentDocument.getRows().size()){\r\n//        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n//    }\r\n//    \r\n//    if (!resultValidate.hasErrors()) {\r\n//        /*for (let tableRec of currentDocument.getRows()){\r\n//            if (tableRec.get(\u0027tap.AvansovyeOtchety.tr.SchetKredita\u0027).getCode().substr(18,3) !\u003d\u003d \u0027208\u0027)\r\n//                resultValidate.addValueError(\u0027tap.AvansovyeOtchety.tr.SchetKredita\u0027, tableRec.get(\u0027tap.AvansovyeOtchety.tr.SchetKredita\u0027).getCode().substr(18,3) + \u0027Номер счета в поле \"Счет Кредита\" в табличной части должен принадлежать группе счетов 208\u0027);\r\n//            \r\n//        }*/\r\n//    }\r\n//\r\n//    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n//        return  resultValidate;\r\n//}\r\n//\r\n//\r\n//\r\n////function preSave(currentDocument) {\r\n//    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n//    catalog.setCode(\u002701\u0027);\r\n//    catalog.setTitle(\u0027Сработал preSave справки\u0027);\r\n//    catalog.save();\r\n//\r\n//function postSave(currentDocument) {\r\n//    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n//    catalog.setCode(\u002701\u0027);\r\n//    catalog.setTitle(\u0027Сработал postSave справки\u0027);\r\n//    catalog.save();\r\n//}\r\n//function postDelete(currentDocument) {\r\n//    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n//    catalog.setCode(\u002701\u0027);\r\n//    catalog.setTitle(\u0027Сработал postDelete справки\u0027);\r\n//    catalog.save();\r\n//}\r\n//function preDelete(currentDocument) {\r\n//    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n//    catalog.setCode(\u002701\u0027);\r\n//    catalog.setTitle(\u0027Сработал preDelete справки\u0027);\r\n//    catalog.save();\r\n//}\r\n//function preActivate(currentDocument) {\r\n//    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n//    catalog.setCode(\u002701\u0027);\r\n//    catalog.setTitle(\u0027Сработал preActivate справки\u0027);\r\n//    catalog.save();\r\n//}\r\n//function postActivate(currentDocument) {\r\n//    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n//    catalog.setCode(\u002701\u0027);\r\n//    catalog.setTitle(\u0027Сработал postActivate справки\u0027);\r\n//    catalog.save();\r\n//}\r\n//function preDeactivate(currentDocument) {\r\n//    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n//    catalog.setCode(\u002701\u0027);\r\n//    catalog.setTitle(\u0027Сработал preDeactivate справки\u0027);\r\n//    catalog.save();\r\n//}\r\n//function postDeactivate(currentDocument) {\r\n//    let catalog \u003d EntityFactory.createCatalogRecord(\u0027tap.TestovyiiSpravochnik\u0027);\r\n//    catalog.setCode(\u002701\u0027);\r\n//    catalog.setTitle(\u0027Сработал postDeactivate справки\u0027);\r\n//    catalog.save();\r\n//    }\r\n//\r\n"
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Test"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.GetType"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Standartnyii"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.IsFast"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.GetDocument"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.GetRequisite"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.FindObekt"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.getDimension"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.MyRegcreate"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.FindStrochnyiiKondishn"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Filterdemension"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Filtercreate"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Summ"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Vozvrat"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Delete"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Tust_ZapisPriProvedeniiDokumenta"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.Record_create"
+    },
+    {
+      "mnemo": "tap.BuhgalterskayaSpravka.StandartnyiiUniversalnyii"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskayaSpravka",
+    "title": {
+      "ru_RU": "Бухгалтерские справки",
+      "en_EN": "Buhgalterskaya spravka"
+    },
+    "description": {}
+  }
+}

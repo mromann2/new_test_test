@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "20563",
+  "name": {
+    "ru_RU": "Расчеты по поступлениям капитального характера в бюджеты бюджетной системы Российской Федерации от бюджетных и автономных учреждений"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "5",
+  "kosgudb": "562",
+  "kosgukr": "662",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20563",
+    "title": {
+      "ru_RU": "20563"
+    },
+    "description": {}
+  }
+}

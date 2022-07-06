@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Лицевой в казначействе",
+    "В кредитной организации"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.TipScheta",
+    "title": {
+      "ru_RU": "Тип счета",
+      "en_EN": "Tip scheta"
+    },
+    "description": {}
+  }
+}

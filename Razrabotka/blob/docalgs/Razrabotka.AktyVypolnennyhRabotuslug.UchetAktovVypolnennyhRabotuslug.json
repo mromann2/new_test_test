@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(currentDocument) {\r\n    let ndsBuilder \u003d new PostingBuilderWithCreatePostingWithProps(currentDocument);\r\n    ndsBuilder.checkCondition \u003d function(tableRec) {\r\n        return Boolean(tableRec.get(this.trMnemo + \u0027SummaNDS\u0027));       \r\n    }\r\n    \r\n    let credit \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002730304\u0027).get(0);\r\n    let creditKosgu \u003d getKOSGUCredit(credit);\r\n    let creditKps \u003d currentDocument.get(currentDocument.getMnemo() + \u0027.hr.KPSDlyaScheta30304\u0027)?.getCode();\r\n    \r\n    ndsBuilder.getObj \u003d function(tableRec) {\r\n        return {debitKps: tableRec.get(this.trMnemo + \u0027KPSKr\u0027)?.getCode(),\r\n                debit: tableRec.get(this.trMnemo + \u0027Kredit\u0027),\r\n                debitKosgu: tableRec.get(this.trMnemo + \u0027KOSGUKr\u0027)?.getCode(),\r\n                creditKps: creditKps,\r\n                credit: credit,\r\n                creditKosgu: creditKosgu,\r\n                summa: tableRec.get(this.trMnemo + \u0027SummaNDS\u0027)\r\n        };        \r\n    }\r\n\r\n    return new DefaultActivator(currentDocument, ndsBuilder).run();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.UchetAktovVypolnennyhRabotuslug",
+    "title": {
+      "ru_RU": "Учет актов выполненных работ (услуг)",
+      "en_EN": "Uchet aktov vypolnennyh rabot uslug"
+    },
+    "description": {}
+  }
+}

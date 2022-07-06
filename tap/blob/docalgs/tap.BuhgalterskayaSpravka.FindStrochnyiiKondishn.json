@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(cc){\r\n\r\n\r\nlet myReg3 \u003d Register.get(\"tap.Testovyii2\")//.get(0);\r\n//let d1 \u003d EntityFactory.getDocuments().get(\"tap.BuhgalterskayaSpravka\").get(0); \r\n//let c3 \u003d EntityFactory.getCatalogs().get(\"tap.OKVEDred1\").get(1);\r\n\r\n//let condition \u003d filter.dimension(\u0027d1\u0027, c3).and().resource(\u0027res1\u0027, 10000);\r\nlet fil \u003d new filter().requisite(\u0027tap.Testovyii2.rg.3\u0027, \u002710127\u0027)//.and().resource(\u0027res1\u0027, 10000);\r\n//let condition \u003d fil.requisite(\u0027tap.Testovyii2.rg.3\u0027, \u002710111\u0027)\r\n\r\nlet collection\u003dmyReg3.find(fil)\r\nreturn collection.size()\r\n\r\n}\r\n\r\n//падает из-за фильтра"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskayaSpravka.FindStrochnyiiKondishn",
+    "title": {
+      "ru_RU": "find строчный кондишн",
+      "en_EN": "find strochnyii kondishn"
+    },
+    "description": {}
+  }
+}

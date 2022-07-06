@@ -1,0 +1,47 @@
+{
+  "active": true,
+  "code": "30228",
+  "name": {
+    "ru_RU": "Расчеты по услугам, работам для целей капитальных вложений"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "6",
+  "kosgudb": "834",
+  "kosgukr": "734",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.DogovoryGoskontrakty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30228",
+    "title": {
+      "ru_RU": "30228"
+    },
+    "description": {}
+  }
+}

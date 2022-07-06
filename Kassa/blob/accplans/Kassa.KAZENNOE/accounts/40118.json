@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "40118",
+  "name": {
+    "ru_RU": "Доходы финансового года, предшествующего отчетному, выявленные в отчетном году"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40118",
+    "title": {
+      "ru_RU": "40118"
+    },
+    "description": {}
+  }
+}

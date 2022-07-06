@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20989",
+  "name": {
+    "ru_RU": "Расчеты по иным доходам"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "5",
+  "kosgudb": "564",
+  "kosgukr": "664",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20989",
+    "title": {
+      "ru_RU": "20989"
+    },
+    "description": {}
+  }
+}

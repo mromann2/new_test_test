@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "210Т5",
+  "name": {
+    "ru_RU": "Расчеты с товарищами по доходам по договору простого товарищества"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "564",
+  "kosgukr": "664",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "2105",
+    "title": {
+      "ru_RU": "210Т5"
+    },
+    "description": {}
+  }
+}

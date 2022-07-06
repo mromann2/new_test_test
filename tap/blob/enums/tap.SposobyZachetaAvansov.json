@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Автоматически",
+    "По документу",
+    "Не зачитывать"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SposobyZachetaAvansov",
+    "title": {
+      "ru_RU": "Способы зачета авансов",
+      "en_EN": "Sposoby zacheta avansov"
+    },
+    "description": {}
+  }
+}

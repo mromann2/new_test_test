@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Драгоценные металлы",
+    "Драгоценные камни"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.TipDragocennogoMateriala",
+    "title": {
+      "ru_RU": "Тип драгоценного материала",
+      "en_EN": "Tip dragocennogo materiala"
+    },
+    "description": {}
+  }
+}

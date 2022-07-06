@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20312",
+  "name": {
+    "ru_RU": "Средства бюджета на счетах органа, осуществляющего кассовое обслуживание"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20312",
+    "title": {
+      "ru_RU": "20312"
+    },
+    "description": {}
+  }
+}

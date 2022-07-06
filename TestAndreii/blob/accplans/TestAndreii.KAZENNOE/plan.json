@@ -1,0 +1,13 @@
+{
+  "plantype": "BUDGET",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.KAZENNOE",
+    "title": {
+      "ru_RU": "Казенный",
+      "en_EN": "Federal Treasury"
+    },
+    "description": {}
+  }
+}

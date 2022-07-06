@@ -1,0 +1,57 @@
+{
+  "active": true,
+  "code": "30241",
+  "name": {
+    "ru_RU": "Расчеты по безвозмездным перечислениям текущего характера государственным (муниципальным) учреждениям"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "4",
+  "kosgudb": "832",
+  "kosgukr": "732",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.SchetafakturyPoluchennye"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    },
+    {
+      "type": {
+        "mnemo": "Razrabotka.DogovoryGoskontrakty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 2
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30241",
+    "title": {
+      "ru_RU": "30241"
+    },
+    "description": {}
+  }
+}

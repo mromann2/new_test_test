@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "50134",
+  "name": {
+    "ru_RU": "Переданные лимиты бюджетных обязательств"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "9",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50134",
+    "title": {
+      "ru_RU": "50134"
+    },
+    "description": {}
+  }
+}

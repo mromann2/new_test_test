@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(currentDocument) {\r\n    \r\n    //Единицы измерения\r\n    //creatRecords(catalogEdinicyIzmereniyaOKEI, MODULEMNEMO + \u0027.EdinicyIzmereniyaOKEI\u0027, MODULEMNEMO + \u0027.EdinicyIzmereniyaOKEI.PolnoeNaimenovanie\u0027);\r\n     \r\n    //Разделы и подразделы\r\n    //creatRecords(catalogRazdelyPodrazdely, MODULEMNEMO + \u0027.RazdelyPodrazdely\u0027, MODULEMNEMO + \u0027.RazdelyPodrazdely.Biudzhet\u0027, MODULEMNEMO + \u0027.RazdelyPodrazdely.NachaloDeiistviya\u0027);\r\n    \r\n    //Главы\r\n    //creatRecords(catalogGlavy, MODULEMNEMO + \u0027.Glavy\u0027, MODULEMNEMO + \u0027.Glavy.Biudzhet\u0027, MODULEMNEMO + \u0027.Glavy.NachaloDeiistviya\u0027);\r\n    \r\n    //Целевые статьи\r\n    //creatRecords(catalogCelevyeStati, MODULEMNEMO + \u0027.CelevyeStati\u0027, MODULEMNEMO + \u0027.CelevyeStati.Biudzhet\u0027, MODULEMNEMO + \u0027.CelevyeStati.NachaloDeiistviya\u0027);\r\n    \r\n    //КОСГУ\r\n    //creatRecords(catalogKOSGUEKR, MODULEMNEMO + \u0027.KOSGUEKR\u0027);\r\n    \r\n    // Журналы операций\r\n    //creatRecords(catalogZhurnaly, MODULEMNEMO + \u0027.Zhurnaly\u0027, MODULEMNEMO + \u0027.Zhurnaly.Prioritet\u0027);\r\n    \r\n    //Соответствие счетов\r\n    /*creatRecords(catalogSootvetstviyaSchetov, \r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov\u0027, \r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov.SchetAmortizacii\u0027, \r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov.SchetAvansa\u0027,\r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov.SchetVlozheniii\u0027, \r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov.SchetObesceneniya\u0027, \r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov.Schet17\u0027, \r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov.Schet18\u0027, \r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov.SchetZatrat\u0027, \r\n        MODULEMNEMO + \u0027.SootvetstviyaSchetov.SchetZabalansovyii\u0027);*/\r\n    \r\n    //Классификация бюджетов РФ (доходы, дефицит)\r\n    /*creatRecords(catalogKlassifikaciyaBiudzhetovRFdohodyDeficit, \r\n        MODULEMNEMO + \u0027.KlassifikaciyaBiudzhetovRFdohodyDeficit\u0027, \r\n        MODULEMNEMO + \u0027.KlassifikaciyaBiudzhetovRFdohodyDeficit.Biudzhet\u0027, \r\n        MODULEMNEMO + \u0027.KlassifikaciyaBiudzhetovRFdohodyDeficit.NachaloDeiistviya\u0027);*/\r\n    \r\n    //Операции\r\n    //createRecordsOperation(catalogOperacii, MODULEMNEMO + \u0027.Operacii\u0027, MODULEMNEMO + \u0027.Operacii.PolnoeNaimenovanie\u0027, MODULEMNEMO + \u0027.Operacii.Dokument\u0027, MODULEMNEMO + \u0027.Operacii.Debet\u0027, MODULEMNEMO + \u0027.Operacii.Kredit\u0027);\r\n    \r\n    return 1;\r\n    \r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.Testovyii.DlyaZapolneniyaKlassifikatorov",
+    "title": {
+      "ru_RU": "Для заполнения классификаторов",
+      "en_EN": "Dlya zapolneniya klassifikatorov"
+    },
+    "description": {}
+  }
+}

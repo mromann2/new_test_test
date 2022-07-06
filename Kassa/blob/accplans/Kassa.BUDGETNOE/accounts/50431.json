@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "50431",
+  "name": {
+    "ru_RU": "Сметные (плановые, прогнозные) назначения по доходам (поступлениям)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50431",
+    "title": {
+      "ru_RU": "50431"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,588 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 24,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.BankovskieRekvizityOrganizacii",
+        "title": {
+          "ru_RU": "Банковские реквизиты организации",
+          "en_EN": "Bankovskie rekvizity organizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityUchetnoiiOrganizacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.KBK",
+        "title": {
+          "ru_RU": "КБК",
+          "en_EN": "KBK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "20"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.OKTMO",
+        "title": {
+          "ru_RU": "ОКТМО",
+          "en_EN": "OKTMO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.OKTMO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.Zakazchik",
+        "title": {
+          "ru_RU": "Заказчик",
+          "en_EN": "Zakazchik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.BankovskieRekvizityKontragenta",
+        "title": {
+          "ru_RU": "Банковские реквизиты контрагента",
+          "en_EN": "Bankovskie rekvizity kontragenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityKontragenta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.Primechanie",
+        "title": {
+          "ru_RU": "Примечание",
+          "en_EN": "Primechanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.NaznacheniePlatezha",
+        "title": {
+          "ru_RU": "Назначение платежа",
+          "en_EN": "Naznachenie platezha"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.hr.KPSDlyaScheta30304",
+        "title": {
+          "ru_RU": "КПС для счета 30304",
+          "en_EN": "KPS dlya scheta 30304"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.Operaciya",
+        "title": {
+          "ru_RU": "Операция",
+          "en_EN": "Operaciya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Operacii"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.TMC",
+        "title": {
+          "ru_RU": "ТМЦ",
+          "en_EN": "TMC"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.MaterialnyeZapasy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.EdinicyIzmereniyaOKEI"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "18",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.CenaSNDS",
+        "title": {
+          "ru_RU": "Цена с НДС",
+          "en_EN": "Cena s NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.SummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.NDS",
+        "title": {
+          "ru_RU": "НДС%",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.SummaNDS",
+        "title": {
+          "ru_RU": "Сумма НДС",
+          "en_EN": "Summa NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.VsegoSNDS",
+        "title": {
+          "ru_RU": "Всего с НДС",
+          "en_EN": "Vsego s NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.SebestoimostbezNDS",
+        "title": {
+          "ru_RU": "Себестоимость (без НДС)",
+          "en_EN": "Sebestoimost bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.Debet",
+        "title": {
+          "ru_RU": "Дебет",
+          "en_EN": "Debet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.KPSKr",
+        "title": {
+          "ru_RU": "КПС кр",
+          "en_EN": "KPS kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.Kredit",
+        "title": {
+          "ru_RU": "Кредит",
+          "en_EN": "Kredit"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.KOSGUKr",
+        "title": {
+          "ru_RU": "КОСГУ кр",
+          "en_EN": "KOSGU kr"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.Tovaroproizvoditel",
+        "title": {
+          "ru_RU": "Товаропроизводитель",
+          "en_EN": "Tovaroproizvoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Strany"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.GTD",
+        "title": {
+          "ru_RU": "№ ГТД",
+          "en_EN": " GTD"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.tr.AkcizVTch",
+        "title": {
+          "ru_RU": "Акциз в т.ч.",
+          "en_EN": "Akciz v tch"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Акты выполненных работ (услуг)",
+    "sources": "function baseOn(base, targetMnemo){\r\n    let baseMnemo \u003d base.getMnemo();\r\n    let currentDocument \u003d EntityFactory.createDocument(targetMnemo);\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n\r\n    currentDocument.setParent(base);\r\n    currentDocument.setNumber(\u0027001\u0027);  \r\n    currentDocument.setOrganization(base.getOrganization()); \r\n\r\n    currentDocument.set(targetMnemo + \".hr.DokumentOsnovanie\", base);\r\n    \r\n    switch (baseMnemo) {\r\n        case MODULEMNEMO + \u0027.SchetafakturyVydannye\u0027:\r\n            /* Акты выполненных работ / Счета-фактуры выданные\r\n            Переносим\r\n            - сумма, свои реквизиты, заказчик + расч.счет и подразделение, \r\n            - в фактуру - счет дебет, КВФО,КПС \u003d \"Балансовый счет\" в дебет (покупатель в аналитику Контрагенты, СФ-основание в аналитику СФ), КВФО, КПС поля из фактуры,\r\n            КОСГУ дебет \u003d КОСГУ по умолчанию из плана по дебету; \r\n            КПС кредит\u003dКПС дебет, кредит \u003d 40110 (аналитика ЭКР\u003d131), КОСГУ кредит\u003d131 */\r\n            copyFieldValuesHr(base, currentDocument, [\u0027Summa\u0027, \u0027BankovskieRekvizityOrganizacii\u0027, [\u0027Zakazchik\u0027, \u0027Pokupatel\u0027], \r\n                                                      \u0027BankovskieRekvizityKontragenta\u0027, \u0027Podrazdelenie\u0027])\r\n            \r\n            let debitAccount \u003d base.get(baseMnemo + \u0027.hr.BalansovyiiSchet\u0027);\r\n            SetAnaliticInAccount(debitAccount, \u0027Kontragenty\u0027, base.get(baseMnemo + \u0027.hr.Pokupatel\u0027));\r\n            SetAnaliticInAccount(debitAccount, \u0027SchetafakturyVydannye\u0027, base);\r\n            let kfo \u003d base.get(baseMnemo + \u0027.hr.KVFO\u0027);\r\n            let kps \u003d base.get(baseMnemo + \u0027.hr.KPS\u0027);\r\n            let debitKOSGU \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.KOSGUEKR\u0027).findByCode(getKOSGUDebit(debitAccount))[0];\r\n            let creditKOSGU \u003d EntityFactory.getCatalogs().get(MODULEMNEMO + \u0027.KOSGUEKR\u0027).findByCode(\u0027131\u0027)[0];\r\n            let creditAccount \u003d getAccountByCode(\u002740110\u0027);\r\n            creditAccount.put(0, creditKOSGU);\r\n\r\n            for (let tableRec of base.getRows()){\r\n                let row \u003d  currentDocument.addTableRow();\r\n                \r\n                setFieldValuesTr(row, docMnemo, [\u0027KVFO\u0027, \u0027KPSDb\u0027, \u0027Debet\u0027, \u0027KOSGUDb\u0027, \u0027KPSKr\u0027, \u0027Kredit\u0027, \u0027KOSGUKr\u0027], \r\n                                                [kfo, kps, debitAccount, debitKOSGU, kps, creditAccount, creditKOSGU]);\r\n                \r\n                copyFieldValuesTr(tableRec, row, baseMnemo, docMnemo,\r\n                        [\u0027TMC\u0027,\u0027Kolichestvo\u0027,\u0027CenaSNDS\u0027,\u0027SummaBezNDS\u0027,\u0027NDS\u0027,\u0027SummaNDS\u0027,\u0027VsegoSNDS\u0027,\u0027SebestoimostbezNDS\u0027,\r\n                         \u0027Tovaroproizvoditel\u0027,\u0027GTD\u0027,\u0027AkcizVTch\u0027]);\r\n            }\r\n            break;\r\n            \r\n        case MODULEMNEMO + \u0027.SchetaNaOplatuVydannye\u0027:\r\n\r\n            //  - сумма, свои реквизиты, заказчик + расч.счет, подразделение (из шапки в шапку)\r\n            copyFieldValuesHr(base, currentDocument, [\u0027Summa\u0027, \u0027BankovskieRekvizityOrganizacii\u0027, [\u0027Zakazchik\u0027, \u0027Pokupatel\u0027], \r\n                                                      \u0027BankovskieRekvizityKontragenta\u0027, \u0027Podrazdelenie\u0027])\r\n\r\n            // - в фактуре Акта заполняем счет дебет, КВФО \u003d из шапки Счета на оплату выданного из бухсчета, КВФО\r\n            //  - поля из фактуры переносим в поля фактуры\r\n            for (let tableRec of base.getRows()){\r\n                let row \u003d  currentDocument.addTableRow();\r\n                \r\n                copyFieldValuesTr(tableRec, row, baseMnemo, docMnemo, [\u0027TMC\u0027,\u0027Kolichestvo\u0027,\u0027CenaSNDS\u0027,\u0027SummaBezNDS\u0027,\u0027NDS\u0027,\u0027SummaNDS\u0027,\u0027VsegoSNDS\u0027,\r\n                                                                       [\u0027SebestoimostbezNDS\u0027,\u0027Sebestoimost\u0027],\u0027Tovaroproizvoditel\u0027,\u0027GTD\u0027,[\u0027AkcizVTch\u0027,\u0027AkcizVTCH\u0027]]);\r\n                setFieldValuesTr(row, docMnemo, [\u0027Debet\u0027, \u0027KVFO\u0027], getFieldValuesHr(base, [\u0027BalansovyiiSchet\u0027,\u0027KVFO\u0027]));\r\n            }\r\n            break;\r\n    \r\n            \r\n            \r\n    }\r\n    currentDocument.save()\r\n    return currentDocument;\r\n}\r\n\r\nfunction postActivate(currentDocument) {\r\n\r\n    let postingCollection \u003d currentDocument.getPostings();\r\n    if (postingCollection){\r\n        for (let postingRec of postingCollection){\r\n            createRegisterRecord(postingRec, currentDocument, true);\r\n            createRegisterRecord(postingRec, currentDocument, false);\r\n        }\r\n    }\r\n    \r\n    //Создание записи регистра\r\n    function createRegisterRecord(postingRec, currentDocument, isDebit) {\r\n\r\n        let regMnemo \u003d \u0027Razrabotka.RegistrOtchet\u0027;\r\n        let sumMnemo \u003d isDebit ? \u0027.rs.DebetSumma\u0027 : \u0027.rs.KreditSumma\u0027;\r\n        let kolvoMnemo \u003d isDebit ? \u0027.rs.DebetKolichestvo\u0027 : \u0027.rs.KreditKolichestvo\u0027;\r\n        let schet \u003d isDebit ? postingRec.getDebit() : postingRec.getCredit();\r\n        let kps \u003d isDebit ? postingRec.getDebitProperty(KPS) : postingRec.getCreditProperty(KPS);\r\n        let kosgu \u003d isDebit ? postingRec.getDebitProperty(KOSGU) : postingRec.getCreditProperty(KOSGU);\r\n\r\n        let myReg \u003d Register.get(\"Razrabotka.RegistrOtchet\");\r\n        let record \u003d myReg.create();\r\n        record.setDate(currentDocument.getDate());\r\n//        record.setDate(new Date(postingRec.getProperty(ACCOUNTINGDATE)));\r\n        record.setDocument(currentDocument);\r\n        record.set(regMnemo + sumMnemo, postingRec.getValue());\r\n//        record.set(regMnemo + kolvoMnemo, postingRec.getProperty(KOLVO));\r\n////        record.setDimension(regMnemo + \u0027.dm.Schet\u0027, schet.getCode());\r\n        record.setDimension(regMnemo + \u0027.dm.Schet\u0027, schet);\r\n//        record.setRequisite(regMnemo + \u0027.rg.KPS\u0027, kps);\r\n//        record.setRequisite(regMnemo + \u0027.rg.KOSGU\u0027, kosgu);\r\n//        record.setRequisite(regMnemo + \u0027.rg.KFO\u0027, EntityFactory.getEnumeration(MODULEMNEMO + \u0027.KFO\u0027).get(1*postingRec.getProperty(KFO) - 1));\r\n////        record.setRequisite(regMnemo + \u0027.rg.KFO\u0027, postingRec.getProperty(KFO));\r\n//        record.setRequisite(regMnemo + \u0027.rg.Journal\u0027, postingRec.getProperty(JOURNAL));\r\n//        record.setRequisite(regMnemo + \u0027.rg.DopJournal\u0027, postingRec.getProperty(DOPJOURNAL));\r\n//        record.setRequisite(regMnemo + \u0027.rg.RasshifrovkaOperacii\u0027, postingRec.getProperty(RASOPER));\r\n//        record.setRequisite(regMnemo + \u0027.rg.Cena\u0027, postingRec.getProperty(CENA));\r\n//        record.setRequisite(regMnemo + \u0027.rg.Kommentariii\u0027, postingRec.getComment());\r\n//        record.setRequisite(regMnemo + \u0027.rg.Vneperiod\u0027, postingRec.getProperty(VNEPERIOD));\r\n        record.create();\r\n    }\r\n}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug.UchetAktovVypolnennyhRabotuslug"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.AktyVypolnennyhRabotuslug",
+    "title": {
+      "ru_RU": "Акты выполненных работ (услуг)",
+      "en_EN": "Akty vypolnennyh rabot uslug"
+    },
+    "description": {}
+  }
+}

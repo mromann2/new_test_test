@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "ПОФ00",
+  "name": {
+    "ru_RU": "Предельные объемы финансирования"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "00",
+    "title": {
+      "ru_RU": "ПОФ00"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "1 - заключение договора",
+    "2 - отказ от заключения договора"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.RezultatyZaversheniyaKonkursnyhProcedur",
+    "title": {
+      "ru_RU": "Результаты завершения конкурсных процедур",
+      "en_EN": "Rezultaty zaversheniya konkursnyh procedur"
+    },
+    "description": {}
+  }
+}
