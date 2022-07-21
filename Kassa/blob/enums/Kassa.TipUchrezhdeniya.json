@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.plan"
+  },
+  "enum": [
+    "Kassa.BUDGETNOE",
+    "Kassa.AVTONOMNOE",
+    "Kassa.KAZENNOE"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Kassa.TipUchrezhdeniya",
+    "title": {
+      "ru_RU": "Тип учреждения",
+      "en_EN": "Tip uchrezhdeniya"
+    },
+    "description": {}
+  }
+}

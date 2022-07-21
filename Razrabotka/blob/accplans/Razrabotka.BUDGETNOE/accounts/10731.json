@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "10731",
+  "name": {
+    "ru_RU": "Картотека ОС - иное движимое имущество учреждения в пути"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "AverageWeighted",
+  "journalnumber": "7",
+  "kosgudb": "310",
+  "kosgukr": "410",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10731",
+    "title": {
+      "ru_RU": "10731"
+    },
+    "description": {}
+  }
+}

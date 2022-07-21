@@ -1,0 +1,11 @@
+{
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KassovoeVybytie",
+    "title": {
+      "ru_RU": "Кассовое выбытие",
+      "en_EN": "Kassovoe vybytie"
+    },
+    "description": {}
+  }
+}

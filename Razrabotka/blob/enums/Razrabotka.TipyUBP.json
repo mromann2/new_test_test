@@ -1,0 +1,23 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "АД",
+    "ПБС",
+    "РБС",
+    "ГлАД",
+    "ГРБС",
+    "ОФК",
+    "НУБП"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.TipyUBP",
+    "title": {
+      "ru_RU": "Типы УБП",
+      "en_EN": "Tipy UBP"
+    },
+    "description": {}
+  }
+}

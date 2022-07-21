@@ -1,0 +1,586 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 24,
+  "titlelength": 300,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Text",
+  "mainview": "KodTitle",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.Data",
+        "title": {
+          "ru_RU": "Дата",
+          "en_EN": "Data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.Tip",
+        "title": {
+          "ru_RU": "Тип",
+          "en_EN": "Tip"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.TipyUchastnikaDogovoraGosKontrakta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.DogovorN",
+        "title": {
+          "ru_RU": "Договор №",
+          "en_EN": "Dogovor N"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.DataZakliucheniyaDogovora",
+        "title": {
+          "ru_RU": "Дата заключения договора",
+          "en_EN": "Data zakliucheniya dogovora"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.SrokDeiistviyaS",
+        "title": {
+          "ru_RU": "Срок действия с",
+          "en_EN": "Srok deiistviya s"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.SrokDeiistviyaPo",
+        "title": {
+          "ru_RU": "Срок действия по",
+          "en_EN": "Srok deiistviya po"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.Podpisan",
+        "title": {
+          "ru_RU": "Подписан",
+          "en_EN": "Podpisan"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.RsUchetnoiiOrganizacii",
+        "title": {
+          "ru_RU": "Р/с учетной организации",
+          "en_EN": "Rs uchetnoii organizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityUchetnoiiOrganizacii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.KodKontragenta",
+        "title": {
+          "ru_RU": "Код контрагента",
+          "en_EN": "Kod kontragenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.RsKontragenta",
+        "title": {
+          "ru_RU": "Р/с контрагента",
+          "en_EN": "Rs kontragenta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.BankovskieRekvizityKontragenta"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.SummaAvansa",
+        "title": {
+          "ru_RU": "Сумма аванса",
+          "en_EN": "Summa avansa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.AvansovyiiPlatezhprocent",
+        "title": {
+          "ru_RU": "Авансовый платеж (процент)",
+          "en_EN": "Avansovyii platezh procent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.EKR",
+        "title": {
+          "ru_RU": "ЭКР",
+          "en_EN": "EKR"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.KOSGUEKR"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.Konkurs",
+        "title": {
+          "ru_RU": "Конкурс",
+          "en_EN": "Konkurs"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Razrabotka.CelevyeProgrammy"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.UsloviyaPredostavleniyaSchetov",
+        "title": {
+          "ru_RU": "Условия предоставления счетов",
+          "en_EN": "Usloviya predostavleniya schetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.UsloviyaOplatyPostavki",
+        "title": {
+          "ru_RU": "Условия оплаты поставки",
+          "en_EN": "Usloviya oplaty postavki"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.SrokOplatydneii",
+        "title": {
+          "ru_RU": "Срок оплаты (дней)",
+          "en_EN": "Srok oplaty dneii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.SrokOplatydata",
+        "title": {
+          "ru_RU": "Срок оплаты (дата)",
+          "en_EN": "Srok oplaty data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.SrokVypolneniyadneii",
+        "title": {
+          "ru_RU": "Срок выполнения (дней)",
+          "en_EN": "Srok vypolneniya dneii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.IdentifikatorGoskontrakta",
+        "title": {
+          "ru_RU": "Идентификатор госконтракта",
+          "en_EN": "Identifikator goskontrakta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.SummaKaznacheiiskogoObespecheniya",
+        "title": {
+          "ru_RU": "Сумма казначейского обеспечения",
+          "en_EN": "Summa kaznacheiiskogo obespecheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.TemaDogovorapredmetDogovora",
+        "title": {
+          "ru_RU": "Тема договора (предмет договора)",
+          "en_EN": "Tema dogovora predmet dogovora"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.NormativnopravovoiiAkt",
+        "title": {
+          "ru_RU": "Нормативно-правовой акт",
+          "en_EN": "Normativnopravovoii akt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestAndreii.DogovoryGoskontrakty.OtvetstvennyiiOtdel",
+        "title": {
+          "ru_RU": "Ответственный отдел",
+          "en_EN": "Otvetstvennyii otdel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "300"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Договоры, гос.контракты",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestAndreii.DogovoryGoskontrakty",
+    "title": {
+      "ru_RU": "Договоры, гос.контракты",
+      "en_EN": "Dogovory goskontrakty"
+    },
+    "description": {}
+  }
+}

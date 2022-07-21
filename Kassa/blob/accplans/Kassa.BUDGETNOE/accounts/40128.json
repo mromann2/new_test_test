@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "40128",
+  "name": {
+    "ru_RU": "Расходы финансового года, предшествующего отчетному, выявленные в отчетном году"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "40128",
+    "title": {
+      "ru_RU": "40128"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 250,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.KIF.GruppaPodgruppa",
+        "title": {
+          "ru_RU": "Группа, подгруппа",
+          "en_EN": "Gruppa podgruppa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.GruppyPodgruppyKIF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.KIF.Statya",
+        "title": {
+          "ru_RU": "Статья",
+          "en_EN": "Statya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StatiKIF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.KIF.Vid",
+        "title": {
+          "ru_RU": "Вид",
+          "en_EN": "Vid"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VidyKIF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.KIF.AnaliticheskayaGruppaKIF",
+        "title": {
+          "ru_RU": "Аналитическая группа КИФ",
+          "en_EN": "Analiticheskaya gruppa KIF"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.AnaliticheskieGruppyKIF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.KIF.NachaloDeiistviya",
+        "title": {
+          "ru_RU": "Начало действия",
+          "en_EN": "Nachalo deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.KIF.KonecDeiistviya",
+        "title": {
+          "ru_RU": "Конец действия",
+          "en_EN": "Konec deiistviya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KIF",
+    "title": {
+      "ru_RU": "КИФ",
+      "en_EN": "KIF"
+    },
+    "description": {}
+  }
+}

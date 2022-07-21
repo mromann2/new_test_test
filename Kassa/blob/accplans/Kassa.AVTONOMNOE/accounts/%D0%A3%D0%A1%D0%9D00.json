@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "УСН00",
+  "name": {
+    "ru_RU": "Вспомогательные счета (УСН)"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "00",
+    "title": {
+      "ru_RU": "УСН00"
+    },
+    "description": {}
+  }
+}

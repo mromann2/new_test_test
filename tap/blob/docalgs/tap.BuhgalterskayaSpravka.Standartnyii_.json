@@ -1,0 +1,152 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n     if (!notValid(currentDocument)) {\r\n         for (let tableRec of currentDocument.getRows()){\r\n            //создание и заполнение проводки\r\n            let posting \u003d EntityFactory.createPosting();\r\n            posting.setComment(tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.NaimenovanieIOpisanieOperacii\u0027));\r\n            posting.setValue(tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.Summa\u0027));\r\n            posting.setDebit(tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.NomerSchetaPoDebitu\u0027));\r\n            posting.setCredit(tableRec.get(\u0027tap.BuhgalterskayaSpravka.tr.NomerSchetaPoKreditu\u0027));\r\n            currentDocument.addPosting(posting);\r\n        };\r\n        //устанавливаем текущую дату проводки\r\n        currentDocument.setExecuted();\r\n\r\n        //сохранение документа с проводками\r\n        currentDocument.save();\r\n       \r\n        return;  \r\n    } else \r\n        return notValid(currentDocument);\r\n}\r\n\r\n//Снятие документа с проведения\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.unPostingAndSave();\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) { \r\n    let resultValidate \u003d currentDocument.validate();\r\n \r\n    if (!currentDocument.getRows().size()){\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    }\r\n\r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n        return  resultValidate;\r\n}"
+  },
+  "template": {
+    "plan": {
+      "mnemo": "tap.BUDGETNOE"
+    },
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": [
+      {
+        "row": [
+          {
+            "celltype": "ROW_SOURCE",
+            "type": {
+              "mnemo": "primitive.text"
+            },
+            "value": "Faktura",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "DEBIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "tap.BuhgalterskayaSpravka.tr.NomerSchetaPoDebitu"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CREDIT_ACCOUNT",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "tap.BuhgalterskayaSpravka.tr.NomerSchetaPoKreditu"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "CURRENCY_SUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "EXCHANGE_RATE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "COUNT",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SUM",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "tap.BuhgalterskayaSpravka.tr.Summa"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "POSTING_DESCRIPTION",
+            "formulaEnabled": "true",
+            "requisite": {
+              "mnemo": "tap.BuhgalterskayaSpravka.tr.NaimenovanieIOpisanieOperacii"
+            },
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "SOURCE",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          },
+          {
+            "celltype": "JOURNAL_NUM",
+            "formulaEnabled": "true",
+            "sourceMnemo": "",
+            "prompt": {},
+            "index": 0
+          }
+        ],
+        "rownum": 0,
+        "condition": "",
+        "conditionEnabled": true
+      }
+    ]
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskayaSpravka.Standartnyii_",
+    "title": {
+      "ru_RU": "Стандартный(Бюджет)",
+      "en_EN": "Standartnyii"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "10600",
+  "name": {
+    "ru_RU": "Вложения в нефинансовые активы"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10600",
+    "title": {
+      "ru_RU": "10600"
+    },
+    "description": {}
+  }
+}

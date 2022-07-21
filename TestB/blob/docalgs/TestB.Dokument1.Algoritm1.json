@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "//Проведение документа\r\nfunction activate(currentDocument) {\r\n     if (!notValid(currentDocument)) {\r\n//         return currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaPerechislenie\u0027)\r\n         for (let tableRec of currentDocument.getRows()){\r\n            //создание и заполнение проводки\r\n            let posting \u003d EntityFactory.createPosting();\r\n            posting.setValue(tableRec.get(\u0027TestB.Dokument1.tr.FakturaTekst\u0027));\r\n            return posting.getValue() + 10;\r\n//            posting.setComment(posting.getValue().toString());\r\n//            currentDocument.set(\u0027TestB.Dokument1.hr.CHislo\u0027, posting.getValue());\r\n//            let tmp \u003d posting.getValue() + currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSumma\u0027);\r\n//            return typeof posting.getValue() + \u0027 \u0027 + typeof currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSumma\u0027);\r\n//            return  posting.getValue() + \u0027 \u0027 +  currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSumma\u0027);\r\n//            return (+currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSumma\u0027)+ +currentDocument.get(\u0027TestB.Dokument1.hr.CHislo\u0027)) + \u0027 \u0027+typeof currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSumma\u0027);\r\n//            return posting.getValue()+ 2;\r\n//            return typeof posting.getValue();\r\n//            currentDocument.set(\u0027TestB.Dokument1.hr.CHislo\u0027, tmp);\r\n//            return typeof currentDocument.get(\u0027TestB.Dokument1.hr.CHislo\u0027);\r\n//            posting.setComment(posting.getValue().toString());\r\n//            return typeof posting.getValue() + \u0027 \u0027+posting.getValue();\r\n\r\n//            posting.setComment(tableRec.get(\u0027TestB.Dokument1.tr.FakturaTekst\u0027));\r\n//            posting.setValue(tableRec.get(\u0027TestB.Dokument1.tr.FakturaSumma\u0027));\r\n            posting.setDebit(tableRec.get(\u0027TestB.Dokument1.tr.FakturaDT\u0027));\r\n            posting.setCredit(tableRec.get(\u0027TestB.Dokument1.tr.FakturaKT\u0027));\r\n\r\n\r\n//posting.setProperty(\u0027testPropDoc1\u0027, \u0027текст 222\u0027);\r\n//posting.setProperty(\u0027testPropDoc1\u0027, currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaTekst\u0027));\r\n//posting.setProperty(\u0027testPropDoc1\u0027, currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaPerechislenie\u0027));\r\n//posting.setProperty(\u0027testPropDoc1\u0027, currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSpravochnik\u0027).getCode());\r\n//posting.setProperty(\u0027testPropDoc2\u0027, currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSpravochnik\u0027).getTitle());\r\n//posting.setProperty(\u0027testPropDoc1\u0027, currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSumma\u0027).toString());\r\n//posting.setProperty(\u0027testPropDoc1\u0027, currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaCeloeCHislo\u0027).toString());\r\n//posting.setProperty(\u0027testPropDoc1\u0027, currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaData\u0027).toString());\r\n//posting.setProperty(\u0027testPropDoc1\u0027, currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaCHekboks\u0027).toString());\r\n\r\n//posting.setDebitProperty(\u0027kfo\u0027, \u0027текст 111\u0027);\r\n//posting.setDebitProperty(\u0027kfo\u0027, tableRec.get(\u0027TestB.Dokument1.tr.FakturaTekst\u0027));\r\n//posting.setDebitProperty(\u0027kfo\u0027, tableRec.get(\u0027TestB.Dokument1.tr.FakturaPerechislenie\u0027));\r\n//posting.setDebitProperty(\u0027kfo\u0027, tableRec.get(\u0027TestB.Dokument1.tr.FakturaSpravochnik\u0027).getCode());\r\n//posting.setCreditProperty(\u0027kps\u0027, tableRec.get(\u0027TestB.Dokument1.tr.FakturaSpravochnik\u0027).getTitle());\r\n//posting.setDebitProperty(\u0027kps1\u0027, posting.getDebitProperty(\u0027kfo\u0027));\r\n//posting.setCreditProperty(\u0027kfo1\u0027, posting.getCreditProperty(\u0027kps\u0027));\r\n//posting.setDebitProperty(\u0027kfo\u0027, tableRec.get(\u0027TestB.Dokument1.tr.FakturaSumma\u0027).toString());\r\n//posting.setDebitProperty(\u0027kfo\u0027, tableRec.get(\u0027TestB.Dokument1.tr.FakturaCeloeCHislo\u0027).toString());\r\n//posting.setDebitProperty(\u0027kfo\u0027, tableRec.get(\u0027TestB.Dokument1.tr.FakturaData\u0027).toString());\r\n//posting.setDebitProperty(\u0027kfo\u0027, tableRec.get(\u0027TestB.Dokument1.tr.FakturaCHekboks\u0027).toString());\r\n\r\n\r\n            currentDocument.addPosting(posting);\r\n        };\r\n        //устанавливаем текущую дату проводки\r\n        currentDocument.setExecuted();\r\ncurrentDocument.setOperationSum(currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaTekst\u0027));\r\n//currentDocument.setOperationSum(currentDocument.get(\u0027TestB.Dokument1.hr.SHapkaSumma\u0027));\r\n        //сохранение документа с проводками\r\n        currentDocument.save();\r\n        return;  \r\n    } else \r\n        return notValid(currentDocument);\r\n}\r\n\r\n//Снятие документа с проведения\r\nfunction deactivate(currentDocument) {\r\n    currentDocument.unPostingAndSave();\r\n}\r\n\r\n//Проверка документа на полное заполнение\r\nfunction notValid(currentDocument) { \r\n    let resultValidate \u003d currentDocument.validate();\r\n \r\n    if (!currentDocument.getRows().size()){\r\n        resultValidate.addValueError(\u0027Не заполнена табличная часть документа.\u0027);\r\n    }\r\n\r\n    if (resultValidate.hasErrors() || resultValidate.hasValueErrors() ) \r\n        return  resultValidate;\r\n}\r\n\r\n"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.Dokument1.Algoritm1",
+    "title": {
+      "ru_RU": "Алгоритм 1",
+      "en_EN": "Algoritm 1"
+    },
+    "description": {}
+  }
+}

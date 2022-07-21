@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(cc){\r\n//\r\n    let myReg \u003d Register.get(\"tap.Testovyii2\");\r\n    let d1 \u003d EntityFactory.getDocuments().get(\"tap.BuhgalterskayaSpravka\").get(0);\r\n    let acc \u003d cc.get(\u0027tap.BuhgalterskayaSpravka.hr.Spravochnik2\u0027)\r\n    let acc2 \u003d cc.get(\u0027tap.BuhgalterskayaSpravka.hr.Schet2\u0027)\r\n    let acc3 \u003d cc.get(\u0027tap.BuhgalterskayaSpravka.hr.Schet3\u0027)\r\n    let acc4 \u003d cc.get(\u0027tap.BuhgalterskayaSpravka.hr.Schet4\u0027)\r\n    \r\n\r\n    myReg.create({\r\n//        Date: new Date(),\r\n//        Document: d1,\r\n        Dimensions: {\"tap.Testovyii2.dm.1\": acc},\r\n        Resources: {\"tap.Testovyii2.rs.2\": 111},\r\n        Requisites: {\"tap.Testovyii2.rg.3\": \u00271\u0027}\r\n    });\r\n\r\nreturn 1\r\n} "
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.BuhgalterskayaSpravka.MyRegcreate",
+    "title": {
+      "ru_RU": "myReg.create",
+      "en_EN": "myRegcreate"
+    },
+    "description": {}
+  }
+}

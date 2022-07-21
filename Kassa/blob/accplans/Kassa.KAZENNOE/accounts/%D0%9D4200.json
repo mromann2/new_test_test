@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "Н4200",
+  "name": {
+    "ru_RU": "Наценка на товары"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "4200",
+    "title": {
+      "ru_RU": "Н4200"
+    },
+    "description": {}
+  }
+}

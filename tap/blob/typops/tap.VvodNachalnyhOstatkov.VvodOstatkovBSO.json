@@ -1,0 +1,152 @@
+{
+  "group": {
+    "mnemo": "tap.VvodNachalnyhOstatkov"
+  },
+  "plan": {
+    "mnemo": "tap.BUDGETNOE"
+  },
+  "date": {
+    "celltype": "OPERATION_DATE",
+    "formula": "currentDocument.getDate()",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "number": {
+    "celltype": "OPERATION_NUMBER",
+    "type": {
+      "mnemo": "primitive.internationalstring"
+    },
+    "value": "{\"ru_RU\":\"1\"}",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "summ": {
+    "celltype": "OPERATION_SUM",
+    "formula": " currentDocument.getDocumentSumma()",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "operation_description": {
+    "celltype": "OPERATION_DESCRIPTION",
+    "type": {
+      "mnemo": "primitive.internationalstring"
+    },
+    "value": "{\"ru_RU\":\"Ввод начальных остатков БСО\"}",
+    "formulaEnabled": "true",
+    "sourceMnemo": "",
+    "prompt": {},
+    "index": 0
+  },
+  "operations": [
+    {
+      "row": [
+        {
+          "celltype": "ROW_SOURCE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "DEBIT_ACCOUNT",
+          "formula": " сurrentDocument.get(\"Account\")",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CREDIT_ACCOUNT",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "CURRENCY_SUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "EXCHANGE_RATE",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "COUNT",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "SUM",
+          "formula": "currentDocument.getCurrentRow().get(\"Kolichestvo\")",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "POSTING_DESCRIPTION",
+          "type": {
+            "mnemo": "primitive.internationalstring"
+          },
+          "value": "{\"ru_RU\":\"Поступление БСО\"}",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "SOURCE",
+          "formula": "currentDocument.getTitle()",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        },
+        {
+          "celltype": "JOURNAL_NUM",
+          "formulaEnabled": "true",
+          "sourceMnemo": "",
+          "prompt": {},
+          "index": 0
+        }
+      ],
+      "rownum": 0,
+      "condition": "",
+      "conditionEnabled": true
+    }
+  ],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VvodNachalnyhOstatkov.VvodOstatkovBSO",
+    "title": {
+      "ru_RU": "Ввод начальных остатков БСО",
+      "en_EN": "Vvod nachalnyh ostatkov BSO"
+    },
+    "description": {}
+  }
+}

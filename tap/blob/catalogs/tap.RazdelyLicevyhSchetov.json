@@ -1,0 +1,90 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": false,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 100,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RazdelyLicevyhSchetov.IstochnikSredstv",
+        "title": {
+          "ru_RU": "Источник средств",
+          "en_EN": "Istochnik sredstv"
+        },
+        "description": {
+          "ru_RU": "Вид средств, подлежащих казначейскому сопровождению"
+        }
+      },
+      "type": {
+        "mnemo": "tap.IstochnikividySredstvDlyaIspolneniyaObyazatelstv"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.RazdelyLicevyhSchetov.DopustimyeKFO",
+        "title": {
+          "ru_RU": "Допустимые КФО",
+          "en_EN": "Dopustimye KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "script",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.RazdelyLicevyhSchetov",
+    "title": {
+      "ru_RU": "Разделы лицевых счетов"
+    },
+    "description": {
+      "ru_RU": "Справочник Разделы лицевых счетов"
+    }
+  }
+}

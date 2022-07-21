@@ -1,0 +1,728 @@
+{
+  "periodictype": "WithInYear",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 8,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": true,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {
+          "ru_RU": "Покупатель"
+        }
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.Dogovor",
+        "title": {
+          "ru_RU": "Договор",
+          "en_EN": "Dogovor"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.PrichinaNalogooblozheniya",
+        "title": {
+          "ru_RU": "Причина налогообложения",
+          "en_EN": "Prichina nalogooblozheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.PrichinyNalogooblozheniya"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.IdentifikatorGoskontrakta",
+        "title": {
+          "ru_RU": "Идентификатор госконтракта",
+          "en_EN": "Identifikator goskontrakta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "25"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.ItogoSummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Itogo Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.ItogoNDS",
+        "title": {
+          "ru_RU": "НДС",
+          "en_EN": "Itogo NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.ItogoVsego",
+        "title": {
+          "ru_RU": "Всего",
+          "en_EN": "Itogo Vsego"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.DokumentOsnovanie",
+        "title": {
+          "ru_RU": "Документы основания",
+          "en_EN": "Dokument osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.PlatezhnyeDokumenty",
+        "title": {
+          "ru_RU": "Платежные документы",
+          "en_EN": "Platezhnye dokumenty"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.Gruzootpravitel",
+        "title": {
+          "ru_RU": "Грузоотправитель",
+          "en_EN": "Gruzootpravitel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.Gruzopoluchatel",
+        "title": {
+          "ru_RU": "Грузополучатель",
+          "en_EN": "Gruzopoluchatel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.KodVidaOperacii",
+        "title": {
+          "ru_RU": "Код вида операции",
+          "en_EN": "Kod vida operacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KodyVidovOperaciiiDlyaSfv"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.VidCennosti",
+        "title": {
+          "ru_RU": "Вид ценности",
+          "en_EN": "Vid cennosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.SchetNaOplatu",
+        "title": {
+          "ru_RU": "Счет на оплату",
+          "en_EN": "Schet na oplatu"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.Realizaciya0",
+        "title": {
+          "ru_RU": "Реализация 0%",
+          "en_EN": "Realizaciya0"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.MestoRegistracii",
+        "title": {
+          "ru_RU": "Место регистрации",
+          "en_EN": "Mesto registracii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.MestoRegistraciiSF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.DataRegistracii",
+        "title": {
+          "ru_RU": "Дата регистрации",
+          "en_EN": "Data registracii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.SchetfakturaVystavlen",
+        "title": {
+          "ru_RU": "Счет-фактура выставлен",
+          "en_EN": "Schetfaktura vystavlen"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.DataVystavleniya",
+        "title": {
+          "ru_RU": "Дата выставления",
+          "en_EN": "Data vystavleniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.SposobVystavleniya",
+        "title": {
+          "ru_RU": "Способ выставления",
+          "en_EN": "Sposob vystavleniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.SposobyVystavleniyaSF"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.Rukovoditel",
+        "title": {
+          "ru_RU": "Руководитель",
+          "en_EN": "Rukovoditel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.GlavnyiiBuhgalter",
+        "title": {
+          "ru_RU": "Главный бухгалтер",
+          "en_EN": "Glavnyii buhgalter"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.hr.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.TovarRabotaUsluga",
+        "title": {
+          "ru_RU": "Товар, работа, услуга",
+          "en_EN": "Tovar, rabota, usluga"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.EdinicaIzmereniya",
+        "title": {
+          "ru_RU": "Единица измерения",
+          "en_EN": "Edinica izmereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.EdinicyIzmereniii"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "3",
+        "length": "12",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.CenaBezNDS",
+        "title": {
+          "ru_RU": "Цена без НДС",
+          "en_EN": "Cena bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "13",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.SummaBezNDS",
+        "title": {
+          "ru_RU": "Сумма без НДС",
+          "en_EN": "Summa bez NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "13",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.Stavka",
+        "title": {
+          "ru_RU": "Ставка",
+          "en_EN": "Stavka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.StavkiNDS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.NDS",
+        "title": {
+          "ru_RU": "НДС",
+          "en_EN": "NDS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "13",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "istotal": true,
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.Vsego",
+        "title": {
+          "ru_RU": "Всего",
+          "en_EN": "Vsego"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "13",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.KPSDb",
+        "title": {
+          "ru_RU": "КПС дб",
+          "en_EN": "KPS db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.SchetDt",
+        "title": {
+          "ru_RU": "Счет дб",
+          "en_EN": "Schet Dt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.KOSGUDb",
+        "title": {
+          "ru_RU": "КОСГУ дб",
+          "en_EN": "KOSGU db"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.SchetKt",
+        "title": {
+          "ru_RU": "Счет Кт",
+          "en_EN": "Schet Kt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.KPS334",
+        "title": {
+          "ru_RU": "КПС 303.04",
+          "en_EN": "KPS 334"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.Schet30304",
+        "title": {
+          "ru_RU": "Счет 303.04",
+          "en_EN": "Schet 303.04"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.KOSGU334",
+        "title": {
+          "ru_RU": "КОСГУ 303.04",
+          "en_EN": "KOSGU 334"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.SchetFaktura.tr.SchetRaschetov",
+        "title": {
+          "ru_RU": "Счет расчетов",
+          "en_EN": "Schet raschetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "250"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [
+      {
+        "mnemo": "tap.KorrektirovochnyiiSchetfakturaVydannyii"
+      }
+    ],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Счета-фактуры выданные",
+    "sources": "//function postDelete(currentDocument){\r\n//    //let doc \u003d EntityFactory.getDocuments().get(\"tap.SchetFaktura\").findByNumber(\"123\")[0];\r\n//    let array \u003d []\r\n//    let childrens \u003d currentDocument.getChildren()\r\n//    for(let child of childrens){\r\n//        array.push(child.getNumber())\r\n//\r\n//    }\r\n//    console.log(\u0027из postDelete: \u0027, array)\r\n////    let children1 \u003d  childrens[0]\r\n////    for (let ch of childrens){\r\n////        if (ch.getNumber()\u003d\u003d\u003d \u0027002\u0027){\r\n////            return ch.get(\u0027tap.KorrektirovochnyiiSchetfakturaVydannyii.hr.INNProdavca\u0027)\r\n////        }\r\n////\r\n////    //return children11\r\n////    }\r\n//}\r\n\r\nfunction preSave(currentDocument){\r\n    let array \u003d []\r\n    let childrens \u003d currentDocument.getChildren()\r\n    for(let child of childrens){\r\n        array.push(child.getNumber())\r\n    }\r\n    console.log(\u0027из preSave: \u0027, array)\r\n}\r\nfunction postSave(currentDocument){\r\n    let array \u003d []\r\n    let childrens \u003d currentDocument.getChildren()\r\n    for(let child of childrens){\r\n        array.push(child.getNumber())\r\n    }\r\n    console.log(\u0027из postSave: \u0027, array)\r\n}\r\nfunction preDelete(currentDocument){\r\n    let array \u003d []\r\n    let childrens \u003d currentDocument.getChildren()\r\n    for(let child of childrens){\r\n        array.push(child.getNumber())\r\n    }\r\n    console.log(\u0027из preDelete: \u0027, array)\r\n}\r\nfunction postDelete(currentDocument){\r\n    let array \u003d []\r\n    let childrens \u003d currentDocument.getChildren()\r\n    for(let child of childrens){\r\n        array.push(child.getNumber())\r\n    }\r\n    console.log(\u0027из postDelete: \u0027, array)\r\n}\r\nfunction preActivate(currentDocument){\r\n    let array \u003d []\r\n    let childrens \u003d currentDocument.getChildren()\r\n    for(let child of childrens){\r\n        array.push(child.getNumber())\r\n    }\r\n    console.log(\u0027из preActivate: \u0027, array)\r\n}\r\nfunction postActivate(currentDocument){\r\n    let array \u003d []\r\n    let childrens \u003d currentDocument.getChildren()\r\n    for(let child of childrens){\r\n        array.push(child.getNumber())\r\n    }\r\n    console.log(\u0027из postActivate: \u0027, array)\r\n}\r\nfunction preDeactivate(currentDocument){\r\n    let array \u003d []\r\n    let childrens \u003d currentDocument.getChildren()\r\n    for(let child of childrens){\r\n        array.push(child.getNumber())\r\n    }\r\n    console.log(\u0027из preDeactivate: \u0027, array)\r\n}\r\nfunction postDeactivate(currentDocument){\r\n    let array \u003d []\r\n    let childrens \u003d currentDocument.getChildren()\r\n    for(let child of childrens){\r\n        array.push(child.getNumber())\r\n    }\r\n    console.log(\u0027из postDeactivate: \u0027, array)\r\n}\r\n"
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.SchetFaktura.Standartnyii"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SchetFaktura",
+    "title": {
+      "ru_RU": "Счета-фактуры выданные",
+      "en_EN": "SchetFakturaVydan"
+    },
+    "description": {
+      "ru_RU": "Документ Счет - фактура выданный"
+    }
+  }
+}

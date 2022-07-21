@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Основание платежа",
+    "Документ-основание"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.TipyOsnovaniyaZayavki",
+    "title": {
+      "ru_RU": "Типы основания заявки",
+      "en_EN": "Tipy osnovaniya zayavki"
+    },
+    "description": {}
+  }
+}

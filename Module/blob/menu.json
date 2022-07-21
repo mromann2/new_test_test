@@ -1,0 +1,14 @@
+[
+  {
+    "menuitem": "{\"title\":{\"ru_RU\":\"Документы\",\"en_EN\":\"Dokumenty\"},\"icon\":\"\",\"grants\":{},\"id\":\"a3d06e03-6946-4470-82d5-4499f4bdf118\",\"childrenid\":[\"05b77d1f-bf8b-4146-8c8e-3ba74c395e7b\",\"2e6d6ecd-1be3-489d-aef5-139c4222fcf6\"],\"menuItemType\":\"SubMenuItem\"}"
+  },
+  {
+    "menuitem": "{\"title\":{\"ru_RU\":\"Справочники\",\"en_EN\":\"Spravochniki\"},\"icon\":\"\",\"grants\":{},\"id\":\"f21e230c-ab9b-4ffe-9d56-7f0057be0106\",\"childrenid\":[],\"menuItemType\":\"SubMenuItem\"}"
+  },
+  {
+    "menuitem": "{\"title\":{\"ru_RU\":\"Ходатайства о награждении\",\"en_EN\":\"Hodataiistva o nagrazhdenii\"},\"description\":{},\"object\":{\"mnemo\":\"Module.HodataiistvaONagrazhdenii\"},\"action\":\"\",\"icon\":\"\",\"grants\":{},\"id\":\"05b77d1f-bf8b-4146-8c8e-3ba74c395e7b\",\"childrenid\":[],\"menuItemType\":\"MenuItem\"}"
+  },
+  {
+    "menuitem": "{\"title\":{\"ru_RU\":\"Приказы о награждении\",\"en_EN\":\"Prikazy o nagrazhdenii\"},\"description\":{},\"object\":{\"mnemo\":\"Module.PrikazyONagrazhdenii\"},\"action\":\"\",\"icon\":\"\",\"grants\":{},\"id\":\"2e6d6ecd-1be3-489d-aef5-139c4222fcf6\",\"childrenid\":[],\"menuItemType\":\"MenuItem\"}"
+  }
+]

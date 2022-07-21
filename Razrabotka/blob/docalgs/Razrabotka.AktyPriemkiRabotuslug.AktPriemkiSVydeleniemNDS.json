@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate(currentDocument) {\r\n    let activator \u003d new DefaultActivator(currentDocument);\r\n    activator.postingBuilders[0].getObj \u003d function(tableRec) {\r\n        return {summa: tableRec.get(this.trMnemo + \u0027SummaBezNDS\u0027)};\r\n    };\r\n    \r\n    let ndsBuilder \u003d new PostingBuilderWithCreatePostingWithProps(currentDocument); \r\n    \r\n    let acc21012 \u003d EntityFactory.getPlan().getAccounts().findByCode(\u002721012\u0027).get(0);\r\n\r\n    ndsBuilder.getObj \u003d function(tableRec) {\r\n        return {debit: acc21012,\r\n                debitKps: tableRec.get(this.trMnemo + \u0027KPSKr\u0027).getCode(),\r\n                summa: tableRec.get(this.trMnemo + \u0027SummaNDS\u0027)\r\n        };\r\n    };\r\n\r\n    return activator.addBuilders(ndsBuilder).run();\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.AktyPriemkiRabotuslug.AktPriemkiSVydeleniemNDS",
+    "title": {
+      "ru_RU": "Акт приемки с выделением НДС",
+      "en_EN": "Akt priemki s vydeleniem NDS"
+    },
+    "description": {}
+  }
+}

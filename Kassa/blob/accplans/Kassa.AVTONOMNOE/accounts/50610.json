@@ -1,0 +1,34 @@
+{
+  "active": true,
+  "code": "50610",
+  "name": {
+    "ru_RU": "Право на принятие обязательств на текущий финансовый год"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.RazdelyLicevyhSchetov"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50610",
+    "title": {
+      "ru_RU": "50610"
+    },
+    "description": {}
+  }
+}

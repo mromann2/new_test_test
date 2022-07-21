@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.NaimenovanieOrganizacii",
+      "title": {
+        "ru_RU": "Название организации",
+        "en_EN": "Nazvanie organizacii"
+      },
+      "description": {
+        "ru_RU": "Наименование организации"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "150"
+    },
+    "required": true
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.NaimenovanieOrganizacii",
+    "title": {
+      "ru_RU": "Название организации",
+      "en_EN": "Nazvanie organizacii"
+    },
+    "description": {
+      "ru_RU": "Наименование организации"
+    }
+  }
+}

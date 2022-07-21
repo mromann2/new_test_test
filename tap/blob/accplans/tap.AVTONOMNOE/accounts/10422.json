@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "10422",
+  "name": {
+    "ru_RU": "Амортизация нежилых помещений (зданий и сооружений) – особо ценного движимого имущества учреждения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10422",
+    "title": {
+      "ru_RU": "10422"
+    },
+    "description": {}
+  }
+}

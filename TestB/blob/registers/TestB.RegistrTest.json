@@ -1,0 +1,137 @@
+{
+  "dimensions": [
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "TestB.RegistrTest.dm.Sklad",
+        "title": {
+          "ru_RU": "Склад",
+          "en_EN": "Sklad"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "TestB.RegistrTest.dm.Mebel",
+        "title": {
+          "ru_RU": "Мебель",
+          "en_EN": "Mebel"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "resources": [
+    {
+      "meta": {
+        "mnemo": "TestB.RegistrTest.rs.Cena",
+        "title": {
+          "ru_RU": "Цена",
+          "en_EN": "Cena"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.RegistrTest.rs.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "requisites": [
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "TestB.RegistrTest.rg.VidDvizheniya",
+        "title": {
+          "ru_RU": "Вид движения",
+          "en_EN": "Vid dvizheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "TestB.RegistrTest.rg.Rekvizit2",
+        "title": {
+          "ru_RU": "Реквизит2",
+          "en_EN": "Rekvizit2"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "type": "Remainders",
+  "period": "Month",
+  "fast": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.RegistrTest",
+    "title": {
+      "ru_RU": "Регистр тест",
+      "en_EN": "Registr test"
+    },
+    "description": {}
+  }
+}

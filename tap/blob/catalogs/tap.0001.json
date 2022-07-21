@@ -1,0 +1,77 @@
+{
+  "mastermnemos": [
+    {
+      "mnemo": "tap.TestovyiiSpravochnik"
+    },
+    {
+      "mnemo": "tap.Nastroiiky"
+    }
+  ],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.0001.Schet",
+        "title": {
+          "ru_RU": "счет",
+          "en_EN": "schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника 1",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.0001",
+    "title": {
+      "ru_RU": "1",
+      "en_EN": "0001"
+    },
+    "description": {}
+  }
+}

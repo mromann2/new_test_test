@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20613",
+  "name": {
+    "ru_RU": "Расчеты по авансам по начислениям на выплаты по оплате труда"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "6",
+  "kosgudb": "567",
+  "kosgukr": "667",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20613",
+    "title": {
+      "ru_RU": "20613"
+    },
+    "description": {}
+  }
+}

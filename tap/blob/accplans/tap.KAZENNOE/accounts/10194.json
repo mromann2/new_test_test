@@ -1,0 +1,47 @@
+{
+  "active": true,
+  "code": "10194",
+  "name": {
+    "ru_RU": "Машины и оборудование – имущество в концессии"
+  },
+  "foreign": false,
+  "numerical": true,
+  "amounttype": "AverageWeighted",
+  "journalnumber": "7",
+  "kosgudb": "567",
+  "kosgukr": "667",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "tap.OsnovnyeSredstva"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    },
+    {
+      "type": {
+        "mnemo": "tap.CentryMaterialnoiiOtvetstvennosti"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 1
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10194",
+    "title": {
+      "ru_RU": "10194"
+    },
+    "description": {}
+  }
+}

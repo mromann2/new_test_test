@@ -1,0 +1,198 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Text",
+  "length": 64,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.hr.Prikaz",
+        "title": {
+          "ru_RU": "Приказ",
+          "en_EN": "Prikaz"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.PrikazyONagrazhdenii"
+      },
+      "properties": {},
+      "required": true
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.tr.Nagrazhdaemyii",
+        "title": {
+          "ru_RU": "Награждаемый",
+          "en_EN": "Nagrazhdaemyii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.SubektyNagrazhdeniya"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.tr.Nagrada",
+        "title": {
+          "ru_RU": "Награда",
+          "en_EN": "Nagrada"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.Nagrady"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.tr.OsnovanieNagrazhdeniya",
+        "title": {
+          "ru_RU": "Основание награждения",
+          "en_EN": "Osnovanie nagrazhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.MotivyNagrazhdeniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.tr.NomerNagrady",
+        "title": {
+          "ru_RU": "Номер награды",
+          "en_EN": "Nomer nagrady"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "15"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.tr.NomerUdostovereniya",
+        "title": {
+          "ru_RU": "Номер удостоверения",
+          "en_EN": "Nomer udostovereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "15"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.tr.VruchaetsyaPosmertno",
+        "title": {
+          "ru_RU": "Вручается посмертно",
+          "en_EN": "Vruchaetsya posmertno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.tr.DataVrucheniya",
+        "title": {
+          "ru_RU": "Дата вручения",
+          "en_EN": "Data vrucheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.AktyOVrucheniiNagrady.tr.NagrazhdenieVrucheno",
+        "title": {
+          "ru_RU": "Награждение вручено",
+          "en_EN": "Nagrazhdenie vrucheno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [
+      {
+        "mnemo": "Module.PrikazyObOtzyveNagrazhdeniya"
+      }
+    ],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Акты о вручении награды",
+    "sources": "function baseOn(base, targetMnemo){\r\n    let currentDocument \u003d EntityFactory.createDocument(targetMnemo);\r\n    let docMnemo \u003d currentDocument.getMnemo();\r\n    let petitionDocument \u003d base.get(base.getMnemo() + \u0027.hr.HodataiistvoONagrazhdenii\u0027);\r\n    let petitionMnemo \u003d petitionDocument.getMnemo();\r\n\r\n    currentDocument.setParent(base);\r\n    //currentDocument.setNumber(petitionDocument.getNumber() + \u0027 (акт)\u0027);\r\n    currentDocument.setNumber(\u0027Акт о вручении награды\u0027); \r\n    currentDocument.setOrganization(base.getOrganization()); \r\n    \r\n    currentDocument.set(docMnemo + \u0027.hr.Prikaz\u0027, base); \r\n    \r\n    for (let tableRec of petitionDocument.getRows()){\r\n        let row \u003d  currentDocument.addTableRow();\r\n\r\n        row.put(docMnemo + \u0027.tr.Nagrazhdaemyii\u0027, tableRec.get(petitionMnemo + \u0027.tr.Nagrazhdaemyii\u0027));\r\n        row.put(docMnemo + \u0027.tr.Nagrada\u0027, tableRec.get(petitionMnemo + \u0027.tr.Nagrada\u0027));\r\n        row.put(docMnemo + \u0027.tr.OsnovanieNagrazhdeniya\u0027, tableRec.get(petitionMnemo + \u0027.tr.OsnovanieNagrazhdeniya\u0027));\r\n    }\r\n\r\n    currentDocument.save();\r\n    return currentDocument;\r\n}"
+  },
+  "algorithms": [
+    {
+      "mnemo": "Module.AktyOVrucheniiNagrady.Uchet"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "Module.AktyOVrucheniiNagrady",
+    "title": {
+      "ru_RU": "Акты о вручении награды",
+      "en_EN": "Akty o vruchenii nagrady"
+    },
+    "description": {}
+  }
+}

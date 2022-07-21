@@ -1,0 +1,21 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Основной долг",
+    "Проценты",
+    "Штрафы",
+    "Пени на основной долг",
+    "Пени на проценты"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyRaschetovPoZaiimam",
+    "title": {
+      "ru_RU": "Виды расчетов по займам",
+      "en_EN": "Vidy raschetov po zaiimam"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "\r\n//Проведение документа\r\nfunction activate(currentDocument) {\r\n//return currentDocument.get(\u0027TestB.Testovyii.hr.Sklad\u0027).getTitle();\r\nlet myReg \u003d Register.get(\"TestB.RegistrTest\");\r\n//let myReg0 \u003d Register.get(\"TestB.RegistrTest\").get(0);\r\n\r\n//СОЗДАНИЕ ЗАПИСИ РЕГИСТРА\r\n//let record \u003d myReg.create();\r\n//record.setDate(currentDocument.getDate());\r\n//record.setDocument(currentDocument);\r\n//record.setDimension(\u0027TestB.RegistrTest.dm.Sklad\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Sklad\u0027).getTitle());\r\n//record.setDimension(\u0027TestB.RegistrTest.dm.Mebel\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Mebel\u0027).getTitle());\r\n//record.setRequisite(\u0027TestB.RegistrTest.rg.VidDvizheniya\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.VidDvizheniyaTMC\u0027));\r\n//record.setRequisite(\u0027TestB.RegistrTest.rg.Rekvizit2\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Rekvizit2\u0027));\r\n//record.create();\r\n\r\n//record.set(\u0027TestB.RegistrTest.rs.Kolichestvo\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Kolichestvo\u0027));\r\n//record.set(\u0027TestB.RegistrTest.rs.Cena\u0027, currentDocument.get(\u0027TestB.Testovyii.hr.Cena\u0027));\r\n//let r1 \u003d \u0027TestB.RegistrTest.rs.Cena\u0027;\r\n//let r2 \u003d \u0027TestB.RegistrTest.rs.Kolichestvo\u0027;\r\n//let cen \u003d currentDocument.get(\u0027TestB.Testovyii.hr.Cena\u0027);\r\n//let kol \u003d currentDocument.get(\u0027TestB.Testovyii.hr.Kolichestvo\u0027);\r\n\r\nlet d1 \u003d \u0027TestB.RegistrTest.dm.Sklad\u0027;\r\nlet d2 \u003d \u0027TestB.RegistrTest.dm.Mebel\u0027;\r\nlet req \u003d \u0027TestB.RegistrTest.rg.VidDvizheniya\u0027;\r\nlet req2 \u003d \u0027TestB.RegistrTest.rg.Rekvizit2\u0027;\r\nlet skl \u003d currentDocument.get(\u0027TestB.Testovyii.hr.Sklad\u0027).getTitle();\r\nlet meb \u003d currentDocument.get(\u0027TestB.Testovyii.hr.Mebel\u0027).getTitle();\r\nlet vd \u003d currentDocument.get(\u0027TestB.Testovyii.hr.VidDvizheniyaTMC\u0027);\r\nlet rek2 \u003d currentDocument.get(\u0027TestB.Testovyii.hr.Rekvizit2\u0027);\r\n\r\n//let condition \u003d filter.find(filter.dimension(d1, skl).and().dimension(\"d2\", cfs2).and().dimension(\"d3\", cfs3)).and(filter.dimension(\"d1\", cfs).and().dimension(\"d2\", cfs))\r\n//let condition \u003d filter.resource(r1, cen);\r\n//let condition \u003d filter.dimension(d1, skl);\r\n\r\n//let condition \u003d filter.dimension(d1, skl).and().dimension(d2, meb);\r\n//let condition \u003d filter.dimension(d1, \u0027Кладовка\u0027).and().dimension(d2, \u0027Шкаф\u0027);\r\n//let condition \u003d filter.dimension(d1, skl).and().dimension(d2, meb).or(filter.dimension(d1, \u0027Кладовка\u0027).and().dimension(d2, \u0027Шкаф\u0027));\r\n//let condition \u003d filter.dimension(d1, skl).and().dimension(d2, meb).or().dimension(d1, \u0027Кладовка\u0027).and().dimension(d2, \u0027Шкаф\u0027);\r\n\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd); //правильно находит 2 записи\r\n//let condition \u003d filter.dimension(d1, skl1).and().requisite(req, vd1); //правильно находит 1 запись\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).or().dimension(d1, skl1).and().requisite(req, vd1); //неправильно находит 0\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).and().dimension(d1, skl1).and().requisite(req, vd1); //неправильно находит 0\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).or(filter.dimension(d1, skl1).and().requisite(req, vd1)); //Resource exhausted: Stack overflow\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).and(filter.dimension(d1, skl1).and().requisite(req, vd1)); //Resource exhausted: Stack overflow\r\n//\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd); //правильно находит 2 записей (Стол)\r\n//let condition \u003d filter.dimension(d2, meb).and().requisite(req2, rek2); //правильно находит 1 записей (Стол)\r\nlet condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).or().dimension(d2, meb).and().requisite(req2, rek2); //правильно находит 4, (Шкаф)\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).and().dimension(d2, meb).and().requisite(req2, rek2); //правильно находит 1 (Шкаф)\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).or(filter.dimension(d2, meb).and().requisite(req2, rek2)); //Resource exhausted: Stack overflow\r\n//let condition \u003d filter.dimension(d1, skl).and().requisite(req, vd).and(filter.dimension(d2, meb).and().requisite(req2, rek2)); //Resource exhausted: Stack overflow\r\n\r\n//let dbc1 \u003d filter.dimension(d1, skl).and().requisite(req, vd); //правильно находит 2 записей\r\n//let dbc2 \u003d filter.dimension(d2, meb).and().requisite(req2, rek2); //правильно находит 1 записей\r\n//let condition \u003d dbc1.or(dbc2); //Resource exhausted: Stack overflow\r\n//\"Resource exhausted: Stack overflow\" теперьпоменялась на: \"Ошибка интерпретации скрипта : activate:61 Cannot invoke \"com.argos.dfe.lib.core.userdata.Matcher.getValue()\" because \r\n//the return value of \"com.argos.dfe.lib.core.userdata.Criteria.getMatcher()\" is null let collection\u003dmyReg.find(condition)\"\r\n\r\nlet collection\u003dmyReg.find(condition);\r\nreturn collection.size();\r\n\r\n\r\n}\r\n\r\n\r\n"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.Testovyii.Reg1",
+    "title": {
+      "ru_RU": "reg1",
+      "en_EN": "reg1"
+    },
+    "description": {}
+  }
+}

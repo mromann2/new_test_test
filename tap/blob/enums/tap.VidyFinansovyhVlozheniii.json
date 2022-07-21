@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Ценные бумаги",
+    "Участие в капитале",
+    "Иные финансовые активы"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyFinansovyhVlozheniii",
+    "title": {
+      "ru_RU": "Виды финансовых вложений",
+      "en_EN": "Vidy finansovyh vlozheniii"
+    },
+    "description": {}
+  }
+}

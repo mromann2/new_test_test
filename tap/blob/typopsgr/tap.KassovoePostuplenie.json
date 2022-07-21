@@ -1,0 +1,11 @@
+{
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.KassovoePostuplenie",
+    "title": {
+      "ru_RU": "Кассовое поступление",
+      "en_EN": "Kassovoe postuplenie"
+    },
+    "description": {}
+  }
+}

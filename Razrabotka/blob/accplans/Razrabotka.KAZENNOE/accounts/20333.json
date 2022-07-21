@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "20333",
+  "name": {
+    "ru_RU": "Средства бюджетных учреждений на счетах для выплаты наличных"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "2",
+  "kosgudb": "510",
+  "kosgukr": "610",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20333",
+    "title": {
+      "ru_RU": "20333"
+    },
+    "description": {}
+  }
+}

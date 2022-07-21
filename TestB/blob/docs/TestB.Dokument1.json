@@ -1,0 +1,355 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.SHapkaSpravochnik",
+        "title": {
+          "ru_RU": "Шапка справочник",
+          "en_EN": "SHapka spravochnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.Spravochnik1"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.SHapkaPerechislenie",
+        "title": {
+          "ru_RU": "Шапка перечисление",
+          "en_EN": "SHapka perechislenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.Perechislenie1"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.SHapkaData",
+        "title": {
+          "ru_RU": "Шапка дата",
+          "en_EN": "SHapka data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.SHapkaCHekboks",
+        "title": {
+          "ru_RU": "Шапка чекбокс",
+          "en_EN": "SHapka chekboks"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.SHapkaSumma",
+        "title": {
+          "ru_RU": "Шапка сумма",
+          "en_EN": "SHapka summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.SHapkaSchet",
+        "title": {
+          "ru_RU": "Шапка счет",
+          "en_EN": "SHapka schet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.SHapkaTekst",
+        "title": {
+          "ru_RU": "Шапка текст",
+          "en_EN": "SHapka tekst"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "500"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.SHapkaCeloeCHislo",
+        "title": {
+          "ru_RU": "Шапка целое число",
+          "en_EN": "SHapka celoe chislo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.hr.CHislo",
+        "title": {
+          "ru_RU": "Число",
+          "en_EN": "CHislo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaSpravochnik",
+        "title": {
+          "ru_RU": "Фактура справочник",
+          "en_EN": "Faktura spravochnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.Spravochnik1"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaPerechislenie",
+        "title": {
+          "ru_RU": "Фактура перечисление",
+          "en_EN": "Faktura perechislenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestB.Perechislenie1"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaData",
+        "title": {
+          "ru_RU": "Фактура дата",
+          "en_EN": "Faktura data"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaCHekboks",
+        "title": {
+          "ru_RU": "Фактура чекбокс",
+          "en_EN": "Faktura chekboks"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaSumma",
+        "title": {
+          "ru_RU": "Фактура сумма",
+          "en_EN": "Faktura summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaTekst",
+        "title": {
+          "ru_RU": "Фактура текст",
+          "en_EN": "Faktura tekst"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "500"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaDT",
+        "title": {
+          "ru_RU": "Фактура ДТ",
+          "en_EN": "Faktura DT"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaKT",
+        "title": {
+          "ru_RU": "Фактура КТ",
+          "en_EN": "Faktura KT"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "TestB.Dokument1.tr.FakturaCeloeCHislo",
+        "title": {
+          "ru_RU": "Фактура целое число",
+          "en_EN": "Faktura celoe chislo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Документ 1",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "TestB.Dokument1.Algoritm1"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "TestB.Dokument1",
+    "title": {
+      "ru_RU": "Документ 1",
+      "en_EN": "Dokument 1"
+    },
+    "description": {}
+  }
+}

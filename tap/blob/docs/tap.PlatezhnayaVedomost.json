@@ -1,0 +1,505 @@
+{
+  "periodictype": "ForAllDocumentsThatType",
+  "autonumerizer": true,
+  "numeratortype": "Number",
+  "length": 5,
+  "uniquecontrol": true,
+  "acceptaccountingprocessing": true,
+  "automovedeletion": true,
+  "autorownumerizer": true,
+  "accounting": false,
+  "calculation": false,
+  "operationalaccounting": false,
+  "createoperation": "Always",
+  "headerrequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Ispolnen",
+        "title": {
+          "ru_RU": "Исполнен",
+          "en_EN": "Ispolnen"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Annulirovan",
+        "title": {
+          "ru_RU": "Аннулирован",
+          "en_EN": "Annulirovan"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.PodrazdelenieDt",
+        "title": {
+          "ru_RU": "Подразделение (дт)",
+          "en_EN": "Podrazdelenie dt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Vyplacheno",
+        "title": {
+          "ru_RU": "Выплачено",
+          "en_EN": "Vyplacheno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Vyplaty",
+        "title": {
+          "ru_RU": "Выплаты",
+          "en_EN": "Vyplaty"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.VyplatyPlatezhnoiiVedomosti"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.PodrazdeleniKt",
+        "title": {
+          "ru_RU": "Подразделение (кт)",
+          "en_EN": "Podrazdelenie kt"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Podrazdeleniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.KodAnalitichUcheta",
+        "title": {
+          "ru_RU": "Код аналитич. учета",
+          "en_EN": "Kod analitich ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "10"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.KodCelevogoNaznacheniya",
+        "title": {
+          "ru_RU": "Код целевого назначения",
+          "en_EN": "Kod celevogo naznacheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.CelevyeNaznacheniyaKassovyhOrderov"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Osnovanie",
+        "title": {
+          "ru_RU": "Основание",
+          "en_EN": "Osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "500"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Prilozhenie",
+        "title": {
+          "ru_RU": "Приложение",
+          "en_EN": "Prilozhenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.SchetKassy",
+        "title": {
+          "ru_RU": "Счет кассы",
+          "en_EN": "Schet kassy"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.SchetRaschetov",
+        "title": {
+          "ru_RU": "Счет расчетов",
+          "en_EN": "Schet raschetov"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.account"
+      },
+      "properties": {
+        "showanalytic": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Period",
+        "title": {
+          "ru_RU": "Период",
+          "en_EN": "Period"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Periody"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Naznachenie",
+        "title": {
+          "ru_RU": "Назначение",
+          "en_EN": "Naznachenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.DataNachalaVyplat",
+        "title": {
+          "ru_RU": "Дата начала выплат",
+          "en_EN": "Data nachala vyplat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.DataOkonchaniyaVyplat",
+        "title": {
+          "ru_RU": "Дата окончания выплат",
+          "en_EN": "Data okonchaniya vyplat"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.Kommentariii",
+        "title": {
+          "ru_RU": "Комментарий",
+          "en_EN": "Kommentariii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "true",
+        "length": "500"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.KPSDlyaScheta20134",
+        "title": {
+          "ru_RU": "КПС для счета 201.34",
+          "en_EN": "KPS dlya scheta 20134"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.hr.PravovoeOsnovanie1",
+        "title": {
+          "ru_RU": "Правовое основание",
+          "en_EN": "Pravovoe osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "tablerequsites": [
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.tr.Vyplacheno",
+        "title": {
+          "ru_RU": "Выплачено",
+          "en_EN": "Vyplacheno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.tr.Sotrudnik",
+        "title": {
+          "ru_RU": "Сотрудник",
+          "en_EN": "Sotrudnik"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Sotrudniki"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.tr.Kontragent",
+        "title": {
+          "ru_RU": "Контрагент",
+          "en_EN": "Kontragent"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.Kontragenty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "istotal": false,
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.tr.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "15",
+        "unsigned": "true"
+      },
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.tr.KFO",
+        "title": {
+          "ru_RU": "КФО",
+          "en_EN": "KFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KFO"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.tr.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KPS"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.tr.KEK",
+        "title": {
+          "ru_RU": "КЭК",
+          "en_EN": "KEK"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.KK"
+      },
+      "properties": {},
+      "required": true
+    },
+    {
+      "meta": {
+        "mnemo": "tap.PlatezhnayaVedomost.tr.PravovoeOsnovanie",
+        "title": {
+          "ru_RU": "Правовое основание",
+          "en_EN": "Pravovoe osnovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "tap.DogovoryIObyazatelstva"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "basedondocuments": {
+    "isthebasis": [],
+    "maybethebasisforanykind": false
+  },
+  "formdescription": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formdocument": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "script": {
+    "title": "Скрипт документа Платежные ведомости",
+    "sources": ""
+  },
+  "algorithms": [
+    {
+      "mnemo": "tap.PlatezhnayaVedomost.Standartnyii"
+    }
+  ],
+  "printedformset": [],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.PlatezhnayaVedomost",
+    "title": {
+      "ru_RU": "Платежные ведомости",
+      "en_EN": "Platezhnaya vedomost"
+    },
+    "description": {}
+  }
+}

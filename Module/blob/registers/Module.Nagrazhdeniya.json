@@ -1,0 +1,455 @@
+{
+  "dimensions": [
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.Nagrazhdennyii",
+        "title": {
+          "ru_RU": "Награжденный",
+          "en_EN": "Nagrazhdennyii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.SubektyNagrazhdeniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.TipNagrazhdennogo",
+        "title": {
+          "ru_RU": "Тип награжденного",
+          "en_EN": "Tip nagrazhdennogo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.TipyNagrazhdaemogo"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.MestoRaboty",
+        "title": {
+          "ru_RU": "Место работы",
+          "en_EN": "Mesto raboty"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "150"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.SferaDeyatelnosti",
+        "title": {
+          "ru_RU": "Сфера деятельности",
+          "en_EN": "Sfera deyatelnosti"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.SferyDeyatelnosti"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.Podrazdelenie",
+        "title": {
+          "ru_RU": "Подразделение",
+          "en_EN": "Podrazdelenie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "150"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.Kategoriya",
+        "title": {
+          "ru_RU": "Категория",
+          "en_EN": "Kategoriya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.KategoriiFizicheskogoLica"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.DataRozhdeniya",
+        "title": {
+          "ru_RU": "Дата рождения",
+          "en_EN": "Data rozhdeniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.Nagrada",
+        "title": {
+          "ru_RU": "Награда",
+          "en_EN": "Nagrada"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.Nagrady"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.dm.VidNagrady",
+        "title": {
+          "ru_RU": "Вид награды",
+          "en_EN": "Vid nagrady"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.VidyNagrad"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "resources": [
+    {
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rs.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.integer"
+      },
+      "properties": {
+        "length": "10",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rs.Summa",
+        "title": {
+          "ru_RU": "Сумма",
+          "en_EN": "Summa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    }
+  ],
+  "requisites": [
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.MotivNagrady",
+        "title": {
+          "ru_RU": "Мотив награды / поощрения",
+          "en_EN": "Motiv nagrady"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "Module.MotivyNagrazhdeniya"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.NomerNagrady",
+        "title": {
+          "ru_RU": "Номер награды",
+          "en_EN": "Nomer nagrady"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "15"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.NomerUdostovereniya",
+        "title": {
+          "ru_RU": "Номер удостоверения",
+          "en_EN": "Nomer udostovereniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "15"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.NomerPrikaza",
+        "title": {
+          "ru_RU": "Номер приказа",
+          "en_EN": "Nomer prikaza"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "65"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.DataPrikaza",
+        "title": {
+          "ru_RU": "Дата приказа",
+          "en_EN": "Data prikaza"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.DataVrucheniya",
+        "title": {
+          "ru_RU": "Дата вручения",
+          "en_EN": "Data vrucheniya"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.KtoHodataiistvuet",
+        "title": {
+          "ru_RU": "Кто ходатайствует",
+          "en_EN": "Kto hodataiistvuet"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "150"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.Posmertno",
+        "title": {
+          "ru_RU": "Посмертно",
+          "en_EN": "Posmertno"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.Otozvana",
+        "title": {
+          "ru_RU": "Отозвана",
+          "en_EN": "Otozvana"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.NomerPrikazaOtzyva",
+        "title": {
+          "ru_RU": "Номер приказа отзыва",
+          "en_EN": "Nomer prikaza otzyva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "65"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.DataPrikazaOtzyva",
+        "title": {
+          "ru_RU": "Дата приказа отзыва",
+          "en_EN": "Data prikaza otzyva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.OsnovanieOtzyva",
+        "title": {
+          "ru_RU": "Основание отзыва",
+          "en_EN": "Osnovanie otzyva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "1000"
+      },
+      "required": false
+    },
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "Module.Nagrazhdeniya.rg.DataOtzyva",
+        "title": {
+          "ru_RU": "Дата отзыва",
+          "en_EN": "Data otzyva"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "type": "Remainders",
+  "period": "Month",
+  "fast": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "Module.Nagrazhdeniya",
+    "title": {
+      "ru_RU": "Награждения",
+      "en_EN": "Nagrazhdeniya"
+    },
+    "description": {}
+  }
+}

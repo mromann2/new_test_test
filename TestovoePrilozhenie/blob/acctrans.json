@@ -1,0 +1,196 @@
+{
+  "postingrequisites": [
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.accounttransaction.rq.KVFO",
+        "title": {
+          "ru_RU": "КВФО",
+          "en_EN": "KVFO"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestovoePrilozhenie.KFO"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.accounttransaction.rq.Kolichestvo",
+        "title": {
+          "ru_RU": "Количество",
+          "en_EN": "Kolichestvo"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "14",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.accounttransaction.rq.Mezhraschetnyii",
+        "title": {
+          "ru_RU": "Межрасчетный",
+          "en_EN": "Mezhraschetnyii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.boolean"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.accounttransaction.rq.OsnZhurnal",
+        "title": {
+          "ru_RU": "Основной Журнал",
+          "en_EN": "Osn Zhurnal"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.accounttransaction.rq.DopolnitelnyiiZhurnal",
+        "title": {
+          "ru_RU": "Дополнительный журнал",
+          "en_EN": "Dopolnitelnyii zhurnal"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    },
+    {
+      "selection": false,
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.accounttransaction.rq.DataUcheta",
+        "title": {
+          "ru_RU": "Дата учета",
+          "en_EN": "Data ucheta"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.date"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "accountrequisites": [
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.accounttransaction.arq.KPS",
+        "title": {
+          "ru_RU": "КПС",
+          "en_EN": "KPS"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestovoePrilozhenie.KPS"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "meta": {
+        "mnemo": "TestovoePrilozhenie.accounttransaction.arq.KOSGU",
+        "title": {
+          "ru_RU": "КОСГУ",
+          "en_EN": "KOSGU"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "allowselection": true,
+  "ondebitcredit": false,
+  "forall": true,
+  "levelscount": 1,
+  "selectionbycurrency": false,
+  "selectionbysum": true,
+  "selectionbyamount": false,
+  "selectionbycurrencysum": false,
+  "selectionbyplan": false,
+  "complextransaction": true,
+  "sumprops": {
+    "length": 15,
+    "minlength": 4,
+    "maxlength": 18,
+    "precision": 2,
+    "maxprecision": 2,
+    "minprecision": 0,
+    "separatetriads": false
+  },
+  "amountprops": {
+    "length": 15,
+    "minlength": 7,
+    "maxlength": 18,
+    "precision": 3,
+    "maxprecision": 5,
+    "minprecision": 0,
+    "separatetriads": false
+  },
+  "currencysumprops": {
+    "length": 15,
+    "minlength": 4,
+    "maxlength": 18,
+    "precision": 2,
+    "maxprecision": 2,
+    "minprecision": 0,
+    "separatetriads": false
+  },
+  "accounttransactionjournal": [],
+  "requisiteheaders": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "TestovoePrilozhenie.accounttransaction",
+    "title": {
+      "ru_RU": "Проводка",
+      "en_EN": "Account Transaction"
+    },
+    "description": {
+      "ru_RU": "Проводка",
+      "en_EN": "Account Transaction"
+    }
+  }
+}

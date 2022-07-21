@@ -1,0 +1,13 @@
+{
+  "plantype": "BUDGET",
+  "codeTemplate": "",
+  "grants": {},
+  "meta": {
+    "mnemo": "Test3.AVTONOMNOE",
+    "title": {
+      "ru_RU": "AVTONOMNOE",
+      "en_EN": "AVTONOMNOE"
+    },
+    "description": {}
+  }
+}

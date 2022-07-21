@@ -1,0 +1,78 @@
+{
+  "dimensions": [
+    {
+      "selectMoves": false,
+      "selectResults": false,
+      "meta": {
+        "mnemo": "tap.CenyNomenklatury.dm.1",
+        "title": {
+          "ru_RU": "1",
+          "en_EN": "1"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "resources": [
+    {
+      "meta": {
+        "mnemo": "tap.CenyNomenklatury.rs.2",
+        "title": {
+          "ru_RU": "2",
+          "en_EN": "2"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "requisites": [
+    {
+      "selectMoves": false,
+      "unsigned": false,
+      "meta": {
+        "mnemo": "tap.CenyNomenklatury.rg.3",
+        "title": {
+          "ru_RU": "3",
+          "en_EN": "3"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "14"
+      },
+      "required": false
+    }
+  ],
+  "type": "Returns",
+  "period": "Day",
+  "fast": true,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.CenyNomenklatury",
+    "title": {
+      "ru_RU": "Цены номенклатуры",
+      "en_EN": "Ceny nomenklatury"
+    },
+    "description": {}
+  }
+}

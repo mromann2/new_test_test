@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "Н6905",
+  "name": {
+    "ru_RU": "Расчеты по страховым взносам на доплату к пенсии работникам организаций угольной промышленности"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "6905",
+    "title": {
+      "ru_RU": "Н6905"
+    },
+    "description": {}
+  }
+}

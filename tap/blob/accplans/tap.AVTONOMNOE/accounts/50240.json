@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "50240",
+  "name": {
+    "ru_RU": "Обязательства второго года, следующего за очередным"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "ActivePassive",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "50240",
+    "title": {
+      "ru_RU": "50240"
+    },
+    "description": {}
+  }
+}

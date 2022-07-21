@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "30112",
+  "name": {
+    "ru_RU": "Расчеты с кредиторами по государственным (муниципальным) ценным бумагам"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "",
+  "kosgudb": "810",
+  "kosgukr": "710",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.Kontragenty"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "30112",
+    "title": {
+      "ru_RU": "30112"
+    },
+    "description": {}
+  }
+}

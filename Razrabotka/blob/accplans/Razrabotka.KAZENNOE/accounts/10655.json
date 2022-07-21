@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "10655",
+  "name": {
+    "ru_RU": "Вложения в непроизведенные активы государственной (муниципальной) казны"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "330",
+  "kosgukr": "430",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "10655",
+    "title": {
+      "ru_RU": "10655"
+    },
+    "description": {}
+  }
+}

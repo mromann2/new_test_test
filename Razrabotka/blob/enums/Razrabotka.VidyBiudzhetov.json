@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "1. Федеральный бюджет",
+    "2. Бюджет субъекта РФ",
+    "3. Местный бюджет"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.VidyBiudzhetov",
+    "title": {
+      "ru_RU": "Виды бюджетов",
+      "en_EN": "Vidy biudzhetov"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "active": true,
+  "code": "10.1",
+  "name": {
+    "ru_RU": "Обеспечение исполнения обязательств - задаток"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "4",
+  "kosgudb": "",
+  "kosgukr": "",
+  "budgetclassificationtype": "None",
+  "offbalance": true,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "101",
+    "title": {
+      "ru_RU": "10.1"
+    },
+    "description": {}
+  }
+}

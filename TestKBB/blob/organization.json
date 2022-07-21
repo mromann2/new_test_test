@@ -1,0 +1,71 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": true,
+  "uniquecontrol": true,
+  "kodseries": "SlaveScope",
+  "kodtype": "Number",
+  "mainview": "Kod",
+  "oneformforelementandgroup": false,
+  "editing": "InList",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "TestKBB.organization.plantype",
+        "title": {
+          "ru_RU": "Тип организации",
+          "en_EN": "Tip organizacii"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "TestKBB.TipUchrezhdeniya"
+      },
+      "properties": {},
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт учетной организации Учётная организация",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "TestKBB.organization",
+    "title": {
+      "ru_RU": "Учётная организация",
+      "en_EN": "Accounting Organization"
+    },
+    "description": {
+      "ru_RU": "Справочник учётных организаций",
+      "en_EN": "Directory of accounting organizations"
+    }
+  }
+}

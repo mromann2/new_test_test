@@ -1,0 +1,161 @@
+{
+  "mastermnemos": [],
+  "publiccatalog": true,
+  "levelscount": 1,
+  "kodlength": 5,
+  "titlelength": 25,
+  "autonumerizer": false,
+  "uniquecontrol": true,
+  "kodseries": "CatalogScope",
+  "kodtype": "Text",
+  "mainview": "Title",
+  "oneformforelementandgroup": false,
+  "editing": "Both",
+  "requisites": [
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Valiuty.PolnoeNaimenovanie",
+        "title": {
+          "ru_RU": "Полное наименование",
+          "en_EN": "Polnoe naimenovanie"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "50"
+      },
+      "required": true
+    },
+    {
+      "periodical": true,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "canbechangedbydocuments": false,
+      "meta": {
+        "mnemo": "tap.Valiuty.Kurs",
+        "title": {
+          "ru_RU": "Курс",
+          "en_EN": "Kurs"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "4",
+        "length": "10",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Valiuty.OsnovnayaValiuta",
+        "title": {
+          "ru_RU": "Основная валюта",
+          "en_EN": "Osnovnaya valiuta"
+        },
+        "description": {
+          "ru_RU": "Валюта, на основании курса которой рассчитывается курс текущей валюты"
+        }
+      },
+      "type": {
+        "mnemo": "tap.Valiuty"
+      },
+      "properties": {},
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Valiuty.Nacenka",
+        "title": {
+          "ru_RU": "Наценка",
+          "en_EN": "Nacenka"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.real"
+      },
+      "properties": {
+        "precision": "2",
+        "length": "10",
+        "unsigned": "false"
+      },
+      "required": false
+    },
+    {
+      "periodical": false,
+      "sort": false,
+      "selectbyrequisite": false,
+      "usefor": "ForElement",
+      "meta": {
+        "mnemo": "tap.Valiuty.FormulaRaschetaKursa",
+        "title": {
+          "ru_RU": "Формула расчета курса",
+          "en_EN": "Formula rascheta kursa"
+        },
+        "description": {}
+      },
+      "type": {
+        "mnemo": "primitive.text"
+      },
+      "properties": {
+        "unlimited": "false",
+        "length": "100"
+      },
+      "required": false
+    }
+  ],
+  "form": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formelement": {
+    "title": "formElement",
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "formgroup": {
+    "script": {
+      "title": "script",
+      "sources": ""
+    }
+  },
+  "listformset": [],
+  "script": {
+    "title": "Скрипт справочника Валюты",
+    "sources": ""
+  },
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Valiuty",
+    "title": {
+      "ru_RU": "Валюты",
+      "en_EN": "Valiuty"
+    },
+    "description": {}
+  }
+}

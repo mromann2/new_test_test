@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Основная система налогообложения",
+    "Особый порядок налогообложения",
+    "Распределяемые затраты"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyRezhimaNalooblozheniya",
+    "title": {
+      "ru_RU": "Виды режима налообложения",
+      "en_EN": "Vidy rezhima nalooblozheniya"
+    },
+    "description": {}
+  }
+}

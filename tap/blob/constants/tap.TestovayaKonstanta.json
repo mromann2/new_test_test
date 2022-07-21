@@ -1,0 +1,34 @@
+{
+  "value": {
+    "meta": {
+      "mnemo": "tap.TestovayaKonstanta",
+      "title": {
+        "ru_RU": "_Тестовая константа",
+        "en_EN": "Testovaya konstanta"
+      },
+      "description": {
+        "ru_RU": "11"
+      }
+    },
+    "type": {
+      "mnemo": "primitive.text"
+    },
+    "properties": {
+      "unlimited": "false",
+      "length": "500"
+    },
+    "required": false
+  },
+  "periodical": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.TestovayaKonstanta",
+    "title": {
+      "ru_RU": "_Тестовая константа",
+      "en_EN": "Testovaya konstanta"
+    },
+    "description": {
+      "ru_RU": "11"
+    }
+  }
+}

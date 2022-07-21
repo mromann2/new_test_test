@@ -1,0 +1,21 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "1. Алименты",
+    "2. Выходные пособия",
+    "3. Зарплата и отчисления",
+    "4. Прочие платежи",
+    "5. Поставщики и налоги"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.OcherednostPlatezheii",
+    "title": {
+      "ru_RU": "Очередность платежей",
+      "en_EN": "Ocherednost platezheii"
+    },
+    "description": {}
+  }
+}

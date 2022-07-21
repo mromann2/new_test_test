@@ -1,0 +1,23 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Приобретение за плату",
+    "Строительство",
+    "Вклад в установленный капитал",
+    "По договору мены",
+    "Безвозмездное поступление",
+    "По договору лизинга",
+    "Иной"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.SposobyPostupleniyaOS",
+    "title": {
+      "ru_RU": "Способы поступления ОС",
+      "en_EN": "Sposoby postupleniya OS"
+    },
+    "description": {}
+  }
+}

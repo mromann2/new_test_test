@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "расходов",
+    "доходов",
+    "ИФДБ"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.TipySmet",
+    "title": {
+      "ru_RU": "Типы смет",
+      "en_EN": "Tipy smet"
+    },
+    "description": {}
+  }
+}

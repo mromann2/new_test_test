@@ -1,0 +1,19 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Global",
+    "User",
+    "PreSet"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "Razrabotka.SettingsTypes",
+    "title": {
+      "ru_RU": "SettingsTypes",
+      "en_EN": "SettingsTypes"
+    },
+    "description": {}
+  }
+}

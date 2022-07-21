@@ -1,0 +1,18 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Региональный",
+    "Федеральный"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "ElektronnyiiReestrPolnomochiii.UrovenOrgana",
+    "title": {
+      "ru_RU": "Уровень органа",
+      "en_EN": "Uroven organa"
+    },
+    "description": {}
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "active": true,
+  "code": "1143N",
+  "name": {
+    "ru_RU": "Обесценение научных исследований (научно-исследовательских разработок) – иного движимого имущества учреждения"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "journalnumber": "7",
+  "kosgudb": "420",
+  "kosgukr": "420",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Passive",
+  "analyticsList": [
+    {
+      "type": {
+        "mnemo": "Razrabotka.KartotekaOS"
+      },
+      "returnsOnly": false,
+      "bySum": false,
+      "byForeignSum": false,
+      "byNum": false,
+      "analyticNumber": 0
+    }
+  ],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "1143",
+    "title": {
+      "ru_RU": "1143N"
+    },
+    "description": {}
+  }
+}

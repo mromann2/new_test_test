@@ -1,0 +1,48 @@
+{
+  "script": {
+    "title": "script",
+    "sources": "function activate (cc){    \r\n//  let catalogs \u003d EntityFactory.getCatalogs().get(\"tap.OKOPF\")\r\n//  let catalog1 \u003d catalogs.findByCode(\u002771\u0027)[0]\r\n//  let catalog2 \u003d catalogs.findByCode(\u002788\u0027)[0]\r\n//  let catalog3 \u003d catalogs.findByCode(\u002772\u0027)[0]\r\n//  return catalog3\r\n\r\nlet zapis \u003d cc.get(\u0027tap.Doc1.hr.1\u0027)\r\nlet shet \u003d zapis.get(\u0027tap.TestovyiiSpravochnik.Rekvizit1\u0027, new Date(2022, 6, 18, 11, 04, 03, 945))//new Date(2022, 6, 11,13,39,15) )\r\nreturn shet \r\n////zapis.set(\u0027tap.TestovyiiSpravochnik.Schett\u0027, new Date(2022, 6, 01,17,44,34,945),cc.get(\u0027tap.Doc1.hr.Schett\u0027))\r\n////zapis.save()\r\n//cc.set(\u0027tap.Doc1.hr.Schett\u0027, shet )\r\n//\r\n//for (let tableRec of cc.getRows()){\r\n//    \r\n//    tableRec.put(\u0027tap.Doc1.tr.Schet\u0027, shet)\r\n//    \r\n//}\r\n//\r\n//cc.save()\r\n\r\n//let zapis \u003d EntityFactory.getCatalogs().get(\"tap.TestovyiiSpravochnik\").findByCode(\u0027001\u0027)[0]\r\n//let shet \u003d zapis.get(\u0027tap.TestovyiiSpravochnik.Schett\u0027, new Date(2022, 6, 11,15,48,30,000))\r\n\r\n        //return cc.get(\u0027tap.Doc1.hr.1\u0027).get(\u0027tap.TestovyiiSpravochnik.Schett\u0027, new Date(2022, 6, 11,15,48,30,945))//, new Date(2022, 6, 10,14,29,00,583))\r\n}"
+  },
+  "template": {
+    "universal": false,
+    "date": {
+      "celltype": "OPERATION_DATE",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "number": {
+      "celltype": "OPERATION_NUMBER",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "summ": {
+      "celltype": "OPERATION_SUM",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operation_description": {
+      "celltype": "OPERATION_DESCRIPTION",
+      "formulaEnabled": "true",
+      "sourceMnemo": "",
+      "prompt": {},
+      "index": 0
+    },
+    "operations": []
+  },
+  "runastemplate": false,
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.Doc1.Vozvrat",
+    "title": {
+      "ru_RU": "Возврат",
+      "en_EN": "Vozvrat"
+    },
+    "description": {}
+  }
+}

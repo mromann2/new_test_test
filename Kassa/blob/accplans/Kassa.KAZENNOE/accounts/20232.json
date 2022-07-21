@@ -1,0 +1,23 @@
+{
+  "active": true,
+  "code": "20232",
+  "name": {
+    "ru_RU": "Средства бюджета на депозитных счетах в пути"
+  },
+  "foreign": false,
+  "numerical": false,
+  "amounttype": "None",
+  "budgetclassificationtype": "None",
+  "offbalance": false,
+  "type": "Active",
+  "analyticsList": [],
+  "propertyValues": {},
+  "grants": {},
+  "meta": {
+    "mnemo": "20232",
+    "title": {
+      "ru_RU": "20232"
+    },
+    "description": {}
+  }
+}

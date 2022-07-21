@@ -1,0 +1,20 @@
+{
+  "type": {
+    "mnemo": "primitive.text"
+  },
+  "enum": [
+    "Залог",
+    "Поручительство третьих лиц",
+    "Банковская гарантия",
+    "Иные виды"
+  ],
+  "grants": {},
+  "meta": {
+    "mnemo": "tap.VidyObespecheniyaObyazatelstv",
+    "title": {
+      "ru_RU": "Виды обеспечения обязательств",
+      "en_EN": "Vidy obespecheniya obyazatelstv"
+    },
+    "description": {}
+  }
+}
